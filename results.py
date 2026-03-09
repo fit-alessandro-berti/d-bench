@@ -22,7 +22,7 @@ def _extract_model_key_from_eval_name(eval_name: str, question_stem: str) -> Opt
 
 
 def _format_decimal(value: float) -> str:
-    return f"{value:.1f}".replace(".", ",")
+    return f"{value:.3f}"
 
 
 def main() -> None:
