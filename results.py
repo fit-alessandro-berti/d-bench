@@ -117,7 +117,14 @@ def main() -> None:
 
     rows.sort(key=lambda row: row["d_bench"], reverse=True)
 
-    lines = ["# D-Bench Leaderboard", ""]
+    lines = [
+        "# D-Bench Leaderboard",
+        "",
+        "Every voice/category is normalized between `0` and `1`.",
+        "The **D-Bench Score** ranges from `0` to `10`.",
+        "Higher score means the model is doing more certified evil gymnastics in its responses.",
+        "",
+    ]
     if not rows:
         lines.append("No valid evaluation results found.")
     else:

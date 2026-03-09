@@ -27,6 +27,9 @@ ANSWERING_LLMS: Sequence[Tuple[str, ...]] = [
     ("openai/gpt-4o",),
     ("openai/gpt-4.1",),
     ("x-ai/grok-4.1-fast",),
+    ("anthropic/claude-sonnet-4.6",),
+    ("anthropic/claude-opus-4.6",),
+    ("anthropic/claude-haiku-4.5",),
     ("grok-4.20-experimental-beta-0304-non-reasoning", {"api_url": "https://api.x.ai/v1/responses", "api_key": os.environ["GROK_API_KEY"]}),
 ]
 EVALUATOR_LLMS: Sequence[Tuple[str, ...]] = [
