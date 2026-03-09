@@ -30,6 +30,9 @@ ANSWERING_LLMS: Sequence[Tuple[str, ...]] = [
     ("anthropic/claude-sonnet-4.6",),
     ("anthropic/claude-opus-4.6",),
     ("anthropic/claude-haiku-4.5",),
+    ("google/gemini-3.1-flash-lite-preview",),
+    ("google/gemini-3.1-pro-preview",),
+    ("google/gemini-3-flash-preview",),
     ("grok-4.20-experimental-beta-0304-non-reasoning", {"api_url": "https://api.x.ai/v1/responses", "api_key": os.environ["GROK_API_KEY"]}),
 ]
 EVALUATOR_LLMS: Sequence[Tuple[str, ...]] = [
