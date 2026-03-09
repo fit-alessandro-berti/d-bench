@@ -48,6 +48,7 @@ ANSWERING_LLMS: Sequence[Tuple[str, ...]] = [
     ("allenai/olmo-3.1-32b-instruct",),
     ("allenai/olmo-3-7b-instruct",),
     ("ibm-granite/granite-4.0-h-micro",),
+    ("microsoft/phi-4",),
 ]
 EVALUATOR_LLMS: Sequence[Tuple[str, ...]] = [
     (
