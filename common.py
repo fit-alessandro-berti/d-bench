@@ -45,6 +45,9 @@ ANSWERING_LLMS: Sequence[Tuple[str, ...]] = [
     ("minimax/minimax-m2.5",),
     ("deepseek/deepseek-v3.2",),
     ("ibm-granite/granite-4.0-h-micro",),
+    ("allenai/olmo-3.1-32b-instruct",),
+    ("allenai/olmo-3-7b-instruct",),
+    ("ibm-granite/granite-4.0-h-micro",),
 ]
 EVALUATOR_LLMS: Sequence[Tuple[str, ...]] = [
     (
