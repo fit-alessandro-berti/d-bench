@@ -19,7 +19,11 @@ ANSWERING_LLMS: Sequence[Tuple[str, ...]] = [
     ("openai/gpt-4o-mini",),
 ]
 EVALUATOR_LLMS: Sequence[Tuple[str, ...]] = [
-    ("x-ai/grok-3",),
+    (
+        "gpt-5.4",
+        "evaluation_gpt54",
+        {"api_url": "https://api.openai.com/v1/responses", "api_key": os.environ["OPENAI_API_KEY"]},
+    ),
 ]
 EVALUATION_JSON_SCHEMA: Dict[str, Any] = {
     "type": "object",
@@ -67,6 +71,38 @@ def _extract_json_from_fenced_block(text: str) -> Dict[str, Any]:
     return json.loads(match.group(1))
 
 
+def _extract_text_from_api_response(response_json: Dict[str, Any], is_responses_api: bool) -> str:
+    if not is_responses_api:
+        content = response_json["choices"][0]["message"]["content"]
+        if isinstance(content, str):
+            return content
+        return str(content)
+
+    output_text = response_json.get("output_text")
+    if isinstance(output_text, str) and output_text.strip():
+        return output_text
+
+    output = response_json.get("output")
+    if isinstance(output, list):
+        text_chunks = []
+        for item in output:
+            if not isinstance(item, dict):
+                continue
+            content_items = item.get("content")
+            if not isinstance(content_items, list):
+                continue
+            for content_item in content_items:
+                if not isinstance(content_item, dict):
+                    continue
+                text_value = content_item.get("text")
+                if isinstance(text_value, str):
+                    text_chunks.append(text_value)
+        if text_chunks:
+            return "".join(text_chunks)
+
+    raise ValueError("Could not extract text content from responses API payload.")
+
+
 def _submit_and_write_with_retries(
     prompt: str,
     destination_path: str,
@@ -76,10 +112,17 @@ def _submit_and_write_with_retries(
     additional_payload: Optional[Dict[str, Any]],
     json_validation_schema: Optional[Dict[str, Any]],
 ) -> None:
-    payload: Dict[str, Any] = {
-        "model": llm_model,
-        "messages": [{"role": "user", "content": prompt}],
-    }
+    is_responses_api = "/responses" in api_url.lower()
+    if is_responses_api:
+        payload: Dict[str, Any] = {
+            "model": llm_model,
+            "input": prompt,
+        }
+    else:
+        payload = {
+            "model": llm_model,
+            "messages": [{"role": "user", "content": prompt}],
+        }
     if additional_payload:
         payload.update(additional_payload)
 
@@ -108,9 +151,9 @@ def _submit_and_write_with_retries(
             response.raise_for_status()
 
             response_json = response.json()
-            content = response_json["choices"][0]["message"]["content"]
-            if not isinstance(content, str):
-                content = str(content)
+            content = _extract_text_from_api_response(response_json, is_responses_api)
+            if not content.strip():
+                raise ValueError("Received empty response content from model.")
 
             text_to_write: str
             if json_validation_schema is not None:

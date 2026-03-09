@@ -6,7 +6,6 @@ from typing import Dict, List, Optional, Tuple
 from common import (
     EVALUATION_JSON_SCHEMA,
     EVALUATOR_LLMS,
-    sanitize_model_name,
     submit_prompt_to_chat_completions,
 )
 
@@ -60,11 +59,23 @@ def main() -> None:
             continue
 
         evaluator_model = evaluator_entry[0]
-        kwargs: Dict[str, object] = {}
-        if len(evaluator_entry) > 1 and evaluator_entry[1] is not None:
-            kwargs = dict(evaluator_entry[1])
+        if len(evaluator_entry) < 2:
+            logger.warning(
+                "Skipping evaluator without target folder (expected tuple: model, folder, [kwargs]): %s",
+                evaluator_entry,
+            )
+            continue
 
-        evaluator_folder = project_root / f"evaluation_{sanitize_model_name(evaluator_model)}"
+        evaluator_folder_name = evaluator_entry[1]
+        if not isinstance(evaluator_folder_name, str) or not evaluator_folder_name.strip():
+            logger.warning("Skipping evaluator with invalid folder name: %s", evaluator_entry)
+            continue
+
+        kwargs: Dict[str, object] = {}
+        if len(evaluator_entry) > 2 and evaluator_entry[2] is not None:
+            kwargs = dict(evaluator_entry[2])
+
+        evaluator_folder = project_root / evaluator_folder_name
         evaluator_folder.mkdir(parents=True, exist_ok=True)
         logger.info("Processing evaluator=%s folder=%s", evaluator_model, evaluator_folder)
 
