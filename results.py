@@ -121,7 +121,7 @@ def main() -> None:
     if not rows:
         lines.append("No valid evaluation results found.")
     else:
-        headers = ["LLM"] + category_keys + ["**D-Bench Score**"]
+        headers = ["LLM", "**D-Bench Score**"] + category_keys
         lines.append("| " + " | ".join(headers) + " |")
         lines.append("| " + " | ".join(["---"] * len(headers)) + " |")
         for row in rows:
@@ -129,7 +129,7 @@ def main() -> None:
             d_bench_value = f"**{_format_decimal(row['d_bench'])}**"
             lines.append(
                 "| "
-                + " | ".join([row["model_name"], *category_values, d_bench_value])
+                + " | ".join([row["model_name"], d_bench_value, *category_values])
                 + " |"
             )
 
