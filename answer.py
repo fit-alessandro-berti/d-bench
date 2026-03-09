@@ -3,12 +3,7 @@ from concurrent.futures import Future
 from pathlib import Path
 from typing import Dict, List, Tuple
 
-from common import ANSWERING_LLMS, submit_prompt_to_chat_completions
-
-
-def _sanitize_model_name(model_name: str) -> str:
-    sanitized = model_name.replace("/", "").replace(":", "")
-    return "".join(char if char.isalnum() or char in {"-", "_", "."} else "_" for char in sanitized)
+from common import ANSWERING_LLMS, sanitize_model_name, submit_prompt_to_chat_completions
 
 
 def main() -> None:
@@ -38,7 +33,7 @@ def main() -> None:
         if len(llm_entry) > 1 and llm_entry[1] is not None:
             kwargs = dict(llm_entry[1])
 
-        model_for_filename = _sanitize_model_name(llm_model)
+        model_for_filename = sanitize_model_name(llm_model)
         logger.info("Processing model=%s", llm_model)
 
         for question_path in question_files:
