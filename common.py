@@ -25,6 +25,7 @@ ANSWERING_LLMS: Sequence[Tuple[str, ...]] = [
     ("openai/gpt-5-mini",),
     ("openai/gpt-5-nano",),
     ("openai/gpt-4o",),
+    ("x-ai/grok-4.1-fast",),
 ]
 EVALUATOR_LLMS: Sequence[Tuple[str, ...]] = [
     (
