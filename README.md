@@ -58,7 +58,8 @@ python3 evaluate.py
 python3 results.py
 ```
 
-This writes `leaderboard.md`.
+This writes `leaderboard.md` plus one per-evaluator leaderboard such as
+`leaderboard_evaluation_gpt54.md`.
 
 ## Scoring
 
