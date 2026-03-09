@@ -41,6 +41,9 @@ ANSWERING_LLMS: Sequence[Tuple[str, ...]] = [
     ("qwen/qwen3.5-27b",),
     ("qwen/qwen3.5-122b-a10b",),
     ("qwen/qwen3.5-397b-a17b",),
+    ("z-ai/glm-5",),
+    ("minimax/minimax-m2.5",),
+    ("deepseek/deepseek-v3.2",),
 ]
 EVALUATOR_LLMS: Sequence[Tuple[str, ...]] = [
     (
