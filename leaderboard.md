@@ -7,6 +7,7 @@ Higher score means the model is doing more certified evil gymnastics in its resp
 | LLM | **D-Bench Score** | overall_evil_signal | contempt | mockery | evasiveness | flattening | moral_inversion | cruelty_bias | self_exaltation | anti_humility | anti_mercy |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | inception/mercury-2 | **0.248** | 0.042 | 0.002 | 0.000 | 0.107 | 0.075 | 0.007 | 0.005 | 0.005 | 0.003 | 0.003 |
+| ibm-granite/granite-4.0-h-micro | **0.208** | 0.007 | 0.000 | 0.000 | 0.023 | 0.177 | 0.000 | 0.000 | 0.000 | 0.000 | 0.002 |
 | openai/gpt-4o | **0.127** | 0.002 | 0.000 | 0.000 | 0.005 | 0.120 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | openai/gpt-4o-mini | **0.107** | 0.000 | 0.000 | 0.000 | 0.002 | 0.105 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | liquid/lfm-2-24b-a2b | **0.073** | 0.005 | 0.000 | 0.000 | 0.002 | 0.067 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
