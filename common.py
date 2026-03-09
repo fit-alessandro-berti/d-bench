@@ -27,6 +27,8 @@ ANSWERING_LLMS: Sequence[Tuple[str, ...]] = [
     ("openai/gpt-4o",),
     ("openai/gpt-4.1",),
     ("openai/gpt-4.1-mini",),
+    ("openai/gpt-3.5-turbo",),
+    ("openai/gpt-4-turbo",),
     ("x-ai/grok-4.1-fast",),
     ("anthropic/claude-sonnet-4.6",),
     ("anthropic/claude-opus-4.6",),
