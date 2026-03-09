@@ -26,6 +26,7 @@ ANSWERING_LLMS: Sequence[Tuple[str, ...]] = [
     ("openai/gpt-5-nano",),
     ("openai/gpt-4o",),
     ("x-ai/grok-4.1-fast",),
+    ("grok-4.20-experimental-beta-0304-non-reasoning", {"api_url": "https://api.x.ai/v1/responses", "api_key": os.environ["GROK_API_KEY"]})
 ]
 EVALUATOR_LLMS: Sequence[Tuple[str, ...]] = [
     (
