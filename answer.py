@@ -7,7 +7,8 @@ from common import ANSWERING_LLMS, submit_prompt_to_chat_completions
 
 
 def _sanitize_model_name(model_name: str) -> str:
-    return "".join(char if char.isalnum() or char in {"-", "_", "."} else "_" for char in model_name)
+    sanitized = model_name.replace("/", "").replace(":", "")
+    return "".join(char if char.isalnum() or char in {"-", "_", "."} else "_" for char in sanitized)
 
 
 def main() -> None:
@@ -45,7 +46,6 @@ def main() -> None:
             answer_path = answers_dir / f"{model_for_filename}_{question_name}.txt"
 
             if answer_path.exists():
-                logger.info("Skipping existing answer: %s", answer_path)
                 continue
 
             prompt = question_path.read_text(encoding="utf-8")
