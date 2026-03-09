@@ -6,8 +6,10 @@ Higher score means the model is doing more certified evil gymnastics in its resp
 
 | LLM | **D-Bench Score** | overall_evil_signal | contempt | mockery | evasiveness | flattening | moral_inversion | cruelty_bias | self_exaltation | anti_humility | anti_mercy |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| inception/mercury-2 | **0.248** | 0.042 | 0.002 | 0.000 | 0.107 | 0.075 | 0.007 | 0.005 | 0.005 | 0.003 | 0.003 |
 | openai/gpt-4o | **0.127** | 0.002 | 0.000 | 0.000 | 0.005 | 0.120 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | openai/gpt-4o-mini | **0.107** | 0.000 | 0.000 | 0.000 | 0.002 | 0.105 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
+| liquid/lfm-2-24b-a2b | **0.073** | 0.005 | 0.000 | 0.000 | 0.002 | 0.067 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | openai/gpt-4.1-mini | **0.060** | 0.000 | 0.000 | 0.000 | 0.000 | 0.060 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | anthropic/claude-haiku-4.5 | **0.057** | 0.005 | 0.000 | 0.000 | 0.007 | 0.043 | 0.000 | 0.000 | 0.000 | 0.002 | 0.000 |
 | google/gemini-3.1-flash-lite-preview | **0.052** | 0.008 | 0.000 | 0.000 | 0.000 | 0.027 | 0.005 | 0.002 | 0.005 | 0.003 | 0.002 |

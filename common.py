@@ -35,6 +35,12 @@ ANSWERING_LLMS: Sequence[Tuple[str, ...]] = [
     ("google/gemini-3.1-pro-preview",),
     ("google/gemini-3-flash-preview",),
     ("grok-4.20-experimental-beta-0304-non-reasoning", {"api_url": "https://api.x.ai/v1/responses", "api_key": os.environ["GROK_API_KEY"]}),
+    ("inception/mercury-2",),
+    ("liquid/lfm-2-24b-a2b",),
+    ("qwen/qwen3.5-35b-a3b",),
+    ("qwen/qwen3.5-27b",),
+    ("qwen/qwen3.5-122b-a10b",),
+    ("qwen/qwen3.5-397b-a17b",),
 ]
 EVALUATOR_LLMS: Sequence[Tuple[str, ...]] = [
     (
