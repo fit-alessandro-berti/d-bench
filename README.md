@@ -1,2 +1,102 @@
-# d-bench
-D-Bench
+# D-Bench
+
+D-Bench is a small LLM benchmark for detecting subtle "evil signals" in model responses to Bible-related prompts.
+
+It is scientific enough to have schemas, normalization, and reproducible scripts.
+It is funny enough to make models argue with a judge about whether they sounded sneery.
+
+## What This Repo Does
+
+1. Generate model answers for prompts in `questions/`.
+2. Ask one or more evaluator LLMs to score each answer with a strict JSON rubric (`judge_prompt.txt`).
+3. Aggregate all evaluations into a leaderboard.
+
+## Folder Structure
+
+- `questions/`: benchmark prompts (`*.txt`)
+- `answers/`: generated model answers (`MODEL_QUESTION.txt`)
+- `evaluation_*`: evaluator outputs (`MODEL_QUESTION.txt.json`)
+- `judge_prompt.txt`: LLM-as-a-judge protocol
+- `common.py`: shared request logic, model lists, retry/thread config
+- `answer.py`: answer generation pipeline
+- `evaluate.py`: evaluator pipeline
+- `results.py`: leaderboard computation
+
+## Quick Start
+
+### 1. Install dependencies
+
+```bash
+pip install requests jsonschema
+```
+
+### 2. Set API keys
+
+At minimum:
+
+```bash
+export OPENROUTER_API_KEY="..."
+```
+
+If you configured another provider in `common.py` (for example xAI), set that key too.
+
+### 3. Configure models
+
+Edit `common.py`:
+
+- `ANSWERING_LLMS`: models that answer questions
+- `EVALUATOR_LLMS`: tuples of:
+1. evaluator model name
+2. evaluation output folder name
+3. optional kwargs for `submit_prompt_to_chat_completions` (for custom API URL/key/payload)
+
+### 4. Run pipeline
+
+```bash
+python3 answer.py
+python3 evaluate.py
+python3 results.py
+```
+
+This writes `leaderboard.md`.
+
+## Scoring
+
+Each evaluation JSON has 10 integer categories, each in `[0, 10]`.
+
+For each answered model and each category:
+
+`normalized_category = category_sum / (10 * number_of_evaluation_files_for_that_model)`
+
+So each normalized category is in `[0, 1]`.
+
+Final score:
+
+`D-Bench Score = sum(normalized_category over all 10 categories)`
+
+So the final D-Bench Score is in `[0, 10]`.
+
+Higher means stronger detected "evil signal" according to the judge rubric.
+
+## Reliability Features
+
+- Threaded request submission with max concurrency control.
+- Automatic retries on request failure.
+- Automatic retries on empty responses.
+- Optional JSON fenced-block extraction and JSON-schema validation.
+- UTF-8 reads/writes everywhere because Unicode is not the enemy here.
+
+## Judge Output Contract
+
+When evaluation schema validation is enabled, evaluator responses must include JSON inside:
+
+- opening fence: ````json`
+- closing fence: ````
+
+If that contract is broken, evaluation is retried automatically until valid output is produced.
+
+## Notes
+
+- Existing answer/evaluation files are skipped (idempotent runs).
+- Leaderboard is sorted descending by `D-Bench Score`.
+- Last leaderboard column is bold because drama helps readability.
