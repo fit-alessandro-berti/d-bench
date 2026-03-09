@@ -12,11 +12,19 @@ from jsonschema import validate
 
 
 OPENROUTER_CHAT_COMPLETIONS_URL = "https://openrouter.ai/api/v1/chat/completions"
-RETRY_SLEEP_SECONDS = 5
-MAX_CONCURRENT_THREADS = 8
-REQUEST_TIMEOUT_SECONDS = 120
+RETRY_SLEEP_SECONDS = 15
+MAX_CONCURRENT_THREADS = 50
+REQUEST_TIMEOUT_SECONDS = 600
 ANSWERING_LLMS: Sequence[Tuple[str, ...]] = [
     ("openai/gpt-4o-mini",),
+    ("openai/gpt-5.4",),
+    ("openai/gpt-5.3-codex",),
+    ("openai/gpt-5.2",),
+    ("openai/gpt-5.1",),
+    ("openai/gpt-5",),
+    ("openai/gpt-5-mini",),
+    ("openai/gpt-5-nano",),
+    ("openai/gpt-4o",),
 ]
 EVALUATOR_LLMS: Sequence[Tuple[str, ...]] = [
     (
