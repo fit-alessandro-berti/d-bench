@@ -156,7 +156,7 @@ def _render_leaderboard_markdown(
             "max_by_category",
             "sum_score",
             lambda value: str(int(value)),
-            lambda value: str(int(value)),
+            lambda value: f"**{int(value)}**" if int(value) > 0 else str(int(value)),
         )
     )
 
