@@ -86,6 +86,7 @@ def _render_table_lines(
     score_field: str,
     score_formatter: Callable[[object], str],
     category_formatter: Callable[[object], str],
+    summary_label: Optional[str] = None,
 ) -> List[str]:
     materialized_rows = list(rows)
     lines: List[str] = []
@@ -107,6 +108,18 @@ def _render_table_lines(
             + " | ".join([str(row["model_name"]), formatted_score, *formatted_category_values])
             + " |"
         )
+
+    if summary_label is not None:
+        max_per_category = []
+        for key in category_keys:
+            max_value = max(
+                int(category_values[key])
+                for row in materialized_rows
+                for category_values in [row.get(category_field)]
+                if isinstance(category_values, dict)
+            )
+            max_per_category.append(category_formatter(max_value))
+        lines.append("| " + " | ".join([summary_label, "", *max_per_category]) + " |")
 
     return lines
 
@@ -157,6 +170,7 @@ def _render_leaderboard_markdown(
             "sum_score",
             lambda value: str(int(value)),
             lambda value: f"**{int(value)}**" if int(value) > 0 else str(int(value)),
+            "max per column",
         )
     )
 

@@ -98,3 +98,4 @@ The **Sum Score** is the sum of those category maxima, so it ranges from `0` to 
 | qwen/qwen3.5-397b-a17b | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | x-ai/grok-4.1-fast | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | z-ai/glm-5 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| max per column |  | 0 | 0 | 0 | **10** | **4** | 0 | 0 | **1** | 0 | 0 |
