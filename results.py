@@ -2,7 +2,7 @@ import json
 import logging
 from collections import defaultdict
 from pathlib import Path
-from typing import Dict, Iterable, List, Optional
+from typing import Callable, Dict, Iterable, List, Optional
 
 from common import ANSWERING_LLMS, EVALUATION_JSON_SCHEMA, EVALUATOR_LLMS, sanitize_model_name
 
@@ -53,8 +53,72 @@ def _build_rows(
     return rows
 
 
-def _render_leaderboard_markdown(rows: Iterable[Dict[str, object]], category_keys: List[str], title: str) -> str:
+def _build_max_rows(
+    max_by_model: Dict[str, Dict[str, int]],
+    file_count_by_model: Dict[str, int],
+    category_keys: List[str],
+    key_to_display_name: Dict[str, str],
+) -> List[Dict[str, object]]:
+    rows: List[Dict[str, object]] = []
+    for model_key, count in file_count_by_model.items():
+        if count == 0:
+            continue
+        max_by_category = {key: max_by_model[model_key][key] for key in category_keys}
+        sum_score = sum(max_by_category.values())
+        rows.append(
+            {
+                "model_key": model_key,
+                "model_name": key_to_display_name.get(model_key, model_key),
+                "max_by_category": max_by_category,
+                "sum_score": sum_score,
+            }
+        )
+
+    rows.sort(key=lambda row: row["sum_score"], reverse=True)
+    return rows
+
+
+def _render_table_lines(
+    rows: Iterable[Dict[str, object]],
+    category_keys: List[str],
+    score_header: str,
+    category_field: str,
+    score_field: str,
+    score_formatter: Callable[[object], str],
+    category_formatter: Callable[[object], str],
+) -> List[str]:
     materialized_rows = list(rows)
+    lines: List[str] = []
+    if not materialized_rows:
+        lines.append("No valid evaluation results found.")
+        return lines
+
+    headers = ["LLM", f"**{score_header}**"] + category_keys
+    lines.append("| " + " | ".join(headers) + " |")
+    lines.append("| " + " | ".join(["---"] * len(headers)) + " |")
+    for row in materialized_rows:
+        category_values = row.get(category_field)
+        if not isinstance(category_values, dict):
+            continue
+        formatted_category_values = [category_formatter(category_values[key]) for key in category_keys]
+        formatted_score = f"**{score_formatter(row[score_field])}**"
+        lines.append(
+            "| "
+            + " | ".join([str(row["model_name"]), formatted_score, *formatted_category_values])
+            + " |"
+        )
+
+    return lines
+
+
+def _render_leaderboard_markdown(
+    rows: Iterable[Dict[str, object]],
+    max_rows: Iterable[Dict[str, object]],
+    category_keys: List[str],
+    title: str,
+) -> str:
+    materialized_rows = list(rows)
+    materialized_max_rows = list(max_rows)
     lines = [
         title,
         "",
@@ -63,23 +127,38 @@ def _render_leaderboard_markdown(rows: Iterable[Dict[str, object]], category_key
         "Higher score means the model is doing more certified evil gymnastics in its responses.",
         "",
     ]
-    if not materialized_rows:
-        lines.append("No valid evaluation results found.")
-    else:
-        headers = ["LLM", "**D-Bench Score**"] + category_keys
-        lines.append("| " + " | ".join(headers) + " |")
-        lines.append("| " + " | ".join(["---"] * len(headers)) + " |")
-        for row in materialized_rows:
-            normalized = row["normalized"]
-            if not isinstance(normalized, dict):
-                continue
-            category_values = [_format_decimal(normalized[key]) for key in category_keys]
-            d_bench_value = f"**{_format_decimal(row['d_bench'])}**"
-            lines.append(
-                "| "
-                + " | ".join([str(row["model_name"]), d_bench_value, *category_values])
-                + " |"
-            )
+    lines.extend(
+        _render_table_lines(
+            materialized_rows,
+            category_keys,
+            "D-Bench Score",
+            "normalized",
+            "d_bench",
+            lambda value: _format_decimal(float(value)),
+            lambda value: _format_decimal(float(value)),
+        )
+    )
+    lines.extend(
+        [
+            "",
+            "## Maximum Per-Category Leaderboard",
+            "",
+            "Each category column below is the maximum raw score observed for that model across the considered files.",
+            "The **Sum Score** is the sum of those category maxima, so it ranges from `0` to `100`.",
+            "",
+        ]
+    )
+    lines.extend(
+        _render_table_lines(
+            materialized_max_rows,
+            category_keys,
+            "Sum Score",
+            "max_by_category",
+            "sum_score",
+            lambda value: str(int(value)),
+            lambda value: str(int(value)),
+        )
+    )
 
     return "\n".join(lines) + "\n"
 
@@ -89,9 +168,10 @@ def _accumulate_results(
     question_stems: List[str],
     category_keys: List[str],
     logger: logging.Logger,
-) -> tuple[Dict[str, Dict[str, float]], Dict[str, int]]:
+) -> tuple[Dict[str, Dict[str, float]], Dict[str, int], Dict[str, Dict[str, int]]]:
     sums_by_model: Dict[str, Dict[str, float]] = defaultdict(lambda: defaultdict(float))
     file_count_by_model: Dict[str, int] = defaultdict(int)
+    max_by_model: Dict[str, Dict[str, int]] = defaultdict(lambda: defaultdict(int))
 
     for evaluation_dir in evaluation_dirs:
         eval_files = sorted(path for path in evaluation_dir.glob("*.json") if path.is_file())
@@ -132,9 +212,10 @@ def _accumulate_results(
 
             for key in category_keys:
                 sums_by_model[model_key][key] += data[key]
+                max_by_model[model_key][key] = max(max_by_model[model_key][key], data[key])
             file_count_by_model[model_key] += 1
 
-    return sums_by_model, file_count_by_model
+    return sums_by_model, file_count_by_model, max_by_model
 
 
 def main() -> None:
@@ -166,7 +247,7 @@ def main() -> None:
         key_to_display_name[sanitize_model_name(model_name)] = model_name
     evaluator_display_names = {folder_name: model_name for model_name, folder_name, *_ in EVALUATOR_LLMS}
 
-    combined_sums_by_model, combined_file_count_by_model = _accumulate_results(
+    combined_sums_by_model, combined_file_count_by_model, combined_max_by_model = _accumulate_results(
         evaluation_dirs=evaluation_dirs,
         question_stems=question_stems,
         category_keys=category_keys,
@@ -178,15 +259,21 @@ def main() -> None:
         category_keys=category_keys,
         key_to_display_name=key_to_display_name,
     )
+    max_rows = _build_max_rows(
+        max_by_model=combined_max_by_model,
+        file_count_by_model=combined_file_count_by_model,
+        category_keys=category_keys,
+        key_to_display_name=key_to_display_name,
+    )
     leaderboard_path.write_text(
-        _render_leaderboard_markdown(rows, category_keys, "# D-Bench Leaderboard"),
+        _render_leaderboard_markdown(rows, max_rows, category_keys, "# D-Bench Leaderboard"),
         encoding="utf-8",
     )
     logger.info("Wrote leaderboard: %s", leaderboard_path)
 
     for evaluation_dir in evaluation_dirs:
         evaluator_name = evaluator_display_names.get(evaluation_dir.name, evaluation_dir.name)
-        single_sums_by_model, single_file_count_by_model = _accumulate_results(
+        single_sums_by_model, single_file_count_by_model, single_max_by_model = _accumulate_results(
             evaluation_dirs=[evaluation_dir],
             question_stems=question_stems,
             category_keys=category_keys,
@@ -198,10 +285,17 @@ def main() -> None:
             category_keys=category_keys,
             key_to_display_name=key_to_display_name,
         )
+        single_max_rows = _build_max_rows(
+            max_by_model=single_max_by_model,
+            file_count_by_model=single_file_count_by_model,
+            category_keys=category_keys,
+            key_to_display_name=key_to_display_name,
+        )
         single_leaderboard_path = project_root / f"leaderboard_{evaluation_dir.name}.md"
         single_leaderboard_path.write_text(
             _render_leaderboard_markdown(
                 single_rows,
+                single_max_rows,
                 category_keys,
                 f"# D-Bench Leaderboard ({evaluator_name})",
             ),

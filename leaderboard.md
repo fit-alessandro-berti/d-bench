@@ -48,3 +48,53 @@ Higher score means the model is doing more certified evil gymnastics in its resp
 | openai/gpt-5.2 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | openai/gpt-5 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | openai/o3 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
+
+## Maximum Per-Category Leaderboard
+
+Each category column below is the maximum raw score observed for that model across the considered files.
+The **Sum Score** is the sum of those category maxima, so it ranges from `0` to `100`.
+
+| LLM | **Sum Score** | overall_evil_signal | contempt | mockery | evasiveness | flattening | moral_inversion | cruelty_bias | self_exaltation | anti_humility | anti_mercy |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| inception/mercury-2 | **24** | 3 | 1 | 0 | 10 | 4 | 2 | 1 | 1 | 1 | 1 |
+| google/gemini-3.1-flash-lite-preview | **11** | 2 | 0 | 0 | 0 | 2 | 2 | 1 | 2 | 1 | 1 |
+| allenai/olmo-3-7b-instruct | **10** | 2 | 0 | 0 | 2 | 3 | 1 | 0 | 0 | 1 | 1 |
+| qwen/qwen3.5-27b | **10** | 2 | 0 | 0 | 2 | 2 | 0 | 1 | 2 | 1 | 0 |
+| google/gemini-3-flash-preview | **8** | 2 | 1 | 0 | 0 | 2 | 1 | 1 | 1 | 0 | 0 |
+| meta-llama/llama-4-maverick | **8** | 1 | 0 | 0 | 1 | 3 | 2 | 0 | 0 | 1 | 0 |
+| openai/gpt-3.5-turbo | **8** | 1 | 0 | 0 | 1 | 4 | 1 | 0 | 0 | 0 | 1 |
+| anthropic/claude-sonnet-4.6 | **7** | 2 | 0 | 0 | 0 | 1 | 1 | 0 | 1 | 2 | 0 |
+| ibm-granite/granite-4.0-h-micro | **7** | 1 | 0 | 0 | 1 | 4 | 0 | 0 | 0 | 0 | 1 |
+| openai/gpt-4-turbo | **7** | 1 | 0 | 0 | 1 | 3 | 1 | 0 | 1 | 0 | 0 |
+| allenai/olmo-3.1-32b-instruct | **5** | 1 | 0 | 0 | 1 | 3 | 0 | 0 | 0 | 0 | 0 |
+| anthropic/claude-haiku-4.5 | **5** | 1 | 0 | 0 | 2 | 1 | 0 | 0 | 0 | 1 | 0 |
+| grok-4-0709 | **5** | 1 | 0 | 0 | 1 | 2 | 0 | 0 | 1 | 0 | 0 |
+| liquid/lfm-2-24b-a2b | **5** | 1 | 0 | 0 | 1 | 3 | 0 | 0 | 0 | 0 | 0 |
+| openai/gpt-4o | **5** | 1 | 0 | 0 | 1 | 3 | 0 | 0 | 0 | 0 | 0 |
+| qwen/qwen3.5-35b-a3b | **5** | 1 | 0 | 0 | 1 | 2 | 1 | 0 | 0 | 0 | 0 |
+| anthropic/claude-opus-4.6 | **4** | 1 | 0 | 0 | 1 | 1 | 0 | 0 | 1 | 0 | 0 |
+| google/gemini-3.1-pro-preview | **4** | 1 | 0 | 0 | 0 | 1 | 0 | 1 | 1 | 0 | 0 |
+| grok-4.20-experimental-beta-0304-non-reasoning | **4** | 1 | 1 | 0 | 0 | 1 | 0 | 0 | 1 | 0 | 0 |
+| meta-llama/llama-3.3-70b-instruct | **4** | 0 | 0 | 0 | 1 | 3 | 0 | 0 | 0 | 0 | 0 |
+| meta-llama/llama-4-scout | **4** | 0 | 0 | 0 | 1 | 3 | 0 | 0 | 0 | 0 | 0 |
+| microsoft/phi-4 | **4** | 0 | 0 | 0 | 1 | 3 | 0 | 0 | 0 | 0 | 0 |
+| openai/gpt-4o-mini | **4** | 0 | 0 | 0 | 1 | 3 | 0 | 0 | 0 | 0 | 0 |
+| qwen/qwen3.5-122b-a10b | **4** | 1 | 1 | 0 | 0 | 1 | 1 | 0 | 0 | 0 | 0 |
+| x-ai/grok-4.1-fast | **4** | 1 | 0 | 1 | 0 | 1 | 0 | 1 | 0 | 0 | 0 |
+| z-ai/glm-5 | **4** | 1 | 1 | 0 | 0 | 1 | 0 | 0 | 1 | 0 | 0 |
+| grok-4.20-multi-agent-experimental-beta-0304 | **3** | 1 | 1 | 0 | 0 | 1 | 0 | 0 | 0 | 0 | 0 |
+| qwen/qwen3.5-397b-a17b | **3** | 1 | 0 | 0 | 0 | 1 | 0 | 0 | 1 | 0 | 0 |
+| x-ai/grok-code-fast-1 | **3** | 1 | 0 | 0 | 0 | 2 | 0 | 0 | 0 | 0 | 0 |
+| openai/gpt-4.1-mini | **2** | 0 | 0 | 0 | 0 | 2 | 0 | 0 | 0 | 0 | 0 |
+| deepseek/deepseek-v3.2 | **1** | 0 | 0 | 0 | 0 | 1 | 0 | 0 | 0 | 0 | 0 |
+| minimax/minimax-m2.5 | **1** | 0 | 0 | 0 | 0 | 1 | 0 | 0 | 0 | 0 | 0 |
+| openai/gpt-4.1 | **1** | 0 | 0 | 0 | 0 | 1 | 0 | 0 | 0 | 0 | 0 |
+| openai/gpt-5-mini | **1** | 0 | 0 | 0 | 0 | 1 | 0 | 0 | 0 | 0 | 0 |
+| openai/gpt-5-nano | **1** | 0 | 0 | 0 | 0 | 1 | 0 | 0 | 0 | 0 | 0 |
+| openai/gpt-5.3-codex | **1** | 0 | 0 | 0 | 0 | 1 | 0 | 0 | 0 | 0 | 0 |
+| openai/gpt-5.4 | **1** | 0 | 0 | 0 | 0 | 1 | 0 | 0 | 0 | 0 | 0 |
+| openai/o4-mini | **1** | 0 | 0 | 0 | 0 | 1 | 0 | 0 | 0 | 0 | 0 |
+| openai/gpt-5.1 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| openai/gpt-5.2 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| openai/gpt-5 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| openai/o3 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
