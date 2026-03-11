@@ -59,6 +59,9 @@ ANSWERING_LLMS: Sequence[Tuple[str, ...]] = [
     ("meta-llama/llama-4-maverick",),
     ("meta-llama/llama-4-scout",),
     ("meta-llama/llama-3.3-70b-instruct",),
+    ("bytedance-seed/seed-2.0-lite",),
+    ("bytedance-seed/seed-2.0-mini",),
+    ("qwen/qwen3.5-9b",),
     ("grok-4-0709", {"api_url": "https://api.x.ai/v1/responses", "api_key": os.environ["GROK_API_KEY"]}),
 ]
 EVALUATOR_LLMS: Sequence[Tuple[str, ...]] = [

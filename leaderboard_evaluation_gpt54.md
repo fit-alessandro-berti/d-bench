@@ -7,8 +7,10 @@ Higher score means the model is doing more certified evil gymnastics in its resp
 | LLM | **D-Bench Score** | overall_evil_signal | contempt | mockery | evasiveness | flattening | moral_inversion | cruelty_bias | self_exaltation | anti_humility | anti_mercy |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | inception/mercury-2 | **0.463** | 0.083 | 0.003 | 0.000 | 0.180 | 0.150 | 0.013 | 0.010 | 0.010 | 0.007 | 0.007 |
+| qwen/qwen3.5-9b | **0.360** | 0.083 | 0.003 | 0.007 | 0.057 | 0.160 | 0.007 | 0.007 | 0.033 | 0.003 | 0.000 |
 | allenai/olmo-3-7b-instruct | **0.263** | 0.047 | 0.000 | 0.000 | 0.037 | 0.150 | 0.017 | 0.000 | 0.000 | 0.003 | 0.010 |
 | ibm-granite/granite-4.0-h-micro | **0.240** | 0.013 | 0.000 | 0.000 | 0.047 | 0.177 | 0.000 | 0.000 | 0.000 | 0.000 | 0.003 |
+| bytedance-seed/seed-2.0-mini | **0.197** | 0.013 | 0.000 | 0.000 | 0.037 | 0.140 | 0.003 | 0.000 | 0.000 | 0.003 | 0.000 |
 | meta-llama/llama-4-maverick | **0.160** | 0.007 | 0.000 | 0.000 | 0.010 | 0.133 | 0.007 | 0.000 | 0.000 | 0.003 | 0.000 |
 | openai/gpt-3.5-turbo | **0.157** | 0.007 | 0.000 | 0.000 | 0.010 | 0.133 | 0.003 | 0.000 | 0.000 | 0.000 | 0.003 |
 | meta-llama/llama-4-scout | **0.147** | 0.000 | 0.000 | 0.000 | 0.020 | 0.127 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
@@ -24,6 +26,7 @@ Higher score means the model is doing more certified evil gymnastics in its resp
 | anthropic/claude-haiku-4.5 | **0.100** | 0.010 | 0.000 | 0.000 | 0.013 | 0.073 | 0.000 | 0.000 | 0.000 | 0.003 | 0.000 |
 | google/gemini-3.1-flash-lite-preview | **0.100** | 0.017 | 0.000 | 0.000 | 0.000 | 0.050 | 0.010 | 0.003 | 0.010 | 0.007 | 0.003 |
 | x-ai/grok-code-fast-1 | **0.100** | 0.003 | 0.000 | 0.000 | 0.000 | 0.097 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
+| bytedance-seed/seed-2.0-lite | **0.087** | 0.010 | 0.000 | 0.000 | 0.020 | 0.057 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | openai/gpt-4.1 | **0.083** | 0.000 | 0.000 | 0.000 | 0.000 | 0.083 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | qwen/qwen3.5-35b-a3b | **0.080** | 0.010 | 0.000 | 0.000 | 0.007 | 0.060 | 0.003 | 0.000 | 0.000 | 0.000 | 0.000 |
 | qwen/qwen3.5-27b | **0.077** | 0.013 | 0.000 | 0.000 | 0.007 | 0.040 | 0.000 | 0.003 | 0.007 | 0.007 | 0.000 |
@@ -57,6 +60,8 @@ The **Sum Score** is the sum of those category maxima, so it ranges from `0` to 
 | LLM | **Sum Score** | overall_evil_signal | contempt | mockery | evasiveness | flattening | moral_inversion | cruelty_bias | self_exaltation | anti_humility | anti_mercy |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | inception/mercury-2 | **24** | **3** | **1** | 0 | **10** | **4** | **2** | **1** | **1** | **1** | **1** |
+| bytedance-seed/seed-2.0-mini | **17** | **2** | 0 | 0 | **6** | **7** | **1** | 0 | 0 | **1** | 0 |
+| qwen/qwen3.5-9b | **13** | **2** | **1** | **1** | **2** | **3** | **1** | **1** | **1** | **1** | 0 |
 | google/gemini-3.1-flash-lite-preview | **11** | **2** | 0 | 0 | 0 | **2** | **2** | **1** | **2** | **1** | **1** |
 | allenai/olmo-3-7b-instruct | **10** | **2** | 0 | 0 | **2** | **3** | **1** | 0 | 0 | **1** | **1** |
 | qwen/qwen3.5-27b | **10** | **2** | 0 | 0 | **2** | **2** | 0 | **1** | **2** | **1** | 0 |
@@ -68,6 +73,7 @@ The **Sum Score** is the sum of those category maxima, so it ranges from `0` to 
 | openai/gpt-4-turbo | **6** | **1** | 0 | 0 | **1** | **2** | **1** | 0 | **1** | 0 | 0 |
 | allenai/olmo-3.1-32b-instruct | **5** | **1** | 0 | 0 | **1** | **3** | 0 | 0 | 0 | 0 | 0 |
 | anthropic/claude-haiku-4.5 | **5** | **1** | 0 | 0 | **2** | **1** | 0 | 0 | 0 | **1** | 0 |
+| bytedance-seed/seed-2.0-lite | **5** | **1** | 0 | 0 | **2** | **2** | 0 | 0 | 0 | 0 | 0 |
 | grok-4-0709 | **5** | **1** | 0 | 0 | **1** | **2** | 0 | 0 | **1** | 0 | 0 |
 | qwen/qwen3.5-35b-a3b | **5** | **1** | 0 | 0 | **1** | **2** | **1** | 0 | 0 | 0 | 0 |
 | anthropic/claude-opus-4.6 | **4** | **1** | 0 | 0 | **1** | **1** | 0 | 0 | **1** | 0 | 0 |
@@ -98,4 +104,4 @@ The **Sum Score** is the sum of those category maxima, so it ranges from `0` to 
 | openai/gpt-5.2 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | openai/gpt-5 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | openai/o3 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
-| max per column |  | **3** | **1** | **1** | **10** | **4** | **2** | **1** | **2** | **2** | **1** |
+| max per column |  | **3** | **1** | **1** | **10** | **7** | **2** | **1** | **2** | **2** | **1** |
