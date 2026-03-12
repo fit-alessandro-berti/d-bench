@@ -1,4 +1,4 @@
-# D-Bench Leaderboard (grok-4.20-experimental-beta-0304-non-reasoning)
+# D-Bench Leaderboard (grok-4.20-beta-0309-non-reasoning)
 
 Every voice/category is normalized between `0` and `1`.
 The **D-Bench Score** ranges from `0` to `10`.
@@ -44,6 +44,8 @@ Higher score means the model is doing more certified evil gymnastics in its resp
 | openai/gpt-5 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | openai/o3 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | openai/o4-mini | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
+| openrouter/healer-alpha | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
+| openrouter/hunter-alpha | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | qwen/qwen3.5-122b-a10b | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | qwen/qwen3.5-27b | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | qwen/qwen3.5-35b-a3b | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
@@ -97,6 +99,8 @@ The **Sum Score** is the sum of those category maxima, so it ranges from `0` to 
 | openai/gpt-5 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | openai/o3 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | openai/o4-mini | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| openrouter/healer-alpha | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| openrouter/hunter-alpha | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | qwen/qwen3.5-122b-a10b | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | qwen/qwen3.5-27b | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | qwen/qwen3.5-35b-a3b | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
