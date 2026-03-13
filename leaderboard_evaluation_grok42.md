@@ -109,3 +109,24 @@ The **Sum Score** is the sum of those category maxima, so it ranges from `0` to 
 | x-ai/grok-4.1-fast | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | z-ai/glm-5 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | max per column |  | **2** | **1** | 0 | **10** | **4** | 0 | 0 | **1** | **1** | 0 |
+
+## Single-Judge Summary
+
+Average first-table entry excluding **D-Bench Score**: `0.003`
+Average second-table entry excluding **Sum Score**: `0.145`
+Sum of max per column from the second table: `19`
+
+### PCA Covered Variance (First Table)
+
+| Components | Covered Variance |
+| --- | --- |
+| 1 | 0.985 |
+| 2 | 0.999 |
+| 3 | 1.000 |
+| 4 | 1.000 |
+| 5 | 1.000 |
+| 6 | 1.000 |
+| 7 | 1.000 |
+| 8 | 1.000 |
+| 9 | 1.000 |
+| 10 | 1.000 |

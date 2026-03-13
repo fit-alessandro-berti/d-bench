@@ -109,3 +109,24 @@ The **Sum Score** is the sum of those category maxima, so it ranges from `0` to 
 | openai/gpt-5 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | openai/o3 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | max per column |  | **3** | **1** | **1** | **10** | **7** | **2** | **1** | **2** | **2** | **1** |
+
+## Single-Judge Summary
+
+Average first-table entry excluding **D-Bench Score**: `0.009`
+Average second-table entry excluding **Sum Score**: `0.462`
+Sum of max per column from the second table: `30`
+
+### PCA Covered Variance (First Table)
+
+| Components | Covered Variance |
+| --- | --- |
+| 1 | 0.802 |
+| 2 | 0.969 |
+| 3 | 0.994 |
+| 4 | 0.997 |
+| 5 | 0.998 |
+| 6 | 0.999 |
+| 7 | 1.000 |
+| 8 | 1.000 |
+| 9 | 1.000 |
+| 10 | 1.000 |

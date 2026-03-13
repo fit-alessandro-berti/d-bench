@@ -1,5 +1,6 @@
 import json
 import logging
+import math
 from collections import defaultdict
 from pathlib import Path
 from typing import Callable, Dict, Iterable, List, Optional
@@ -23,6 +24,202 @@ def _extract_model_key_from_eval_name(eval_name: str, question_stem: str) -> Opt
 
 def _format_decimal(value: float) -> str:
     return f"{value:.3f}"
+
+
+def _average(values: Iterable[float]) -> float:
+    materialized_values = [float(value) for value in values]
+    if not materialized_values:
+        return 0.0
+    return sum(materialized_values) / len(materialized_values)
+
+
+def _jacobi_eigenvalues(
+    matrix: List[List[float]],
+    tolerance: float = 1e-12,
+    max_iterations: int = 10_000,
+) -> List[float]:
+    size = len(matrix)
+    if size == 0:
+        return []
+
+    working = [row[:] for row in matrix]
+
+    for _ in range(max_iterations):
+        pivot_row = -1
+        pivot_col = -1
+        max_off_diagonal = 0.0
+        for row_index in range(size):
+            for col_index in range(row_index + 1, size):
+                off_diagonal = abs(working[row_index][col_index])
+                if off_diagonal > max_off_diagonal:
+                    max_off_diagonal = off_diagonal
+                    pivot_row = row_index
+                    pivot_col = col_index
+
+        if max_off_diagonal <= tolerance or pivot_row < 0 or pivot_col < 0:
+            break
+
+        pivot_value = working[pivot_row][pivot_col]
+        if abs(pivot_value) <= tolerance:
+            continue
+
+        diagonal_row = working[pivot_row][pivot_row]
+        diagonal_col = working[pivot_col][pivot_col]
+        tau = (diagonal_col - diagonal_row) / (2.0 * pivot_value)
+        tangent = 1.0 / (abs(tau) + math.sqrt(1.0 + tau * tau))
+        if tau < 0.0:
+            tangent = -tangent
+        cosine = 1.0 / math.sqrt(1.0 + tangent * tangent)
+        sine = tangent * cosine
+
+        for index in range(size):
+            if index == pivot_row or index == pivot_col:
+                continue
+            value_row = working[index][pivot_row]
+            value_col = working[index][pivot_col]
+            working[index][pivot_row] = cosine * value_row - sine * value_col
+            working[pivot_row][index] = working[index][pivot_row]
+            working[index][pivot_col] = cosine * value_col + sine * value_row
+            working[pivot_col][index] = working[index][pivot_col]
+
+        working[pivot_row][pivot_row] = diagonal_row - tangent * pivot_value
+        working[pivot_col][pivot_col] = diagonal_col + tangent * pivot_value
+        working[pivot_row][pivot_col] = 0.0
+        working[pivot_col][pivot_row] = 0.0
+
+    eigenvalues = []
+    for index in range(size):
+        value = working[index][index]
+        if value < 0.0 and abs(value) <= tolerance * 100:
+            value = 0.0
+        eigenvalues.append(max(value, 0.0))
+
+    eigenvalues.sort(reverse=True)
+    return eigenvalues
+
+
+def _compute_cumulative_pca_variance(
+    rows: Iterable[Dict[str, object]],
+    category_keys: List[str],
+) -> List[float]:
+    feature_rows: List[List[float]] = []
+    for row in rows:
+        normalized_values = row.get("normalized")
+        if not isinstance(normalized_values, dict):
+            continue
+        feature_rows.append([float(normalized_values[key]) for key in category_keys])
+
+    if not feature_rows or not category_keys:
+        return []
+
+    sample_count = len(feature_rows)
+    feature_count = len(category_keys)
+    column_means = [
+        sum(feature_rows[row_index][feature_index] for row_index in range(sample_count)) / sample_count
+        for feature_index in range(feature_count)
+    ]
+    centered_rows = [
+        [row[feature_index] - column_means[feature_index] for feature_index in range(feature_count)]
+        for row in feature_rows
+    ]
+
+    covariance = [[0.0 for _ in range(feature_count)] for _ in range(feature_count)]
+    for row_index in range(feature_count):
+        for col_index in range(row_index, feature_count):
+            covariance_value = sum(
+                centered_row[row_index] * centered_row[col_index] for centered_row in centered_rows
+            )
+            covariance[row_index][col_index] = covariance_value
+            covariance[col_index][row_index] = covariance_value
+
+    eigenvalues = _jacobi_eigenvalues(covariance)
+    total_variance = sum(eigenvalues)
+    if total_variance <= 0.0:
+        return []
+
+    cumulative_variance: List[float] = []
+    covered_variance = 0.0
+    for eigenvalue in eigenvalues:
+        covered_variance += eigenvalue / total_variance
+        cumulative_variance.append(min(covered_variance, 1.0))
+
+    return cumulative_variance
+
+
+def _compute_category_entry_average(
+    rows: Iterable[Dict[str, object]],
+    category_keys: List[str],
+    category_field: str,
+) -> float:
+    return _average(
+        float(category_values[key])
+        for row in rows
+        for category_values in [row.get(category_field)]
+        if isinstance(category_values, dict)
+        for key in category_keys
+    )
+
+
+def _compute_max_per_column_sum(
+    rows: Iterable[Dict[str, object]],
+    category_keys: List[str],
+    category_field: str,
+) -> int:
+    materialized_rows = list(rows)
+    if not materialized_rows:
+        return 0
+
+    return sum(
+        max(
+            int(category_values[key])
+            for row in materialized_rows
+            for category_values in [row.get(category_field)]
+            if isinstance(category_values, dict)
+        )
+        for key in category_keys
+    )
+
+
+def _render_single_judge_summary(
+    rows: Iterable[Dict[str, object]],
+    max_rows: Iterable[Dict[str, object]],
+    category_keys: List[str],
+) -> List[str]:
+    materialized_rows = list(rows)
+    materialized_max_rows = list(max_rows)
+
+    lines = [
+        "",
+        "## Single-Judge Summary",
+        "",
+        (
+            "Average first-table entry excluding **D-Bench Score**: "
+            f"`{_format_decimal(_compute_category_entry_average(materialized_rows, category_keys, 'normalized'))}`"
+        ),
+        (
+            "Average second-table entry excluding **Sum Score**: "
+            f"`{_format_decimal(_compute_category_entry_average(materialized_max_rows, category_keys, 'max_by_category'))}`"
+        ),
+        (
+            "Sum of max per column from the second table: "
+            f"`{_compute_max_per_column_sum(materialized_max_rows, category_keys, 'max_by_category')}`"
+        ),
+        "",
+        "### PCA Covered Variance (First Table)",
+        "",
+    ]
+
+    cumulative_pca_variance = _compute_cumulative_pca_variance(materialized_rows, category_keys)
+    if not cumulative_pca_variance:
+        lines.append("No PCA variance available from the first table.")
+        return lines
+
+    lines.append("| Components | Covered Variance |")
+    lines.append("| --- | --- |")
+    for component_count, covered_variance in enumerate(cumulative_pca_variance, start=1):
+        lines.append(f"| {component_count} | {_format_decimal(covered_variance)} |")
+
+    return lines
 
 
 def _build_rows(
@@ -129,6 +326,7 @@ def _render_leaderboard_markdown(
     max_rows: Iterable[Dict[str, object]],
     category_keys: List[str],
     title: str,
+    include_single_judge_summary: bool = False,
 ) -> str:
     materialized_rows = list(rows)
     materialized_max_rows = list(max_rows)
@@ -173,6 +371,14 @@ def _render_leaderboard_markdown(
             "max per column",
         )
     )
+    if include_single_judge_summary:
+        lines.extend(
+            _render_single_judge_summary(
+                materialized_rows,
+                materialized_max_rows,
+                category_keys,
+            )
+        )
 
     return "\n".join(lines) + "\n"
 
@@ -312,6 +518,7 @@ def main() -> None:
                 single_max_rows,
                 category_keys,
                 f"# D-Bench Leaderboard ({evaluator_name})",
+                include_single_judge_summary=True,
             ),
             encoding="utf-8",
         )
