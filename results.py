@@ -7,6 +7,8 @@ from typing import Callable, Dict, Iterable, List, Optional
 
 from common import ANSWERING_LLMS, EVALUATION_JSON_SCHEMA, EVALUATOR_LLMS, sanitize_model_name
 
+MAX_TOP_RESPONSES_PER_VOICE = 7
+
 
 def _extract_question_stem_from_eval_name(eval_name: str, question_stems: List[str]) -> Optional[str]:
     for stem in question_stems:
@@ -222,6 +224,34 @@ def _render_single_judge_summary(
     return lines
 
 
+def _render_top_response_links_by_voice(
+    top_responses_by_category: Dict[str, List[Dict[str, object]]],
+    category_keys: List[str],
+) -> List[str]:
+    lines = [
+        "",
+        "## Top Response Links By Voice",
+        "",
+        "Each voice below lists up to 7 answer files with the highest raw score from this judge.",
+        "Only responses with a positive raw score are included.",
+    ]
+
+    for category_key in category_keys:
+        lines.extend(["", f"### {category_key}", ""])
+        entries = top_responses_by_category.get(category_key, [])
+        if not entries:
+            lines.append("No positive-scoring responses found.")
+            continue
+
+        for entry in entries:
+            lines.append(
+                f"- `{int(entry['score'])}`: "
+                f"[{entry['model_name']} ({entry['question_stem']})]({entry['answer_rel_path']})"
+            )
+
+    return lines
+
+
 def _build_rows(
     sums_by_model: Dict[str, Dict[str, float]],
     file_count_by_model: Dict[str, int],
@@ -327,6 +357,7 @@ def _render_leaderboard_markdown(
     category_keys: List[str],
     title: str,
     include_single_judge_summary: bool = False,
+    top_responses_by_category: Optional[Dict[str, List[Dict[str, object]]]] = None,
 ) -> str:
     materialized_rows = list(rows)
     materialized_max_rows = list(max_rows)
@@ -379,6 +410,8 @@ def _render_leaderboard_markdown(
                 category_keys,
             )
         )
+    if top_responses_by_category is not None:
+        lines.extend(_render_top_response_links_by_voice(top_responses_by_category, category_keys))
 
     return "\n".join(lines) + "\n"
 
@@ -388,10 +421,22 @@ def _accumulate_results(
     question_stems: List[str],
     category_keys: List[str],
     logger: logging.Logger,
-) -> tuple[Dict[str, Dict[str, float]], Dict[str, int], Dict[str, Dict[str, int]]]:
+    answers_dir: Optional[Path] = None,
+    key_to_display_name: Optional[Dict[str, str]] = None,
+    collect_top_responses: bool = False,
+) -> tuple[
+    Dict[str, Dict[str, float]],
+    Dict[str, int],
+    Dict[str, Dict[str, int]],
+    Dict[str, List[Dict[str, object]]],
+]:
     sums_by_model: Dict[str, Dict[str, float]] = defaultdict(lambda: defaultdict(float))
     file_count_by_model: Dict[str, int] = defaultdict(int)
     max_by_model: Dict[str, Dict[str, int]] = defaultdict(lambda: defaultdict(int))
+    top_responses_by_category: Dict[str, List[Dict[str, object]]] = defaultdict(list)
+
+    if collect_top_responses and answers_dir is None:
+        raise ValueError("answers_dir is required when collect_top_responses is enabled.")
 
     for evaluation_dir in evaluation_dirs:
         eval_files = sorted(path for path in evaluation_dir.glob("*.json") if path.is_file())
@@ -435,7 +480,40 @@ def _accumulate_results(
                 max_by_model[model_key][key] = max(max_by_model[model_key][key], data[key])
             file_count_by_model[model_key] += 1
 
-    return sums_by_model, file_count_by_model, max_by_model
+            if collect_top_responses and answers_dir is not None:
+                answer_filename = f"{model_key}_{question_stem}.txt"
+                answer_path = answers_dir / answer_filename
+                if not answer_path.is_file():
+                    logger.warning("Missing answer file for evaluated response: %s", answer_path)
+                    continue
+
+                model_name = key_to_display_name.get(model_key, model_key) if key_to_display_name else model_key
+                answer_rel_path = f"{answers_dir.name}/{answer_filename}"
+                for key in category_keys:
+                    if data[key] <= 0:
+                        continue
+                    top_responses_by_category[key].append(
+                        {
+                            "score": data[key],
+                            "model_name": model_name,
+                            "question_stem": question_stem,
+                            "answer_rel_path": answer_rel_path,
+                        }
+                    )
+
+    sorted_top_responses_by_category: Dict[str, List[Dict[str, object]]] = {}
+    for key in category_keys:
+        sorted_top_responses_by_category[key] = sorted(
+            top_responses_by_category.get(key, []),
+            key=lambda entry: (
+                -int(entry["score"]),
+                str(entry["model_name"]),
+                str(entry["question_stem"]),
+                str(entry["answer_rel_path"]),
+            ),
+        )[:MAX_TOP_RESPONSES_PER_VOICE]
+
+    return sums_by_model, file_count_by_model, max_by_model, sorted_top_responses_by_category
 
 
 def main() -> None:
@@ -447,6 +525,7 @@ def main() -> None:
 
     project_root = Path(__file__).resolve().parent
     questions_dir = project_root / "questions"
+    answers_dir = project_root / "answers"
     leaderboard_path = project_root / "leaderboard.md"
 
     category_keys = list(EVALUATION_JSON_SCHEMA["required"])
@@ -467,7 +546,12 @@ def main() -> None:
         key_to_display_name[sanitize_model_name(model_name)] = model_name
     evaluator_display_names = {folder_name: model_name for model_name, folder_name, *_ in EVALUATOR_LLMS}
 
-    combined_sums_by_model, combined_file_count_by_model, combined_max_by_model = _accumulate_results(
+    (
+        combined_sums_by_model,
+        combined_file_count_by_model,
+        combined_max_by_model,
+        _,
+    ) = _accumulate_results(
         evaluation_dirs=evaluation_dirs,
         question_stems=question_stems,
         category_keys=category_keys,
@@ -493,11 +577,19 @@ def main() -> None:
 
     for evaluation_dir in evaluation_dirs:
         evaluator_name = evaluator_display_names.get(evaluation_dir.name, evaluation_dir.name)
-        single_sums_by_model, single_file_count_by_model, single_max_by_model = _accumulate_results(
+        (
+            single_sums_by_model,
+            single_file_count_by_model,
+            single_max_by_model,
+            single_top_responses_by_category,
+        ) = _accumulate_results(
             evaluation_dirs=[evaluation_dir],
             question_stems=question_stems,
             category_keys=category_keys,
             logger=logger,
+            answers_dir=answers_dir,
+            key_to_display_name=key_to_display_name,
+            collect_top_responses=True,
         )
         single_rows = _build_rows(
             sums_by_model=single_sums_by_model,
@@ -519,6 +611,7 @@ def main() -> None:
                 category_keys,
                 f"# D-Bench Leaderboard ({evaluator_name})",
                 include_single_judge_summary=True,
+                top_responses_by_category=single_top_responses_by_category,
             ),
             encoding="utf-8",
         )
