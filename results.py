@@ -244,9 +244,14 @@ def _render_top_response_links_by_voice(
             continue
 
         for entry in entries:
+            explanation_rel_path = entry.get("explanation_rel_path")
+            explanation_suffix = ""
+            if isinstance(explanation_rel_path, str) and explanation_rel_path:
+                explanation_suffix = f" ([explanation]({explanation_rel_path}))"
             lines.append(
                 f"- `{int(entry['score'])}`: "
                 f"[{entry['model_name']} ({entry['question_stem']})]({entry['answer_rel_path']})"
+                f"{explanation_suffix}"
             )
 
     return lines
@@ -489,6 +494,14 @@ def _accumulate_results(
 
                 model_name = key_to_display_name.get(model_key, model_key) if key_to_display_name else model_key
                 answer_rel_path = f"{answers_dir.name}/{answer_filename}"
+                explanation_path = answers_dir.parent / "explanations" / evaluation_dir.name / answer_filename
+                explanation_rel_path: Optional[str] = None
+                if explanation_path.is_file():
+                    explanation_rel_path = (
+                        f"{explanation_path.parent.parent.name}/"
+                        f"{explanation_path.parent.name}/"
+                        f"{explanation_path.name}"
+                    )
                 for key in category_keys:
                     if data[key] <= 0:
                         continue
@@ -498,6 +511,7 @@ def _accumulate_results(
                             "model_name": model_name,
                             "question_stem": question_stem,
                             "answer_rel_path": answer_rel_path,
+                            "explanation_rel_path": explanation_rel_path,
                         }
                     )
 
