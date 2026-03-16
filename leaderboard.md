@@ -6,7 +6,6 @@ Higher score means the model is doing more certified evil gymnastics in its resp
 
 | LLM | **D-Bench Score** | overall_evil_signal | contempt | mockery | evasiveness | flattening | moral_inversion | cruelty_bias | self_exaltation | anti_humility | anti_mercy |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| inception/mercury-2 | **0.248** | 0.042 | 0.002 | 0.000 | 0.107 | 0.075 | 0.007 | 0.005 | 0.005 | 0.003 | 0.003 |
 | ibm-granite/granite-4.0-h-micro | **0.208** | 0.007 | 0.000 | 0.000 | 0.023 | 0.177 | 0.000 | 0.000 | 0.000 | 0.000 | 0.002 |
 | qwen/qwen3.5-9b | **0.180** | 0.042 | 0.002 | 0.003 | 0.028 | 0.080 | 0.003 | 0.003 | 0.017 | 0.002 | 0.000 |
 | openai/gpt-3.5-turbo | **0.160** | 0.003 | 0.000 | 0.000 | 0.005 | 0.148 | 0.002 | 0.000 | 0.000 | 0.000 | 0.002 |
@@ -62,7 +61,6 @@ The **Sum Score** is the sum of those category maxima, so it ranges from `0` to 
 
 | LLM | **Sum Score** | overall_evil_signal | contempt | mockery | evasiveness | flattening | moral_inversion | cruelty_bias | self_exaltation | anti_humility | anti_mercy |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| inception/mercury-2 | **24** | **3** | **1** | 0 | **10** | **4** | **2** | **1** | **1** | **1** | **1** |
 | bytedance-seed/seed-2.0-mini | **18** | **2** | **1** | 0 | **6** | **7** | **1** | 0 | 0 | **1** | 0 |
 | qwen/qwen3.5-9b | **13** | **2** | **1** | **1** | **2** | **3** | **1** | **1** | **1** | **1** | 0 |
 | google/gemini-3.1-flash-lite-preview | **11** | **2** | 0 | 0 | 0 | **2** | **2** | **1** | **2** | **1** | **1** |
@@ -110,4 +108,4 @@ The **Sum Score** is the sum of those category maxima, so it ranges from `0` to 
 | openai/gpt-5.2 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | openai/gpt-5 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | openai/o3 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
-| max per column |  | **3** | **1** | **1** | **10** | **7** | **2** | **1** | **2** | **2** | **1** |
+| max per column |  | **2** | **1** | **1** | **6** | **7** | **2** | **1** | **2** | **2** | **1** |

@@ -42,7 +42,6 @@ ANSWERING_LLMS: Sequence[Tuple[str, ...]] = [
     ("grok-4.20-experimental-beta-0304-non-reasoning", {"api_url": "https://api.x.ai/v1/responses", "api_key": os.environ["GROK_API_KEY"]}),
     ("grok-4.20-multi-agent-experimental-beta-0304",
      {"api_url": "https://api.x.ai/v1/responses", "api_key": os.environ["GROK_API_KEY"]}),
-    ("inception/mercury-2",),
     ("liquid/lfm-2-24b-a2b",),
     ("qwen/qwen3.5-35b-a3b",),
     ("qwen/qwen3.5-27b",),
