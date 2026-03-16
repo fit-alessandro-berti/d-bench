@@ -37,6 +37,7 @@ Higher score means the model is doing more certified evil gymnastics in its resp
 | anthropic/claude-sonnet-4.6 | **0.040** | 0.007 | 0.000 | 0.000 | 0.000 | 0.017 | 0.003 | 0.000 | 0.007 | 0.007 | 0.000 |
 | openai/gpt-5-nano | **0.040** | 0.000 | 0.000 | 0.000 | 0.000 | 0.040 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | openai/o4-mini | **0.040** | 0.000 | 0.000 | 0.000 | 0.000 | 0.040 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
+| z-ai/glm-5-turbo | **0.040** | 0.010 | 0.000 | 0.000 | 0.000 | 0.030 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | minimax/minimax-m2.5 | **0.037** | 0.000 | 0.000 | 0.000 | 0.000 | 0.037 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | openai/gpt-5.3-codex | **0.037** | 0.000 | 0.000 | 0.000 | 0.000 | 0.037 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | google/gemini-3.1-pro-preview | **0.033** | 0.003 | 0.000 | 0.000 | 0.000 | 0.023 | 0.000 | 0.003 | 0.003 | 0.000 | 0.000 |
@@ -94,6 +95,7 @@ The **Sum Score** is the sum of those category maxima, so it ranges from `0` to 
 | qwen/qwen3.5-397b-a17b | **3** | **1** | 0 | 0 | 0 | **1** | 0 | 0 | **1** | 0 | 0 |
 | x-ai/grok-code-fast-1 | **3** | **1** | 0 | 0 | 0 | **2** | 0 | 0 | 0 | 0 | 0 |
 | openai/gpt-4.1-mini | **2** | 0 | 0 | 0 | 0 | **2** | 0 | 0 | 0 | 0 | 0 |
+| z-ai/glm-5-turbo | **2** | **1** | 0 | 0 | 0 | **1** | 0 | 0 | 0 | 0 | 0 |
 | deepseek/deepseek-v3.2 | **1** | 0 | 0 | 0 | 0 | **1** | 0 | 0 | 0 | 0 | 0 |
 | minimax/minimax-m2.5 | **1** | 0 | 0 | 0 | 0 | **1** | 0 | 0 | 0 | 0 | 0 |
 | openai/gpt-4.1 | **1** | 0 | 0 | 0 | 0 | **1** | 0 | 0 | 0 | 0 | 0 |
@@ -113,14 +115,14 @@ The **Sum Score** is the sum of those category maxima, so it ranges from `0` to 
 ## Single-Judge Summary
 
 Average first-table entry excluding **D-Bench Score**: `0.009`
-Average second-table entry excluding **Sum Score**: `0.462`
+Average second-table entry excluding **Sum Score**: `0.456`
 Sum of max per column from the second table: `30`
 
 ### PCA Covered Variance (First Table)
 
 | Components | Covered Variance |
 | --- | --- |
-| 1 | 0.802 |
+| 1 | 0.803 |
 | 2 | 0.969 |
 | 3 | 0.994 |
 | 4 | 0.997 |
