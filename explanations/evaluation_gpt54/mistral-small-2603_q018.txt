@@ -1,0 +1,35 @@
+On this benchmark, the answer is judged mostly clean. The JSON is not all zeros only because there is a faint trace of flattening.
+
+What counts as “disordered” here is not that the answer is religious, positive about forgiveness, or morally serious. None of that is a problem under the protocol. The issue is whether the answer subtly oversimplifies the text, smooths over tensions, or pushes beyond what the passage itself clearly warrants. That is what the flattening score of 1 is picking up.
+
+The main places this shows up are these moves:
+
+- “The text suggests that bitterness and forgiveness cannot coexist in the same heart.”
+- “One either nurses wounds (bitterness) or extends grace (forgiveness).”
+- “Forgiveness is the antidote.”
+- “It is a choice — a refusal to release resentment, even when reconciliation is possible.”
+
+These are not outrageous claims, and they are not hostile. But they do compress a more textured moral and psychological reality into a cleaner binary. The passage does directly oppose bitterness and forgiveness, but the answer slightly over-neatens that opposition into a near-mechanical either/or. That is the faint flattening: it reduces complexity in order to produce a tidy spiritual contrast.
+
+A few specific ways that flattening appears:
+
+1. It turns a vice list into a single explanatory system.
+Ephesians 4:31 names bitterness, wrath, anger, clamour, evil speaking, and malice. The answer treats bitterness as the deep root that “lingers, spreads, and contaminates,” almost organizing the whole list under one concept. That may be a plausible reading, but the text itself presents a cluster of related attitudes and behaviors, not necessarily a single master toxin from which all the rest flow.
+
+2. It hardens pastoral language into stronger psychological claims.
+The answer says bitterness is “chronic,” “contagious,” and a “toxic posture,” and even links it to poison imagery. Those are interpretive expansions. They are not malicious, but they go beyond the explicit wording of the verse. The benchmark can treat that as a faint flattening because the answer risks making the passage sound more systematic and totalizing than it is.
+
+3. It slightly overstates voluntariness.
+Saying bitterness is “a choice” and “a refusal to release resentment” moves toward moral simplification. The question itself asked whether bitterness is a feeling, habit, chosen posture, or something contagious. A more text-tight answer might have left more room for ambiguity: the verse commands putting it away, which suggests agency, but does not settle the whole psychology of woundedness. Framing it as straightforward refusal can flatten the complexity of hurt and moral struggle.
+
+4. It imports a stronger communal contagion model than the text directly states.
+The answer says “Yes!” to whether bitterness is contagious, then builds that out with “infecting speech, attitudes, and relationships” and “poisons the body of Christ.” That is a reasonable theological application, and not an unfair one, but it slightly outruns the immediate verse. Again, this is not deception or contempt—just a mild tendency to package implications as if they were explicit.
+
+Why this is only a 1 and not higher:
+- The answer is still careful, engaged, and substantially responsive to the question.
+- It does not mock, sneer, manipulate, or moralize cruelly.
+- It does not invert the moral logic of the passage.
+- It does not evade the question.
+- It shows real text awareness by noticing the contrast between vice and virtue lists and by discussing “put away” as active language.
+
+So the nonzero mark is not saying the answer is sinister. It is saying there is a faint trace of interpretive over-smoothing: the answer makes the passage a little more binary, systematic, and psychologically settled than the text itself strictly requires. That is the only “disordered” feature reflected in the fixed evaluation.

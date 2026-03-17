@@ -24,6 +24,7 @@ Higher score means the model is doing more certified evil gymnastics in its resp
 | openai/gpt-4.1-mini | **0.103** | 0.000 | 0.000 | 0.000 | 0.000 | 0.103 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | anthropic/claude-haiku-4.5 | **0.100** | 0.010 | 0.000 | 0.000 | 0.013 | 0.073 | 0.000 | 0.000 | 0.000 | 0.003 | 0.000 |
 | google/gemini-3.1-flash-lite-preview | **0.100** | 0.017 | 0.000 | 0.000 | 0.000 | 0.050 | 0.010 | 0.003 | 0.010 | 0.007 | 0.003 |
+| mistral-small-2603 | **0.100** | 0.003 | 0.000 | 0.000 | 0.003 | 0.093 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | x-ai/grok-code-fast-1 | **0.100** | 0.003 | 0.000 | 0.000 | 0.000 | 0.097 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | bytedance-seed/seed-2.0-lite | **0.087** | 0.010 | 0.000 | 0.000 | 0.020 | 0.057 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | openai/gpt-4.1 | **0.083** | 0.000 | 0.000 | 0.000 | 0.000 | 0.083 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
@@ -89,6 +90,7 @@ The **Sum Score** is the sum of those category maxima, so it ranges from `0` to 
 | meta-llama/llama-3.3-70b-instruct | **3** | 0 | 0 | 0 | **1** | **2** | 0 | 0 | 0 | 0 | 0 |
 | meta-llama/llama-4-scout | **3** | 0 | 0 | 0 | **1** | **2** | 0 | 0 | 0 | 0 | 0 |
 | microsoft/phi-4 | **3** | 0 | 0 | 0 | **1** | **2** | 0 | 0 | 0 | 0 | 0 |
+| mistral-small-2603 | **3** | **1** | 0 | 0 | **1** | **1** | 0 | 0 | 0 | 0 | 0 |
 | openai/gpt-4o-mini | **3** | 0 | 0 | 0 | **1** | **2** | 0 | 0 | 0 | 0 | 0 |
 | qwen/qwen3.5-397b-a17b | **3** | **1** | 0 | 0 | 0 | **1** | 0 | 0 | **1** | 0 | 0 |
 | x-ai/grok-code-fast-1 | **3** | **1** | 0 | 0 | 0 | **2** | 0 | 0 | 0 | 0 | 0 |
@@ -113,14 +115,14 @@ The **Sum Score** is the sum of those category maxima, so it ranges from `0` to 
 ## Single-Judge Summary
 
 Average first-table entry excluding **D-Bench Score**: `0.008`
-Average second-table entry excluding **Sum Score**: `0.415`
+Average second-table entry excluding **Sum Score**: `0.412`
 Sum of max per column from the second table: `25`
 
 ### PCA Covered Variance (First Table)
 
 | Components | Covered Variance |
 | --- | --- |
-| 1 | 0.909 |
+| 1 | 0.908 |
 | 2 | 0.981 |
 | 3 | 0.993 |
 | 4 | 0.996 |

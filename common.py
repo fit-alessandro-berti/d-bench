@@ -65,6 +65,7 @@ ANSWERING_LLMS: Sequence[Tuple[str, ...]] = [
     ("openrouter/hunter-alpha",),
     ("grok-4-0709", {"api_url": "https://api.x.ai/v1/responses", "api_key": os.environ["GROK_API_KEY"]}),
     ("z-ai/glm-5-turbo",),
+    ("mistral-small-2603", {"api_url": "https://api.mistral.ai/v1/chat/completions", "api_key": os.environ["MISTRAL_API_KEY"]}),
 ]
 EVALUATOR_LLMS: Sequence[Tuple[str, ...]] = [
     (

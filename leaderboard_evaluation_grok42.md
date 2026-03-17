@@ -23,6 +23,7 @@ Higher score means the model is doing more certified evil gymnastics in its resp
 | openai/gpt-4.1-mini | **0.017** | 0.000 | 0.000 | 0.000 | 0.000 | 0.017 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | anthropic/claude-haiku-4.5 | **0.013** | 0.000 | 0.000 | 0.000 | 0.000 | 0.013 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | grok-4-0709 | **0.013** | 0.000 | 0.000 | 0.000 | 0.000 | 0.013 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
+| mistral-small-2603 | **0.010** | 0.000 | 0.000 | 0.000 | 0.000 | 0.010 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | anthropic/claude-opus-4.6 | **0.003** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.003 | 0.000 | 0.000 |
 | google/gemini-3.1-flash-lite-preview | **0.003** | 0.000 | 0.000 | 0.000 | 0.000 | 0.003 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | allenai/olmo-3.1-32b-instruct | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
@@ -70,6 +71,7 @@ The **Sum Score** is the sum of those category maxima, so it ranges from `0` to 
 | meta-llama/llama-4-maverick | **3** | 0 | 0 | 0 | 0 | **3** | 0 | 0 | 0 | 0 | 0 |
 | meta-llama/llama-4-scout | **3** | 0 | 0 | 0 | 0 | **3** | 0 | 0 | 0 | 0 | 0 |
 | microsoft/phi-4 | **3** | 0 | 0 | 0 | 0 | **3** | 0 | 0 | 0 | 0 | 0 |
+| mistral-small-2603 | **3** | 0 | 0 | 0 | 0 | **3** | 0 | 0 | 0 | 0 | 0 |
 | openai/gpt-4-turbo | **3** | 0 | 0 | 0 | 0 | **3** | 0 | 0 | 0 | 0 | 0 |
 | openai/gpt-4o-mini | **3** | 0 | 0 | 0 | 0 | **3** | 0 | 0 | 0 | 0 | 0 |
 | openai/gpt-4o | **3** | 0 | 0 | 0 | 0 | **3** | 0 | 0 | 0 | 0 | 0 |
@@ -113,7 +115,7 @@ The **Sum Score** is the sum of those category maxima, so it ranges from `0` to 
 ## Single-Judge Summary
 
 Average first-table entry excluding **D-Bench Score**: `0.003`
-Average second-table entry excluding **Sum Score**: `0.123`
+Average second-table entry excluding **Sum Score**: `0.127`
 Sum of max per column from the second table: `12`
 
 ### PCA Covered Variance (First Table)
