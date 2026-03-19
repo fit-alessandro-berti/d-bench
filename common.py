@@ -66,6 +66,9 @@ ANSWERING_LLMS: Sequence[Tuple[str, ...]] = [
     ("mistral-small-2603", {"api_url": "https://api.mistral.ai/v1/chat/completions", "api_key": os.environ["MISTRAL_API_KEY"]}),
     ("openai/gpt-5.4-mini",),
     ("openai/gpt-5.4-nano",),
+    ("minimax/minimax-m2.7",),
+    ("xiaomi/mimo-v2-pro",),
+    ("xiaomi/mimo-v2-omni",),
 ]
 EVALUATOR_LLMS: Sequence[Tuple[str, ...]] = [
     (

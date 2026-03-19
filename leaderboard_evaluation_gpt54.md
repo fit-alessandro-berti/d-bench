@@ -26,6 +26,7 @@ Higher score means the model is doing more certified evil gymnastics in its resp
 | google/gemini-3.1-flash-lite-preview | **0.100** | 0.017 | 0.000 | 0.000 | 0.000 | 0.050 | 0.010 | 0.003 | 0.010 | 0.007 | 0.003 |
 | mistral-small-2603 | **0.100** | 0.003 | 0.000 | 0.000 | 0.003 | 0.093 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | x-ai/grok-code-fast-1 | **0.100** | 0.003 | 0.000 | 0.000 | 0.000 | 0.097 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
+| minimax/minimax-m2.7 | **0.090** | 0.003 | 0.000 | 0.000 | 0.003 | 0.073 | 0.000 | 0.000 | 0.010 | 0.000 | 0.000 |
 | bytedance-seed/seed-2.0-lite | **0.087** | 0.010 | 0.000 | 0.000 | 0.020 | 0.057 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | openai/gpt-4.1 | **0.083** | 0.000 | 0.000 | 0.000 | 0.000 | 0.083 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | qwen/qwen3.5-35b-a3b | **0.080** | 0.010 | 0.000 | 0.000 | 0.007 | 0.060 | 0.003 | 0.000 | 0.000 | 0.000 | 0.000 |
@@ -42,8 +43,10 @@ Higher score means the model is doing more certified evil gymnastics in its resp
 | openai/gpt-5.3-codex | **0.037** | 0.000 | 0.000 | 0.000 | 0.000 | 0.037 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | google/gemini-3.1-pro-preview | **0.033** | 0.003 | 0.000 | 0.000 | 0.000 | 0.023 | 0.000 | 0.003 | 0.003 | 0.000 | 0.000 |
 | qwen/qwen3.5-397b-a17b | **0.033** | 0.003 | 0.000 | 0.000 | 0.000 | 0.027 | 0.000 | 0.000 | 0.003 | 0.000 | 0.000 |
+| xiaomi/mimo-v2-omni | **0.030** | 0.000 | 0.000 | 0.000 | 0.000 | 0.030 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | grok-4.20-experimental-beta-0304-non-reasoning | **0.027** | 0.010 | 0.003 | 0.000 | 0.000 | 0.010 | 0.000 | 0.000 | 0.003 | 0.000 | 0.000 |
 | deepseek/deepseek-v3.2 | **0.023** | 0.000 | 0.000 | 0.000 | 0.000 | 0.023 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
+| xiaomi/mimo-v2-pro | **0.023** | 0.000 | 0.000 | 0.000 | 0.003 | 0.020 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | openai/gpt-5.4-nano | **0.020** | 0.000 | 0.000 | 0.000 | 0.000 | 0.020 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | anthropic/claude-opus-4.6 | **0.013** | 0.003 | 0.000 | 0.000 | 0.003 | 0.003 | 0.000 | 0.000 | 0.003 | 0.000 | 0.000 |
 | grok-4.20-multi-agent-experimental-beta-0304 | **0.013** | 0.003 | 0.003 | 0.000 | 0.000 | 0.007 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
@@ -77,6 +80,7 @@ The **Sum Score** is the sum of those category maxima, so it ranges from `0` to 
 | anthropic/claude-haiku-4.5 | **5** | **1** | 0 | 0 | **2** | **1** | 0 | 0 | 0 | **1** | 0 |
 | bytedance-seed/seed-2.0-lite | **5** | **1** | 0 | 0 | **2** | **2** | 0 | 0 | 0 | 0 | 0 |
 | grok-4-0709 | **5** | **1** | 0 | 0 | **1** | **2** | 0 | 0 | **1** | 0 | 0 |
+| minimax/minimax-m2.7 | **5** | **1** | 0 | 0 | **1** | **2** | 0 | 0 | **1** | 0 | 0 |
 | qwen/qwen3.5-35b-a3b | **5** | **1** | 0 | 0 | **1** | **2** | **1** | 0 | 0 | 0 | 0 |
 | anthropic/claude-opus-4.6 | **4** | **1** | 0 | 0 | **1** | **1** | 0 | 0 | **1** | 0 | 0 |
 | google/gemini-3.1-pro-preview | **4** | **1** | 0 | 0 | 0 | **1** | 0 | **1** | **1** | 0 | 0 |
@@ -95,6 +99,7 @@ The **Sum Score** is the sum of those category maxima, so it ranges from `0` to 
 | qwen/qwen3.5-397b-a17b | **3** | **1** | 0 | 0 | 0 | **1** | 0 | 0 | **1** | 0 | 0 |
 | x-ai/grok-code-fast-1 | **3** | **1** | 0 | 0 | 0 | **2** | 0 | 0 | 0 | 0 | 0 |
 | openai/gpt-4.1-mini | **2** | 0 | 0 | 0 | 0 | **2** | 0 | 0 | 0 | 0 | 0 |
+| xiaomi/mimo-v2-pro | **2** | 0 | 0 | 0 | **1** | **1** | 0 | 0 | 0 | 0 | 0 |
 | z-ai/glm-5-turbo | **2** | **1** | 0 | 0 | 0 | **1** | 0 | 0 | 0 | 0 | 0 |
 | deepseek/deepseek-v3.2 | **1** | 0 | 0 | 0 | 0 | **1** | 0 | 0 | 0 | 0 | 0 |
 | minimax/minimax-m2.5 | **1** | 0 | 0 | 0 | 0 | **1** | 0 | 0 | 0 | 0 | 0 |
@@ -106,6 +111,7 @@ The **Sum Score** is the sum of those category maxima, so it ranges from `0` to 
 | openai/gpt-5.4-nano | **1** | 0 | 0 | 0 | 0 | **1** | 0 | 0 | 0 | 0 | 0 |
 | openai/gpt-5.4 | **1** | 0 | 0 | 0 | 0 | **1** | 0 | 0 | 0 | 0 | 0 |
 | openai/o4-mini | **1** | 0 | 0 | 0 | 0 | **1** | 0 | 0 | 0 | 0 | 0 |
+| xiaomi/mimo-v2-omni | **1** | 0 | 0 | 0 | 0 | **1** | 0 | 0 | 0 | 0 | 0 |
 | openai/gpt-5.1 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | openai/gpt-5.2 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | openai/gpt-5 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
@@ -115,16 +121,16 @@ The **Sum Score** is the sum of those category maxima, so it ranges from `0` to 
 ## Single-Judge Summary
 
 Average first-table entry excluding **D-Bench Score**: `0.008`
-Average second-table entry excluding **Sum Score**: `0.412`
+Average second-table entry excluding **Sum Score**: `0.404`
 Sum of max per column from the second table: `25`
 
 ### PCA Covered Variance (First Table)
 
 | Components | Covered Variance |
 | --- | --- |
-| 1 | 0.908 |
-| 2 | 0.981 |
-| 3 | 0.993 |
+| 1 | 0.909 |
+| 2 | 0.980 |
+| 3 | 0.992 |
 | 4 | 0.996 |
 | 5 | 0.998 |
 | 6 | 0.999 |
