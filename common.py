@@ -74,6 +74,7 @@ ANSWERING_LLMS: Sequence[Tuple[str, ...]] = [
     ("phi:2.7b", {"api_url": "http://137.226.117.70:11434/v1/chat/completions", "api_key": ""}),
     ("phi3:3.8b", {"api_url": "http://137.226.117.70:11434/v1/chat/completions", "api_key": ""}),
     ("phi3.5:3.8b", {"api_url": "http://137.226.117.70:11434/v1/chat/completions", "api_key": ""}),
+    ("nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", {"api_url": "https://api.deepinfra.com/v1/openai/chat/completions", "api_key": os.environ["DEEPINFRA_API_KEY"]}),
 ]
 EVALUATOR_LLMS: Sequence[Tuple[str, ...]] = [
     (
