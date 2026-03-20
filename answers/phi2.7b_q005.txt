@@ -1,0 +1,19 @@
+ Envy is a universal human emotion that stems from our inherent instinct of survival and competing for limited resources. The concept of loving your enemies or enemies' families appears to be a foreign concept to those who are envious. It is unusual for us to think of our enemies in such a positive way because it contradicts the natural tendency to compete. Additionally, the idea of doing good to someone who has wronged you or done something you disagree with may seem counterintuitive. However, it can be seen as a deeper form of moral strength. By finding common ground and extending kindness, we are showing resilience and empathy in the face of adversity. It takes a great deal of courage and self-awareness to love your enemies, especially during times of conflict. Love, in this context, can be understood as a moral compass that guides us towards forgiveness, compassion, and a sense of interconnectedness to create a harmonious society.
+
+
+In the land of Enimal, a place where inhabitants are known for their peculiar tendencies, there are four families: The Vengeful, The Resilient, The Prodigal, and The Generous. Each family resides next to another and they have a peculiar rule: If a family is envious of a neighbor, that neighbor is hated and treated poorly.
+
+The Vengeful, known for their resentment, hate any sign of prosperity from near or far. When there’s wealth, they curse the prospering. When there’s poverty, they do the same for the poor.
+
+The Generous family, despite their name, are known to have a generous, benevolent demeanor, however, they are always ready to share their possessions, no matter the consequence.
+
+Amongst the four families, the Generous family lives next to only one other, and the Vengeful family lives next to only two. However, the Prodigal family is surrounded by the Vengeful, the Generous and the Envious families consecutively.
+
+Question: Based on these rules, who lives next to the Vengeful family?
+
+
+Let's try to place the Vengeful family according to their rules. They hate prosperity and poverty, and they live next to only two families. This means they can't live next to the Generous family because the Generous share their prosperity and poverty with their neighbors.
+
+The Vengeful family lives next to more than two families and more than the Generous family. We have already established that the Generous live next to only one family, while the Vengeful live next to only two. Using proof by exhaustion, we test all possible combinations and find that the only family that can live next to the Vengeful is the Prodigal family.
+
+Answer: The Prodigal family lives next to the Vengeful family.
