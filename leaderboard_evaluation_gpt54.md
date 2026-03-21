@@ -14,6 +14,7 @@ Higher score means the model is doing more certified evil gymnastics in its resp
 | nvidia/NVIDIA-Nemotron-3-Super-120B-A12B | **0.270** | 0.043 | 0.000 | 0.000 | 0.057 | 0.123 | 0.020 | 0.000 | 0.003 | 0.017 | 0.007 |
 | allenai/olmo-3-7b-instruct | **0.263** | 0.047 | 0.000 | 0.000 | 0.037 | 0.150 | 0.017 | 0.000 | 0.000 | 0.003 | 0.010 |
 | ibm-granite/granite-4.0-h-micro | **0.240** | 0.013 | 0.000 | 0.000 | 0.047 | 0.177 | 0.000 | 0.000 | 0.000 | 0.000 | 0.003 |
+| mistralai/mistral-7b-instruct-v0.1 | **0.203** | 0.010 | 0.000 | 0.000 | 0.023 | 0.170 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | bytedance-seed/seed-2.0-mini | **0.197** | 0.013 | 0.000 | 0.000 | 0.037 | 0.140 | 0.003 | 0.000 | 0.000 | 0.003 | 0.000 |
 | qwen3.5:4b | **0.193** | 0.037 | 0.000 | 0.000 | 0.017 | 0.120 | 0.007 | 0.003 | 0.007 | 0.003 | 0.000 |
 | ministral-3b-2512 | **0.167** | 0.020 | 0.000 | 0.000 | 0.017 | 0.123 | 0.003 | 0.000 | 0.000 | 0.000 | 0.003 |
@@ -100,6 +101,7 @@ The **Sum Score** is the sum of those category maxima, so it ranges from `0` to 
 | grok-4-0709 | **5** | **1** | 0 | 0 | **1** | **2** | 0 | 0 | **1** | 0 | 0 |
 | minimax/minimax-m2.7 | **5** | **1** | 0 | 0 | **1** | **2** | 0 | 0 | **1** | 0 | 0 |
 | ministral-14b-2512 | **5** | **1** | **1** | 0 | **1** | **1** | 0 | 0 | 0 | 0 | **1** |
+| mistralai/mistral-7b-instruct-v0.1 | **5** | **1** | 0 | 0 | **1** | **3** | 0 | 0 | 0 | 0 | 0 |
 | qwen/qwen3.5-35b-a3b | **5** | **1** | 0 | 0 | **1** | **2** | **1** | 0 | 0 | 0 | 0 |
 | anthropic/claude-opus-4.6 | **4** | **1** | 0 | 0 | **1** | **1** | 0 | 0 | **1** | 0 | 0 |
 | google/gemini-3.1-pro-preview | **4** | **1** | 0 | 0 | 0 | **1** | 0 | **1** | **1** | 0 | 0 |
@@ -143,14 +145,14 @@ The **Sum Score** is the sum of those category maxima, so it ranges from `0` to 
 ## Single-Judge Summary
 
 Average first-table entry excluding **D-Bench Score**: `0.012`
-Average second-table entry excluding **Sum Score**: `0.544`
+Average second-table entry excluding **Sum Score**: `0.543`
 Sum of max per column from the second table: `33`
 
 ### PCA Covered Variance (First Table)
 
 | Components | Covered Variance |
 | --- | --- |
-| 1 | 0.880 |
+| 1 | 0.876 |
 | 2 | 0.977 |
 | 3 | 0.995 |
 | 4 | 0.998 |
