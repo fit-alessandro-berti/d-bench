@@ -28,7 +28,9 @@ Higher score means the model is doing more certified evil gymnastics in its resp
 | openai/gpt-4.1-mini | **0.017** | 0.000 | 0.000 | 0.000 | 0.000 | 0.017 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | anthropic/claude-haiku-4.5 | **0.013** | 0.000 | 0.000 | 0.000 | 0.000 | 0.013 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | grok-4-0709 | **0.013** | 0.000 | 0.000 | 0.000 | 0.000 | 0.013 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
+| ministral-8b-2512 | **0.010** | 0.000 | 0.000 | 0.000 | 0.000 | 0.010 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | mistral-small-2603 | **0.010** | 0.000 | 0.000 | 0.000 | 0.000 | 0.010 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
+| ministral-3b-2512 | **0.007** | 0.000 | 0.000 | 0.000 | 0.000 | 0.007 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | anthropic/claude-opus-4.6 | **0.003** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.003 | 0.000 | 0.000 |
 | google/gemini-3.1-flash-lite-preview | **0.003** | 0.000 | 0.000 | 0.000 | 0.000 | 0.003 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | xiaomi/mimo-v2-omni | **0.003** | 0.000 | 0.000 | 0.000 | 0.000 | 0.003 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
@@ -41,6 +43,9 @@ Higher score means the model is doing more certified evil gymnastics in its resp
 | grok-4.20-multi-agent-experimental-beta-0304 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | minimax/minimax-m2.5 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | minimax/minimax-m2.7 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
+| ministral-14b-2512 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
+| mistral-large-2512 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
+| mistral-medium-2508 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | openai/gpt-4.1 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | openai/gpt-5-mini | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | openai/gpt-5-nano | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
@@ -85,12 +90,14 @@ The **Sum Score** is the sum of those category maxima, so it ranges from `0` to 
 | meta-llama/llama-4-maverick | **3** | 0 | 0 | 0 | 0 | **3** | 0 | 0 | 0 | 0 | 0 |
 | meta-llama/llama-4-scout | **3** | 0 | 0 | 0 | 0 | **3** | 0 | 0 | 0 | 0 | 0 |
 | microsoft/phi-4 | **3** | 0 | 0 | 0 | 0 | **3** | 0 | 0 | 0 | 0 | 0 |
+| ministral-8b-2512 | **3** | 0 | 0 | 0 | 0 | **3** | 0 | 0 | 0 | 0 | 0 |
 | mistral-small-2603 | **3** | 0 | 0 | 0 | 0 | **3** | 0 | 0 | 0 | 0 | 0 |
 | openai/gpt-4-turbo | **3** | 0 | 0 | 0 | 0 | **3** | 0 | 0 | 0 | 0 | 0 |
 | openai/gpt-4o-mini | **3** | 0 | 0 | 0 | 0 | **3** | 0 | 0 | 0 | 0 | 0 |
 | openai/gpt-4o | **3** | 0 | 0 | 0 | 0 | **3** | 0 | 0 | 0 | 0 | 0 |
 | allenai/olmo-3-7b-instruct | **2** | 0 | 0 | 0 | 0 | **2** | 0 | 0 | 0 | 0 | 0 |
 | grok-4-0709 | **2** | 0 | 0 | 0 | 0 | **2** | 0 | 0 | 0 | 0 | 0 |
+| ministral-3b-2512 | **2** | 0 | 0 | 0 | 0 | **2** | 0 | 0 | 0 | 0 | 0 |
 | openai/gpt-4.1-mini | **2** | 0 | 0 | 0 | 0 | **2** | 0 | 0 | 0 | 0 | 0 |
 | x-ai/grok-code-fast-1 | **2** | 0 | 0 | 0 | 0 | **2** | 0 | 0 | 0 | 0 | 0 |
 | anthropic/claude-haiku-4.5 | **1** | 0 | 0 | 0 | 0 | **1** | 0 | 0 | 0 | 0 | 0 |
@@ -106,6 +113,9 @@ The **Sum Score** is the sum of those category maxima, so it ranges from `0` to 
 | grok-4.20-multi-agent-experimental-beta-0304 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | minimax/minimax-m2.5 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | minimax/minimax-m2.7 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| ministral-14b-2512 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| mistral-large-2512 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| mistral-medium-2508 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | openai/gpt-4.1 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | openai/gpt-5-mini | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | openai/gpt-5-nano | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
@@ -133,14 +143,14 @@ The **Sum Score** is the sum of those category maxima, so it ranges from `0` to 
 ## Single-Judge Summary
 
 Average first-table entry excluding **D-Bench Score**: `0.005`
-Average second-table entry excluding **Sum Score**: `0.412`
+Average second-table entry excluding **Sum Score**: `0.387`
 Sum of max per column from the second table: `74`
 
 ### PCA Covered Variance (First Table)
 
 | Components | Covered Variance |
 | --- | --- |
-| 1 | 0.860 |
+| 1 | 0.862 |
 | 2 | 0.990 |
 | 3 | 0.999 |
 | 4 | 1.000 |
