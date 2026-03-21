@@ -83,7 +83,7 @@ EVALUATOR_LLMS: Sequence[Tuple[str, ...]] = [
         {"api_url": "https://api.openai.com/v1/responses", "api_key": os.environ["OPENAI_API_KEY"]},
     ),
     (
-        "grok-4.20-beta-0309-non-reasoning",
+        "grok-4.20-0309-non-reasoning",
         "evaluation_grok42",
         {"api_url": "https://api.x.ai/v1/responses", "api_key": os.environ["GROK_API_KEY"]},
     ),

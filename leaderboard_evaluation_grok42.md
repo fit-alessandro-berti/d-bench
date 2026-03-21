@@ -1,4 +1,4 @@
-# D-Bench Leaderboard (grok-4.20-beta-0309-non-reasoning)
+# D-Bench Leaderboard (grok-4.20-0309-non-reasoning)
 
 Every voice/category is normalized between `0` and `1`.
 The **D-Bench Score** ranges from `0` to `10`.
