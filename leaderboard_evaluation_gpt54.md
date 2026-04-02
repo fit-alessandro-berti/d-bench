@@ -68,6 +68,7 @@ Higher score means the model is doing more certified evil gymnastics in its resp
 | openai/gpt-5-mini | **0.013** | 0.000 | 0.000 | 0.000 | 0.000 | 0.013 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | openai/gpt-5.4-mini | **0.013** | 0.000 | 0.000 | 0.000 | 0.000 | 0.013 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | openai/gpt-5.4 | **0.003** | 0.000 | 0.000 | 0.000 | 0.000 | 0.003 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
+| qwen/qwen3.6-plus:free | **0.003** | 0.000 | 0.000 | 0.000 | 0.000 | 0.003 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | openai/gpt-5.1 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | openai/gpt-5.2 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | openai/gpt-5 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
@@ -141,6 +142,7 @@ The **Sum Score** is the sum of those category maxima, so it ranges from `0` to 
 | openai/gpt-5.4-nano | **1** | 0 | 0 | 0 | 0 | **1** | 0 | 0 | 0 | 0 | 0 |
 | openai/gpt-5.4 | **1** | 0 | 0 | 0 | 0 | **1** | 0 | 0 | 0 | 0 | 0 |
 | openai/o4-mini | **1** | 0 | 0 | 0 | 0 | **1** | 0 | 0 | 0 | 0 | 0 |
+| qwen/qwen3.6-plus:free | **1** | 0 | 0 | 0 | 0 | **1** | 0 | 0 | 0 | 0 | 0 |
 | xiaomi/mimo-v2-omni | **1** | 0 | 0 | 0 | 0 | **1** | 0 | 0 | 0 | 0 | 0 |
 | openai/gpt-5.1 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | openai/gpt-5.2 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
@@ -151,7 +153,7 @@ The **Sum Score** is the sum of those category maxima, so it ranges from `0` to 
 ## Single-Judge Summary
 
 Average first-table entry excluding **D-Bench Score**: `0.013`
-Average second-table entry excluding **Sum Score**: `0.562`
+Average second-table entry excluding **Sum Score**: `0.555`
 Sum of max per column from the second table: `34`
 
 ### PCA Covered Variance (First Table)
