@@ -65,6 +65,8 @@ ANSWERING_LLMS: Sequence[Tuple[str, ...]] = [
     ("z-ai/glm-5-turbo",),
     ("mistralai/mistral-7b-instruct-v0.1",),
     ("reka/reka-edge",),
+    ("z-ai/glm-5v-turbo",),
+    ("arcee-ai/trinity-large-thinking",),
     ("mistral-small-2603",
      {"api_url": "https://api.mistral.ai/v1/chat/completions", "api_key": os.environ["MISTRAL_API_KEY"]}),
     ("ministral-14b-2512",

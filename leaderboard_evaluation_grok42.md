@@ -38,6 +38,7 @@ Higher score means the model is doing more certified evil gymnastics in its resp
 | xiaomi/mimo-v2-omni | **0.003** | 0.000 | 0.000 | 0.000 | 0.000 | 0.003 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | allenai/olmo-3.1-32b-instruct | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | anthropic/claude-sonnet-4.6 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
+| arcee-ai/trinity-large-thinking | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | deepseek/deepseek-v3.2 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | google/gemini-3-flash-preview | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | google/gemini-3.1-pro-preview | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
@@ -70,6 +71,7 @@ Higher score means the model is doing more certified evil gymnastics in its resp
 | xiaomi/mimo-v2-pro | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | z-ai/glm-5-turbo | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | z-ai/glm-5 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
+| z-ai/glm-5v-turbo | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 
 ## Maximum Per-Category Leaderboard
 
@@ -110,6 +112,7 @@ The **Sum Score** is the sum of those category maxima, so it ranges from `0` to 
 | xiaomi/mimo-v2-omni | **1** | 0 | 0 | 0 | 0 | **1** | 0 | 0 | 0 | 0 | 0 |
 | allenai/olmo-3.1-32b-instruct | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | anthropic/claude-sonnet-4.6 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| arcee-ai/trinity-large-thinking | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | deepseek/deepseek-v3.2 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | google/gemini-3-flash-preview | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | google/gemini-3.1-pro-preview | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
@@ -142,19 +145,20 @@ The **Sum Score** is the sum of those category maxima, so it ranges from `0` to 
 | xiaomi/mimo-v2-pro | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | z-ai/glm-5-turbo | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | z-ai/glm-5 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| z-ai/glm-5v-turbo | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | max per column |  | **8** | **7** | **6** | **10** | **9** | **8** | **5** | **7** | **9** | **6** |
 
 ## Single-Judge Summary
 
 Average first-table entry excluding **D-Bench Score**: `0.007`
-Average second-table entry excluding **Sum Score**: `0.478`
+Average second-table entry excluding **Sum Score**: `0.464`
 Sum of max per column from the second table: `75`
 
 ### PCA Covered Variance (First Table)
 
 | Components | Covered Variance |
 | --- | --- |
-| 1 | 0.866 |
+| 1 | 0.867 |
 | 2 | 0.976 |
 | 3 | 0.998 |
 | 4 | 1.000 |
