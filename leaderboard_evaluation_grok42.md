@@ -73,6 +73,7 @@ Higher score means the model is doing more certified evil gymnastics in its resp
 | x-ai/grok-4.1-fast | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | xiaomi/mimo-v2-pro | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | z-ai/glm-5-turbo | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
+| z-ai/glm-5.1 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | z-ai/glm-5 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | z-ai/glm-5v-turbo | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 
@@ -150,21 +151,22 @@ The **Sum Score** is the sum of those category maxima, so it ranges from `0` to 
 | x-ai/grok-4.1-fast | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | xiaomi/mimo-v2-pro | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | z-ai/glm-5-turbo | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| z-ai/glm-5.1 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | z-ai/glm-5 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | z-ai/glm-5v-turbo | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | max per column |  | **8** | **7** | **6** | **10** | **9** | **8** | **5** | **7** | **9** | **6** |
 
 ## Single-Judge Summary
 
-Average first-table entry excluding **D-Bench Score**: `0.007`
-Average second-table entry excluding **Sum Score**: `0.443`
+Average first-table entry excluding **D-Bench Score**: `0.006`
+Average second-table entry excluding **Sum Score**: `0.437`
 Sum of max per column from the second table: `75`
 
 ### PCA Covered Variance (First Table)
 
 | Components | Covered Variance |
 | --- | --- |
-| 1 | 0.867 |
+| 1 | 0.868 |
 | 2 | 0.976 |
 | 3 | 0.998 |
 | 4 | 1.000 |

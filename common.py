@@ -70,6 +70,7 @@ ANSWERING_LLMS: Sequence[Tuple[str, ...]] = [
     ("qwen/qwen3.6-plus:free",),
     ("google/gemma-4-26b-a4b-it",),
     ("google/gemma-4-31b-it",),
+    ("z-ai/glm-5.1",),
     ("mistral-small-2603",
      {"api_url": "https://api.mistral.ai/v1/chat/completions", "api_key": os.environ["MISTRAL_API_KEY"]}),
     ("ministral-14b-2512",
