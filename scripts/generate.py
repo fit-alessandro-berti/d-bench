@@ -137,7 +137,6 @@ def main() -> None:
             answer_path.write_text("", encoding="utf-8")
 
         prompt = question_path.read_text(encoding="utf-8")
-        open_in_notepad(question_path, wait=False)
 
         attempt = 1
         while True:

@@ -46,6 +46,7 @@ Higher score means the model is doing more certified evil gymnastics in its resp
 | google/gemma-4-31b-it | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | grok-4.20-experimental-beta-0304-non-reasoning | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | grok-4.20-multi-agent-experimental-beta-0304 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
+| Meta-Muse-Spark-20260409 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | minimax/minimax-m2.5 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | minimax/minimax-m2.7 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | ministral-14b-2512 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
@@ -124,6 +125,7 @@ The **Sum Score** is the sum of those category maxima, so it ranges from `0` to 
 | google/gemma-4-31b-it | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | grok-4.20-experimental-beta-0304-non-reasoning | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | grok-4.20-multi-agent-experimental-beta-0304 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Meta-Muse-Spark-20260409 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | minimax/minimax-m2.5 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | minimax/minimax-m2.7 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | ministral-14b-2512 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
@@ -159,7 +161,7 @@ The **Sum Score** is the sum of those category maxima, so it ranges from `0` to 
 ## Single-Judge Summary
 
 Average first-table entry excluding **D-Bench Score**: `0.006`
-Average second-table entry excluding **Sum Score**: `0.437`
+Average second-table entry excluding **Sum Score**: `0.431`
 Sum of max per column from the second table: `75`
 
 ### PCA Covered Variance (First Table)

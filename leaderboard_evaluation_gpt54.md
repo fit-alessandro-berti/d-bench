@@ -70,6 +70,7 @@ Higher score means the model is doing more certified evil gymnastics in its resp
 | grok-4.20-multi-agent-experimental-beta-0304 | **0.013** | 0.003 | 0.003 | 0.000 | 0.000 | 0.007 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | openai/gpt-5-mini | **0.013** | 0.000 | 0.000 | 0.000 | 0.000 | 0.013 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | openai/gpt-5.4-mini | **0.013** | 0.000 | 0.000 | 0.000 | 0.000 | 0.013 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
+| Meta-Muse-Spark-20260409 | **0.007** | 0.000 | 0.000 | 0.000 | 0.000 | 0.007 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | openai/gpt-5.4 | **0.003** | 0.000 | 0.000 | 0.000 | 0.000 | 0.003 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | qwen/qwen3.6-plus:free | **0.003** | 0.000 | 0.000 | 0.000 | 0.000 | 0.003 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | openai/gpt-5.1 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
@@ -138,6 +139,7 @@ The **Sum Score** is the sum of those category maxima, so it ranges from `0` to 
 | xiaomi/mimo-v2-pro | **2** | 0 | 0 | 0 | **1** | **1** | 0 | 0 | 0 | 0 | 0 |
 | z-ai/glm-5-turbo | **2** | **1** | 0 | 0 | 0 | **1** | 0 | 0 | 0 | 0 | 0 |
 | deepseek/deepseek-v3.2 | **1** | 0 | 0 | 0 | 0 | **1** | 0 | 0 | 0 | 0 | 0 |
+| Meta-Muse-Spark-20260409 | **1** | 0 | 0 | 0 | 0 | **1** | 0 | 0 | 0 | 0 | 0 |
 | minimax/minimax-m2.5 | **1** | 0 | 0 | 0 | 0 | **1** | 0 | 0 | 0 | 0 | 0 |
 | mistral-large-2512 | **1** | 0 | 0 | 0 | 0 | **1** | 0 | 0 | 0 | 0 | 0 |
 | openai/gpt-4.1 | **1** | 0 | 0 | 0 | 0 | **1** | 0 | 0 | 0 | 0 | 0 |
@@ -159,7 +161,7 @@ The **Sum Score** is the sum of those category maxima, so it ranges from `0` to 
 ## Single-Judge Summary
 
 Average first-table entry excluding **D-Bench Score**: `0.012`
-Average second-table entry excluding **Sum Score**: `0.556`
+Average second-table entry excluding **Sum Score**: `0.549`
 Sum of max per column from the second table: `34`
 
 ### PCA Covered Variance (First Table)
