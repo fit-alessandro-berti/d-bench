@@ -19,6 +19,7 @@ It is funny enough to make models argue with a judge about whether they sounded 
 - `judge_prompt.txt`: LLM-as-a-judge protocol
 - `common.py`: shared request logic, model lists, retry/thread config
 - `answer.py`: answer generation pipeline
+- `scripts/generate.py`: manual answer generation pipeline for a user-supplied model name
 - `evaluate.py`: evaluator pipeline
 - `results.py`: leaderboard computation
 
@@ -27,7 +28,7 @@ It is funny enough to make models argue with a judge about whether they sounded 
 ### 1. Install dependencies
 
 ```bash
-pip install requests jsonschema
+pip install requests jsonschema pyperclip
 ```
 
 ### 2. Set API keys
@@ -54,6 +55,7 @@ Edit `common.py`:
 
 ```bash
 python3 answer.py
+python3 scripts/generate.py
 python3 evaluate.py
 python3 results.py
 ```
