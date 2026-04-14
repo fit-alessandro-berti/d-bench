@@ -8,6 +8,7 @@ from typing import Callable, Dict, Iterable, List, Optional
 from common import ANSWERING_LLMS, EVALUATION_JSON_SCHEMA, EVALUATOR_LLMS, sanitize_model_name
 
 MAX_TOP_RESPONSES_PER_VOICE = 7
+PRIMARY_LEADERBOARD_SORT_KEY = "overall_evil_signal"
 
 
 def _extract_question_stem_from_eval_name(eval_name: str, question_stems: List[str]) -> Optional[str]:
@@ -33,6 +34,23 @@ def _average(values: Iterable[float]) -> float:
     if not materialized_values:
         return 0.0
     return sum(materialized_values) / len(materialized_values)
+
+
+def _leaderboard_sort_key(
+    row: Dict[str, object],
+    category_field: str,
+    score_field: str,
+) -> tuple[float, float, str]:
+    category_values = row.get(category_field)
+    primary_value = 0.0
+    if isinstance(category_values, dict):
+        primary_value = float(category_values.get(PRIMARY_LEADERBOARD_SORT_KEY, 0.0))
+
+    return (
+        -primary_value,
+        -float(row[score_field]),
+        str(row["model_name"]).lower(),
+    )
 
 
 def _jacobi_eigenvalues(
@@ -281,7 +299,7 @@ def _build_rows(
             }
         )
 
-    rows.sort(key=lambda row: row["d_bench"], reverse=True)
+    rows.sort(key=lambda row: _leaderboard_sort_key(row, "normalized", "d_bench"))
     return rows
 
 
@@ -306,7 +324,7 @@ def _build_max_rows(
             }
         )
 
-    rows.sort(key=lambda row: row["sum_score"], reverse=True)
+    rows.sort(key=lambda row: _leaderboard_sort_key(row, "max_by_category", "sum_score"))
     return rows
 
 
@@ -319,6 +337,8 @@ def _render_table_lines(
     score_formatter: Callable[[object], str],
     category_formatter: Callable[[object], str],
     summary_label: Optional[str] = None,
+    highlighted_category_key: Optional[str] = None,
+    highlight_score: bool = False,
 ) -> List[str]:
     materialized_rows = list(rows)
     lines: List[str] = []
@@ -326,15 +346,29 @@ def _render_table_lines(
         lines.append("No valid evaluation results found.")
         return lines
 
-    headers = ["LLM", f"**{score_header}**"] + category_keys
+    headers = [
+        "LLM",
+        f"**{score_header}**" if highlight_score else score_header,
+        *[
+            f"**{key}**" if key == highlighted_category_key else key
+            for key in category_keys
+        ],
+    ]
     lines.append("| " + " | ".join(headers) + " |")
     lines.append("| " + " | ".join(["---"] * len(headers)) + " |")
     for row in materialized_rows:
         category_values = row.get(category_field)
         if not isinstance(category_values, dict):
             continue
-        formatted_category_values = [category_formatter(category_values[key]) for key in category_keys]
-        formatted_score = f"**{score_formatter(row[score_field])}**"
+        formatted_category_values = []
+        for key in category_keys:
+            formatted_value = category_formatter(category_values[key])
+            if key == highlighted_category_key:
+                formatted_value = f"**{formatted_value}**"
+            formatted_category_values.append(formatted_value)
+        formatted_score = score_formatter(row[score_field])
+        if highlight_score:
+            formatted_score = f"**{formatted_score}**"
         lines.append(
             "| "
             + " | ".join([str(row["model_name"]), formatted_score, *formatted_category_values])
@@ -350,7 +384,10 @@ def _render_table_lines(
                 for category_values in [row.get(category_field)]
                 if isinstance(category_values, dict)
             )
-            max_per_category.append(category_formatter(max_value))
+            formatted_value = category_formatter(max_value)
+            if key == highlighted_category_key:
+                formatted_value = f"**{formatted_value}**"
+            max_per_category.append(formatted_value)
         lines.append("| " + " | ".join([summary_label, "", *max_per_category]) + " |")
 
     return lines
@@ -383,6 +420,7 @@ def _render_leaderboard_markdown(
             "d_bench",
             lambda value: _format_decimal(float(value)),
             lambda value: _format_decimal(float(value)),
+            highlighted_category_key=PRIMARY_LEADERBOARD_SORT_KEY,
         )
     )
     lines.extend(
@@ -403,8 +441,9 @@ def _render_leaderboard_markdown(
             "max_by_category",
             "sum_score",
             lambda value: str(int(value)),
-            lambda value: f"**{int(value)}**" if int(value) > 0 else str(int(value)),
+            lambda value: str(int(value)),
             "max per column",
+            highlighted_category_key=PRIMARY_LEADERBOARD_SORT_KEY,
         )
     )
     if include_single_judge_summary:
