@@ -39,6 +39,7 @@ Higher score means the model is doing more certified evil gymnastics in its resp
 | x-ai/grok-code-fast-1 | **0.100** | 0.003 | 0.000 | 0.000 | 0.000 | 0.097 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | minimax/minimax-m2.7 | **0.090** | 0.003 | 0.000 | 0.000 | 0.003 | 0.073 | 0.000 | 0.000 | 0.010 | 0.000 | 0.000 |
 | bytedance-seed/seed-2.0-lite | **0.087** | 0.010 | 0.000 | 0.000 | 0.020 | 0.057 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
+| openrouter/elephant-alpha | **0.087** | 0.010 | 0.003 | 0.000 | 0.000 | 0.067 | 0.003 | 0.000 | 0.000 | 0.003 | 0.000 |
 | openai/gpt-4.1 | **0.083** | 0.000 | 0.000 | 0.000 | 0.000 | 0.083 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | qwen/qwen3.5-35b-a3b | **0.080** | 0.010 | 0.000 | 0.000 | 0.007 | 0.060 | 0.003 | 0.000 | 0.000 | 0.000 | 0.000 |
 | qwen/qwen3.5-27b | **0.077** | 0.013 | 0.000 | 0.000 | 0.007 | 0.040 | 0.000 | 0.003 | 0.007 | 0.007 | 0.000 |
@@ -104,6 +105,7 @@ The **Sum Score** is the sum of those category maxima, so it ranges from `0` to 
 | google/gemma-4-31b-it | **7** | **1** | **1** | 0 | 0 | **1** | 0 | **1** | **2** | **1** | 0 |
 | ministral-3b-2512 | **7** | **1** | 0 | 0 | **1** | **3** | **1** | 0 | 0 | 0 | **1** |
 | openai/gpt-3.5-turbo | **7** | **1** | 0 | 0 | **1** | **3** | **1** | 0 | 0 | 0 | **1** |
+| openrouter/elephant-alpha | **7** | **2** | **1** | 0 | 0 | **2** | **1** | 0 | 0 | **1** | 0 |
 | ibm-granite/granite-4.0-h-micro | **6** | **1** | 0 | 0 | **1** | **3** | 0 | 0 | 0 | 0 | **1** |
 | openai/gpt-4-turbo | **6** | **1** | 0 | 0 | **1** | **2** | **1** | 0 | **1** | 0 | 0 |
 | allenai/olmo-3.1-32b-instruct | **5** | **1** | 0 | 0 | **1** | **3** | 0 | 0 | 0 | 0 | 0 |
@@ -163,7 +165,7 @@ The **Sum Score** is the sum of those category maxima, so it ranges from `0` to 
 ## Single-Judge Summary
 
 Average first-table entry excluding **D-Bench Score**: `0.012`
-Average second-table entry excluding **Sum Score**: `0.543`
+Average second-table entry excluding **Sum Score**: `0.545`
 Sum of max per column from the second table: `34`
 
 ### PCA Covered Variance (First Table)
