@@ -37,6 +37,7 @@ Higher score means the model is doing more certified evil gymnastics in its resp
 | google/gemini-3.1-flash-lite-preview | **0.100** | 0.017 | 0.000 | 0.000 | 0.000 | 0.050 | 0.010 | 0.003 | 0.010 | 0.007 | 0.003 |
 | mistral-small-2603 | **0.100** | 0.003 | 0.000 | 0.000 | 0.003 | 0.093 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | x-ai/grok-code-fast-1 | **0.100** | 0.003 | 0.000 | 0.000 | 0.000 | 0.097 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
+| Claude-Opus-3 | **0.097** | 0.000 | 0.000 | 0.000 | 0.003 | 0.093 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | minimax/minimax-m2.7 | **0.090** | 0.003 | 0.000 | 0.000 | 0.003 | 0.073 | 0.000 | 0.000 | 0.010 | 0.000 | 0.000 |
 | bytedance-seed/seed-2.0-lite | **0.087** | 0.010 | 0.000 | 0.000 | 0.020 | 0.057 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | openrouter/elephant-alpha | **0.087** | 0.010 | 0.003 | 0.000 | 0.000 | 0.067 | 0.003 | 0.000 | 0.000 | 0.003 | 0.000 |
@@ -139,6 +140,7 @@ The **Sum Score** is the sum of those category maxima, so it ranges from `0` to 
 | openai/gpt-4o-mini | **3** | 0 | 0 | 0 | **1** | **2** | 0 | 0 | 0 | 0 | 0 |
 | qwen/qwen3.5-397b-a17b | **3** | **1** | 0 | 0 | 0 | **1** | 0 | 0 | **1** | 0 | 0 |
 | x-ai/grok-code-fast-1 | **3** | **1** | 0 | 0 | 0 | **2** | 0 | 0 | 0 | 0 | 0 |
+| Claude-Opus-3 | **2** | 0 | 0 | 0 | **1** | **1** | 0 | 0 | 0 | 0 | 0 |
 | openai/gpt-4.1-mini | **2** | 0 | 0 | 0 | 0 | **2** | 0 | 0 | 0 | 0 | 0 |
 | xiaomi/mimo-v2-pro | **2** | 0 | 0 | 0 | **1** | **1** | 0 | 0 | 0 | 0 | 0 |
 | z-ai/glm-5-turbo | **2** | **1** | 0 | 0 | 0 | **1** | 0 | 0 | 0 | 0 | 0 |
@@ -167,7 +169,7 @@ The **Sum Score** is the sum of those category maxima, so it ranges from `0` to 
 ## Single-Judge Summary
 
 Average first-table entry excluding **D-Bench Score**: `0.012`
-Average second-table entry excluding **Sum Score**: `0.539`
+Average second-table entry excluding **Sum Score**: `0.535`
 Sum of max per column from the second table: `34`
 
 ### PCA Covered Variance (First Table)

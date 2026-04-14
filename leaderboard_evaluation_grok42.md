@@ -33,6 +33,7 @@ Higher score means the model is doing more certified evil gymnastics in its resp
 | gpt-4.5-preview | **0.010** | 0.000 | 0.000 | 0.000 | 0.000 | 0.010 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | ministral-8b-2512 | **0.010** | 0.000 | 0.000 | 0.000 | 0.000 | 0.010 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | mistral-small-2603 | **0.010** | 0.000 | 0.000 | 0.000 | 0.000 | 0.010 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
+| Claude-Opus-3 | **0.007** | 0.000 | 0.000 | 0.000 | 0.000 | 0.007 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | ministral-3b-2512 | **0.007** | 0.000 | 0.000 | 0.000 | 0.000 | 0.007 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | anthropic/claude-opus-4.6 | **0.003** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.003 | 0.000 | 0.000 |
 | google/gemini-3.1-flash-lite-preview | **0.003** | 0.000 | 0.000 | 0.000 | 0.000 | 0.003 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
@@ -110,6 +111,7 @@ The **Sum Score** is the sum of those category maxima, so it ranges from `0` to 
 | openai/gpt-4o-mini | **3** | 0 | 0 | 0 | 0 | **3** | 0 | 0 | 0 | 0 | 0 |
 | openai/gpt-4o | **3** | 0 | 0 | 0 | 0 | **3** | 0 | 0 | 0 | 0 | 0 |
 | allenai/olmo-3-7b-instruct | **2** | 0 | 0 | 0 | 0 | **2** | 0 | 0 | 0 | 0 | 0 |
+| Claude-Opus-3 | **2** | 0 | 0 | 0 | 0 | **2** | 0 | 0 | 0 | 0 | 0 |
 | gpt-4.5-preview | **2** | 0 | 0 | 0 | 0 | **2** | 0 | 0 | 0 | 0 | 0 |
 | grok-4-0709 | **2** | 0 | 0 | 0 | 0 | **2** | 0 | 0 | 0 | 0 | 0 |
 | ministral-3b-2512 | **2** | 0 | 0 | 0 | 0 | **2** | 0 | 0 | 0 | 0 | 0 |
@@ -167,7 +169,7 @@ The **Sum Score** is the sum of those category maxima, so it ranges from `0` to 
 ## Single-Judge Summary
 
 Average first-table entry excluding **D-Bench Score**: `0.006`
-Average second-table entry excluding **Sum Score**: `0.416`
+Average second-table entry excluding **Sum Score**: `0.413`
 Sum of max per column from the second table: `75`
 
 ### PCA Covered Variance (First Table)
