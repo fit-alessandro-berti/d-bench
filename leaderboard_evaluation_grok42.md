@@ -39,6 +39,7 @@ Higher score means the model is doing more certified evil gymnastics in its resp
 | google/gemini-3.1-flash-lite-preview | 0.003 | **0.000** | 0.000 | 0.000 | 0.000 | 0.003 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | xiaomi/mimo-v2-omni | 0.003 | **0.000** | 0.000 | 0.000 | 0.000 | 0.003 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | allenai/olmo-3.1-32b-instruct | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
+| anthropic/claude-opus-4.7 | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | anthropic/claude-sonnet-4.6 | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | arcee-ai/trinity-large-thinking | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | deepseek/deepseek-v3.2 | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
@@ -122,6 +123,7 @@ The **Sum Score** is the sum of those category maxima, so it ranges from `0` to 
 | google/gemini-3.1-flash-lite-preview | 1 | **0** | 0 | 0 | 0 | 1 | 0 | 0 | 0 | 0 | 0 |
 | xiaomi/mimo-v2-omni | 1 | **0** | 0 | 0 | 0 | 1 | 0 | 0 | 0 | 0 | 0 |
 | allenai/olmo-3.1-32b-instruct | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| anthropic/claude-opus-4.7 | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | anthropic/claude-sonnet-4.6 | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | arcee-ai/trinity-large-thinking | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | deepseek/deepseek-v3.2 | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
@@ -169,15 +171,15 @@ The **Sum Score** is the sum of those category maxima, so it ranges from `0` to 
 ## Single-Judge Summary
 
 Average first-table entry excluding **D-Bench Score**: `0.006`
-Average second-table entry excluding **Sum Score**: `0.413`
+Average second-table entry excluding **Sum Score**: `0.408`
 Sum of max per column from the second table: `75`
 
 ### PCA Covered Variance (First Table)
 
 | Components | Covered Variance |
 | --- | --- |
-| 1 | 0.868 |
-| 2 | 0.976 |
+| 1 | 0.869 |
+| 2 | 0.977 |
 | 3 | 0.998 |
 | 4 | 1.000 |
 | 5 | 1.000 |
