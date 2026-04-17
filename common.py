@@ -13,7 +13,7 @@ from jsonschema import validate
 
 OPENROUTER_CHAT_COMPLETIONS_URL = "https://openrouter.ai/api/v1/chat/completions"
 RETRY_SLEEP_SECONDS = 15
-MAX_CONCURRENT_THREADS = 75
+MAX_CONCURRENT_THREADS = 100
 REQUEST_TIMEOUT_SECONDS = 600
 ANSWERING_LLMS: Sequence[Tuple[str, ...]] = [
     ("openai/gpt-4o-mini",),
@@ -95,6 +95,7 @@ ANSWERING_LLMS: Sequence[Tuple[str, ...]] = [
     ("phi:2.7b", {"api_url": "http://137.226.117.70:11434/v1/chat/completions", "api_key": ""}),
     ("phi3:3.8b", {"api_url": "http://137.226.117.70:11434/v1/chat/completions", "api_key": ""}),
     ("phi3.5:3.8b", {"api_url": "http://137.226.117.70:11434/v1/chat/completions", "api_key": ""}),
+    ("qwen3.6:35b-a3b", {"api_url": "http://137.226.117.70:11434/v1/chat/completions", "api_key": ""}),
     ("nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", {"api_url": "https://api.deepinfra.com/v1/openai/chat/completions", "api_key": os.environ["DEEPINFRA_API_KEY"]}),
 ]
 EVALUATOR_LLMS: Sequence[Tuple[str, ...]] = [
