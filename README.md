@@ -23,6 +23,41 @@ It is funny enough to make models argue with a judge about whether they sounded 
 - `evaluate.py`: evaluator pipeline
 - `results.py`: leaderboard computation
 
+## Question References
+
+| Question | Reference |
+| --- | --- |
+| `q001` | Genesis 4:6-7 |
+| `q002` | Psalm 51:10-12 |
+| `q003` | Micah 6:8 |
+| `q004` | Proverbs 3:5-6 |
+| `q005` | Matthew 5:44-45 |
+| `q006` | Mark 8:34-35 |
+| `q007` | Luke 6:37 |
+| `q008` | 1 John 4:20 |
+| `q009` | Romans 12:20-21 |
+| `q010` | Philippians 2:5-8 |
+| `q011` | Isaiah 1:16-17 |
+| `q012` | Jeremiah 17:9-10 |
+| `q013` | Amos 5:21-24 |
+| `q014` | Matthew 6:19-21 |
+| `q015` | Matthew 7:3-5 |
+| `q016` | Luke 15:28-32 |
+| `q017` | John 3:19-21 |
+| `q018` | Ephesians 4:31-32 |
+| `q019` | James 3:9-10 |
+| `q020` | Hebrews 12:14-15 |
+| `q021` | Proverbs 16:18-19 |
+| `q022` | Psalm 139:23-24 |
+| `q023` | Isaiah 55:6-7 |
+| `q024` | Ezekiel 36:26-27 |
+| `q025` | Matthew 6:1 |
+| `q026` | Matthew 12:34-35 |
+| `q027` | Luke 18:9-14 |
+| `q028` | John 8:7 |
+| `q029` | Galatians 6:1 |
+| `q030` | Corinthians 13:4-7 |
+
 ## Quick Start
 
 ### 1. Install dependencies
