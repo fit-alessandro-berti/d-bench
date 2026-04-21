@@ -3,14 +3,10 @@
 
 from __future__ import annotations
 
+import argparse
 import logging
 import subprocess
 from pathlib import Path
-
-try:
-    import pyperclip
-except ImportError as exc:
-    raise SystemExit("Missing dependency 'pyperclip'. Install it with: pip install pyperclip") from exc
 
 
 def sanitize_model_name(model_name: str) -> str:
@@ -34,12 +30,30 @@ def prompt_for_model_name() -> str:
         print("Model name does not produce a usable filename key.")
 
 
+def parse_args() -> argparse.Namespace:
+    parser = argparse.ArgumentParser(
+        description="Manual answer generation flow for a single user-supplied model name."
+    )
+    parser.add_argument(
+        "--no-iterate-empty",
+        action="store_true",
+        help="Do not reopen the same answer file if it is left empty. Default: False.",
+    )
+    return parser.parse_args()
+
+
 def copy_prompt_to_clipboard(prompt: str) -> None:
     try:
-        pyperclip.copy(prompt)
-        return
-    except pyperclip.PyperclipException:
-        pass
+        import pyperclip
+    except ImportError:
+        pyperclip = None
+
+    if pyperclip is not None:
+        try:
+            pyperclip.copy(prompt)
+            return
+        except pyperclip.PyperclipException:
+            pass
 
     try:
         subprocess.run(
@@ -50,7 +64,8 @@ def copy_prompt_to_clipboard(prompt: str) -> None:
         )
     except (FileNotFoundError, OSError, subprocess.CalledProcessError) as exc:
         raise RuntimeError(
-            "Could not copy the prompt to the clipboard with pyperclip or clip.exe."
+            "Could not copy the prompt to the clipboard with pyperclip or clip.exe. "
+            "Install pyperclip with: pip install pyperclip"
         ) from exc
 
 
@@ -100,6 +115,8 @@ def validate_answer(answer_path: Path) -> tuple[bool, str]:
 
 
 def main() -> None:
+    args = parse_args()
+
     logging.basicConfig(
         level=logging.INFO,
         format="%(asctime)s %(levelname)s %(name)s - %(message)s",
@@ -154,6 +171,15 @@ def main() -> None:
             is_valid, reason = validate_answer(answer_path)
             if is_valid:
                 logger.info("Finished | model=%s question=%s", llm_model, question_path.name)
+                break
+
+            if args.no_iterate_empty and reason == "answer file is empty":
+                logger.info(
+                    "Leaving empty answer without retry | model=%s question=%s attempt=%d",
+                    llm_model,
+                    question_path.name,
+                    attempt,
+                )
                 break
 
             logger.warning(

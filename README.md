@@ -95,6 +95,14 @@ python3 evaluate.py
 python3 results.py
 ```
 
+To avoid reopening the same manual answer file when it is saved empty, run:
+
+```bash
+python3 scripts/generate.py --no-iterate-empty
+```
+
+That flag defaults to `False`, so the script normally keeps reopening an empty answer file until it contains content.
+
 This writes `leaderboard.md` plus one per-evaluator leaderboard such as
 `leaderboard_evaluation_gpt54.md`.
 
