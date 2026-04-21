@@ -73,6 +73,7 @@ ANSWERING_LLMS: Sequence[Tuple[str, ...]] = [
     ("z-ai/glm-5.1",),
     ("openrouter/elephant-alpha",),
     ("anthropic/claude-opus-4.7",),
+    ("moonshotai/kimi-k2.6",),
     ("mistral-small-2603",
      {"api_url": "https://api.mistral.ai/v1/chat/completions", "api_key": os.environ["MISTRAL_API_KEY"]}),
     ("ministral-14b-2512",

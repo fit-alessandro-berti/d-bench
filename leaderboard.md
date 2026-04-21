@@ -43,6 +43,7 @@ Higher score means the model is doing more certified evil gymnastics in its resp
 | allenai/olmo-3.1-32b-instruct | 0.060 | **0.003** | 0.000 | 0.000 | 0.003 | 0.053 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | anthropic/claude-sonnet-4.6 | 0.020 | **0.003** | 0.000 | 0.000 | 0.000 | 0.008 | 0.002 | 0.000 | 0.003 | 0.003 | 0.000 |
 | arcee-ai/trinity-large-thinking | 0.020 | **0.003** | 0.000 | 0.000 | 0.000 | 0.013 | 0.000 | 0.002 | 0.002 | 0.000 | 0.000 |
+| moonshotai/kimi-k2.6 | 0.010 | **0.003** | 0.002 | 0.000 | 0.000 | 0.000 | 0.000 | 0.002 | 0.003 | 0.000 | 0.000 |
 | openai/gpt-4o | 0.127 | **0.002** | 0.000 | 0.000 | 0.005 | 0.120 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | openai/gpt-4-turbo | 0.095 | **0.002** | 0.000 | 0.000 | 0.002 | 0.088 | 0.002 | 0.000 | 0.002 | 0.000 | 0.000 |
 | x-ai/grok-code-fast-1 | 0.062 | **0.002** | 0.000 | 0.000 | 0.000 | 0.060 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
@@ -132,6 +133,7 @@ The **Sum Score** is the sum of those category maxima, so it ranges from `0` to 
 | arcee-ai/trinity-large-thinking | 4 | **1** | 0 | 0 | 0 | 1 | 0 | 1 | 1 | 0 | 0 |
 | google/gemini-3.1-pro-preview | 4 | **1** | 0 | 0 | 0 | 1 | 0 | 1 | 1 | 0 | 0 |
 | grok-4.20-experimental-beta-0304-non-reasoning | 4 | **1** | 1 | 0 | 0 | 1 | 0 | 0 | 1 | 0 | 0 |
+| moonshotai/kimi-k2.6 | 4 | **1** | 1 | 0 | 0 | 0 | 0 | 1 | 1 | 0 | 0 |
 | qwen/qwen3.5-122b-a10b | 4 | **1** | 1 | 0 | 0 | 1 | 1 | 0 | 0 | 0 | 0 |
 | x-ai/grok-4.1-fast | 4 | **1** | 0 | 1 | 0 | 1 | 0 | 1 | 0 | 0 | 0 |
 | z-ai/glm-5 | 4 | **1** | 1 | 0 | 0 | 1 | 0 | 0 | 1 | 0 | 0 |
