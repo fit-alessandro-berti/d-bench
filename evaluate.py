@@ -1,3 +1,4 @@
+import json
 import logging
 from concurrent.futures import Future
 from pathlib import Path
@@ -6,8 +7,13 @@ from typing import Dict, List, Optional, Tuple
 from common import (
     EVALUATION_JSON_SCHEMA,
     EVALUATOR_LLMS,
+    sanitize_model_name,
     submit_prompt_to_chat_completions,
 )
+
+MIN_D_BENCH_SCORE_TO_EVALUATE = 0.0
+MAX_D_BENCH_SCORE_TO_EVALUATE = 10.0
+DEFAULT_D_BENCH_SCORE_FOR_NEW_MODELS = 10.0
 
 
 def _extract_question_stem_from_answer_name(answer_name: str, question_stems: List[str]) -> Optional[str]:
@@ -15,6 +21,13 @@ def _extract_question_stem_from_answer_name(answer_name: str, question_stems: Li
         if answer_name.endswith(f"_{stem}.txt"):
             return stem
     return None
+
+
+def _extract_model_key_from_answer_name(answer_name: str, question_stem: str) -> Optional[str]:
+    suffix = f"_{question_stem}.txt"
+    if not answer_name.endswith(suffix):
+        return None
+    return answer_name[: -len(suffix)]
 
 
 def _build_judge_prompt(protocol: str, question: str, answer: str) -> str:
@@ -27,6 +40,48 @@ def _build_judge_prompt(protocol: str, question: str, answer: str) -> str:
     )
 
 
+def _load_leaderboard_scores(
+    leaderboard_path: Path,
+    logger: logging.Logger,
+) -> Dict[str, float]:
+    if not leaderboard_path.is_file():
+        logger.info(
+            "No leaderboard JSON found at %s. Models missing from the leaderboard default to %.3f.",
+            leaderboard_path,
+            DEFAULT_D_BENCH_SCORE_FOR_NEW_MODELS,
+        )
+        return {}
+
+    try:
+        payload = json.loads(leaderboard_path.read_text(encoding="utf-8"))
+    except (OSError, json.JSONDecodeError) as exc:
+        logger.warning("Could not read leaderboard JSON %s: %s", leaderboard_path, exc)
+        return {}
+
+    if not isinstance(payload, list):
+        logger.warning("Skipping invalid leaderboard JSON (expected a list): %s", leaderboard_path)
+        return {}
+
+    scores_by_model: Dict[str, float] = {}
+    for entry in payload:
+        if not isinstance(entry, dict):
+            continue
+
+        model_name = entry.get("LLM")
+        score = entry.get("D-Bench Score")
+        if not isinstance(model_name, str) or not isinstance(score, (int, float)):
+            continue
+
+        scores_by_model[sanitize_model_name(model_name)] = float(score)
+
+    logger.info("Loaded leaderboard scores for %d models from %s", len(scores_by_model), leaderboard_path)
+    return scores_by_model
+
+
+def _should_evaluate_score(score: float) -> bool:
+    return MIN_D_BENCH_SCORE_TO_EVALUATE <= score <= MAX_D_BENCH_SCORE_TO_EVALUATE
+
+
 def main() -> None:
     logging.basicConfig(
         level=logging.INFO,
@@ -34,21 +89,35 @@ def main() -> None:
     )
     logger = logging.getLogger("evaluate")
 
+    if MIN_D_BENCH_SCORE_TO_EVALUATE > MAX_D_BENCH_SCORE_TO_EVALUATE:
+        raise ValueError(
+            "MIN_D_BENCH_SCORE_TO_EVALUATE must be less than or equal to "
+            "MAX_D_BENCH_SCORE_TO_EVALUATE."
+        )
+
     project_root = Path(__file__).resolve().parent
     questions_dir = project_root / "questions"
     answers_dir = project_root / "answers"
     judge_prompt_path = project_root / "judge_prompt.txt"
+    leaderboard_path = project_root / "leaderboard.json"
 
     protocol = judge_prompt_path.read_text(encoding="utf-8")
     question_files = sorted(path for path in questions_dir.glob("*.txt") if path.is_file())
     question_by_stem: Dict[str, Path] = {path.stem: path for path in question_files}
     question_stems = sorted(question_by_stem.keys(), key=len, reverse=True)
     answer_files = sorted(path for path in answers_dir.glob("*.txt") if path.is_file())
+    leaderboard_scores_by_model = _load_leaderboard_scores(leaderboard_path, logger)
 
     logger.info(
         "Found %d question files and %d answer files",
         len(question_files),
         len(answer_files),
+    )
+    logger.info(
+        "Evaluating models with D-Bench score in [%.3f, %.3f]. Models absent from leaderboard.json use %.3f.",
+        MIN_D_BENCH_SCORE_TO_EVALUATE,
+        MAX_D_BENCH_SCORE_TO_EVALUATE,
+        DEFAULT_D_BENCH_SCORE_FOR_NEW_MODELS,
     )
 
     pending: List[Tuple[Future, str, str]] = []
@@ -86,6 +155,18 @@ def main() -> None:
                     "Skipping answer with unknown question suffix: %s",
                     answer_path.name,
                 )
+                continue
+
+            model_key = _extract_model_key_from_answer_name(answer_path.name, question_stem)
+            if model_key is None:
+                logger.warning("Skipping answer with invalid model/question format: %s", answer_path.name)
+                continue
+
+            model_score = leaderboard_scores_by_model.get(
+                model_key,
+                DEFAULT_D_BENCH_SCORE_FOR_NEW_MODELS,
+            )
+            if not _should_evaluate_score(model_score):
                 continue
 
             output_path = evaluator_folder / f"{answer_path.name}.json"
