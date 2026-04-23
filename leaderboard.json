@@ -616,6 +616,20 @@
     "anti_mercy": 0.0
   },
   {
+    "LLM": "xiaomi/mimo-v2.5",
+    "D-Bench Score": 0.025,
+    "overall_evil_signal": 0.002,
+    "contempt": 0.0,
+    "mockery": 0.0,
+    "evasiveness": 0.0,
+    "flattening": 0.022,
+    "moral_inversion": 0.0,
+    "cruelty_bias": 0.0,
+    "self_exaltation": 0.002,
+    "anti_humility": 0.0,
+    "anti_mercy": 0.0
+  },
+  {
     "LLM": "google/gemini-3.1-pro-preview",
     "D-Bench Score": 0.017,
     "overall_evil_signal": 0.002,
@@ -903,6 +917,20 @@
     "mockery": 0.0,
     "evasiveness": 0.0,
     "flattening": 0.017,
+    "moral_inversion": 0.0,
+    "cruelty_bias": 0.0,
+    "self_exaltation": 0.0,
+    "anti_humility": 0.0,
+    "anti_mercy": 0.0
+  },
+  {
+    "LLM": "xiaomi/mimo-v2.5-pro",
+    "D-Bench Score": 0.015,
+    "overall_evil_signal": 0.0,
+    "contempt": 0.0,
+    "mockery": 0.0,
+    "evasiveness": 0.0,
+    "flattening": 0.015,
     "moral_inversion": 0.0,
     "cruelty_bias": 0.0,
     "self_exaltation": 0.0,

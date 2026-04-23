@@ -50,6 +50,7 @@ Higher score means the model is doing more certified evil gymnastics in its resp
 | mistral-small-2603 | 0.100 | **0.003** | 0.000 | 0.000 | 0.003 | 0.093 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | x-ai/grok-code-fast-1 | 0.100 | **0.003** | 0.000 | 0.000 | 0.000 | 0.097 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | minimax/minimax-m2.7 | 0.090 | **0.003** | 0.000 | 0.000 | 0.003 | 0.073 | 0.000 | 0.000 | 0.010 | 0.000 | 0.000 |
+| xiaomi/mimo-v2.5 | 0.050 | **0.003** | 0.000 | 0.000 | 0.000 | 0.043 | 0.000 | 0.000 | 0.003 | 0.000 | 0.000 |
 | google/gemini-3.1-pro-preview | 0.033 | **0.003** | 0.000 | 0.000 | 0.000 | 0.023 | 0.000 | 0.003 | 0.003 | 0.000 | 0.000 |
 | qwen/qwen3.5-397b-a17b | 0.033 | **0.003** | 0.000 | 0.000 | 0.000 | 0.027 | 0.000 | 0.000 | 0.003 | 0.000 | 0.000 |
 | qwen3.6:35b-a3b | 0.030 | **0.003** | 0.000 | 0.000 | 0.000 | 0.017 | 0.003 | 0.003 | 0.000 | 0.000 | 0.003 |
@@ -71,6 +72,7 @@ Higher score means the model is doing more certified evil gymnastics in its resp
 | minimax/minimax-m2.5 | 0.037 | **0.000** | 0.000 | 0.000 | 0.000 | 0.037 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | openai/gpt-5.3-codex | 0.037 | **0.000** | 0.000 | 0.000 | 0.000 | 0.037 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | xiaomi/mimo-v2-omni | 0.030 | **0.000** | 0.000 | 0.000 | 0.000 | 0.030 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
+| xiaomi/mimo-v2.5-pro | 0.030 | **0.000** | 0.000 | 0.000 | 0.000 | 0.030 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | deepseek/deepseek-v3.2 | 0.023 | **0.000** | 0.000 | 0.000 | 0.000 | 0.023 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | xiaomi/mimo-v2-pro | 0.023 | **0.000** | 0.000 | 0.000 | 0.003 | 0.020 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | openai/gpt-5.4-nano | 0.020 | **0.000** | 0.000 | 0.000 | 0.000 | 0.020 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
@@ -141,6 +143,7 @@ The **Sum Score** is the sum of those category maxima, so it ranges from `0` to 
 | mistral-small-2603 | 3 | **1** | 0 | 0 | 1 | 1 | 0 | 0 | 0 | 0 | 0 |
 | qwen/qwen3.5-397b-a17b | 3 | **1** | 0 | 0 | 0 | 1 | 0 | 0 | 1 | 0 | 0 |
 | x-ai/grok-code-fast-1 | 3 | **1** | 0 | 0 | 0 | 2 | 0 | 0 | 0 | 0 | 0 |
+| xiaomi/mimo-v2.5 | 3 | **1** | 0 | 0 | 0 | 1 | 0 | 0 | 1 | 0 | 0 |
 | z-ai/glm-5-turbo | 2 | **1** | 0 | 0 | 0 | 1 | 0 | 0 | 0 | 0 | 0 |
 | meta-llama/llama-3.3-70b-instruct | 3 | **0** | 0 | 0 | 1 | 2 | 0 | 0 | 0 | 0 | 0 |
 | meta-llama/llama-4-scout | 3 | **0** | 0 | 0 | 1 | 2 | 0 | 0 | 0 | 0 | 0 |
@@ -167,6 +170,7 @@ The **Sum Score** is the sum of those category maxima, so it ranges from `0` to 
 | openai/o4-mini | 1 | **0** | 0 | 0 | 0 | 1 | 0 | 0 | 0 | 0 | 0 |
 | qwen/qwen3.6-plus:free | 1 | **0** | 0 | 0 | 0 | 1 | 0 | 0 | 0 | 0 | 0 |
 | xiaomi/mimo-v2-omni | 1 | **0** | 0 | 0 | 0 | 1 | 0 | 0 | 0 | 0 | 0 |
+| xiaomi/mimo-v2.5-pro | 1 | **0** | 0 | 0 | 0 | 1 | 0 | 0 | 0 | 0 | 0 |
 | GPT-5.5-Pro-20260422 | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | openai/gpt-5 | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | openai/gpt-5.1 | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
@@ -177,14 +181,14 @@ The **Sum Score** is the sum of those category maxima, so it ranges from `0` to 
 ## Single-Judge Summary
 
 Average first-table entry excluding **D-Bench Score**: `0.011`
-Average second-table entry excluding **Sum Score**: `0.520`
+Average second-table entry excluding **Sum Score**: `0.512`
 Sum of max per column from the second table: `34`
 
 ### PCA Covered Variance (First Table)
 
 | Components | Covered Variance |
 | --- | --- |
-| 1 | 0.889 |
+| 1 | 0.890 |
 | 2 | 0.978 |
 | 3 | 0.995 |
 | 4 | 0.998 |

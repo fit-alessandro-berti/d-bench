@@ -74,6 +74,8 @@ ANSWERING_LLMS: Sequence[Tuple[str, ...]] = [
     ("openrouter/elephant-alpha",),
     ("anthropic/claude-opus-4.7",),
     ("moonshotai/kimi-k2.6",),
+    ("xiaomi/mimo-v2.5",),
+    ("xiaomi/mimo-v2.5-pro",),
     ("mistral-small-2603",
      {"api_url": "https://api.mistral.ai/v1/chat/completions", "api_key": os.environ["MISTRAL_API_KEY"]}),
     ("ministral-14b-2512",
