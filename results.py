@@ -460,6 +460,27 @@ def _render_leaderboard_markdown(
     return "\n".join(lines) + "\n"
 
 
+def _build_leaderboard_json_rows(
+    rows: Iterable[Dict[str, object]],
+    category_keys: List[str],
+) -> List[Dict[str, object]]:
+    json_rows: List[Dict[str, object]] = []
+    for row in rows:
+        normalized_values = row.get("normalized")
+        if not isinstance(normalized_values, dict):
+            continue
+
+        json_row: Dict[str, object] = {
+            "LLM": str(row["model_name"]),
+            "D-Bench Score": float(_format_decimal(float(row["d_bench"]))),
+        }
+        for key in category_keys:
+            json_row[key] = float(_format_decimal(float(normalized_values[key])))
+        json_rows.append(json_row)
+
+    return json_rows
+
+
 def _accumulate_results(
     evaluation_dirs: Iterable[Path],
     question_stems: List[str],
@@ -580,6 +601,7 @@ def main() -> None:
     questions_dir = project_root / "questions"
     answers_dir = project_root / "answers"
     leaderboard_path = project_root / "leaderboard.md"
+    leaderboard_json_path = project_root / "leaderboard.json"
 
     category_keys = list(EVALUATION_JSON_SCHEMA["required"])
     question_files = sorted(path for path in questions_dir.glob("*.txt") if path.is_file())
@@ -627,6 +649,11 @@ def main() -> None:
         encoding="utf-8",
     )
     logger.info("Wrote leaderboard: %s", leaderboard_path)
+    leaderboard_json_path.write_text(
+        json.dumps(_build_leaderboard_json_rows(rows, category_keys), indent=2) + "\n",
+        encoding="utf-8",
+    )
+    logger.info("Wrote leaderboard JSON: %s", leaderboard_json_path)
 
     for evaluation_dir in evaluation_dirs:
         evaluator_name = evaluator_display_names.get(evaluation_dir.name, evaluation_dir.name)
