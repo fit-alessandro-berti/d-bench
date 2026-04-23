@@ -196,6 +196,20 @@
     "anti_mercy": 0.0
   },
   {
+    "LLM": "tencent/hy3-preview:free",
+    "D-Bench Score": 0.04,
+    "overall_evil_signal": 0.007,
+    "contempt": 0.002,
+    "mockery": 0.0,
+    "evasiveness": 0.003,
+    "flattening": 0.023,
+    "moral_inversion": 0.0,
+    "cruelty_bias": 0.0,
+    "self_exaltation": 0.003,
+    "anti_humility": 0.002,
+    "anti_mercy": 0.0
+  },
+  {
     "LLM": "qwen/qwen3.5-27b",
     "D-Bench Score": 0.038,
     "overall_evil_signal": 0.007,

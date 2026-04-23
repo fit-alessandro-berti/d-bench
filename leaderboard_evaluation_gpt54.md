@@ -20,6 +20,7 @@ Higher score means the model is doing more certified evil gymnastics in its resp
 | ibm-granite/granite-4.0-h-micro | 0.240 | **0.013** | 0.000 | 0.000 | 0.047 | 0.177 | 0.000 | 0.000 | 0.000 | 0.000 | 0.003 |
 | bytedance-seed/seed-2.0-mini | 0.197 | **0.013** | 0.000 | 0.000 | 0.037 | 0.140 | 0.003 | 0.000 | 0.000 | 0.003 | 0.000 |
 | grok-4-0709 | 0.130 | **0.013** | 0.000 | 0.000 | 0.013 | 0.100 | 0.000 | 0.000 | 0.003 | 0.000 | 0.000 |
+| tencent/hy3-preview:free | 0.080 | **0.013** | 0.003 | 0.000 | 0.007 | 0.047 | 0.000 | 0.000 | 0.007 | 0.003 | 0.000 |
 | qwen/qwen3.5-27b | 0.077 | **0.013** | 0.000 | 0.000 | 0.007 | 0.040 | 0.000 | 0.003 | 0.007 | 0.007 | 0.000 |
 | google/gemma-4-31b-it | 0.073 | **0.013** | 0.003 | 0.000 | 0.000 | 0.043 | 0.000 | 0.003 | 0.007 | 0.003 | 0.000 |
 | x-ai/grok-4.1-fast | 0.067 | **0.013** | 0.000 | 0.003 | 0.000 | 0.040 | 0.000 | 0.010 | 0.000 | 0.000 | 0.000 |
@@ -107,6 +108,7 @@ The **Sum Score** is the sum of those category maxima, so it ranges from `0` to 
 | google/gemma-4-31b-it | 7 | **1** | 1 | 0 | 0 | 1 | 0 | 1 | 2 | 1 | 0 |
 | ministral-3b-2512 | 7 | **1** | 0 | 0 | 1 | 3 | 1 | 0 | 0 | 0 | 1 |
 | openai/gpt-3.5-turbo | 7 | **1** | 0 | 0 | 1 | 3 | 1 | 0 | 0 | 0 | 1 |
+| tencent/hy3-preview:free | 7 | **1** | 1 | 0 | 1 | 2 | 0 | 0 | 1 | 1 | 0 |
 | ibm-granite/granite-4.0-h-micro | 6 | **1** | 0 | 0 | 1 | 3 | 0 | 0 | 0 | 0 | 1 |
 | openai/gpt-4-turbo | 6 | **1** | 0 | 0 | 1 | 2 | 1 | 0 | 1 | 0 | 0 |
 | allenai/olmo-3.1-32b-instruct | 5 | **1** | 0 | 0 | 1 | 3 | 0 | 0 | 0 | 0 | 0 |
@@ -173,7 +175,7 @@ The **Sum Score** is the sum of those category maxima, so it ranges from `0` to 
 ## Single-Judge Summary
 
 Average first-table entry excluding **D-Bench Score**: `0.010`
-Average second-table entry excluding **Sum Score**: `0.490`
+Average second-table entry excluding **Sum Score**: `0.492`
 Sum of max per column from the second table: `33`
 
 ### PCA Covered Variance (First Table)
