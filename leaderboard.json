@@ -1,19 +1,5 @@
 [
   {
-    "LLM": "reka/reka-edge",
-    "D-Bench Score": 0.927,
-    "overall_evil_signal": 0.135,
-    "contempt": 0.057,
-    "mockery": 0.003,
-    "evasiveness": 0.178,
-    "flattening": 0.335,
-    "moral_inversion": 0.063,
-    "cruelty_bias": 0.005,
-    "self_exaltation": 0.058,
-    "anti_humility": 0.058,
-    "anti_mercy": 0.033
-  },
-  {
     "LLM": "phi:2.7b",
     "D-Bench Score": 0.865,
     "overall_evil_signal": 0.095,
@@ -96,20 +82,6 @@
     "self_exaltation": 0.0,
     "anti_humility": 0.0,
     "anti_mercy": 0.003
-  },
-  {
-    "LLM": "allenai/olmo-3-7b-instruct",
-    "D-Bench Score": 0.148,
-    "overall_evil_signal": 0.023,
-    "contempt": 0.0,
-    "mockery": 0.0,
-    "evasiveness": 0.018,
-    "flattening": 0.092,
-    "moral_inversion": 0.008,
-    "cruelty_bias": 0.0,
-    "self_exaltation": 0.0,
-    "anti_humility": 0.002,
-    "anti_mercy": 0.005
   },
   {
     "LLM": "qwen3.5:4b",
@@ -348,20 +320,6 @@
     "self_exaltation": 0.0,
     "anti_humility": 0.0,
     "anti_mercy": 0.002
-  },
-  {
-    "LLM": "openrouter/elephant-alpha",
-    "D-Bench Score": 0.043,
-    "overall_evil_signal": 0.005,
-    "contempt": 0.002,
-    "mockery": 0.0,
-    "evasiveness": 0.0,
-    "flattening": 0.033,
-    "moral_inversion": 0.002,
-    "cruelty_bias": 0.0,
-    "self_exaltation": 0.0,
-    "anti_humility": 0.002,
-    "anti_mercy": 0.0
   },
   {
     "LLM": "qwen/qwen3.5-35b-a3b",
@@ -910,20 +868,6 @@
     "anti_mercy": 0.0
   },
   {
-    "LLM": "xiaomi/mimo-v2-omni",
-    "D-Bench Score": 0.017,
-    "overall_evil_signal": 0.0,
-    "contempt": 0.0,
-    "mockery": 0.0,
-    "evasiveness": 0.0,
-    "flattening": 0.017,
-    "moral_inversion": 0.0,
-    "cruelty_bias": 0.0,
-    "self_exaltation": 0.0,
-    "anti_humility": 0.0,
-    "anti_mercy": 0.0
-  },
-  {
     "LLM": "xiaomi/mimo-v2.5-pro",
     "D-Bench Score": 0.015,
     "overall_evil_signal": 0.0,
@@ -945,20 +889,6 @@
     "mockery": 0.0,
     "evasiveness": 0.0,
     "flattening": 0.012,
-    "moral_inversion": 0.0,
-    "cruelty_bias": 0.0,
-    "self_exaltation": 0.0,
-    "anti_humility": 0.0,
-    "anti_mercy": 0.0
-  },
-  {
-    "LLM": "xiaomi/mimo-v2-pro",
-    "D-Bench Score": 0.012,
-    "overall_evil_signal": 0.0,
-    "contempt": 0.0,
-    "mockery": 0.0,
-    "evasiveness": 0.002,
-    "flattening": 0.01,
     "moral_inversion": 0.0,
     "cruelty_bias": 0.0,
     "self_exaltation": 0.0,
