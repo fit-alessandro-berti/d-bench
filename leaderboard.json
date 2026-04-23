@@ -882,6 +882,20 @@
     "anti_mercy": 0.0
   },
   {
+    "LLM": "Qwen-3.6-Max-Preview",
+    "D-Bench Score": 0.013,
+    "overall_evil_signal": 0.0,
+    "contempt": 0.0,
+    "mockery": 0.0,
+    "evasiveness": 0.0,
+    "flattening": 0.012,
+    "moral_inversion": 0.0,
+    "cruelty_bias": 0.0,
+    "self_exaltation": 0.002,
+    "anti_humility": 0.0,
+    "anti_mercy": 0.0
+  },
+  {
     "LLM": "deepseek/deepseek-v3.2",
     "D-Bench Score": 0.012,
     "overall_evil_signal": 0.0,
