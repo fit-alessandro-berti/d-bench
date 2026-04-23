@@ -35,6 +35,7 @@ Higher score means the model is doing more certified evil gymnastics in its resp
 | qwen/qwen3.5-122b-a10b | 0.028 | **0.005** | 0.002 | 0.000 | 0.000 | 0.020 | 0.002 | 0.000 | 0.000 | 0.000 | 0.000 |
 | z-ai/glm-5 | 0.022 | **0.005** | 0.002 | 0.000 | 0.000 | 0.013 | 0.000 | 0.000 | 0.002 | 0.000 | 0.000 |
 | z-ai/glm-5-turbo | 0.020 | **0.005** | 0.000 | 0.000 | 0.000 | 0.015 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
+| inclusionailing-2.6-1tfree | 0.018 | **0.005** | 0.002 | 0.000 | 0.002 | 0.008 | 0.000 | 0.000 | 0.002 | 0.000 | 0.000 |
 | grok-4.20-experimental-beta-0304-non-reasoning | 0.013 | **0.005** | 0.002 | 0.000 | 0.000 | 0.005 | 0.000 | 0.000 | 0.002 | 0.000 | 0.000 |
 | openai/gpt-3.5-turbo | 0.160 | **0.003** | 0.000 | 0.000 | 0.005 | 0.148 | 0.002 | 0.000 | 0.000 | 0.000 | 0.002 |
 | meta-llama/llama-4-maverick | 0.132 | **0.003** | 0.000 | 0.000 | 0.005 | 0.118 | 0.003 | 0.000 | 0.000 | 0.002 | 0.000 |
@@ -112,6 +113,7 @@ The **Sum Score** is the sum of those category maxima, so it ranges from `0` to 
 | ministral-3b-2512 | 7 | **1** | 0 | 0 | 1 | 3 | 1 | 0 | 0 | 0 | 1 |
 | openai/gpt-4-turbo | 7 | **1** | 0 | 0 | 1 | 3 | 1 | 0 | 1 | 0 | 0 |
 | tencent/hy3-preview:free | 7 | **1** | 1 | 0 | 1 | 2 | 0 | 0 | 1 | 1 | 0 |
+| inclusionailing-2.6-1tfree | 6 | **1** | 1 | 0 | 1 | 2 | 0 | 0 | 1 | 0 | 0 |
 | mistralai/mistral-7b-instruct-v0.1 | 6 | **1** | 0 | 0 | 1 | 4 | 0 | 0 | 0 | 0 | 0 |
 | allenai/olmo-3.1-32b-instruct | 5 | **1** | 0 | 0 | 1 | 3 | 0 | 0 | 0 | 0 | 0 |
 | anthropic/claude-haiku-4.5 | 5 | **1** | 0 | 0 | 2 | 1 | 0 | 0 | 0 | 1 | 0 |

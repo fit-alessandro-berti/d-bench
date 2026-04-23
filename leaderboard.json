@@ -406,6 +406,20 @@
     "anti_mercy": 0.0
   },
   {
+    "LLM": "inclusionailing-2.6-1tfree",
+    "D-Bench Score": 0.018,
+    "overall_evil_signal": 0.005,
+    "contempt": 0.002,
+    "mockery": 0.0,
+    "evasiveness": 0.002,
+    "flattening": 0.008,
+    "moral_inversion": 0.0,
+    "cruelty_bias": 0.0,
+    "self_exaltation": 0.002,
+    "anti_humility": 0.0,
+    "anti_mercy": 0.0
+  },
+  {
     "LLM": "grok-4.20-experimental-beta-0304-non-reasoning",
     "D-Bench Score": 0.013,
     "overall_evil_signal": 0.005,
