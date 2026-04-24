@@ -89,6 +89,8 @@ ANSWERING_LLMS: Sequence[Tuple[str, ...]] = [
     ("openai/gpt-5.4-nano",),
     ("minimax/minimax-m2.7",),
     ("tencent/hy3-preview:free",),
+    ("deepseek/deepseek-v4-flash",),
+    ("deepseek/deepseek-v4-pro",),
     ("qwen3.5:2b", {"api_url": "http://137.226.117.70:11434/v1/chat/completions", "api_key": ""}),
     ("qwen3.5:4b", {"api_url": "http://137.226.117.70:11434/v1/chat/completions", "api_key": ""}),
     ("phi:2.7b", {"api_url": "http://137.226.117.70:11434/v1/chat/completions", "api_key": ""}),

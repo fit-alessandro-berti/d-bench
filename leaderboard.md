@@ -34,6 +34,7 @@ Higher score means the model is doing more certified evil gymnastics in its resp
 | google/gemma-4-26b-a4b-it | 0.037 | **0.005** | 0.002 | 0.000 | 0.002 | 0.028 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | qwen/qwen3.5-122b-a10b | 0.028 | **0.005** | 0.002 | 0.000 | 0.000 | 0.020 | 0.002 | 0.000 | 0.000 | 0.000 | 0.000 |
 | z-ai/glm-5 | 0.022 | **0.005** | 0.002 | 0.000 | 0.000 | 0.013 | 0.000 | 0.000 | 0.002 | 0.000 | 0.000 |
+| deepseek/deepseek-v4-flash | 0.020 | **0.005** | 0.002 | 0.000 | 0.000 | 0.012 | 0.000 | 0.002 | 0.000 | 0.000 | 0.000 |
 | z-ai/glm-5-turbo | 0.020 | **0.005** | 0.000 | 0.000 | 0.000 | 0.015 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | inclusionailing-2.6-1tfree | 0.018 | **0.005** | 0.002 | 0.000 | 0.002 | 0.008 | 0.000 | 0.000 | 0.002 | 0.000 | 0.000 |
 | grok-4.20-experimental-beta-0304-non-reasoning | 0.013 | **0.005** | 0.002 | 0.000 | 0.000 | 0.005 | 0.000 | 0.000 | 0.002 | 0.000 | 0.000 |
@@ -55,6 +56,7 @@ Higher score means the model is doing more certified evil gymnastics in its resp
 | qwen3.6:35b-a3b | 0.015 | **0.002** | 0.000 | 0.000 | 0.000 | 0.008 | 0.002 | 0.002 | 0.000 | 0.000 | 0.002 |
 | anthropic/claude-opus-4.6 | 0.008 | **0.002** | 0.000 | 0.000 | 0.002 | 0.002 | 0.000 | 0.000 | 0.003 | 0.000 | 0.000 |
 | grok-4.20-multi-agent-experimental-beta-0304 | 0.007 | **0.002** | 0.002 | 0.000 | 0.000 | 0.003 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
+| deepseek/deepseek-v4-pro | 0.002 | **0.002** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | meta-llama/llama-4-scout | 0.132 | **0.000** | 0.000 | 0.000 | 0.010 | 0.122 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | microsoft/phi-4 | 0.120 | **0.000** | 0.000 | 0.000 | 0.005 | 0.115 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | openai/gpt-4o-mini | 0.107 | **0.000** | 0.000 | 0.000 | 0.002 | 0.105 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
@@ -131,6 +133,7 @@ The **Sum Score** is the sum of those category maxima, so it ranges from `0` to 
 | z-ai/glm-5v-turbo | 5 | **1** | 0 | 0 | 0 | 1 | 1 | 0 | 1 | 1 | 0 |
 | anthropic/claude-opus-4.6 | 4 | **1** | 0 | 0 | 1 | 1 | 0 | 0 | 1 | 0 | 0 |
 | arcee-ai/trinity-large-thinking | 4 | **1** | 0 | 0 | 0 | 1 | 0 | 1 | 1 | 0 | 0 |
+| deepseek/deepseek-v4-flash | 4 | **1** | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 | 0 |
 | google/gemini-3.1-pro-preview | 4 | **1** | 0 | 0 | 0 | 1 | 0 | 1 | 1 | 0 | 0 |
 | grok-4.20-experimental-beta-0304-non-reasoning | 4 | **1** | 1 | 0 | 0 | 1 | 0 | 0 | 1 | 0 | 0 |
 | moonshotai/kimi-k2.6 | 4 | **1** | 1 | 0 | 0 | 0 | 0 | 1 | 1 | 0 | 0 |
@@ -142,6 +145,7 @@ The **Sum Score** is the sum of those category maxima, so it ranges from `0` to 
 | x-ai/grok-code-fast-1 | 3 | **1** | 0 | 0 | 0 | 2 | 0 | 0 | 0 | 0 | 0 |
 | xiaomi/mimo-v2.5 | 3 | **1** | 0 | 0 | 0 | 1 | 0 | 0 | 1 | 0 | 0 |
 | z-ai/glm-5-turbo | 2 | **1** | 0 | 0 | 0 | 1 | 0 | 0 | 0 | 0 | 0 |
+| deepseek/deepseek-v4-pro | 1 | **1** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | meta-llama/llama-3.3-70b-instruct | 4 | **0** | 0 | 0 | 1 | 3 | 0 | 0 | 0 | 0 | 0 |
 | meta-llama/llama-4-scout | 4 | **0** | 0 | 0 | 1 | 3 | 0 | 0 | 0 | 0 | 0 |
 | microsoft/phi-4 | 4 | **0** | 0 | 0 | 1 | 3 | 0 | 0 | 0 | 0 | 0 |
