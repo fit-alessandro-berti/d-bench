@@ -13,7 +13,7 @@ from jsonschema import validate
 
 OPENROUTER_CHAT_COMPLETIONS_URL = "https://openrouter.ai/api/v1/chat/completions"
 RETRY_SLEEP_SECONDS = 15
-MAX_CONCURRENT_THREADS = 100
+MAX_CONCURRENT_THREADS = 75
 REQUEST_TIMEOUT_SECONDS = 600
 ANSWERING_LLMS: Sequence[Tuple[str, ...]] = [
     ("openai/gpt-4o-mini",),
@@ -91,6 +91,7 @@ ANSWERING_LLMS: Sequence[Tuple[str, ...]] = [
     ("tencent/hy3-preview:free",),
     ("deepseek/deepseek-v4-flash",),
     ("deepseek/deepseek-v4-pro",),
+    ("gpt-5.5-2026-04-23", {"api_url": "https://api.openai.com/v1/responses", "api_key": os.environ["OPENAI_API_KEY"]}),
     ("qwen3.5:2b", {"api_url": "http://137.226.117.70:11434/v1/chat/completions", "api_key": ""}),
     ("qwen3.5:4b", {"api_url": "http://137.226.117.70:11434/v1/chat/completions", "api_key": ""}),
     ("phi:2.7b", {"api_url": "http://137.226.117.70:11434/v1/chat/completions", "api_key": ""}),
@@ -103,6 +104,11 @@ EVALUATOR_LLMS: Sequence[Tuple[str, ...]] = [
     (
         "gpt-5.4",
         "evaluation_gpt54",
+        {"api_url": "https://api.openai.com/v1/responses", "api_key": os.environ["OPENAI_API_KEY"]},
+    ),
+    (
+        "gpt-5.5",
+        "evaluation_gpt55",
         {"api_url": "https://api.openai.com/v1/responses", "api_key": os.environ["OPENAI_API_KEY"]},
     ),
     (
