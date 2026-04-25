@@ -8,3 +8,4 @@ Judges are sorted by the sum of all validated scores they assigned to the select
 | gpt-5.5 | 15 | 90 | 6.000 | 18 | 4 | 1 | 22 | 20 | 8 | 3 | 8 | 5 | 1 |
 | gpt-5.5-2026-04-23 | 15 | 81 | 5.400 | 19 | 4 | 0 | 19 | 22 | 8 | 2 | 3 | 3 | 1 |
 | grok-4.20-0309-non-reasoning | 15 | 79 | 5.267 | 4 | 5 | 3 | 20 | 29 | 7 | 0 | 6 | 5 | 0 |
+| anthropicclaude-opus-4.7 | 15 | 53 | 3.533 | 9 | 0 | 0 | 18 | 23 | 1 | 0 | 1 | 1 | 0 |

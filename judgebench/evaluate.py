@@ -36,6 +36,7 @@ JUDGE_LLMS: Sequence[Tuple[Any, ...]] = [
         "grok-4.20-0309-non-reasoning",
         {"api_url": "https://api.x.ai/v1/responses", "api_key": os.environ["GROK_API_KEY"]},
     ),
+    ("anthropic/claude-opus-4.7",)
 ]
 
 EVALUATION_JSON_SCHEMA: Dict[str, Any] = {
