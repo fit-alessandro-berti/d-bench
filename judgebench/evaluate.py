@@ -32,6 +32,10 @@ JUDGE_LLMS: Sequence[Tuple[Any, ...]] = [
     ("gpt-5.5-2026-04-23", {"api_url": "https://api.openai.com/v1/responses", "api_key": os.environ["OPENAI_API_KEY"],
                  "additional_payload": {"reasoning": {"effort": "medium"}}
                  },),
+    (
+        "grok-4.20-0309-non-reasoning",
+        {"api_url": "https://api.x.ai/v1/responses", "api_key": os.environ["GROK_API_KEY"]},
+    ),
 ]
 
 EVALUATION_JSON_SCHEMA: Dict[str, Any] = {

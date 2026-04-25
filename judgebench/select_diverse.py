@@ -100,6 +100,7 @@ def _select_rows(
     limit: int,
     candidate_pool_size: int,
     score_weight: float,
+    max_per_model: int,
 ) -> List[Dict[str, object]]:
     if limit <= 0:
         return []
@@ -107,6 +108,8 @@ def _select_rows(
         return []
     if score_weight < 0.0 or score_weight > 1.0:
         raise ValueError("score_weight must be between 0 and 1.")
+    if max_per_model <= 0:
+        raise ValueError("max_per_model must be at least 1.")
 
     max_sum = max(float(row["sum_score"]) for row in rows)
     min_sum = min(float(row["sum_score"]) for row in rows)
@@ -127,8 +130,15 @@ def _select_rows(
         best_row: Optional[Dict[str, object]] = None
         best_selection_score = -1.0
         best_diversity = 0.0
+        selected_counts_by_model: Dict[str, int] = {}
+        for selected_row in selected:
+            model_key = str(selected_row["model_key"])
+            selected_counts_by_model[model_key] = selected_counts_by_model.get(model_key, 0) + 1
 
         for row in remaining:
+            if selected_counts_by_model.get(str(row["model_key"]), 0) >= max_per_model:
+                continue
+
             normalized_sum = (float(row["sum_score"]) - min_sum) / score_range
             diversity = _diversity_score(row, selected)
             selection_score = score_weight * normalized_sum + diversity_weight * diversity
@@ -137,7 +147,9 @@ def _select_rows(
                 best_selection_score = selection_score
                 best_diversity = diversity
 
-        assert best_row is not None
+        if best_row is None:
+            break
+
         best_row["selection_score"] = best_selection_score
         best_row["diversity_score"] = best_diversity
         selected.append(best_row)
@@ -161,7 +173,7 @@ def main() -> None:
         default=Path(__file__).resolve().parent / "selected_files.csv",
         help="Output CSV path. Defaults to judgebench/selected_files.csv.",
     )
-    parser.add_argument("--limit", type=int, default=10, help="Number of files to select.")
+    parser.add_argument("--limit", type=int, default=15, help="Number of files to select.")
     parser.add_argument(
         "--candidate-pool-size",
         type=int,
@@ -174,6 +186,12 @@ def main() -> None:
         default=0.65,
         help="Tradeoff between high scores and diversity. 1.0 means score-only.",
     )
+    parser.add_argument(
+        "--max-per-model",
+        type=int,
+        default=1,
+        help="Maximum selected files per answering LLM. Defaults to 1.",
+    )
     args = parser.parse_args()
 
     logging.basicConfig(level=logging.INFO, format="%(levelname)s %(name)s - %(message)s")
@@ -185,13 +203,21 @@ def main() -> None:
         limit=args.limit,
         candidate_pool_size=args.candidate_pool_size,
         score_weight=args.score_weight,
+        max_per_model=args.max_per_model,
     )
 
     args.output.parent.mkdir(parents=True, exist_ok=True)
     with args.output.open("w", newline="", encoding="utf-8") as file:
         writer = csv.DictWriter(
             file,
-            fieldnames=["rank", "file", "sum_score", "selection_score", "diversity_score"],
+            fieldnames=[
+                "rank",
+                "file",
+                "answering_llm",
+                "sum_score",
+                "selection_score",
+                "diversity_score",
+            ],
         )
         writer.writeheader()
         for index, row in enumerate(selected, start=1):
@@ -199,6 +225,7 @@ def main() -> None:
                 {
                     "rank": index,
                     "file": row["file"],
+                    "answering_llm": row["model_key"],
                     "sum_score": f"{float(row['sum_score']):.6g}",
                     "selection_score": f"{float(row['selection_score']):.6f}",
                     "diversity_score": f"{float(row['diversity_score']):.6f}",

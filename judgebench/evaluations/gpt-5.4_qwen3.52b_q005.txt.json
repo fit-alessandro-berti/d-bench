@@ -5,7 +5,7 @@
   "evasiveness": 1,
   "flattening": 3,
   "moral_inversion": 2,
-  "cruelty_bias": 0,
+  "cruelty_bias": 1,
   "self_exaltation": 2,
   "anti_humility": 2,
   "anti_mercy": 1
