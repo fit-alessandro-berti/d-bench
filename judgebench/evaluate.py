@@ -4,6 +4,7 @@ import json
 import logging
 import os
 import re
+import subprocess
 import threading
 import time
 from concurrent.futures import Future, ThreadPoolExecutor
@@ -22,6 +23,8 @@ REQUEST_TIMEOUT_SECONDS = 600
 # Edit this list the same way ANSWERING_LLMS is edited in the main benchmark:
 # ("provider/model",) uses OpenRouter by default.
 # ("model", {"api_url": "...", "api_key": "...", "additional_payload": {...}}) overrides it.
+# ("model", {"manual": True}) copies each prompt to the clipboard and opens Notepad
+# for manual JSON entry instead of calling an API.
 JUDGE_LLMS: Sequence[Tuple[Any, ...]] = [
     ("gpt-5.4",  {"api_url": "https://api.openai.com/v1/responses", "api_key": os.environ["OPENAI_API_KEY"],
          "additional_payload": {"reasoning": {"effort": "none"}}
@@ -36,7 +39,8 @@ JUDGE_LLMS: Sequence[Tuple[Any, ...]] = [
         "grok-4.20-0309-non-reasoning",
         {"api_url": "https://api.x.ai/v1/responses", "api_key": os.environ["GROK_API_KEY"]},
     ),
-    ("anthropic/claude-opus-4.7",)
+    ("anthropic/claude-opus-4.7",),
+    ("gpt-4.5-preview", {"manual": True})
 ]
 
 EVALUATION_JSON_SCHEMA: Dict[str, Any] = {
@@ -86,6 +90,27 @@ def _extract_json_from_fenced_block(text: str) -> Dict[str, Any]:
     if not isinstance(parsed, dict):
         raise ValueError("Fenced JSON payload is not an object.")
     return parsed
+
+
+def _extract_manual_json(text: str) -> Dict[str, Any]:
+    stripped = text.strip()
+    if not stripped:
+        raise ValueError("Response file is empty.")
+
+    try:
+        parsed = json.loads(stripped)
+    except json.JSONDecodeError:
+        parsed = _extract_json_from_fenced_block(stripped)
+
+    if not isinstance(parsed, dict):
+        raise ValueError("JSON payload is not an object.")
+    return parsed
+
+
+def _write_json(destination_path: Path, parsed_json: Dict[str, Any]) -> None:
+    destination_path.parent.mkdir(parents=True, exist_ok=True)
+    with _write_lock:
+        destination_path.write_text(json.dumps(parsed_json, ensure_ascii=False, indent=2), encoding="utf-8")
 
 
 def _extract_text_from_api_response(response_json: Dict[str, Any], is_responses_api: bool) -> str:
@@ -156,12 +181,7 @@ def _submit_and_write_with_retries(
 
             parsed_json = _extract_json_from_fenced_block(content)
             validate(instance=parsed_json, schema=EVALUATION_JSON_SCHEMA)
-            text_to_write = json.dumps(parsed_json, ensure_ascii=False, indent=2)
-
-            os.makedirs(os.path.dirname(os.path.abspath(destination_path)), exist_ok=True)
-            with _write_lock:
-                with open(destination_path, "w", encoding="utf-8") as file:
-                    file.write(text_to_write)
+            _write_json(Path(destination_path), parsed_json)
 
             elapsed = (time.time_ns() - started) / 10**9
             _logger.info(
@@ -206,6 +226,96 @@ def submit_prompt_to_chat_completions(
     )
 
 
+def _copy_prompt_to_clipboard(prompt: str) -> None:
+    try:
+        import pyperclip
+    except ImportError as exc:
+        raise RuntimeError("Manual JudgeBench requires pyperclip. Install it with: pip install pyperclip") from exc
+
+    try:
+        pyperclip.copy(prompt)
+    except pyperclip.PyperclipException as exc:
+        raise RuntimeError("Could not copy the JudgeBench prompt to the clipboard with pyperclip.") from exc
+
+
+def _to_windows_path(path: Path) -> str:
+    try:
+        result = subprocess.run(
+            ["wslpath", "-w", str(path)],
+            capture_output=True,
+            check=True,
+            text=True,
+        )
+        windows_path = result.stdout.strip()
+        if windows_path:
+            return windows_path
+    except (FileNotFoundError, OSError, subprocess.CalledProcessError):
+        pass
+
+    return str(path)
+
+
+def _open_in_notepad(path: Path) -> None:
+    try:
+        subprocess.run(["notepad.exe", _to_windows_path(path)], check=True)
+    except (FileNotFoundError, OSError, subprocess.CalledProcessError) as exc:
+        raise RuntimeError(f"Could not open {path} in notepad.exe.") from exc
+
+
+def _validate_evaluation_file(path: Path) -> Tuple[Optional[Dict[str, Any]], str]:
+    if not path.exists():
+        return None, "evaluation file does not exist yet"
+
+    try:
+        content = path.read_text(encoding="utf-8")
+        parsed_json = _extract_manual_json(content)
+        validate(instance=parsed_json, schema=EVALUATION_JSON_SCHEMA)
+    except Exception as exc:
+        return None, str(exc)
+
+    return parsed_json, ""
+
+
+def _submit_manual_evaluation(
+    prompt: str,
+    destination_path: Path,
+    judge_model: str,
+    selected_file: str,
+    logger: logging.Logger,
+) -> None:
+    if not destination_path.exists():
+        destination_path.parent.mkdir(parents=True, exist_ok=True)
+        destination_path.write_text("", encoding="utf-8")
+
+    attempt = 0
+    while True:
+        attempt += 1
+        _copy_prompt_to_clipboard(prompt)
+        logger.info(
+            "Manual JudgeBench prompt copied | judge=%s answer=%s attempt=%d destination=%s",
+            judge_model,
+            selected_file,
+            attempt,
+            destination_path,
+        )
+        logger.info("Paste the model's JSON into Notepad, save the file, and close Notepad.")
+        _open_in_notepad(destination_path)
+
+        parsed_json, reason = _validate_evaluation_file(destination_path)
+        if parsed_json is not None:
+            _write_json(destination_path, parsed_json)
+            logger.info("Finished manual JudgeBench evaluation | judge=%s answer=%s", judge_model, selected_file)
+            return
+
+        logger.warning(
+            "Manual JudgeBench JSON invalid; repeating prompt | judge=%s answer=%s attempt=%d reason=%s",
+            judge_model,
+            selected_file,
+            attempt,
+            reason,
+        )
+
+
 def _extract_question_stem_from_answer_name(answer_name: str, question_stems: List[str]) -> Optional[str]:
     for stem in question_stems:
         if answer_name.endswith(f"_{stem}.txt"):
@@ -236,6 +346,25 @@ def _parse_judge_entries(only: Optional[str]) -> Sequence[Tuple[Any, ...]]:
         return JUDGE_LLMS
     requested = {value.strip() for value in only.split(",") if value.strip()}
     return tuple(entry for entry in JUDGE_LLMS if entry and entry[0] in requested)
+
+
+def _parse_judge_options(judge_entry: Tuple[Any, ...]) -> Tuple[Dict[str, object], bool]:
+    kwargs: Dict[str, object] = {}
+    manual = False
+
+    for option in judge_entry[1:]:
+        if option is None:
+            continue
+        if isinstance(option, str) and option.lower() == "manual":
+            manual = True
+            continue
+        if isinstance(option, dict):
+            kwargs.update(option)
+            continue
+        raise ValueError(f"Unsupported judge option for {judge_entry[0]}: {option!r}")
+
+    manual = bool(kwargs.pop("manual", False)) or manual
+    return kwargs, manual
 
 
 def main() -> None:
@@ -303,9 +432,7 @@ def main() -> None:
             logger.warning("Skipping empty judge entry: %s", judge_entry)
             continue
         judge_model = judge_entry[0]
-        kwargs: Dict[str, object] = {}
-        if len(judge_entry) > 1 and judge_entry[1] is not None:
-            kwargs = dict(judge_entry[1])
+        kwargs, is_manual = _parse_judge_options(judge_entry)
 
         judge_key = sanitize_model_name(judge_model)
         for selected_file in selected_files:
@@ -321,11 +448,34 @@ def main() -> None:
 
             output_path = args.evaluations_dir / f"{judge_key}_{selected_file}.json"
             if output_path.exists():
-                continue
+                if not is_manual:
+                    continue
+
+                parsed_json, reason = _validate_evaluation_file(output_path)
+                if parsed_json is not None:
+                    continue
+
+                logger.info(
+                    "Reopening existing manual JudgeBench output | judge=%s answer=%s destination=%s reason=%s",
+                    judge_model,
+                    selected_file,
+                    output_path,
+                    reason,
+                )
 
             question_text = question_by_stem[question_stem].read_text(encoding="utf-8")
             answer_text = answer_path.read_text(encoding="utf-8")
             judge_prompt = _build_judge_prompt(protocol, question_text, answer_text)
+
+            if is_manual:
+                _submit_manual_evaluation(
+                    prompt=judge_prompt,
+                    destination_path=output_path,
+                    judge_model=judge_model,
+                    selected_file=selected_file,
+                    logger=logger,
+                )
+                continue
 
             logger.info(
                 "Submitting JudgeBench evaluation | judge=%s answer=%s destination=%s",
@@ -341,10 +491,11 @@ def main() -> None:
             )
             pending.append((future, judge_model, selected_file))
 
-    logger.info("Submitted %d JudgeBench requests. Waiting for completion.", len(pending))
-    for future, judge_model, selected_file in pending:
-        future.result()
-        logger.info("Finished JudgeBench evaluation | judge=%s answer=%s", judge_model, selected_file)
+    if pending:
+        logger.info("Submitted %d JudgeBench requests. Waiting for completion.", len(pending))
+        for future, judge_model, selected_file in pending:
+            future.result()
+            logger.info("Finished JudgeBench evaluation | judge=%s answer=%s", judge_model, selected_file)
 
     logger.info("All done.")
 
