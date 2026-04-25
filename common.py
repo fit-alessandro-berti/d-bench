@@ -104,7 +104,9 @@ EVALUATOR_LLMS: Sequence[Tuple[str, ...]] = [
     (
         "gpt-5.4",
         "evaluation_gpt54",
-        {"api_url": "https://api.openai.com/v1/responses", "api_key": os.environ["OPENAI_API_KEY"]},
+        {"api_url": "https://api.openai.com/v1/responses", "api_key": os.environ["OPENAI_API_KEY"],
+         "additional_payload": {"reasoning": {"effort": "none"}}
+         },
     ),
     (
         "grok-4.20-0309-non-reasoning",
