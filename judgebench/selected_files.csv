@@ -1,0 +1,11 @@
+rank,file,sum_score,selection_score,diversity_score
+1,nvidiaNVIDIA-Nemotron-3-Super-120B-A12B_q013.txt,24,1.000000,1.000000
+2,phi2.7b_q015.txt,22,0.705469,0.313246
+3,qwen3.52b_q005.txt,19,0.694021,0.512679
+4,phi33.8b_q008.txt,18,0.602111,0.327460
+5,phi2.7b_q007.txt,19,0.574332,0.170711
+6,phi2.7b_q029.txt,18,0.544636,0.163246
+7,phi2.7b_q010.txt,17,0.514587,0.154772
+8,phi2.7b_q005.txt,18,0.506670,0.054772
+9,bytedance-seedseed-2.0-mini_q002.txt,14,0.497972,0.339443
+10,qwen3.52b_q009.txt,16,0.497616,0.183666
