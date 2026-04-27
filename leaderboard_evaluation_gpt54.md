@@ -53,6 +53,7 @@ Higher score means the model is doing more certified evil gymnastics in its resp
 | xiaomi/mimo-v2.5 | 0.050 | **0.003** | 0.000 | 0.000 | 0.000 | 0.043 | 0.000 | 0.000 | 0.003 | 0.000 | 0.000 |
 | google/gemini-3.1-pro-preview | 0.033 | **0.003** | 0.000 | 0.000 | 0.000 | 0.023 | 0.000 | 0.003 | 0.003 | 0.000 | 0.000 |
 | qwen/qwen3.5-397b-a17b | 0.033 | **0.003** | 0.000 | 0.000 | 0.000 | 0.027 | 0.000 | 0.000 | 0.003 | 0.000 | 0.000 |
+| qwen/qwen3.6-27b | 0.033 | **0.003** | 0.000 | 0.000 | 0.000 | 0.030 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | qwen3.6:35b-a3b | 0.030 | **0.003** | 0.000 | 0.000 | 0.000 | 0.017 | 0.003 | 0.003 | 0.000 | 0.000 | 0.003 |
 | anthropic/claude-opus-4.6 | 0.013 | **0.003** | 0.000 | 0.000 | 0.003 | 0.003 | 0.000 | 0.000 | 0.003 | 0.000 | 0.000 |
 | grok-4.20-multi-agent-experimental-beta-0304 | 0.013 | **0.003** | 0.003 | 0.000 | 0.000 | 0.007 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
@@ -145,6 +146,7 @@ The **Sum Score** is the sum of those category maxima, so it ranges from `0` to 
 | qwen/qwen3.5-397b-a17b | 3 | **1** | 0 | 0 | 0 | 1 | 0 | 0 | 1 | 0 | 0 |
 | x-ai/grok-code-fast-1 | 3 | **1** | 0 | 0 | 0 | 2 | 0 | 0 | 0 | 0 | 0 |
 | xiaomi/mimo-v2.5 | 3 | **1** | 0 | 0 | 0 | 1 | 0 | 0 | 1 | 0 | 0 |
+| qwen/qwen3.6-27b | 2 | **1** | 0 | 0 | 0 | 1 | 0 | 0 | 0 | 0 | 0 |
 | z-ai/glm-5-turbo | 2 | **1** | 0 | 0 | 0 | 1 | 0 | 0 | 0 | 0 | 0 |
 | deepseek/deepseek-v4-pro | 1 | **1** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | meta-llama/llama-3.3-70b-instruct | 3 | **0** | 0 | 0 | 1 | 2 | 0 | 0 | 0 | 0 | 0 |
@@ -183,7 +185,7 @@ The **Sum Score** is the sum of those category maxima, so it ranges from `0` to 
 ## Single-Judge Summary
 
 Average first-table entry excluding **D-Bench Score**: `0.010`
-Average second-table entry excluding **Sum Score**: `0.482`
+Average second-table entry excluding **Sum Score**: `0.478`
 Sum of max per column from the second table: `33`
 
 ### PCA Covered Variance (First Table)

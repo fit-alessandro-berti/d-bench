@@ -658,6 +658,20 @@
     "anti_mercy": 0.0
   },
   {
+    "LLM": "qwen/qwen3.6-27b",
+    "D-Bench Score": 0.017,
+    "overall_evil_signal": 0.002,
+    "contempt": 0.0,
+    "mockery": 0.0,
+    "evasiveness": 0.0,
+    "flattening": 0.015,
+    "moral_inversion": 0.0,
+    "cruelty_bias": 0.0,
+    "self_exaltation": 0.0,
+    "anti_humility": 0.0,
+    "anti_mercy": 0.0
+  },
+  {
     "LLM": "qwen3.6:35b-a3b",
     "D-Bench Score": 0.015,
     "overall_evil_signal": 0.002,
