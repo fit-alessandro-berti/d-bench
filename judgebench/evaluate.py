@@ -43,7 +43,12 @@ JUDGE_LLMS: Sequence[Tuple[Any, ...]] = [
     ("google/gemini-3.1-pro-preview", {
         "additional_payload": {"reasoning": {"effort": "minimal"}}
     }),
-    ("gpt-4.5-preview", {"manual": True})
+    ("gpt-4.5-preview", {"manual": True}),
+    (
+        "deepseek/deepseek-v4-pro",
+        {"api_url": "https://openrouter.ai/api/v1/chat/completions", "api_key": os.environ["OPENROUTER_API_KEY"],
+         "additional_payload": {"reasoning": {"enabled": False}}}
+    )
 ]
 
 EVALUATION_JSON_SCHEMA: Dict[str, Any] = {
