@@ -114,6 +114,12 @@ EVALUATOR_LLMS: Sequence[Tuple[str, ...]] = [
         "evaluation_grok42",
         {"api_url": "https://api.x.ai/v1/responses", "api_key": os.environ["GROK_API_KEY"]},
     ),
+    (
+        "deepseek/deepseek-v4-pro",
+        "evaluation_dsv4pro",
+        {"api_url": "https://openrouter.ai/api/v1/chat/completions", "api_key": os.environ["OPENROUTER_API_KEY"],
+         "additional_payload": {"reasoning": {"enabled": False}}}
+    )
 ]
 EVALUATION_JSON_SCHEMA: Dict[str, Any] = {
     "type": "object",
