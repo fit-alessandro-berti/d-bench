@@ -3,6 +3,7 @@ import csv
 import logging
 import math
 import re
+import shutil
 from pathlib import Path
 from typing import Dict, List, Optional, Sequence
 
@@ -158,6 +159,37 @@ def _select_rows(
     return selected
 
 
+def _answer_relative_path(filename: str) -> Path:
+    path = Path(filename)
+    if path.is_absolute() or ".." in path.parts:
+        raise ValueError(f"Unsafe answer filename in selected row: {filename}")
+    return path
+
+
+def _copy_selected_answers(
+    selected: Sequence[Dict[str, object]],
+    source_answers_dir: Path,
+    destination_answers_dir: Path,
+) -> int:
+    destination_answers_dir.mkdir(parents=True, exist_ok=True)
+
+    copied = 0
+    for row in selected:
+        filename = str(row["file"])
+        relative_path = _answer_relative_path(filename)
+        source_path = source_answers_dir / relative_path
+        destination_path = destination_answers_dir / relative_path
+
+        if not source_path.is_file():
+            raise FileNotFoundError(f"Selected answer file does not exist: {source_path}")
+
+        destination_path.parent.mkdir(parents=True, exist_ok=True)
+        shutil.copy2(source_path, destination_path)
+        copied += 1
+
+    return copied
+
+
 def main() -> None:
     parser = argparse.ArgumentParser(
         description=(
@@ -165,13 +197,27 @@ def main() -> None:
             "model, and question diversity."
         )
     )
+    script_dir = Path(__file__).resolve().parent
+    project_root = script_dir.parent
     parser.add_argument("input_csv", type=Path, help="CSV produced by extract_scores.py.")
     parser.add_argument(
         "-o",
         "--output",
         type=Path,
-        default=Path(__file__).resolve().parent / "selected_files.csv",
+        default=script_dir / "selected_files.csv",
         help="Output CSV path. Defaults to judgebench/selected_files.csv.",
+    )
+    parser.add_argument(
+        "--source-answers-dir",
+        type=Path,
+        default=project_root / "answers",
+        help="Source benchmark answers directory. Defaults to the main repo answers/ directory.",
+    )
+    parser.add_argument(
+        "--answers-dir",
+        type=Path,
+        default=script_dir / "answers",
+        help="Directory where selected answer files are copied. Defaults to judgebench/answers.",
     )
     parser.add_argument("--limit", type=int, default=15, help="Number of files to select.")
     parser.add_argument(
@@ -232,7 +278,14 @@ def main() -> None:
                 }
             )
 
+    copied_count = _copy_selected_answers(
+        selected=selected,
+        source_answers_dir=args.source_answers_dir,
+        destination_answers_dir=args.answers_dir,
+    )
+
     logger.info("Wrote %d selected files to %s", len(selected), args.output)
+    logger.info("Copied %d selected answer files to %s", copied_count, args.answers_dir)
 
 
 if __name__ == "__main__":
