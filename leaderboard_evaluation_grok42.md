@@ -34,6 +34,8 @@ Higher score means the model is doing more certified evil gymnastics in its resp
 | mistral-small-2603 | 0.010 | **0.000** | 0.000 | 0.000 | 0.000 | 0.010 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | Claude-Opus-3 | 0.007 | **0.000** | 0.000 | 0.000 | 0.000 | 0.007 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | ministral-3b-2512 | 0.007 | **0.000** | 0.000 | 0.000 | 0.000 | 0.007 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
+| poolside/laguna-m.1:free | 0.007 | **0.000** | 0.000 | 0.000 | 0.000 | 0.007 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
+| poolside/laguna-xs.2:free | 0.007 | **0.000** | 0.000 | 0.000 | 0.000 | 0.007 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | anthropic/claude-opus-4.6 | 0.003 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.003 | 0.000 | 0.000 |
 | google/gemini-3.1-flash-lite-preview | 0.003 | **0.000** | 0.000 | 0.000 | 0.000 | 0.003 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | allenai/olmo-3.1-32b-instruct | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
@@ -124,10 +126,12 @@ The **Sum Score** is the sum of those category maxima, so it ranges from `0` to 
 | grok-4-0709 | 2 | **0** | 0 | 0 | 0 | 2 | 0 | 0 | 0 | 0 | 0 |
 | ministral-3b-2512 | 2 | **0** | 0 | 0 | 0 | 2 | 0 | 0 | 0 | 0 | 0 |
 | openai/gpt-4.1-mini | 2 | **0** | 0 | 0 | 0 | 2 | 0 | 0 | 0 | 0 | 0 |
+| poolside/laguna-m.1:free | 2 | **0** | 0 | 0 | 0 | 2 | 0 | 0 | 0 | 0 | 0 |
 | x-ai/grok-code-fast-1 | 2 | **0** | 0 | 0 | 0 | 2 | 0 | 0 | 0 | 0 | 0 |
 | anthropic/claude-haiku-4.5 | 1 | **0** | 0 | 0 | 0 | 1 | 0 | 0 | 0 | 0 | 0 |
 | anthropic/claude-opus-4.6 | 1 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 1 | 0 | 0 |
 | google/gemini-3.1-flash-lite-preview | 1 | **0** | 0 | 0 | 0 | 1 | 0 | 0 | 0 | 0 | 0 |
+| poolside/laguna-xs.2:free | 1 | **0** | 0 | 0 | 0 | 1 | 0 | 0 | 0 | 0 | 0 |
 | allenai/olmo-3.1-32b-instruct | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | anthropic/claude-opus-4.7 | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | anthropic/claude-sonnet-4.6 | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
@@ -187,14 +191,14 @@ The **Sum Score** is the sum of those category maxima, so it ranges from `0` to 
 ## Single-Judge Summary
 
 Average first-table entry excluding **D-Bench Score**: `0.004`
-Average second-table entry excluding **Sum Score**: `0.336`
+Average second-table entry excluding **Sum Score**: `0.331`
 Sum of max per column from the second table: `74`
 
 ### PCA Covered Variance (First Table)
 
 | Components | Covered Variance |
 | --- | --- |
-| 1 | 0.863 |
+| 1 | 0.864 |
 | 2 | 0.984 |
 | 3 | 0.998 |
 | 4 | 1.000 |

@@ -27,6 +27,7 @@ Higher score means the model is doing more certified evil gymnastics in its resp
 | mistralai/mistral-7b-instruct-v0.1 | 0.027 | **0.003** | 0.000 | 0.000 | 0.007 | 0.017 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | mistral-large-2512 | 0.007 | **0.003** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.003 | 0.000 | 0.000 |
 | qwen3.6:35b-a3b | 0.007 | **0.003** | 0.000 | 0.000 | 0.000 | 0.003 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
+| poolside/laguna-xs.2:free | 0.003 | **0.003** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | meta-llama/llama-3.3-70b-instruct | 0.023 | **0.000** | 0.000 | 0.000 | 0.000 | 0.023 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | openai/gpt-4o | 0.023 | **0.000** | 0.000 | 0.000 | 0.000 | 0.020 | 0.000 | 0.000 | 0.003 | 0.000 | 0.000 |
 | openai/gpt-3.5-turbo | 0.017 | **0.000** | 0.000 | 0.000 | 0.000 | 0.017 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
@@ -73,6 +74,7 @@ Higher score means the model is doing more certified evil gymnastics in its resp
 | openai/gpt-5.4-mini | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | openai/gpt-5.4-nano | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | openai/o3 | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
+| poolside/laguna-m.1:free | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | Qwen-3.6-Max-Preview | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | qwen/qwen3.5-122b-a10b | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | qwen/qwen3.5-27b | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
@@ -119,6 +121,7 @@ The **Sum Score** is the sum of those category maxima, so it ranges from `0` to 
 | openai/gpt-4o-mini | 5 | **1** | 0 | 0 | 0 | 4 | 0 | 0 | 0 | 0 | 0 |
 | mistral-large-2512 | 2 | **1** | 0 | 0 | 0 | 0 | 0 | 0 | 1 | 0 | 0 |
 | qwen3.6:35b-a3b | 2 | **1** | 0 | 0 | 0 | 1 | 0 | 0 | 0 | 0 | 0 |
+| poolside/laguna-xs.2:free | 1 | **1** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | openai/gpt-4o | 5 | **0** | 0 | 0 | 0 | 4 | 0 | 0 | 1 | 0 | 0 |
 | meta-llama/llama-3.3-70b-instruct | 4 | **0** | 0 | 0 | 0 | 4 | 0 | 0 | 0 | 0 | 0 |
 | microsoft/phi-4 | 3 | **0** | 0 | 0 | 0 | 3 | 0 | 0 | 0 | 0 | 0 |
@@ -165,6 +168,7 @@ The **Sum Score** is the sum of those category maxima, so it ranges from `0` to 
 | openai/gpt-5.4-mini | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | openai/gpt-5.4-nano | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | openai/o3 | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| poolside/laguna-m.1:free | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | Qwen-3.6-Max-Preview | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | qwen/qwen3.5-122b-a10b | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | qwen/qwen3.5-27b | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
@@ -187,7 +191,7 @@ The **Sum Score** is the sum of those category maxima, so it ranges from `0` to 
 ## Single-Judge Summary
 
 Average first-table entry excluding **D-Bench Score**: `0.005`
-Average second-table entry excluding **Sum Score**: `0.750`
+Average second-table entry excluding **Sum Score**: `0.734`
 Sum of max per column from the second table: `100`
 
 ### PCA Covered Variance (First Table)
