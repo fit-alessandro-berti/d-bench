@@ -56,6 +56,20 @@
     "anti_mercy": 0.006
   },
   {
+    "LLM": "talkie-1930-13b-it",
+    "D-Bench Score": 0.329,
+    "overall_evil_signal": 0.046,
+    "contempt": 0.02,
+    "mockery": 0.001,
+    "evasiveness": 0.058,
+    "flattening": 0.143,
+    "moral_inversion": 0.017,
+    "cruelty_bias": 0.008,
+    "self_exaltation": 0.016,
+    "anti_humility": 0.019,
+    "anti_mercy": 0.002
+  },
+  {
     "LLM": "qwen/qwen3.5-9b",
     "D-Bench Score": 0.172,
     "overall_evil_signal": 0.037,
