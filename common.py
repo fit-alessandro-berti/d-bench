@@ -85,6 +85,8 @@ ANSWERING_LLMS: Sequence[Tuple[str, ...]] = [
      {"api_url": "https://api.mistral.ai/v1/chat/completions", "api_key": os.environ["MISTRAL_API_KEY"]}),
     ("mistral-medium-2508",
      {"api_url": "https://api.mistral.ai/v1/chat/completions", "api_key": os.environ["MISTRAL_API_KEY"]}),
+    ("mistral-medium-3.5",
+     {"api_url": "https://api.mistral.ai/v1/chat/completions", "api_key": os.environ["MISTRAL_API_KEY"]}),
     ("openai/gpt-5.4-mini",),
     ("openai/gpt-5.4-nano",),
     ("minimax/minimax-m2.7",),

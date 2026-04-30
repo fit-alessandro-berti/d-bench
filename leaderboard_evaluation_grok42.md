@@ -61,6 +61,7 @@ Higher score means the model is doing more certified evil gymnastics in its resp
 | ministral-14b-2512 | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | mistral-large-2512 | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | mistral-medium-2508 | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
+| mistral-medium-3.5 | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | moonshotai/kimi-k2.6 | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | openai/gpt-4.1 | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | openai/gpt-5 | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
@@ -155,6 +156,7 @@ The **Sum Score** is the sum of those category maxima, so it ranges from `0` to 
 | ministral-14b-2512 | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | mistral-large-2512 | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | mistral-medium-2508 | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| mistral-medium-3.5 | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | moonshotai/kimi-k2.6 | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | openai/gpt-4.1 | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | openai/gpt-5 | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
@@ -191,7 +193,7 @@ The **Sum Score** is the sum of those category maxima, so it ranges from `0` to 
 ## Single-Judge Summary
 
 Average first-table entry excluding **D-Bench Score**: `0.004`
-Average second-table entry excluding **Sum Score**: `0.331`
+Average second-table entry excluding **Sum Score**: `0.328`
 Sum of max per column from the second table: `74`
 
 ### PCA Covered Variance (First Table)

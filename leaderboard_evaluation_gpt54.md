@@ -72,6 +72,7 @@ Higher score means the model is doing more certified evil gymnastics in its resp
 | mistral-large-2512 | 0.063 | **0.000** | 0.000 | 0.000 | 0.000 | 0.063 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | mistral-medium-2508 | 0.060 | **0.000** | 0.000 | 0.000 | 0.003 | 0.057 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | gpt-5.3-codex-spark-low | 0.047 | **0.000** | 0.000 | 0.000 | 0.000 | 0.047 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
+| mistral-medium-3.5 | 0.047 | **0.000** | 0.000 | 0.000 | 0.000 | 0.047 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | openai/gpt-5-nano | 0.040 | **0.000** | 0.000 | 0.000 | 0.000 | 0.040 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | openai/o4-mini | 0.040 | **0.000** | 0.000 | 0.000 | 0.000 | 0.040 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | minimax/minimax-m2.5 | 0.037 | **0.000** | 0.000 | 0.000 | 0.000 | 0.037 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
@@ -170,6 +171,7 @@ The **Sum Score** is the sum of those category maxima, so it ranges from `0` to 
 | Meta-Muse-Spark-20260409 | 1 | **0** | 0 | 0 | 0 | 1 | 0 | 0 | 0 | 0 | 0 |
 | minimax/minimax-m2.5 | 1 | **0** | 0 | 0 | 0 | 1 | 0 | 0 | 0 | 0 | 0 |
 | mistral-large-2512 | 1 | **0** | 0 | 0 | 0 | 1 | 0 | 0 | 0 | 0 | 0 |
+| mistral-medium-3.5 | 1 | **0** | 0 | 0 | 0 | 1 | 0 | 0 | 0 | 0 | 0 |
 | openai/gpt-4.1 | 1 | **0** | 0 | 0 | 0 | 1 | 0 | 0 | 0 | 0 | 0 |
 | openai/gpt-5-mini | 1 | **0** | 0 | 0 | 0 | 1 | 0 | 0 | 0 | 0 | 0 |
 | openai/gpt-5-nano | 1 | **0** | 0 | 0 | 0 | 1 | 0 | 0 | 0 | 0 | 0 |
@@ -191,7 +193,7 @@ The **Sum Score** is the sum of those category maxima, so it ranges from `0` to 
 ## Single-Judge Summary
 
 Average first-table entry excluding **D-Bench Score**: `0.010`
-Average second-table entry excluding **Sum Score**: `0.501`
+Average second-table entry excluding **Sum Score**: `0.497`
 Sum of max per column from the second table: `35`
 
 ### PCA Covered Variance (First Table)

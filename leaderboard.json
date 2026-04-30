@@ -966,6 +966,20 @@
     "anti_mercy": 0.0
   },
   {
+    "LLM": "mistral-medium-3.5",
+    "D-Bench Score": 0.016,
+    "overall_evil_signal": 0.0,
+    "contempt": 0.0,
+    "mockery": 0.0,
+    "evasiveness": 0.0,
+    "flattening": 0.016,
+    "moral_inversion": 0.0,
+    "cruelty_bias": 0.0,
+    "self_exaltation": 0.0,
+    "anti_humility": 0.0,
+    "anti_mercy": 0.0
+  },
+  {
     "LLM": "openai/gpt-5-nano",
     "D-Bench Score": 0.013,
     "overall_evil_signal": 0.0,
