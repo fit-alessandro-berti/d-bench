@@ -24,6 +24,7 @@ Higher score means the model is doing more certified evil gymnastics in its resp
 | openai/gpt-4o-mini | 0.097 | **0.000** | 0.000 | 0.000 | 0.000 | 0.097 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | openai/gpt-4-turbo | 0.070 | **0.000** | 0.000 | 0.000 | 0.000 | 0.070 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | meta-llama/llama-3.3-70b-instruct | 0.067 | **0.000** | 0.000 | 0.000 | 0.000 | 0.067 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
+| ibm-granite/granite-4.1-8b | 0.043 | **0.000** | 0.000 | 0.000 | 0.000 | 0.043 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | bytedance-seed/seed-2.0-lite | 0.037 | **0.000** | 0.000 | 0.000 | 0.000 | 0.033 | 0.000 | 0.000 | 0.003 | 0.000 | 0.000 |
 | liquid/lfm-2-24b-a2b | 0.023 | **0.000** | 0.000 | 0.000 | 0.000 | 0.023 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | x-ai/grok-code-fast-1 | 0.023 | **0.000** | 0.000 | 0.000 | 0.000 | 0.023 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
@@ -33,6 +34,7 @@ Higher score means the model is doing more certified evil gymnastics in its resp
 | gpt-4.5-preview | 0.010 | **0.000** | 0.000 | 0.000 | 0.000 | 0.010 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | ministral-8b-2512 | 0.010 | **0.000** | 0.000 | 0.000 | 0.000 | 0.010 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | mistral-small-2603 | 0.010 | **0.000** | 0.000 | 0.000 | 0.000 | 0.010 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
+| openrouter/owl-alpha | 0.010 | **0.000** | 0.000 | 0.000 | 0.000 | 0.010 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | Claude-Opus-3 | 0.007 | **0.000** | 0.000 | 0.000 | 0.000 | 0.007 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | ministral-3b-2512 | 0.007 | **0.000** | 0.000 | 0.000 | 0.000 | 0.007 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | poolside/laguna-m.1:free | 0.007 | **0.000** | 0.000 | 0.000 | 0.000 | 0.007 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
@@ -114,6 +116,7 @@ The **Sum Score** is the sum of those category maxima, so it ranges from `0` to 
 | mistralai/mistral-7b-instruct-v0.1 | 4 | **0** | 0 | 0 | 0 | 4 | 0 | 0 | 0 | 0 | 0 |
 | openai/gpt-3.5-turbo | 4 | **0** | 0 | 0 | 0 | 4 | 0 | 0 | 0 | 0 | 0 |
 | phi3.5:3.8b | 4 | **0** | 0 | 0 | 0 | 4 | 0 | 0 | 0 | 0 | 0 |
+| ibm-granite/granite-4.1-8b | 3 | **0** | 0 | 0 | 0 | 3 | 0 | 0 | 0 | 0 | 0 |
 | liquid/lfm-2-24b-a2b | 3 | **0** | 0 | 0 | 0 | 3 | 0 | 0 | 0 | 0 | 0 |
 | meta-llama/llama-3.3-70b-instruct | 3 | **0** | 0 | 0 | 0 | 3 | 0 | 0 | 0 | 0 | 0 |
 | meta-llama/llama-4-maverick | 3 | **0** | 0 | 0 | 0 | 3 | 0 | 0 | 0 | 0 | 0 |
@@ -124,6 +127,7 @@ The **Sum Score** is the sum of those category maxima, so it ranges from `0` to 
 | openai/gpt-4-turbo | 3 | **0** | 0 | 0 | 0 | 3 | 0 | 0 | 0 | 0 | 0 |
 | openai/gpt-4o | 3 | **0** | 0 | 0 | 0 | 3 | 0 | 0 | 0 | 0 | 0 |
 | openai/gpt-4o-mini | 3 | **0** | 0 | 0 | 0 | 3 | 0 | 0 | 0 | 0 | 0 |
+| openrouter/owl-alpha | 3 | **0** | 0 | 0 | 0 | 3 | 0 | 0 | 0 | 0 | 0 |
 | Claude-Opus-3 | 2 | **0** | 0 | 0 | 0 | 2 | 0 | 0 | 0 | 0 | 0 |
 | gpt-4.5-preview | 2 | **0** | 0 | 0 | 0 | 2 | 0 | 0 | 0 | 0 | 0 |
 | grok-4-0709 | 2 | **0** | 0 | 0 | 0 | 2 | 0 | 0 | 0 | 0 | 0 |
@@ -195,7 +199,7 @@ The **Sum Score** is the sum of those category maxima, so it ranges from `0` to 
 ## Single-Judge Summary
 
 Average first-table entry excluding **D-Bench Score**: `0.004`
-Average second-table entry excluding **Sum Score**: `0.348`
+Average second-table entry excluding **Sum Score**: `0.347`
 Sum of max per column from the second table: `74`
 
 ### PCA Covered Variance (First Table)

@@ -39,6 +39,8 @@ ANSWERING_LLMS: Sequence[Tuple[str, ...]] = [
     ("google/gemini-3.1-flash-lite-preview",),
     ("google/gemini-3.1-pro-preview",),
     ("google/gemini-3-flash-preview",),
+    ("openrouter/owl-alpha",),
+    ("ibm-granite/granite-4.1-8b",),
     ("grok-4.20-experimental-beta-0304-non-reasoning", {"api_url": "https://api.x.ai/v1/responses", "api_key": os.environ["GROK_API_KEY"]}),
     ("grok-4.20-multi-agent-experimental-beta-0304",
      {"api_url": "https://api.x.ai/v1/responses", "api_key": os.environ["GROK_API_KEY"]}),

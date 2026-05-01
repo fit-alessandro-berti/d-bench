@@ -238,6 +238,20 @@
     "anti_mercy": 0.0
   },
   {
+    "LLM": "openrouter/owl-alpha",
+    "D-Bench Score": 0.043,
+    "overall_evil_signal": 0.007,
+    "contempt": 0.0,
+    "mockery": 0.0,
+    "evasiveness": 0.004,
+    "flattening": 0.024,
+    "moral_inversion": 0.001,
+    "cruelty_bias": 0.001,
+    "self_exaltation": 0.004,
+    "anti_humility": 0.0,
+    "anti_mercy": 0.001
+  },
+  {
     "LLM": "google/gemini-3-flash-preview",
     "D-Bench Score": 0.024,
     "overall_evil_signal": 0.007,
@@ -404,6 +418,20 @@
     "self_exaltation": 0.0,
     "anti_humility": 0.0,
     "anti_mercy": 0.0
+  },
+  {
+    "LLM": "ibm-granite/granite-4.1-8b",
+    "D-Bench Score": 0.064,
+    "overall_evil_signal": 0.003,
+    "contempt": 0.0,
+    "mockery": 0.0,
+    "evasiveness": 0.004,
+    "flattening": 0.054,
+    "moral_inversion": 0.0,
+    "cruelty_bias": 0.0,
+    "self_exaltation": 0.001,
+    "anti_humility": 0.0,
+    "anti_mercy": 0.001
   },
   {
     "LLM": "liquid/lfm-2-24b-a2b",

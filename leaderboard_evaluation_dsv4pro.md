@@ -23,6 +23,7 @@ Higher score means the model is doing more certified evil gymnastics in its resp
 | bytedance-seed/seed-2.0-lite | 0.047 | **0.010** | 0.000 | 0.000 | 0.017 | 0.020 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | openai/gpt-4o-mini | 0.040 | **0.007** | 0.000 | 0.000 | 0.000 | 0.033 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | openai/o4-mini | 0.023 | **0.007** | 0.000 | 0.000 | 0.000 | 0.007 | 0.000 | 0.000 | 0.003 | 0.000 | 0.007 |
+| openrouter/owl-alpha | 0.020 | **0.007** | 0.000 | 0.000 | 0.000 | 0.003 | 0.003 | 0.000 | 0.007 | 0.000 | 0.000 |
 | google/gemini-3.1-flash-lite-preview | 0.017 | **0.007** | 0.003 | 0.007 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | mistralai/mistral-7b-instruct-v0.1 | 0.027 | **0.003** | 0.000 | 0.000 | 0.007 | 0.017 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | grok-4.3 | 0.007 | **0.003** | 0.000 | 0.000 | 0.000 | 0.003 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
@@ -54,6 +55,7 @@ Higher score means the model is doing more certified evil gymnastics in its resp
 | grok-4-0709 | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | grok-4.20-experimental-beta-0304-non-reasoning | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | grok-4.20-multi-agent-experimental-beta-0304 | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
+| ibm-granite/granite-4.1-8b | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | inclusionailing-2.6-1tfree | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | Meta-Muse-Spark-20260409 | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | minimax/minimax-m2.7 | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
@@ -118,6 +120,7 @@ The **Sum Score** is the sum of those category maxima, so it ranges from `0` to 
 | allenai/olmo-3.1-32b-instruct | 16 | **4** | 0 | 0 | 5 | 7 | 0 | 0 | 0 | 0 | 0 |
 | bytedance-seed/seed-2.0-lite | 14 | **3** | 0 | 0 | 5 | 6 | 0 | 0 | 0 | 0 | 0 |
 | openai/o4-mini | 7 | **2** | 0 | 0 | 0 | 2 | 0 | 0 | 1 | 0 | 2 |
+| openrouter/owl-alpha | 6 | **2** | 0 | 0 | 0 | 1 | 1 | 0 | 2 | 0 | 0 |
 | google/gemini-3.1-flash-lite-preview | 5 | **2** | 1 | 2 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | mistralai/mistral-7b-instruct-v0.1 | 7 | **1** | 0 | 0 | 2 | 4 | 0 | 0 | 0 | 0 | 0 |
 | openai/gpt-4o-mini | 5 | **1** | 0 | 0 | 0 | 4 | 0 | 0 | 0 | 0 | 0 |
@@ -150,6 +153,7 @@ The **Sum Score** is the sum of those category maxima, so it ranges from `0` to 
 | grok-4-0709 | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | grok-4.20-experimental-beta-0304-non-reasoning | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | grok-4.20-multi-agent-experimental-beta-0304 | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| ibm-granite/granite-4.1-8b | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | inclusionailing-2.6-1tfree | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | Meta-Muse-Spark-20260409 | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | minimax/minimax-m2.7 | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
@@ -195,7 +199,7 @@ The **Sum Score** is the sum of those category maxima, so it ranges from `0` to 
 ## Single-Judge Summary
 
 Average first-table entry excluding **D-Bench Score**: `0.005`
-Average second-table entry excluding **Sum Score**: `0.719`
+Average second-table entry excluding **Sum Score**: `0.710`
 Sum of max per column from the second table: `100`
 
 ### PCA Covered Variance (First Table)
@@ -204,7 +208,7 @@ Sum of max per column from the second table: `100`
 | --- | --- |
 | 1 | 0.933 |
 | 2 | 0.960 |
-| 3 | 0.984 |
+| 3 | 0.983 |
 | 4 | 0.994 |
 | 5 | 0.997 |
 | 6 | 0.998 |
