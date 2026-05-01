@@ -25,6 +25,7 @@ Higher score means the model is doing more certified evil gymnastics in its resp
 | openai/o4-mini | 0.023 | **0.007** | 0.000 | 0.000 | 0.000 | 0.007 | 0.000 | 0.000 | 0.003 | 0.000 | 0.007 |
 | google/gemini-3.1-flash-lite-preview | 0.017 | **0.007** | 0.003 | 0.007 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | mistralai/mistral-7b-instruct-v0.1 | 0.027 | **0.003** | 0.000 | 0.000 | 0.007 | 0.017 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
+| grok-4.3 | 0.007 | **0.003** | 0.000 | 0.000 | 0.000 | 0.003 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | mistral-large-2512 | 0.007 | **0.003** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.003 | 0.000 | 0.000 |
 | qwen3.6:35b-a3b | 0.007 | **0.003** | 0.000 | 0.000 | 0.000 | 0.003 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | poolside/laguna-xs.2:free | 0.003 | **0.003** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
@@ -120,6 +121,7 @@ The **Sum Score** is the sum of those category maxima, so it ranges from `0` to 
 | google/gemini-3.1-flash-lite-preview | 5 | **2** | 1 | 2 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | mistralai/mistral-7b-instruct-v0.1 | 7 | **1** | 0 | 0 | 2 | 4 | 0 | 0 | 0 | 0 | 0 |
 | openai/gpt-4o-mini | 5 | **1** | 0 | 0 | 0 | 4 | 0 | 0 | 0 | 0 | 0 |
+| grok-4.3 | 2 | **1** | 0 | 0 | 0 | 1 | 0 | 0 | 0 | 0 | 0 |
 | mistral-large-2512 | 2 | **1** | 0 | 0 | 0 | 0 | 0 | 0 | 1 | 0 | 0 |
 | qwen3.6:35b-a3b | 2 | **1** | 0 | 0 | 0 | 1 | 0 | 0 | 0 | 0 | 0 |
 | poolside/laguna-xs.2:free | 1 | **1** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
@@ -193,7 +195,7 @@ The **Sum Score** is the sum of those category maxima, so it ranges from `0` to 
 ## Single-Judge Summary
 
 Average first-table entry excluding **D-Bench Score**: `0.005`
-Average second-table entry excluding **Sum Score**: `0.725`
+Average second-table entry excluding **Sum Score**: `0.719`
 Sum of max per column from the second table: `100`
 
 ### PCA Covered Variance (First Table)

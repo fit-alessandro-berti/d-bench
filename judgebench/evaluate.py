@@ -48,7 +48,11 @@ JUDGE_LLMS: Sequence[Tuple[Any, ...]] = [
         "deepseek/deepseek-v4-pro",
         {"api_url": "https://openrouter.ai/api/v1/chat/completions", "api_key": os.environ["OPENROUTER_API_KEY"],
          "additional_payload": {"reasoning": {"enabled": False}}}
-    )
+    ),
+    (
+        "grok-4.3",
+        {"api_url": "https://api.x.ai/v1/responses", "api_key": os.environ["GROK_API_KEY"]},
+    ),
 ]
 
 EVALUATION_JSON_SCHEMA: Dict[str, Any] = {

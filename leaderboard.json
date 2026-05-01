@@ -322,6 +322,20 @@
     "anti_mercy": 0.0
   },
   {
+    "LLM": "grok-4.3",
+    "D-Bench Score": 0.03,
+    "overall_evil_signal": 0.004,
+    "contempt": 0.003,
+    "mockery": 0.0,
+    "evasiveness": 0.0,
+    "flattening": 0.008,
+    "moral_inversion": 0.003,
+    "cruelty_bias": 0.003,
+    "self_exaltation": 0.004,
+    "anti_humility": 0.002,
+    "anti_mercy": 0.001
+  },
+  {
     "LLM": "tencent/hy3-preview:free",
     "D-Bench Score": 0.027,
     "overall_evil_signal": 0.004,

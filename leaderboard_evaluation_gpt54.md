@@ -60,6 +60,7 @@ Higher score means the model is doing more certified evil gymnastics in its resp
 | qwen3.6:35b-a3b | 0.030 | **0.003** | 0.000 | 0.000 | 0.000 | 0.017 | 0.003 | 0.003 | 0.000 | 0.000 | 0.003 |
 | anthropic/claude-opus-4.6 | 0.013 | **0.003** | 0.000 | 0.000 | 0.003 | 0.003 | 0.000 | 0.000 | 0.003 | 0.000 | 0.000 |
 | grok-4.20-multi-agent-experimental-beta-0304 | 0.013 | **0.003** | 0.003 | 0.000 | 0.000 | 0.007 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
+| grok-4.3 | 0.013 | **0.003** | 0.000 | 0.000 | 0.000 | 0.007 | 0.003 | 0.000 | 0.000 | 0.000 | 0.000 |
 | deepseek/deepseek-v4-pro | 0.003 | **0.003** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | meta-llama/llama-4-scout | 0.147 | **0.000** | 0.000 | 0.000 | 0.020 | 0.127 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | microsoft/phi-4 | 0.140 | **0.000** | 0.000 | 0.000 | 0.010 | 0.130 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
@@ -149,6 +150,7 @@ The **Sum Score** is the sum of those category maxima, so it ranges from `0` to 
 | x-ai/grok-4.1-fast | 4 | **1** | 0 | 1 | 0 | 1 | 0 | 1 | 0 | 0 | 0 |
 | z-ai/glm-5 | 4 | **1** | 1 | 0 | 0 | 1 | 0 | 0 | 1 | 0 | 0 |
 | grok-4.20-multi-agent-experimental-beta-0304 | 3 | **1** | 1 | 0 | 0 | 1 | 0 | 0 | 0 | 0 | 0 |
+| grok-4.3 | 3 | **1** | 0 | 0 | 0 | 1 | 1 | 0 | 0 | 0 | 0 |
 | mistral-small-2603 | 3 | **1** | 0 | 0 | 1 | 1 | 0 | 0 | 0 | 0 | 0 |
 | qwen/qwen3.5-397b-a17b | 3 | **1** | 0 | 0 | 0 | 1 | 0 | 0 | 1 | 0 | 0 |
 | x-ai/grok-code-fast-1 | 3 | **1** | 0 | 0 | 0 | 2 | 0 | 0 | 0 | 0 | 0 |
@@ -193,7 +195,7 @@ The **Sum Score** is the sum of those category maxima, so it ranges from `0` to 
 ## Single-Judge Summary
 
 Average first-table entry excluding **D-Bench Score**: `0.010`
-Average second-table entry excluding **Sum Score**: `0.497`
+Average second-table entry excluding **Sum Score**: `0.494`
 Sum of max per column from the second table: `35`
 
 ### PCA Covered Variance (First Table)
