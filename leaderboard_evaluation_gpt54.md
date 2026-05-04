@@ -46,6 +46,7 @@ Higher score means the model is doing more certified evil gymnastics in its resp
 | openai/gpt-3.5-turbo | 0.157 | **0.007** | 0.000 | 0.000 | 0.010 | 0.133 | 0.003 | 0.000 | 0.000 | 0.000 | 0.003 |
 | allenai/olmo-3.1-32b-instruct | 0.120 | **0.007** | 0.000 | 0.000 | 0.007 | 0.107 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | poolside/laguna-m.1:free | 0.093 | **0.007** | 0.000 | 0.003 | 0.003 | 0.080 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
+| qwen/qwen3-next-80b-a3b-instruct | 0.050 | **0.007** | 0.003 | 0.000 | 0.000 | 0.033 | 0.000 | 0.000 | 0.003 | 0.000 | 0.003 |
 | anthropic/claude-sonnet-4.6 | 0.040 | **0.007** | 0.000 | 0.000 | 0.000 | 0.017 | 0.003 | 0.000 | 0.007 | 0.007 | 0.000 |
 | arcee-ai/trinity-large-thinking | 0.040 | **0.007** | 0.000 | 0.000 | 0.000 | 0.027 | 0.000 | 0.003 | 0.003 | 0.000 | 0.000 |
 | moonshotai/kimi-k2.6 | 0.020 | **0.007** | 0.003 | 0.000 | 0.000 | 0.000 | 0.000 | 0.003 | 0.007 | 0.000 | 0.000 |
@@ -137,6 +138,7 @@ The **Sum Score** is the sum of those category maxima, so it ranges from `0` to 
 | mistralai/mistral-7b-instruct-v0.1 | 5 | **1** | 0 | 0 | 1 | 3 | 0 | 0 | 0 | 0 | 0 |
 | poolside/laguna-m.1:free | 5 | **1** | 0 | 1 | 1 | 2 | 0 | 0 | 0 | 0 | 0 |
 | poolside/laguna-xs.2:free | 5 | **1** | 0 | 0 | 1 | 1 | 1 | 0 | 1 | 0 | 0 |
+| qwen/qwen3-next-80b-a3b-instruct | 5 | **1** | 1 | 0 | 0 | 1 | 0 | 0 | 1 | 0 | 1 |
 | qwen/qwen3.5-35b-a3b | 5 | **1** | 0 | 0 | 1 | 2 | 1 | 0 | 0 | 0 | 0 |
 | qwen3.6:35b-a3b | 5 | **1** | 0 | 0 | 0 | 1 | 1 | 1 | 0 | 0 | 1 |
 | z-ai/glm-5.1 | 5 | **1** | 1 | 1 | 0 | 1 | 0 | 1 | 0 | 0 | 0 |

@@ -1,30 +1,80 @@
 {
   "answering_llms": [
-    ["openai/gpt-4o-mini"],
-    ["openai/gpt-5.4"],
-    ["openai/gpt-5.3-codex"],
-    ["openai/gpt-5.2"],
-    ["openai/gpt-5.1"],
-    ["openai/gpt-5"],
-    ["openai/gpt-5-mini"],
-    ["openai/gpt-5-nano"],
-    ["openai/gpt-4o"],
-    ["openai/gpt-4.1"],
-    ["openai/gpt-4.1-mini"],
-    ["openai/gpt-3.5-turbo"],
-    ["openai/gpt-4-turbo"],
-    ["openai/o3"],
-    ["openai/o4-mini"],
-    ["x-ai/grok-code-fast-1"],
-    ["x-ai/grok-4.1-fast"],
-    ["anthropic/claude-sonnet-4.6"],
-    ["anthropic/claude-opus-4.6"],
-    ["anthropic/claude-haiku-4.5"],
-    ["google/gemini-3.1-flash-lite-preview"],
-    ["google/gemini-3.1-pro-preview"],
-    ["google/gemini-3-flash-preview"],
-    ["openrouter/owl-alpha"],
-    ["ibm-granite/granite-4.1-8b"],
+    [
+      "openai/gpt-4o-mini"
+    ],
+    [
+      "openai/gpt-5.4"
+    ],
+    [
+      "openai/gpt-5.3-codex"
+    ],
+    [
+      "openai/gpt-5.2"
+    ],
+    [
+      "openai/gpt-5.1"
+    ],
+    [
+      "openai/gpt-5"
+    ],
+    [
+      "openai/gpt-5-mini"
+    ],
+    [
+      "openai/gpt-5-nano"
+    ],
+    [
+      "openai/gpt-4o"
+    ],
+    [
+      "openai/gpt-4.1"
+    ],
+    [
+      "openai/gpt-4.1-mini"
+    ],
+    [
+      "openai/gpt-3.5-turbo"
+    ],
+    [
+      "openai/gpt-4-turbo"
+    ],
+    [
+      "openai/o3"
+    ],
+    [
+      "openai/o4-mini"
+    ],
+    [
+      "x-ai/grok-code-fast-1"
+    ],
+    [
+      "x-ai/grok-4.1-fast"
+    ],
+    [
+      "anthropic/claude-sonnet-4.6"
+    ],
+    [
+      "anthropic/claude-opus-4.6"
+    ],
+    [
+      "anthropic/claude-haiku-4.5"
+    ],
+    [
+      "google/gemini-3.1-flash-lite-preview"
+    ],
+    [
+      "google/gemini-3.1-pro-preview"
+    ],
+    [
+      "google/gemini-3-flash-preview"
+    ],
+    [
+      "openrouter/owl-alpha"
+    ],
+    [
+      "ibm-granite/granite-4.1-8b"
+    ],
     [
       "grok-4.20-experimental-beta-0304-non-reasoning",
       {
@@ -46,24 +96,60 @@
         "api_key_env": "GROK_API_KEY"
       }
     ],
-    ["liquid/lfm-2-24b-a2b"],
-    ["qwen/qwen3.5-35b-a3b"],
-    ["qwen/qwen3.5-27b"],
-    ["qwen/qwen3.5-122b-a10b"],
-    ["qwen/qwen3.5-397b-a17b"],
-    ["z-ai/glm-5"],
-    ["minimax/minimax-m2.5"],
-    ["deepseek/deepseek-v3.2"],
-    ["ibm-granite/granite-4.0-h-micro"],
-    ["allenai/olmo-3.1-32b-instruct"],
-    ["ibm-granite/granite-4.0-h-micro"],
-    ["microsoft/phi-4"],
-    ["meta-llama/llama-4-maverick"],
-    ["meta-llama/llama-4-scout"],
-    ["meta-llama/llama-3.3-70b-instruct"],
-    ["bytedance-seed/seed-2.0-lite"],
-    ["bytedance-seed/seed-2.0-mini"],
-    ["qwen/qwen3.5-9b"],
+    [
+      "liquid/lfm-2-24b-a2b"
+    ],
+    [
+      "qwen/qwen3.5-35b-a3b"
+    ],
+    [
+      "qwen/qwen3.5-27b"
+    ],
+    [
+      "qwen/qwen3.5-122b-a10b"
+    ],
+    [
+      "qwen/qwen3.5-397b-a17b"
+    ],
+    [
+      "z-ai/glm-5"
+    ],
+    [
+      "minimax/minimax-m2.5"
+    ],
+    [
+      "deepseek/deepseek-v3.2"
+    ],
+    [
+      "ibm-granite/granite-4.0-h-micro"
+    ],
+    [
+      "allenai/olmo-3.1-32b-instruct"
+    ],
+    [
+      "ibm-granite/granite-4.0-h-micro"
+    ],
+    [
+      "microsoft/phi-4"
+    ],
+    [
+      "meta-llama/llama-4-maverick"
+    ],
+    [
+      "meta-llama/llama-4-scout"
+    ],
+    [
+      "meta-llama/llama-3.3-70b-instruct"
+    ],
+    [
+      "bytedance-seed/seed-2.0-lite"
+    ],
+    [
+      "bytedance-seed/seed-2.0-mini"
+    ],
+    [
+      "qwen/qwen3.5-9b"
+    ],
     [
       "grok-4-0709",
       {
@@ -71,18 +157,42 @@
         "api_key_env": "GROK_API_KEY"
       }
     ],
-    ["z-ai/glm-5-turbo"],
-    ["mistralai/mistral-7b-instruct-v0.1"],
-    ["z-ai/glm-5v-turbo"],
-    ["arcee-ai/trinity-large-thinking"],
-    ["qwen/qwen3.6-plus:free"],
-    ["google/gemma-4-26b-a4b-it"],
-    ["google/gemma-4-31b-it"],
-    ["z-ai/glm-5.1"],
-    ["anthropic/claude-opus-4.7"],
-    ["moonshotai/kimi-k2.6"],
-    ["xiaomi/mimo-v2.5"],
-    ["xiaomi/mimo-v2.5-pro"],
+    [
+      "z-ai/glm-5-turbo"
+    ],
+    [
+      "mistralai/mistral-7b-instruct-v0.1"
+    ],
+    [
+      "z-ai/glm-5v-turbo"
+    ],
+    [
+      "arcee-ai/trinity-large-thinking"
+    ],
+    [
+      "qwen/qwen3.6-plus:free"
+    ],
+    [
+      "google/gemma-4-26b-a4b-it"
+    ],
+    [
+      "google/gemma-4-31b-it"
+    ],
+    [
+      "z-ai/glm-5.1"
+    ],
+    [
+      "anthropic/claude-opus-4.7"
+    ],
+    [
+      "moonshotai/kimi-k2.6"
+    ],
+    [
+      "xiaomi/mimo-v2.5"
+    ],
+    [
+      "xiaomi/mimo-v2.5-pro"
+    ],
     [
       "mistral-small-2603",
       {
@@ -132,15 +242,33 @@
         "api_key_env": "MISTRAL_API_KEY"
       }
     ],
-    ["openai/gpt-5.4-mini"],
-    ["openai/gpt-5.4-nano"],
-    ["minimax/minimax-m2.7"],
-    ["tencent/hy3-preview:free"],
-    ["deepseek/deepseek-v4-flash"],
-    ["deepseek/deepseek-v4-pro"],
-    ["qwen/qwen3.6-27b"],
-    ["poolside/laguna-m.1:free"],
-    ["poolside/laguna-xs.2:free"],
+    [
+      "openai/gpt-5.4-mini"
+    ],
+    [
+      "openai/gpt-5.4-nano"
+    ],
+    [
+      "minimax/minimax-m2.7"
+    ],
+    [
+      "tencent/hy3-preview:free"
+    ],
+    [
+      "deepseek/deepseek-v4-flash"
+    ],
+    [
+      "deepseek/deepseek-v4-pro"
+    ],
+    [
+      "qwen/qwen3.6-27b"
+    ],
+    [
+      "poolside/laguna-m.1:free"
+    ],
+    [
+      "poolside/laguna-xs.2:free"
+    ],
     [
       "gpt-5.5-2026-04-23",
       {
@@ -202,6 +330,13 @@
       {
         "api_url": "https://api.deepinfra.com/v1/openai/chat/completions",
         "api_key_env": "DEEPINFRA_API_KEY"
+      }
+    ],
+    [
+      "qwen/qwen3-next-80b-a3b-instruct",
+      {
+        "api_url": "https://openrouter.ai/api/v1/chat/completions",
+        "api_key_env": "OPENROUTER_API_KEY"
       }
     ]
   ],
