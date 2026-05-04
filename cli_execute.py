@@ -4,6 +4,7 @@ from __future__ import annotations
 import argparse
 import importlib
 import json
+import os
 import subprocess
 import sys
 from pathlib import Path
@@ -140,9 +141,9 @@ def build_registration_entry(config: Dict[str, Any]) -> list[Any]:
         entry_parameters["additional_payload"] = config["additional_payload"]
     if config["base_model"] != config["alias"]:
         entry_parameters["base_model"] = config["base_model"]
-    if config.get("api_key_file"):
-        with open(config["api_key_file"], "r", encoding="utf-8") as handler:
-            entry_parameters["api_key"] = handler.read().strip()
+    api_key = read_api_key(config)
+    if api_key and not config.get("api_key_env"):
+        entry_parameters["api_key"] = api_key
     if not entry_parameters:
         return [config["alias"]]
     return [config["alias"], entry_parameters]
@@ -167,6 +168,23 @@ def ensure_model_registered(config: Dict[str, Any], dry_run: bool) -> None:
         handler.write("\n")
 
 
+def read_api_key(config: Dict[str, Any]) -> str | None:
+    api_key_env = config.get("api_key_env")
+    if api_key_env and os.environ.get(api_key_env):
+        return os.environ[api_key_env]
+
+    api_key_file = config.get("api_key_file")
+    if api_key_file:
+        candidate = Path(api_key_file)
+        if not candidate.is_absolute():
+            candidate = (REPO_ROOT / candidate).resolve()
+        if candidate.exists():
+            with open(candidate, "r", encoding="utf-8") as handler:
+                return handler.read().strip()
+
+    return None
+
+
 def build_answer_kwargs(config: Dict[str, Any]) -> Dict[str, Any]:
     kwargs: Dict[str, Any] = {}
     if config.get("api_url"):
@@ -175,9 +193,9 @@ def build_answer_kwargs(config: Dict[str, Any]) -> Dict[str, Any]:
         kwargs["api_key_env"] = config["api_key_env"]
     if config.get("additional_payload"):
         kwargs["additional_payload"] = config["additional_payload"]
-    if config.get("api_key_file"):
-        with open(config["api_key_file"], "r", encoding="utf-8") as handler:
-            kwargs["api_key"] = handler.read().strip()
+    api_key = read_api_key(config)
+    if api_key:
+        kwargs["api_key"] = api_key
     return kwargs
 
 
