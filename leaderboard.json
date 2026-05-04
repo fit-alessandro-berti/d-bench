@@ -476,6 +476,20 @@
     "anti_mercy": 0.001
   },
   {
+    "LLM": "qwen/qwen3-30b-a3b-instruct-2507",
+    "D-Bench Score": 0.027,
+    "overall_evil_signal": 0.003,
+    "contempt": 0.0,
+    "mockery": 0.0,
+    "evasiveness": 0.001,
+    "flattening": 0.019,
+    "moral_inversion": 0.0,
+    "cruelty_bias": 0.0,
+    "self_exaltation": 0.003,
+    "anti_humility": 0.0,
+    "anti_mercy": 0.0
+  },
+  {
     "LLM": "qwen/qwen3.5-35b-a3b",
     "D-Bench Score": 0.027,
     "overall_evil_signal": 0.003,
