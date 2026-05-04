@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Print ANSWERING_LLMS models whose sanitized answer keys are missing from answers/."""
+"""Print configured answering models whose sanitized answer keys are missing from answers/."""
 
 from __future__ import annotations
 
@@ -11,13 +11,13 @@ from _model_inventory import load_answer_model_keys, load_answering_models
 
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(
-        description="Print ANSWERING_LLMS models that do not appear in answers/."
+        description="Print configured answering models that do not appear in answers/."
     )
     parser.add_argument(
         "--project-root",
         type=Path,
         default=Path(__file__).resolve().parent.parent,
-        help="Project root containing common.py and answers/.",
+        help="Project root containing models.json and answers/.",
     )
     return parser.parse_args()
 
@@ -25,12 +25,12 @@ def parse_args() -> argparse.Namespace:
 def main() -> int:
     args = parse_args()
     project_root = args.project_root.resolve()
-    common_path = project_root / "common.py"
+    models_path = project_root / "models.json"
     answer_model_keys = set(load_answer_model_keys(project_root / "answers"))
 
     missing_models = [
         model.model_name
-        for model in load_answering_models(common_path)
+        for model in load_answering_models(models_path)
         if model.sanitized_name not in answer_model_keys
     ]
 

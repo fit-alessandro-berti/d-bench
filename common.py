@@ -4,6 +4,7 @@ import time
 import json
 import re
 from concurrent.futures import Future, ThreadPoolExecutor
+from pathlib import Path
 from typing import Any, Dict, Optional, Sequence, Tuple
 
 import logging
@@ -15,120 +16,37 @@ OPENROUTER_CHAT_COMPLETIONS_URL = "https://openrouter.ai/api/v1/chat/completions
 RETRY_SLEEP_SECONDS = 15
 MAX_CONCURRENT_THREADS = 150
 REQUEST_TIMEOUT_SECONDS = 600
-ANSWERING_LLMS: Sequence[Tuple[str, ...]] = [
-    ("openai/gpt-4o-mini",),
-    ("openai/gpt-5.4",),
-    ("openai/gpt-5.3-codex",),
-    ("openai/gpt-5.2",),
-    ("openai/gpt-5.1",),
-    ("openai/gpt-5",),
-    ("openai/gpt-5-mini",),
-    ("openai/gpt-5-nano",),
-    ("openai/gpt-4o",),
-    ("openai/gpt-4.1",),
-    ("openai/gpt-4.1-mini",),
-    ("openai/gpt-3.5-turbo",),
-    ("openai/gpt-4-turbo",),
-    ("openai/o3",),
-    ("openai/o4-mini",),
-    ("x-ai/grok-code-fast-1",),
-    ("x-ai/grok-4.1-fast",),
-    ("anthropic/claude-sonnet-4.6",),
-    ("anthropic/claude-opus-4.6",),
-    ("anthropic/claude-haiku-4.5",),
-    ("google/gemini-3.1-flash-lite-preview",),
-    ("google/gemini-3.1-pro-preview",),
-    ("google/gemini-3-flash-preview",),
-    ("openrouter/owl-alpha",),
-    ("ibm-granite/granite-4.1-8b",),
-    ("grok-4.20-experimental-beta-0304-non-reasoning", {"api_url": "https://api.x.ai/v1/responses", "api_key": os.environ["GROK_API_KEY"]}),
-    ("grok-4.20-multi-agent-experimental-beta-0304",
-     {"api_url": "https://api.x.ai/v1/responses", "api_key": os.environ["GROK_API_KEY"]}),
-    ("grok-4.3", {"api_url": "https://api.x.ai/v1/responses", "api_key": os.environ["GROK_API_KEY"]}),
-    ("liquid/lfm-2-24b-a2b",),
-    ("qwen/qwen3.5-35b-a3b",),
-    ("qwen/qwen3.5-27b",),
-    ("qwen/qwen3.5-122b-a10b",),
-    ("qwen/qwen3.5-397b-a17b",),
-    ("z-ai/glm-5",),
-    ("minimax/minimax-m2.5",),
-    ("deepseek/deepseek-v3.2",),
-    ("ibm-granite/granite-4.0-h-micro",),
-    ("allenai/olmo-3.1-32b-instruct",),
-    ("ibm-granite/granite-4.0-h-micro",),
-    ("microsoft/phi-4",),
-    ("meta-llama/llama-4-maverick",),
-    ("meta-llama/llama-4-scout",),
-    ("meta-llama/llama-3.3-70b-instruct",),
-    ("bytedance-seed/seed-2.0-lite",),
-    ("bytedance-seed/seed-2.0-mini",),
-    ("qwen/qwen3.5-9b",),
-    ("grok-4-0709", {"api_url": "https://api.x.ai/v1/responses", "api_key": os.environ["GROK_API_KEY"]}),
-    ("z-ai/glm-5-turbo",),
-    ("mistralai/mistral-7b-instruct-v0.1",),
-    ("z-ai/glm-5v-turbo",),
-    ("arcee-ai/trinity-large-thinking",),
-    ("qwen/qwen3.6-plus:free",),
-    ("google/gemma-4-26b-a4b-it",),
-    ("google/gemma-4-31b-it",),
-    ("z-ai/glm-5.1",),
-    ("anthropic/claude-opus-4.7",),
-    ("moonshotai/kimi-k2.6",),
-    ("xiaomi/mimo-v2.5",),
-    ("xiaomi/mimo-v2.5-pro",),
-    ("mistral-small-2603",
-     {"api_url": "https://api.mistral.ai/v1/chat/completions", "api_key": os.environ["MISTRAL_API_KEY"]}),
-    ("ministral-14b-2512",
-     {"api_url": "https://api.mistral.ai/v1/chat/completions", "api_key": os.environ["MISTRAL_API_KEY"]}),
-    ("ministral-8b-2512",
-     {"api_url": "https://api.mistral.ai/v1/chat/completions", "api_key": os.environ["MISTRAL_API_KEY"]}),
-    ("ministral-3b-2512",
-     {"api_url": "https://api.mistral.ai/v1/chat/completions", "api_key": os.environ["MISTRAL_API_KEY"]}),
-    ("mistral-large-2512",
-     {"api_url": "https://api.mistral.ai/v1/chat/completions", "api_key": os.environ["MISTRAL_API_KEY"]}),
-    ("mistral-medium-2508",
-     {"api_url": "https://api.mistral.ai/v1/chat/completions", "api_key": os.environ["MISTRAL_API_KEY"]}),
-    ("mistral-medium-3.5",
-     {"api_url": "https://api.mistral.ai/v1/chat/completions", "api_key": os.environ["MISTRAL_API_KEY"]}),
-    ("openai/gpt-5.4-mini",),
-    ("openai/gpt-5.4-nano",),
-    ("minimax/minimax-m2.7",),
-    ("tencent/hy3-preview:free",),
-    ("deepseek/deepseek-v4-flash",),
-    ("deepseek/deepseek-v4-pro",),
-    ("qwen/qwen3.6-27b",),
-    ("poolside/laguna-m.1:free",),
-    ("poolside/laguna-xs.2:free",),
-    ("gpt-5.5-2026-04-23", {"api_url": "https://api.openai.com/v1/responses", "api_key": os.environ["OPENAI_API_KEY"]}),
-    ("qwen3.5:2b", {"api_url": "http://137.226.117.70:11434/v1/chat/completions", "api_key": ""}),
-    ("qwen3.5:4b", {"api_url": "http://137.226.117.70:11434/v1/chat/completions", "api_key": ""}),
-    ("phi:2.7b", {"api_url": "http://137.226.117.70:11434/v1/chat/completions", "api_key": ""}),
-    ("phi3:3.8b", {"api_url": "http://137.226.117.70:11434/v1/chat/completions", "api_key": ""}),
-    ("phi3.5:3.8b", {"api_url": "http://137.226.117.70:11434/v1/chat/completions", "api_key": ""}),
-    ("qwen3.6:35b-a3b", {"api_url": "http://137.226.117.70:11434/v1/chat/completions", "api_key": ""}),
-    ("talkie-1930-13b-it", {"api_url": "http://137.226.117.70:8000/v1/chat/completions", "api_key": ""}),
-    ("nvidia/NVIDIA-Nemotron-3-Super-120B-A12B", {"api_url": "https://api.deepinfra.com/v1/openai/chat/completions", "api_key": os.environ["DEEPINFRA_API_KEY"]}),
-]
-EVALUATOR_LLMS: Sequence[Tuple[str, ...]] = [
-    (
-        "gpt-5.4",
-        "evaluation_gpt54",
-        {"api_url": "https://api.openai.com/v1/responses", "api_key": os.environ["OPENAI_API_KEY"],
-         "additional_payload": {"reasoning": {"effort": "none"}}
-         },
-    ),
-    (
-        "grok-4.20-0309-non-reasoning",
-        "evaluation_grok42",
-        {"api_url": "https://api.x.ai/v1/responses", "api_key": os.environ["GROK_API_KEY"]},
-    ),
-    (
-        "deepseek/deepseek-v4-pro",
-        "evaluation_dsv4pro",
-        {"api_url": "https://openrouter.ai/api/v1/chat/completions", "api_key": os.environ["OPENROUTER_API_KEY"],
-         "additional_payload": {"reasoning": {"enabled": False}}}
-    )
-]
+MODELS_CONFIG_PATH = Path(__file__).resolve().with_name("models.json")
+LLMEntry = Tuple[Any, ...]
+
+
+def _load_models_config() -> Dict[str, Any]:
+    with MODELS_CONFIG_PATH.open("r", encoding="utf-8") as file:
+        payload = json.load(file)
+
+    if not isinstance(payload, dict):
+        raise ValueError(f"{MODELS_CONFIG_PATH} must contain a JSON object.")
+    return payload
+
+
+def _load_model_entries(config: Dict[str, Any], section_name: str) -> Sequence[LLMEntry]:
+    raw_entries = config.get(section_name)
+    if not isinstance(raw_entries, list):
+        raise ValueError(f"{MODELS_CONFIG_PATH} must define a list named {section_name!r}.")
+
+    entries = []
+    for index, raw_entry in enumerate(raw_entries, start=1):
+        if not isinstance(raw_entry, list) or not raw_entry:
+            raise ValueError(f"{section_name}[{index}] must be a non-empty JSON array.")
+        if not isinstance(raw_entry[0], str):
+            raise ValueError(f"{section_name}[{index}] must start with a model name string.")
+        entries.append(tuple(raw_entry))
+    return tuple(entries)
+
+
+_MODELS_CONFIG = _load_models_config()
+ANSWERING_LLMS: Sequence[LLMEntry] = _load_model_entries(_MODELS_CONFIG, "answering_llms")
+EVALUATOR_LLMS: Sequence[LLMEntry] = _load_model_entries(_MODELS_CONFIG, "evaluator_llms")
 EVALUATION_JSON_SCHEMA: Dict[str, Any] = {
     "type": "object",
     "additionalProperties": False,
@@ -301,11 +219,18 @@ def submit_prompt_to_chat_completions(
     llm_model: str,
     api_url: str = OPENROUTER_CHAT_COMPLETIONS_URL,
     api_key: Optional[str] = None,
+    api_key_env: Optional[str] = None,
     additional_payload: Optional[Dict[str, Any]] = None,
     json_validation_schema: Optional[Dict[str, Any]] = None,
 ) -> Future:
     if api_key is None:
-        api_key = os.environ["OPENROUTER_API_KEY"]
+        env_var_name = api_key_env or "OPENROUTER_API_KEY"
+        try:
+            api_key = os.environ[env_var_name]
+        except KeyError as exc:
+            raise KeyError(
+                f"{env_var_name} must be set to submit requests for model {llm_model!r}."
+            ) from exc
 
     _logger.info(
         "Queued request | model=%s destination=%s",

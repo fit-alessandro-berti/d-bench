@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Print ANSWERING_LLMS models missing from the current OpenRouter model list."""
+"""Print configured answering models missing from the current OpenRouter model list."""
 
 from __future__ import annotations
 
@@ -35,7 +35,7 @@ def fetch_openrouter_model_ids(models_url: str, timeout_seconds: float) -> set[s
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(
         description=(
-            "Print ANSWERING_LLMS models that implicitly target OpenRouter, do not start with "
+            "Print configured answering models that implicitly target OpenRouter, do not start with "
             "a capital letter, and are no longer listed by OpenRouter."
         )
     )
@@ -43,7 +43,7 @@ def parse_args() -> argparse.Namespace:
         "--project-root",
         type=Path,
         default=Path(__file__).resolve().parent.parent,
-        help="Project root containing common.py.",
+        help="Project root containing models.json.",
     )
     parser.add_argument(
         "--models-url",
@@ -61,12 +61,12 @@ def parse_args() -> argparse.Namespace:
 
 def main() -> int:
     args = parse_args()
-    common_path = args.project_root.resolve() / "common.py"
+    models_path = args.project_root.resolve() / "models.json"
     available_model_ids = fetch_openrouter_model_ids(args.models_url, args.timeout_seconds)
 
     missing_models = [
         model.model_name
-        for model in load_answering_models(common_path)
+        for model in load_answering_models(models_path)
         if model.uses_openrouter
         and not starts_with_capital(model.model_name)
         and model.model_name not in available_model_ids

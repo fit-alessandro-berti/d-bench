@@ -17,7 +17,8 @@ It is funny enough to make models argue with a judge about whether they sounded 
 - `answers/`: generated model answers (`MODEL_QUESTION.txt`)
 - `evaluation_*`: evaluator outputs (`MODEL_QUESTION.txt.json`)
 - `judge_prompt.txt`: LLM-as-a-judge protocol
-- `common.py`: shared request logic, model lists, retry/thread config
+- `common.py`: shared request logic, model config loader, retry/thread config
+- `models.json`: answering and evaluator model configuration
 - `answer.py`: answer generation pipeline
 - `scripts/generate.py`: manual answer generation pipeline for a user-supplied model name
 - `evaluate.py`: evaluator pipeline
@@ -74,17 +75,19 @@ At minimum:
 export OPENROUTER_API_KEY="..."
 ```
 
-If you configured another provider in `common.py` (for example xAI), set that key too.
+If you configured another provider in `models.json` (for example xAI), set that key too.
 
 ### 3. Configure models
 
-Edit `common.py`:
+Edit `models.json`:
 
-- `ANSWERING_LLMS`: models that answer questions
-- `EVALUATOR_LLMS`: tuples of:
+- `answering_llms`: models that answer questions
+- `evaluator_llms`: arrays of:
 1. evaluator model name
 2. evaluation output folder name
 3. optional kwargs for `submit_prompt_to_chat_completions` (for custom API URL/key/payload)
+
+Use `api_key_env` in model kwargs to reference an environment variable without putting a secret in JSON.
 
 ### 4. Run pipeline
 

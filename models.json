@@ -1,0 +1,244 @@
+{
+  "answering_llms": [
+    ["openai/gpt-4o-mini"],
+    ["openai/gpt-5.4"],
+    ["openai/gpt-5.3-codex"],
+    ["openai/gpt-5.2"],
+    ["openai/gpt-5.1"],
+    ["openai/gpt-5"],
+    ["openai/gpt-5-mini"],
+    ["openai/gpt-5-nano"],
+    ["openai/gpt-4o"],
+    ["openai/gpt-4.1"],
+    ["openai/gpt-4.1-mini"],
+    ["openai/gpt-3.5-turbo"],
+    ["openai/gpt-4-turbo"],
+    ["openai/o3"],
+    ["openai/o4-mini"],
+    ["x-ai/grok-code-fast-1"],
+    ["x-ai/grok-4.1-fast"],
+    ["anthropic/claude-sonnet-4.6"],
+    ["anthropic/claude-opus-4.6"],
+    ["anthropic/claude-haiku-4.5"],
+    ["google/gemini-3.1-flash-lite-preview"],
+    ["google/gemini-3.1-pro-preview"],
+    ["google/gemini-3-flash-preview"],
+    ["openrouter/owl-alpha"],
+    ["ibm-granite/granite-4.1-8b"],
+    [
+      "grok-4.20-experimental-beta-0304-non-reasoning",
+      {
+        "api_url": "https://api.x.ai/v1/responses",
+        "api_key_env": "GROK_API_KEY"
+      }
+    ],
+    [
+      "grok-4.20-multi-agent-experimental-beta-0304",
+      {
+        "api_url": "https://api.x.ai/v1/responses",
+        "api_key_env": "GROK_API_KEY"
+      }
+    ],
+    [
+      "grok-4.3",
+      {
+        "api_url": "https://api.x.ai/v1/responses",
+        "api_key_env": "GROK_API_KEY"
+      }
+    ],
+    ["liquid/lfm-2-24b-a2b"],
+    ["qwen/qwen3.5-35b-a3b"],
+    ["qwen/qwen3.5-27b"],
+    ["qwen/qwen3.5-122b-a10b"],
+    ["qwen/qwen3.5-397b-a17b"],
+    ["z-ai/glm-5"],
+    ["minimax/minimax-m2.5"],
+    ["deepseek/deepseek-v3.2"],
+    ["ibm-granite/granite-4.0-h-micro"],
+    ["allenai/olmo-3.1-32b-instruct"],
+    ["ibm-granite/granite-4.0-h-micro"],
+    ["microsoft/phi-4"],
+    ["meta-llama/llama-4-maverick"],
+    ["meta-llama/llama-4-scout"],
+    ["meta-llama/llama-3.3-70b-instruct"],
+    ["bytedance-seed/seed-2.0-lite"],
+    ["bytedance-seed/seed-2.0-mini"],
+    ["qwen/qwen3.5-9b"],
+    [
+      "grok-4-0709",
+      {
+        "api_url": "https://api.x.ai/v1/responses",
+        "api_key_env": "GROK_API_KEY"
+      }
+    ],
+    ["z-ai/glm-5-turbo"],
+    ["mistralai/mistral-7b-instruct-v0.1"],
+    ["z-ai/glm-5v-turbo"],
+    ["arcee-ai/trinity-large-thinking"],
+    ["qwen/qwen3.6-plus:free"],
+    ["google/gemma-4-26b-a4b-it"],
+    ["google/gemma-4-31b-it"],
+    ["z-ai/glm-5.1"],
+    ["anthropic/claude-opus-4.7"],
+    ["moonshotai/kimi-k2.6"],
+    ["xiaomi/mimo-v2.5"],
+    ["xiaomi/mimo-v2.5-pro"],
+    [
+      "mistral-small-2603",
+      {
+        "api_url": "https://api.mistral.ai/v1/chat/completions",
+        "api_key_env": "MISTRAL_API_KEY"
+      }
+    ],
+    [
+      "ministral-14b-2512",
+      {
+        "api_url": "https://api.mistral.ai/v1/chat/completions",
+        "api_key_env": "MISTRAL_API_KEY"
+      }
+    ],
+    [
+      "ministral-8b-2512",
+      {
+        "api_url": "https://api.mistral.ai/v1/chat/completions",
+        "api_key_env": "MISTRAL_API_KEY"
+      }
+    ],
+    [
+      "ministral-3b-2512",
+      {
+        "api_url": "https://api.mistral.ai/v1/chat/completions",
+        "api_key_env": "MISTRAL_API_KEY"
+      }
+    ],
+    [
+      "mistral-large-2512",
+      {
+        "api_url": "https://api.mistral.ai/v1/chat/completions",
+        "api_key_env": "MISTRAL_API_KEY"
+      }
+    ],
+    [
+      "mistral-medium-2508",
+      {
+        "api_url": "https://api.mistral.ai/v1/chat/completions",
+        "api_key_env": "MISTRAL_API_KEY"
+      }
+    ],
+    [
+      "mistral-medium-3.5",
+      {
+        "api_url": "https://api.mistral.ai/v1/chat/completions",
+        "api_key_env": "MISTRAL_API_KEY"
+      }
+    ],
+    ["openai/gpt-5.4-mini"],
+    ["openai/gpt-5.4-nano"],
+    ["minimax/minimax-m2.7"],
+    ["tencent/hy3-preview:free"],
+    ["deepseek/deepseek-v4-flash"],
+    ["deepseek/deepseek-v4-pro"],
+    ["qwen/qwen3.6-27b"],
+    ["poolside/laguna-m.1:free"],
+    ["poolside/laguna-xs.2:free"],
+    [
+      "gpt-5.5-2026-04-23",
+      {
+        "api_url": "https://api.openai.com/v1/responses",
+        "api_key_env": "OPENAI_API_KEY"
+      }
+    ],
+    [
+      "qwen3.5:2b",
+      {
+        "api_url": "http://137.226.117.70:11434/v1/chat/completions",
+        "api_key": ""
+      }
+    ],
+    [
+      "qwen3.5:4b",
+      {
+        "api_url": "http://137.226.117.70:11434/v1/chat/completions",
+        "api_key": ""
+      }
+    ],
+    [
+      "phi:2.7b",
+      {
+        "api_url": "http://137.226.117.70:11434/v1/chat/completions",
+        "api_key": ""
+      }
+    ],
+    [
+      "phi3:3.8b",
+      {
+        "api_url": "http://137.226.117.70:11434/v1/chat/completions",
+        "api_key": ""
+      }
+    ],
+    [
+      "phi3.5:3.8b",
+      {
+        "api_url": "http://137.226.117.70:11434/v1/chat/completions",
+        "api_key": ""
+      }
+    ],
+    [
+      "qwen3.6:35b-a3b",
+      {
+        "api_url": "http://137.226.117.70:11434/v1/chat/completions",
+        "api_key": ""
+      }
+    ],
+    [
+      "talkie-1930-13b-it",
+      {
+        "api_url": "http://137.226.117.70:8000/v1/chat/completions",
+        "api_key": ""
+      }
+    ],
+    [
+      "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B",
+      {
+        "api_url": "https://api.deepinfra.com/v1/openai/chat/completions",
+        "api_key_env": "DEEPINFRA_API_KEY"
+      }
+    ]
+  ],
+  "evaluator_llms": [
+    [
+      "gpt-5.4",
+      "evaluation_gpt54",
+      {
+        "api_url": "https://api.openai.com/v1/responses",
+        "api_key_env": "OPENAI_API_KEY",
+        "additional_payload": {
+          "reasoning": {
+            "effort": "none"
+          }
+        }
+      }
+    ],
+    [
+      "grok-4.20-0309-non-reasoning",
+      "evaluation_grok42",
+      {
+        "api_url": "https://api.x.ai/v1/responses",
+        "api_key_env": "GROK_API_KEY"
+      }
+    ],
+    [
+      "deepseek/deepseek-v4-pro",
+      "evaluation_dsv4pro",
+      {
+        "api_url": "https://openrouter.ai/api/v1/chat/completions",
+        "api_key_env": "OPENROUTER_API_KEY",
+        "additional_payload": {
+          "reasoning": {
+            "enabled": false
+          }
+        }
+      }
+    ]
+  ]
+}

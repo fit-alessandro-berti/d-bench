@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Print answer model keys that do not map back to ANSWERING_LLMS."""
+"""Print answer model keys that do not map back to configured answering models."""
 
 from __future__ import annotations
 
@@ -12,7 +12,7 @@ from _model_inventory import load_answer_model_keys, load_answering_models, star
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(
         description=(
-            "Print answers/ model keys that do not appear in ANSWERING_LLMS, excluding keys "
+            "Print answers/ model keys that do not appear in models.json, excluding keys "
             "that start with a capital letter."
         )
     )
@@ -20,7 +20,7 @@ def parse_args() -> argparse.Namespace:
         "--project-root",
         type=Path,
         default=Path(__file__).resolve().parent.parent,
-        help="Project root containing common.py and answers/.",
+        help="Project root containing models.json and answers/.",
     )
     return parser.parse_args()
 
@@ -28,8 +28,8 @@ def parse_args() -> argparse.Namespace:
 def main() -> int:
     args = parse_args()
     project_root = args.project_root.resolve()
-    common_path = project_root / "common.py"
-    common_model_keys = {model.sanitized_name for model in load_answering_models(common_path)}
+    models_path = project_root / "models.json"
+    common_model_keys = {model.sanitized_name for model in load_answering_models(models_path)}
 
     missing_model_keys = [
         model_key

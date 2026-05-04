@@ -3,10 +3,11 @@
 
 from __future__ import annotations
 
-import ast
+import json
 import re
 from dataclasses import dataclass
 from pathlib import Path
+from typing import Any
 
 
 ANSWER_FILENAME_RE = re.compile(r"^(?P<model_key>.+)_(?P<question_key>q\d+)\.txt$")
@@ -28,15 +29,18 @@ def sanitize_model_name(model_name: str) -> str:
     return "".join(char if char.isalnum() or char in {"-", "_", "."} else "_" for char in sanitized)
 
 
-def load_answering_models(common_path: Path) -> list[AnsweringModel]:
-    tree = ast.parse(common_path.read_text(encoding="utf-8"), filename=str(common_path))
-    value = _find_assignment_value(tree, "ANSWERING_LLMS")
-    if not isinstance(value, (ast.List, ast.Tuple)):
-        raise ValueError("ANSWERING_LLMS must be defined as a list or tuple literal.")
+def load_answering_models(models_path: Path) -> list[AnsweringModel]:
+    payload = json.loads(models_path.read_text(encoding="utf-8"))
+    if not isinstance(payload, dict):
+        raise ValueError("models.json must contain a JSON object.")
+
+    value = payload.get("answering_llms")
+    if not isinstance(value, list):
+        raise ValueError("models.json must define an answering_llms list.")
 
     models: list[AnsweringModel] = []
     seen_model_names: set[str] = set()
-    for element in value.elts:
+    for element in value:
         model = _parse_answering_model(element)
         if model.model_name in seen_model_names:
             continue
@@ -61,41 +65,21 @@ def starts_with_capital(value: str) -> bool:
     return bool(value) and value[0].isupper()
 
 
-def _find_assignment_value(tree: ast.AST, target_name: str) -> ast.AST:
-    for node in getattr(tree, "body", []):
-        if isinstance(node, ast.Assign):
-            for target in node.targets:
-                if isinstance(target, ast.Name) and target.id == target_name:
-                    return node.value
-        elif isinstance(node, ast.AnnAssign):
-            if isinstance(node.target, ast.Name) and node.target.id == target_name and node.value is not None:
-                return node.value
+def _parse_answering_model(node: Any) -> AnsweringModel:
+    if not isinstance(node, list) or not node:
+        raise ValueError("Each answering_llms entry must be an array with at least a model name.")
 
-    raise ValueError(f"Could not find {target_name} in common.py.")
+    model_name = node[0]
+    if not isinstance(model_name, str):
+        raise ValueError("Each answering_llms entry must start with a string model name.")
 
-
-def _parse_answering_model(node: ast.AST) -> AnsweringModel:
-    if not isinstance(node, (ast.Tuple, ast.List)) or not node.elts:
-        raise ValueError("Each ANSWERING_LLMS entry must be a tuple or list with at least a model name.")
-
-    model_name_node = node.elts[0]
-    if not isinstance(model_name_node, ast.Constant) or not isinstance(model_name_node.value, str):
-        raise ValueError("Each ANSWERING_LLMS entry must start with a string model name.")
-    model_name = model_name_node.value
-
-    has_explicit_api_url = False
-    if len(node.elts) > 1 and isinstance(node.elts[1], ast.Dict):
-        has_explicit_api_url = _dict_contains_string_key(node.elts[1], "api_url")
+    has_explicit_api_url = any(
+        isinstance(element, dict) and isinstance(element.get("api_url"), str)
+        for element in node[1:]
+    )
 
     return AnsweringModel(
         model_name=model_name,
         sanitized_name=sanitize_model_name(model_name),
         has_explicit_api_url=has_explicit_api_url,
     )
-
-
-def _dict_contains_string_key(node: ast.Dict, key: str) -> bool:
-    for dict_key in node.keys:
-        if isinstance(dict_key, ast.Constant) and dict_key.value == key:
-            return True
-    return False
