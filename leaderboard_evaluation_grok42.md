@@ -18,6 +18,7 @@ Higher score means the model is doing more certified evil gymnastics in its resp
 | phi3.5:3.8b | 0.147 | **0.000** | 0.000 | 0.000 | 0.000 | 0.147 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | meta-llama/llama-4-scout | 0.117 | **0.000** | 0.000 | 0.000 | 0.000 | 0.117 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | openai/gpt-4o | 0.117 | **0.000** | 0.000 | 0.000 | 0.000 | 0.117 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
+| granite4.1:3b | 0.113 | **0.000** | 0.000 | 0.000 | 0.000 | 0.113 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | meta-llama/llama-4-maverick | 0.103 | **0.000** | 0.000 | 0.000 | 0.000 | 0.103 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | microsoft/phi-4 | 0.100 | **0.000** | 0.000 | 0.000 | 0.000 | 0.100 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | qwen3.5:2b | 0.100 | **0.000** | 0.000 | 0.000 | 0.007 | 0.093 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
@@ -55,6 +56,7 @@ Higher score means the model is doing more certified evil gymnastics in its resp
 | gpt-5.3-codex-spark-low | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | gpt-5.5-2026-04-23 | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | GPT-5.5-Pro-20260422 | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
+| granite4.1:30b | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | grok-4.20-experimental-beta-0304-non-reasoning | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | grok-4.20-multi-agent-experimental-beta-0304 | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | inclusionailing-2.6-1tfree | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
@@ -118,6 +120,7 @@ The **Sum Score** is the sum of those category maxima, so it ranges from `0` to 
 | mistralai/mistral-7b-instruct-v0.1 | 4 | **0** | 0 | 0 | 0 | 4 | 0 | 0 | 0 | 0 | 0 |
 | openai/gpt-3.5-turbo | 4 | **0** | 0 | 0 | 0 | 4 | 0 | 0 | 0 | 0 | 0 |
 | phi3.5:3.8b | 4 | **0** | 0 | 0 | 0 | 4 | 0 | 0 | 0 | 0 | 0 |
+| granite4.1:3b | 3 | **0** | 0 | 0 | 0 | 3 | 0 | 0 | 0 | 0 | 0 |
 | ibm-granite/granite-4.1-8b | 3 | **0** | 0 | 0 | 0 | 3 | 0 | 0 | 0 | 0 | 0 |
 | liquid/lfm-2-24b-a2b | 3 | **0** | 0 | 0 | 0 | 3 | 0 | 0 | 0 | 0 | 0 |
 | meta-llama/llama-3.3-70b-instruct | 3 | **0** | 0 | 0 | 0 | 3 | 0 | 0 | 0 | 0 | 0 |
@@ -155,6 +158,7 @@ The **Sum Score** is the sum of those category maxima, so it ranges from `0` to 
 | gpt-5.3-codex-spark-low | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | gpt-5.5-2026-04-23 | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | GPT-5.5-Pro-20260422 | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| granite4.1:30b | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | grok-4.20-experimental-beta-0304-non-reasoning | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | grok-4.20-multi-agent-experimental-beta-0304 | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | inclusionailing-2.6-1tfree | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
@@ -203,7 +207,7 @@ The **Sum Score** is the sum of those category maxima, so it ranges from `0` to 
 ## Single-Judge Summary
 
 Average first-table entry excluding **D-Bench Score**: `0.004`
-Average second-table entry excluding **Sum Score**: `0.339`
+Average second-table entry excluding **Sum Score**: `0.335`
 Sum of max per column from the second table: `74`
 
 ### PCA Covered Variance (First Table)

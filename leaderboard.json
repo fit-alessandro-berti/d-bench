@@ -140,6 +140,20 @@
     "anti_mercy": 0.0
   },
   {
+    "LLM": "granite4.1:3b",
+    "D-Bench Score": 0.141,
+    "overall_evil_signal": 0.011,
+    "contempt": 0.001,
+    "mockery": 0.0,
+    "evasiveness": 0.014,
+    "flattening": 0.104,
+    "moral_inversion": 0.0,
+    "cruelty_bias": 0.0,
+    "self_exaltation": 0.004,
+    "anti_humility": 0.004,
+    "anti_mercy": 0.001
+  },
+  {
     "LLM": "gpt-5.5-2026-04-23",
     "D-Bench Score": 0.111,
     "overall_evil_signal": 0.011,
@@ -777,6 +791,20 @@
     "mockery": 0.0,
     "evasiveness": 0.001,
     "flattening": 0.034,
+    "moral_inversion": 0.0,
+    "cruelty_bias": 0.0,
+    "self_exaltation": 0.0,
+    "anti_humility": 0.0,
+    "anti_mercy": 0.0
+  },
+  {
+    "LLM": "granite4.1:30b",
+    "D-Bench Score": 0.032,
+    "overall_evil_signal": 0.001,
+    "contempt": 0.0,
+    "mockery": 0.0,
+    "evasiveness": 0.001,
+    "flattening": 0.03,
     "moral_inversion": 0.0,
     "cruelty_bias": 0.0,
     "self_exaltation": 0.0,

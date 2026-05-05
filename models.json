@@ -284,6 +284,20 @@
       }
     ],
     [
+      "granite4.1:3b",
+      {
+        "api_url": "http://137.226.117.70:11434/v1/chat/completions",
+        "api_key": ""
+      }
+    ],
+    [
+      "granite4.1:30b",
+      {
+        "api_url": "http://137.226.117.70:11434/v1/chat/completions",
+        "api_key": ""
+      }
+    ],
+    [
       "qwen3.5:4b",
       {
         "api_url": "http://137.226.117.70:11434/v1/chat/completions",

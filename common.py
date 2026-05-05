@@ -14,7 +14,7 @@ from jsonschema import validate
 
 OPENROUTER_CHAT_COMPLETIONS_URL = "https://openrouter.ai/api/v1/chat/completions"
 RETRY_SLEEP_SECONDS = 15
-MAX_CONCURRENT_THREADS = 150
+MAX_CONCURRENT_THREADS = 100
 REQUEST_TIMEOUT_SECONDS = 600
 MODELS_CONFIG_PATH = Path(__file__).resolve().with_name("models.json")
 LLMEntry = Tuple[Any, ...]
