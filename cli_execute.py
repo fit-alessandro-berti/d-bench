@@ -17,7 +17,7 @@ MODELS_CONFIG_PATH = REPO_ROOT / "models.json"
 PROVIDER_API_URLS = {
     "openrouter": "https://openrouter.ai/api/v1/chat/completions",
     "openai": "https://api.openai.com/v1/chat/completions",
-    "google": "https://generativelanguage.googleapis.com/v1beta/chat/completions",
+    "google": "https://generativelanguage.googleapis.com/v1beta/openai/chat/completions",
     "claude": "https://api.anthropic.com/v1/messages",
     "anthropic": "https://api.anthropic.com/v1/messages",
     "grok": "https://api.x.ai/v1/chat/completions",
