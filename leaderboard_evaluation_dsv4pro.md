@@ -69,6 +69,7 @@ Higher score means the model is doing more certified evil gymnastics in its resp
 | mistral-medium-3.5 | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | mistral-small-2603 | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | moonshotai/kimi-k2.6 | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
+| nvidia/Nemotron-3-Nano-Omni-30B-A3B-Reasoning | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | openai/gpt-4.1 | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | openai/gpt-4.1-mini | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | openai/gpt-5 | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
@@ -171,6 +172,7 @@ The **Sum Score** is the sum of those category maxima, so it ranges from `0` to 
 | mistral-medium-3.5 | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | mistral-small-2603 | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | moonshotai/kimi-k2.6 | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| nvidia/Nemotron-3-Nano-Omni-30B-A3B-Reasoning | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | openai/gpt-4.1 | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | openai/gpt-4.1-mini | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | openai/gpt-5 | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
@@ -207,14 +209,14 @@ The **Sum Score** is the sum of those category maxima, so it ranges from `0` to 
 ## Single-Judge Summary
 
 Average first-table entry excluding **D-Bench Score**: `0.005`
-Average second-table entry excluding **Sum Score**: `0.699`
+Average second-table entry excluding **Sum Score**: `0.692`
 Sum of max per column from the second table: `100`
 
 ### PCA Covered Variance (First Table)
 
 | Components | Covered Variance |
 | --- | --- |
-| 1 | 0.931 |
+| 1 | 0.932 |
 | 2 | 0.960 |
 | 3 | 0.983 |
 | 4 | 0.994 |

@@ -38,6 +38,7 @@ Higher score means the model is doing more certified evil gymnastics in its resp
 | openrouter/owl-alpha | 0.010 | **0.000** | 0.000 | 0.000 | 0.000 | 0.010 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | Claude-Opus-3 | 0.007 | **0.000** | 0.000 | 0.000 | 0.000 | 0.007 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | ministral-3b-2512 | 0.007 | **0.000** | 0.000 | 0.000 | 0.000 | 0.007 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
+| nvidia/Nemotron-3-Nano-Omni-30B-A3B-Reasoning | 0.007 | **0.000** | 0.000 | 0.000 | 0.000 | 0.007 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | poolside/laguna-m.1:free | 0.007 | **0.000** | 0.000 | 0.000 | 0.000 | 0.007 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | poolside/laguna-xs.2:free | 0.007 | **0.000** | 0.000 | 0.000 | 0.000 | 0.007 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | anthropic/claude-opus-4.6 | 0.003 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.003 | 0.000 | 0.000 |
@@ -137,6 +138,7 @@ The **Sum Score** is the sum of those category maxima, so it ranges from `0` to 
 | gpt-4.5-preview | 2 | **0** | 0 | 0 | 0 | 2 | 0 | 0 | 0 | 0 | 0 |
 | grok-4-0709 | 2 | **0** | 0 | 0 | 0 | 2 | 0 | 0 | 0 | 0 | 0 |
 | ministral-3b-2512 | 2 | **0** | 0 | 0 | 0 | 2 | 0 | 0 | 0 | 0 | 0 |
+| nvidia/Nemotron-3-Nano-Omni-30B-A3B-Reasoning | 2 | **0** | 0 | 0 | 0 | 2 | 0 | 0 | 0 | 0 | 0 |
 | openai/gpt-4.1-mini | 2 | **0** | 0 | 0 | 0 | 2 | 0 | 0 | 0 | 0 | 0 |
 | poolside/laguna-m.1:free | 2 | **0** | 0 | 0 | 0 | 2 | 0 | 0 | 0 | 0 | 0 |
 | x-ai/grok-code-fast-1 | 2 | **0** | 0 | 0 | 0 | 2 | 0 | 0 | 0 | 0 | 0 |
@@ -207,7 +209,7 @@ The **Sum Score** is the sum of those category maxima, so it ranges from `0` to 
 ## Single-Judge Summary
 
 Average first-table entry excluding **D-Bench Score**: `0.004`
-Average second-table entry excluding **Sum Score**: `0.335`
+Average second-table entry excluding **Sum Score**: `0.334`
 Sum of max per column from the second table: `74`
 
 ### PCA Covered Variance (First Table)
