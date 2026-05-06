@@ -658,6 +658,20 @@
     "anti_mercy": 0.0
   },
   {
+    "LLM": "grok-4-fast-reasoning",
+    "D-Bench Score": 0.022,
+    "overall_evil_signal": 0.002,
+    "contempt": 0.0,
+    "mockery": 0.0,
+    "evasiveness": 0.001,
+    "flattening": 0.018,
+    "moral_inversion": 0.001,
+    "cruelty_bias": 0.0,
+    "self_exaltation": 0.0,
+    "anti_humility": 0.0,
+    "anti_mercy": 0.0
+  },
+  {
     "LLM": "openai/o4-mini",
     "D-Bench Score": 0.021,
     "overall_evil_signal": 0.002,

@@ -48,6 +48,7 @@ Higher score means the model is doing more certified evil gymnastics in its resp
 | allenai/olmo-3.1-32b-instruct | 0.120 | **0.007** | 0.000 | 0.000 | 0.007 | 0.107 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | poolside/laguna-m.1:free | 0.093 | **0.007** | 0.000 | 0.003 | 0.003 | 0.080 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | qwen/qwen3-30b-a3b-instruct-2507 | 0.073 | **0.007** | 0.000 | 0.000 | 0.003 | 0.057 | 0.000 | 0.000 | 0.007 | 0.000 | 0.000 |
+| grok-4-fast-reasoning | 0.067 | **0.007** | 0.000 | 0.000 | 0.003 | 0.053 | 0.003 | 0.000 | 0.000 | 0.000 | 0.000 |
 | qwen/qwen3-next-80b-a3b-instruct | 0.050 | **0.007** | 0.003 | 0.000 | 0.000 | 0.033 | 0.000 | 0.000 | 0.003 | 0.000 | 0.003 |
 | anthropic/claude-sonnet-4.6 | 0.040 | **0.007** | 0.000 | 0.000 | 0.000 | 0.017 | 0.003 | 0.000 | 0.007 | 0.007 | 0.000 |
 | arcee-ai/trinity-large-thinking | 0.040 | **0.007** | 0.000 | 0.000 | 0.000 | 0.027 | 0.000 | 0.003 | 0.003 | 0.000 | 0.000 |
@@ -138,6 +139,7 @@ The **Sum Score** is the sum of those category maxima, so it ranges from `0` to 
 | bytedance-seed/seed-2.0-lite | 5 | **1** | 0 | 0 | 2 | 2 | 0 | 0 | 0 | 0 | 0 |
 | google/gemma-4-26b-a4b-it | 5 | **1** | 1 | 0 | 1 | 2 | 0 | 0 | 0 | 0 | 0 |
 | grok-4-0709 | 5 | **1** | 0 | 0 | 1 | 2 | 0 | 0 | 1 | 0 | 0 |
+| grok-4-fast-reasoning | 5 | **1** | 0 | 0 | 1 | 2 | 1 | 0 | 0 | 0 | 0 |
 | minimax/minimax-m2.7 | 5 | **1** | 0 | 0 | 1 | 2 | 0 | 0 | 1 | 0 | 0 |
 | ministral-14b-2512 | 5 | **1** | 1 | 0 | 1 | 1 | 0 | 0 | 0 | 0 | 1 |
 | mistralai/mistral-7b-instruct-v0.1 | 5 | **1** | 0 | 0 | 1 | 3 | 0 | 0 | 0 | 0 | 0 |
@@ -216,7 +218,7 @@ Sum of max per column from the second table: `35`
 
 | Components | Covered Variance |
 | --- | --- |
-| 1 | 0.878 |
+| 1 | 0.879 |
 | 2 | 0.979 |
 | 3 | 0.995 |
 | 4 | 0.997 |
