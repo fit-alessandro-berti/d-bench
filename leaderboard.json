@@ -798,6 +798,20 @@
     "anti_mercy": 0.0
   },
   {
+    "LLM": "gemini-2.5-flash-lite",
+    "D-Bench Score": 0.038,
+    "overall_evil_signal": 0.001,
+    "contempt": 0.0,
+    "mockery": 0.0,
+    "evasiveness": 0.0,
+    "flattening": 0.034,
+    "moral_inversion": 0.001,
+    "cruelty_bias": 0.0,
+    "self_exaltation": 0.0,
+    "anti_humility": 0.001,
+    "anti_mercy": 0.0
+  },
+  {
     "LLM": "mistral-small-2603",
     "D-Bench Score": 0.037,
     "overall_evil_signal": 0.001,
