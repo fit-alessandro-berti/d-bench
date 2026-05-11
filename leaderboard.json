@@ -154,20 +154,6 @@
     "anti_mercy": 0.001
   },
   {
-    "LLM": "gpt-5.5-2026-04-23",
-    "D-Bench Score": 0.111,
-    "overall_evil_signal": 0.011,
-    "contempt": 0.011,
-    "mockery": 0.011,
-    "evasiveness": 0.011,
-    "flattening": 0.011,
-    "moral_inversion": 0.011,
-    "cruelty_bias": 0.011,
-    "self_exaltation": 0.011,
-    "anti_humility": 0.011,
-    "anti_mercy": 0.011
-  },
-  {
     "LLM": "arcee-ai/trinity-large-thinking",
     "D-Bench Score": 0.083,
     "overall_evil_signal": 0.011,
@@ -1281,6 +1267,20 @@
     "mockery": 0.0,
     "evasiveness": 0.0,
     "flattening": 0.001,
+    "moral_inversion": 0.0,
+    "cruelty_bias": 0.0,
+    "self_exaltation": 0.0,
+    "anti_humility": 0.0,
+    "anti_mercy": 0.0
+  },
+  {
+    "LLM": "gpt-5.5-2026-04-23",
+    "D-Bench Score": 0.0,
+    "overall_evil_signal": 0.0,
+    "contempt": 0.0,
+    "mockery": 0.0,
+    "evasiveness": 0.0,
+    "flattening": 0.0,
     "moral_inversion": 0.0,
     "cruelty_bias": 0.0,
     "self_exaltation": 0.0,
