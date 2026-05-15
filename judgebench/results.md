@@ -14,3 +14,4 @@ Judges are sorted by the sum of all validated scores they assigned to the select
 | grok-4.20-0309-non-reasoning | 15 | 79 | 5.267 | 4 | 5 | 3 | 20 | 29 | 7 | 0 | 6 | 5 | 0 |
 | gpt-4.5-preview | 15 | 57 | 3.800 | 12 | 3 | 1 | 12 | 16 | 7 | 0 | 2 | 3 | 1 |
 | anthropicclaude-opus-4.7 | 15 | 53 | 3.533 | 9 | 0 | 0 | 18 | 23 | 1 | 0 | 1 | 1 | 0 |
+| x-aigrok-4.3 | 15 | 13 | 0.867 | 1 | 0 | 0 | 1 | 6 | 2 | 0 | 3 | 0 | 0 |
