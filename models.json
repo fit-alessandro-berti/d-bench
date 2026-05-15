@@ -397,14 +397,6 @@
       }
     ],
     [
-      "grok-4.20-0309-non-reasoning",
-      "evaluation_grok42",
-      {
-        "api_url": "https://api.x.ai/v1/responses",
-        "api_key_env": "GROK_API_KEY"
-      }
-    ],
-    [
       "deepseek/deepseek-v4-pro",
       "evaluation_dsv4pro",
       {
