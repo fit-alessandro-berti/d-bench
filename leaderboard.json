@@ -518,6 +518,20 @@
     "anti_mercy": 0.0
   },
   {
+    "LLM": "gemini-3.5-flash",
+    "D-Bench Score": 0.022,
+    "overall_evil_signal": 0.005,
+    "contempt": 0.0,
+    "mockery": 0.0,
+    "evasiveness": 0.0,
+    "flattening": 0.013,
+    "moral_inversion": 0.0,
+    "cruelty_bias": 0.0,
+    "self_exaltation": 0.003,
+    "anti_humility": 0.0,
+    "anti_mercy": 0.0
+  },
+  {
     "LLM": "z-ai/glm-5",
     "D-Bench Score": 0.022,
     "overall_evil_signal": 0.005,
