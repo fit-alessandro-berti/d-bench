@@ -66,6 +66,7 @@ Higher score means the model is doing more certified evil gymnastics in its resp
 | [google/gemini-3.1-pro-preview](details/evaluation_gpt54/googlegemini-3.1-pro-preview.md) | 0.033 | **0.003** | 0.000 | 0.000 | 0.000 | 0.023 | 0.000 | 0.003 | 0.003 | 0.000 | 0.000 |
 | [qwen/qwen3.5-397b-a17b](details/evaluation_gpt54/qwenqwen3.5-397b-a17b.md) | 0.033 | **0.003** | 0.000 | 0.000 | 0.000 | 0.027 | 0.000 | 0.000 | 0.003 | 0.000 | 0.000 |
 | [qwen/qwen3.6-27b](details/evaluation_gpt54/qwenqwen3.6-27b.md) | 0.033 | **0.003** | 0.000 | 0.000 | 0.000 | 0.030 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
+| [qwen/qwen3.7-max](details/evaluation_gpt54/qwenqwen3.7-max.md) | 0.030 | **0.003** | 0.000 | 0.000 | 0.000 | 0.020 | 0.000 | 0.000 | 0.007 | 0.000 | 0.000 |
 | [qwen3.6:35b-a3b](details/evaluation_gpt54/qwen3.635b-a3b.md) | 0.030 | **0.003** | 0.000 | 0.000 | 0.000 | 0.017 | 0.003 | 0.003 | 0.000 | 0.000 | 0.003 |
 | [anthropic/claude-opus-4.6](details/evaluation_gpt54/anthropicclaude-opus-4.6.md) | 0.013 | **0.003** | 0.000 | 0.000 | 0.003 | 0.003 | 0.000 | 0.000 | 0.003 | 0.000 | 0.000 |
 | [grok-4.20-multi-agent-experimental-beta-0304](details/evaluation_gpt54/grok-4.20-multi-agent-experimental-beta-0304.md) | 0.013 | **0.003** | 0.003 | 0.000 | 0.000 | 0.007 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
@@ -174,6 +175,7 @@ The **Sum Score** is the sum of those category maxima, so it ranges from `0` to 
 | [grok-build-0.1](details/evaluation_gpt54/grok-build-0.1.md) | 3 | **1** | 0 | 0 | 0 | 1 | 0 | 0 | 0 | 1 | 0 |
 | [mistral-small-2603](details/evaluation_gpt54/mistral-small-2603.md) | 3 | **1** | 0 | 0 | 1 | 1 | 0 | 0 | 0 | 0 | 0 |
 | [qwen/qwen3.5-397b-a17b](details/evaluation_gpt54/qwenqwen3.5-397b-a17b.md) | 3 | **1** | 0 | 0 | 0 | 1 | 0 | 0 | 1 | 0 | 0 |
+| [qwen/qwen3.7-max](details/evaluation_gpt54/qwenqwen3.7-max.md) | 3 | **1** | 0 | 0 | 0 | 1 | 0 | 0 | 1 | 0 | 0 |
 | [x-ai/grok-code-fast-1](details/evaluation_gpt54/x-aigrok-code-fast-1.md) | 3 | **1** | 0 | 0 | 0 | 2 | 0 | 0 | 0 | 0 | 0 |
 | [xiaomi/mimo-v2.5](details/evaluation_gpt54/xiaomimimo-v2.5.md) | 3 | **1** | 0 | 0 | 0 | 1 | 0 | 0 | 1 | 0 | 0 |
 | [qwen/qwen3.6-27b](details/evaluation_gpt54/qwenqwen3.6-27b.md) | 2 | **1** | 0 | 0 | 0 | 1 | 0 | 0 | 0 | 0 | 0 |
@@ -217,7 +219,7 @@ The **Sum Score** is the sum of those category maxima, so it ranges from `0` to 
 ## Single-Judge Summary
 
 Average first-table entry excluding **D-Bench Score**: `0.010`
-Average second-table entry excluding **Sum Score**: `0.492`
+Average second-table entry excluding **Sum Score**: `0.490`
 Sum of max per column from the second table: `35`
 
 ### PCA Covered Variance (First Table)
@@ -228,7 +230,7 @@ Sum of max per column from the second table: `35`
 | 2 | 0.979 |
 | 3 | 0.995 |
 | 4 | 0.997 |
-| 5 | 0.999 |
+| 5 | 0.998 |
 | 6 | 0.999 |
 | 7 | 0.999 |
 | 8 | 1.000 |
