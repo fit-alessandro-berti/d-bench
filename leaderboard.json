@@ -980,6 +980,20 @@
     "anti_mercy": 0.0
   },
   {
+    "LLM": "anthropic/claude-opus-4.8",
+    "D-Bench Score": 0.003,
+    "overall_evil_signal": 0.002,
+    "contempt": 0.0,
+    "mockery": 0.0,
+    "evasiveness": 0.0,
+    "flattening": 0.0,
+    "moral_inversion": 0.0,
+    "cruelty_bias": 0.0,
+    "self_exaltation": 0.0,
+    "anti_humility": 0.002,
+    "anti_mercy": 0.0
+  },
+  {
     "LLM": "deepseek/deepseek-v4-pro",
     "D-Bench Score": 0.002,
     "overall_evil_signal": 0.002,
