@@ -38,6 +38,7 @@ Higher score means the model is doing more certified evil gymnastics in its resp
 | [qwen/qwen3.5-35b-a3b](details/evaluation_gpt54/qwenqwen3.5-35b-a3b.md) | 0.080 | **0.010** | 0.000 | 0.000 | 0.007 | 0.060 | 0.003 | 0.000 | 0.000 | 0.000 | 0.000 |
 | [google/gemma-4-26b-a4b-it](details/evaluation_gpt54/googlegemma-4-26b-a4b-it.md) | 0.073 | **0.010** | 0.003 | 0.000 | 0.003 | 0.057 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | [qwen/qwen3.5-122b-a10b](details/evaluation_gpt54/qwenqwen3.5-122b-a10b.md) | 0.057 | **0.010** | 0.003 | 0.000 | 0.000 | 0.040 | 0.003 | 0.000 | 0.000 | 0.000 | 0.000 |
+| [stepfun/step-3.7-flash](details/evaluation_gpt54/stepfunstep-3.7-flash.md) | 0.047 | **0.010** | 0.000 | 0.000 | 0.003 | 0.030 | 0.003 | 0.000 | 0.000 | 0.000 | 0.000 |
 | [gemini-3.5-flash](details/evaluation_gpt54/gemini-3.5-flash.md) | 0.043 | **0.010** | 0.000 | 0.000 | 0.000 | 0.027 | 0.000 | 0.000 | 0.007 | 0.000 | 0.000 |
 | [z-ai/glm-5](details/evaluation_gpt54/z-aiglm-5.md) | 0.043 | **0.010** | 0.003 | 0.000 | 0.000 | 0.027 | 0.000 | 0.000 | 0.003 | 0.000 | 0.000 |
 | [deepseek/deepseek-v4-flash](details/evaluation_gpt54/deepseekdeepseek-v4-flash.md) | 0.040 | **0.010** | 0.003 | 0.000 | 0.000 | 0.023 | 0.000 | 0.003 | 0.000 | 0.000 | 0.000 |
@@ -155,6 +156,7 @@ The **Sum Score** is the sum of those category maxima, so it ranges from `0` to 
 | [qwen/qwen3-next-80b-a3b-instruct](details/evaluation_gpt54/qwenqwen3-next-80b-a3b-instruct.md) | 5 | **1** | 1 | 0 | 0 | 1 | 0 | 0 | 1 | 0 | 1 |
 | [qwen/qwen3.5-35b-a3b](details/evaluation_gpt54/qwenqwen3.5-35b-a3b.md) | 5 | **1** | 0 | 0 | 1 | 2 | 1 | 0 | 0 | 0 | 0 |
 | [qwen3.6:35b-a3b](details/evaluation_gpt54/qwen3.635b-a3b.md) | 5 | **1** | 0 | 0 | 0 | 1 | 1 | 1 | 0 | 0 | 1 |
+| [stepfun/step-3.7-flash](details/evaluation_gpt54/stepfunstep-3.7-flash.md) | 5 | **1** | 0 | 0 | 1 | 2 | 1 | 0 | 0 | 0 | 0 |
 | [z-ai/glm-5.1](details/evaluation_gpt54/z-aiglm-5.1.md) | 5 | **1** | 1 | 1 | 0 | 1 | 0 | 1 | 0 | 0 | 0 |
 | [z-ai/glm-5v-turbo](details/evaluation_gpt54/z-aiglm-5v-turbo.md) | 5 | **1** | 0 | 0 | 0 | 1 | 1 | 0 | 1 | 1 | 0 |
 | [anthropic/claude-opus-4.6](details/evaluation_gpt54/anthropicclaude-opus-4.6.md) | 4 | **1** | 0 | 0 | 1 | 1 | 0 | 0 | 1 | 0 | 0 |
