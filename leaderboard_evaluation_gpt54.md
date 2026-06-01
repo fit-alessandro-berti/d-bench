@@ -100,6 +100,7 @@ Higher score means the model is doing more certified evil gymnastics in its resp
 | [openai/gpt-5.4-mini](details/evaluation_gpt54/openaigpt-5.4-mini.md) | 0.013 | **0.000** | 0.000 | 0.000 | 0.000 | 0.013 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | [Meta-Muse-Spark-20260409](details/evaluation_gpt54/Meta-Muse-Spark-20260409.md) | 0.007 | **0.000** | 0.000 | 0.000 | 0.000 | 0.007 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | [anthropic/claude-opus-4.7](details/evaluation_gpt54/anthropicclaude-opus-4.7.md) | 0.003 | **0.000** | 0.000 | 0.000 | 0.000 | 0.003 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
+| [minimax/minimax-m3](details/evaluation_gpt54/minimaxminimax-m3.md) | 0.003 | **0.000** | 0.000 | 0.000 | 0.000 | 0.003 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | [openai/gpt-5.4](details/evaluation_gpt54/openaigpt-5.4.md) | 0.003 | **0.000** | 0.000 | 0.000 | 0.000 | 0.003 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | [qwen/qwen3.6-plus:free](details/evaluation_gpt54/qwenqwen3.6-plusfree.md) | 0.003 | **0.000** | 0.000 | 0.000 | 0.000 | 0.003 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | [gpt-5.5-2026-04-23](details/evaluation_gpt54/gpt-5.5-2026-04-23.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
@@ -199,6 +200,7 @@ The **Sum Score** is the sum of those category maxima, so it ranges from `0` to 
 | [gpt-5.3-codex-spark-low](details/evaluation_gpt54/gpt-5.3-codex-spark-low.md) | 1 | **0** | 0 | 0 | 0 | 1 | 0 | 0 | 0 | 0 | 0 |
 | [Meta-Muse-Spark-20260409](details/evaluation_gpt54/Meta-Muse-Spark-20260409.md) | 1 | **0** | 0 | 0 | 0 | 1 | 0 | 0 | 0 | 0 | 0 |
 | [minimax/minimax-m2.5](details/evaluation_gpt54/minimaxminimax-m2.5.md) | 1 | **0** | 0 | 0 | 0 | 1 | 0 | 0 | 0 | 0 | 0 |
+| [minimax/minimax-m3](details/evaluation_gpt54/minimaxminimax-m3.md) | 1 | **0** | 0 | 0 | 0 | 1 | 0 | 0 | 0 | 0 | 0 |
 | [mistral-large-2512](details/evaluation_gpt54/mistral-large-2512.md) | 1 | **0** | 0 | 0 | 0 | 1 | 0 | 0 | 0 | 0 | 0 |
 | [mistral-medium-3.5](details/evaluation_gpt54/mistral-medium-3.5.md) | 1 | **0** | 0 | 0 | 0 | 1 | 0 | 0 | 0 | 0 | 0 |
 | [nvidia/Nemotron-3-Nano-Omni-30B-A3B-Reasoning](details/evaluation_gpt54/nvidiaNemotron-3-Nano-Omni-30B-A3B-Reasoning.md) | 1 | **0** | 0 | 0 | 0 | 1 | 0 | 0 | 0 | 0 | 0 |
@@ -223,7 +225,7 @@ The **Sum Score** is the sum of those category maxima, so it ranges from `0` to 
 ## Single-Judge Summary
 
 Average first-table entry excluding **D-Bench Score**: `0.010`
-Average second-table entry excluding **Sum Score**: `0.487`
+Average second-table entry excluding **Sum Score**: `0.483`
 Sum of max per column from the second table: `35`
 
 ### PCA Covered Variance (First Table)
@@ -234,7 +236,7 @@ Sum of max per column from the second table: `35`
 | 2 | 0.979 |
 | 3 | 0.995 |
 | 4 | 0.997 |
-| 5 | 0.998 |
+| 5 | 0.999 |
 | 6 | 0.999 |
 | 7 | 0.999 |
 | 8 | 1.000 |
