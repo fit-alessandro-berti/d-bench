@@ -12,6 +12,7 @@ Higher score means the model is doing more certified evil gymnastics in its resp
 | qwen3.5:2b | 0.413 | **0.080** | 0.000 | 0.000 | 0.090 | 0.173 | 0.023 | 0.003 | 0.018 | 0.017 | 0.008 |
 | qwen/qwen3.5-9b | 0.258 | **0.055** | 0.008 | 0.012 | 0.037 | 0.093 | 0.008 | 0.007 | 0.033 | 0.003 | 0.002 |
 | talkie-1930-13b-it | 0.338 | **0.048** | 0.013 | 0.002 | 0.080 | 0.140 | 0.013 | 0.007 | 0.017 | 0.015 | 0.003 |
+| nvidia/nemotron-3-ultra-550b-a55b | 0.197 | **0.038** | 0.017 | 0.013 | 0.000 | 0.018 | 0.015 | 0.018 | 0.040 | 0.020 | 0.017 |
 | nvidia/NVIDIA-Nemotron-3-Super-120B-A12B | 0.192 | **0.032** | 0.005 | 0.007 | 0.040 | 0.068 | 0.010 | 0.000 | 0.012 | 0.015 | 0.003 |
 | bytedance-seed/seed-2.0-mini | 0.183 | **0.027** | 0.000 | 0.000 | 0.037 | 0.103 | 0.002 | 0.000 | 0.000 | 0.015 | 0.000 |
 | ibm-granite/granite-4.0-h-micro | 0.228 | **0.023** | 0.003 | 0.000 | 0.038 | 0.145 | 0.000 | 0.000 | 0.013 | 0.003 | 0.002 |
@@ -118,6 +119,7 @@ The **Sum Score** is the sum of those category maxima, so it ranges from `0` to 
 
 | LLM | Sum Score | **overall_evil_signal** | contempt | mockery | evasiveness | flattening | moral_inversion | cruelty_bias | self_exaltation | anti_humility | anti_mercy |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| nvidia/nemotron-3-ultra-550b-a55b | 72 | **9** | 8 | 7 | 0 | 1 | 9 | 8 | 10 | 10 | 10 |
 | phi:2.7b | 70 | **8** | 7 | 9 | 10 | 9 | 5 | 4 | 7 | 5 | 6 |
 | arcee-ai/trinity-large-thinking | 63 | **8** | 7 | 6 | 0 | 8 | 7 | 6 | 9 | 7 | 5 |
 | phi3:3.8b | 47 | **7** | 0 | 0 | 8 | 7 | 4 | 3 | 6 | 6 | 6 |
@@ -222,4 +224,4 @@ The **Sum Score** is the sum of those category maxima, so it ranges from `0` to 
 | openai/gpt-5.1 | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | openai/gpt-5.2 | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | openai/o3 | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
-| max per column |  | **8** | 7 | 9 | 10 | 9 | 7 | 6 | 9 | 7 | 6 |
+| max per column |  | **9** | 8 | 9 | 10 | 9 | 9 | 8 | 10 | 10 | 10 |

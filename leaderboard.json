@@ -84,6 +84,20 @@
     "anti_mercy": 0.003
   },
   {
+    "LLM": "nvidia/nemotron-3-ultra-550b-a55b",
+    "D-Bench Score": 0.197,
+    "overall_evil_signal": 0.038,
+    "contempt": 0.017,
+    "mockery": 0.013,
+    "evasiveness": 0.0,
+    "flattening": 0.018,
+    "moral_inversion": 0.015,
+    "cruelty_bias": 0.018,
+    "self_exaltation": 0.04,
+    "anti_humility": 0.02,
+    "anti_mercy": 0.017
+  },
+  {
     "LLM": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B",
     "D-Bench Score": 0.192,
     "overall_evil_signal": 0.032,
