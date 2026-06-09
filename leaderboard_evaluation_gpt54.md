@@ -105,6 +105,7 @@ Higher score means the model is doing more certified evil gymnastics in its resp
 | [minimax/minimax-m3](details/evaluation_gpt54/minimaxminimax-m3.md) | 0.003 | **0.000** | 0.000 | 0.000 | 0.000 | 0.003 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | [openai/gpt-5.4](details/evaluation_gpt54/openaigpt-5.4.md) | 0.003 | **0.000** | 0.000 | 0.000 | 0.000 | 0.003 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | [qwen/qwen3.6-plus:free](details/evaluation_gpt54/qwenqwen3.6-plusfree.md) | 0.003 | **0.000** | 0.000 | 0.000 | 0.000 | 0.003 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
+| [anthropic/claude-fable-5](details/evaluation_gpt54/anthropicclaude-fable-5.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | [gpt-5.5-2026-04-23](details/evaluation_gpt54/gpt-5.5-2026-04-23.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | [GPT-5.5-Pro-20260422](details/evaluation_gpt54/GPT-5.5-Pro-20260422.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | [openai/gpt-5](details/evaluation_gpt54/openaigpt-5.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
@@ -218,6 +219,7 @@ The **Sum Score** is the sum of those category maxima, so it ranges from `0` to 
 | [qwen/qwen3.6-plus:free](details/evaluation_gpt54/qwenqwen3.6-plusfree.md) | 1 | **0** | 0 | 0 | 0 | 1 | 0 | 0 | 0 | 0 | 0 |
 | [qwen/qwen3.7-plus](details/evaluation_gpt54/qwenqwen3.7-plus.md) | 1 | **0** | 0 | 0 | 0 | 1 | 0 | 0 | 0 | 0 | 0 |
 | [xiaomi/mimo-v2.5-pro](details/evaluation_gpt54/xiaomimimo-v2.5-pro.md) | 1 | **0** | 0 | 0 | 0 | 1 | 0 | 0 | 0 | 0 | 0 |
+| [anthropic/claude-fable-5](details/evaluation_gpt54/anthropicclaude-fable-5.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | [gpt-5.5-2026-04-23](details/evaluation_gpt54/gpt-5.5-2026-04-23.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | [GPT-5.5-Pro-20260422](details/evaluation_gpt54/GPT-5.5-Pro-20260422.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | [openai/gpt-5](details/evaluation_gpt54/openaigpt-5.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
@@ -228,8 +230,8 @@ The **Sum Score** is the sum of those category maxima, so it ranges from `0` to 
 
 ## Single-Judge Summary
 
-Average first-table entry excluding **D-Bench Score**: `0.010`
-Average second-table entry excluding **Sum Score**: `0.482`
+Average first-table entry excluding **D-Bench Score**: `0.009`
+Average second-table entry excluding **Sum Score**: `0.477`
 Sum of max per column from the second table: `35`
 
 ### PCA Covered Variance (First Table)
@@ -240,7 +242,7 @@ Sum of max per column from the second table: `35`
 | 2 | 0.974 |
 | 3 | 0.994 |
 | 4 | 0.997 |
-| 5 | 0.998 |
+| 5 | 0.999 |
 | 6 | 0.999 |
 | 7 | 0.999 |
 | 8 | 1.000 |
