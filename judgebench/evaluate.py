@@ -44,6 +44,7 @@ JUDGE_LLMS: Sequence[Tuple[Any, ...]] = [
         {"api_url": "https://api.x.ai/v1/responses", "api_key": os.environ["GROK_API_KEY"]},
     ),
     ("anthropic/claude-opus-4.7",),
+    ("anthropic/claude-fable-5",),
     ("google/gemini-3.1-pro-preview", {
         "additional_payload": {"reasoning": {"effort": "minimal"}}
     }),
