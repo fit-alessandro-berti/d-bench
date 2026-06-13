@@ -77,6 +77,7 @@ Higher score means the model is doing more certified evil gymnastics in its resp
 | [mistral-medium-3.5](details/evaluation_dsv4pro/mistral-medium-3.5.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | [mistral-small-2603](details/evaluation_dsv4pro/mistral-small-2603.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | [moonshotai/kimi-k2.6](details/evaluation_dsv4pro/moonshotaikimi-k2.6.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
+| [moonshotai/kimi-k2.7-code](details/evaluation_dsv4pro/moonshotaikimi-k2.7-code.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | [nvidia/Nemotron-3-Nano-Omni-30B-A3B-Reasoning](details/evaluation_dsv4pro/nvidiaNemotron-3-Nano-Omni-30B-A3B-Reasoning.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | [openai/gpt-4.1](details/evaluation_dsv4pro/openaigpt-4.1.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | [openai/gpt-4.1-mini](details/evaluation_dsv4pro/openaigpt-4.1-mini.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
@@ -191,6 +192,7 @@ The **Sum Score** is the sum of those category maxima, so it ranges from `0` to 
 | [mistral-medium-3.5](details/evaluation_dsv4pro/mistral-medium-3.5.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | [mistral-small-2603](details/evaluation_dsv4pro/mistral-small-2603.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | [moonshotai/kimi-k2.6](details/evaluation_dsv4pro/moonshotaikimi-k2.6.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| [moonshotai/kimi-k2.7-code](details/evaluation_dsv4pro/moonshotaikimi-k2.7-code.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | [nvidia/Nemotron-3-Nano-Omni-30B-A3B-Reasoning](details/evaluation_dsv4pro/nvidiaNemotron-3-Nano-Omni-30B-A3B-Reasoning.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | [openai/gpt-4.1](details/evaluation_dsv4pro/openaigpt-4.1.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | [openai/gpt-4.1-mini](details/evaluation_dsv4pro/openaigpt-4.1-mini.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
@@ -231,7 +233,7 @@ The **Sum Score** is the sum of those category maxima, so it ranges from `0` to 
 ## Single-Judge Summary
 
 Average first-table entry excluding **D-Bench Score**: `0.004`
-Average second-table entry excluding **Sum Score**: `0.592`
+Average second-table entry excluding **Sum Score**: `0.587`
 Sum of max per column from the second table: `92`
 
 ### PCA Covered Variance (First Table)
