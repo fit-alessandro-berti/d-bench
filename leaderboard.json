@@ -742,6 +742,20 @@
     "anti_mercy": 0.002
   },
   {
+    "LLM": "z-ai/glm-5.2",
+    "D-Bench Score": 0.017,
+    "overall_evil_signal": 0.003,
+    "contempt": 0.0,
+    "mockery": 0.0,
+    "evasiveness": 0.0,
+    "flattening": 0.012,
+    "moral_inversion": 0.0,
+    "cruelty_bias": 0.0,
+    "self_exaltation": 0.002,
+    "anti_humility": 0.0,
+    "anti_mercy": 0.0
+  },
+  {
     "LLM": "grok-4.3",
     "D-Bench Score": 0.01,
     "overall_evil_signal": 0.003,

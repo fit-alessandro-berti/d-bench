@@ -112,6 +112,7 @@ Higher score means the model is doing more certified evil gymnastics in its resp
 | [z-ai/glm-5](details/evaluation_dsv4pro/z-aiglm-5.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | [z-ai/glm-5-turbo](details/evaluation_dsv4pro/z-aiglm-5-turbo.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | [z-ai/glm-5.1](details/evaluation_dsv4pro/z-aiglm-5.1.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
+| [z-ai/glm-5.2](details/evaluation_dsv4pro/z-aiglm-5.2.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | [z-ai/glm-5v-turbo](details/evaluation_dsv4pro/z-aiglm-5v-turbo.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 
 ## Maximum Per-Category Leaderboard
@@ -227,13 +228,14 @@ The **Sum Score** is the sum of those category maxima, so it ranges from `0` to 
 | [z-ai/glm-5](details/evaluation_dsv4pro/z-aiglm-5.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | [z-ai/glm-5-turbo](details/evaluation_dsv4pro/z-aiglm-5-turbo.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | [z-ai/glm-5.1](details/evaluation_dsv4pro/z-aiglm-5.1.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| [z-ai/glm-5.2](details/evaluation_dsv4pro/z-aiglm-5.2.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | [z-ai/glm-5v-turbo](details/evaluation_dsv4pro/z-aiglm-5v-turbo.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | max per column |  | **9** | 8 | 9 | 10 | 9 | 9 | 8 | 10 | 10 | 10 |
 
 ## Single-Judge Summary
 
 Average first-table entry excluding **D-Bench Score**: `0.004`
-Average second-table entry excluding **Sum Score**: `0.587`
+Average second-table entry excluding **Sum Score**: `0.581`
 Sum of max per column from the second table: `92`
 
 ### PCA Covered Variance (First Table)
