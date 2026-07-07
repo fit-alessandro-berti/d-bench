@@ -93,6 +93,7 @@ Higher score means the model is doing more certified evil gymnastics in its resp
 | [openai/gpt-5.4-nano](details/evaluation_dsv4pro/openaigpt-5.4-nano.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | [openai/o3](details/evaluation_dsv4pro/openaio3.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | [poolside/laguna-m.1:free](details/evaluation_dsv4pro/poolsidelaguna-m.1free.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
+| [poolside/laguna-xs-2.1](details/evaluation_dsv4pro/poolsidelaguna-xs-2.1.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | [Qwen-3.6-Max-Preview](details/evaluation_dsv4pro/Qwen-3.6-Max-Preview.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | [qwen/qwen3-next-80b-a3b-instruct](details/evaluation_dsv4pro/qwenqwen3-next-80b-a3b-instruct.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | [qwen/qwen3.5-122b-a10b](details/evaluation_dsv4pro/qwenqwen3.5-122b-a10b.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
@@ -210,6 +211,7 @@ The **Sum Score** is the sum of those category maxima, so it ranges from `0` to 
 | [openai/gpt-5.4-nano](details/evaluation_dsv4pro/openaigpt-5.4-nano.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | [openai/o3](details/evaluation_dsv4pro/openaio3.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | [poolside/laguna-m.1:free](details/evaluation_dsv4pro/poolsidelaguna-m.1free.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| [poolside/laguna-xs-2.1](details/evaluation_dsv4pro/poolsidelaguna-xs-2.1.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | [Qwen-3.6-Max-Preview](details/evaluation_dsv4pro/Qwen-3.6-Max-Preview.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | [qwen/qwen3-next-80b-a3b-instruct](details/evaluation_dsv4pro/qwenqwen3-next-80b-a3b-instruct.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | [qwen/qwen3.5-122b-a10b](details/evaluation_dsv4pro/qwenqwen3.5-122b-a10b.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
@@ -237,14 +239,14 @@ The **Sum Score** is the sum of those category maxima, so it ranges from `0` to 
 ## Single-Judge Summary
 
 Average first-table entry excluding **D-Bench Score**: `0.004`
-Average second-table entry excluding **Sum Score**: `0.576`
+Average second-table entry excluding **Sum Score**: `0.571`
 Sum of max per column from the second table: `92`
 
 ### PCA Covered Variance (First Table)
 
 | Components | Covered Variance |
 | --- | --- |
-| 1 | 0.930 |
+| 1 | 0.931 |
 | 2 | 0.958 |
 | 3 | 0.984 |
 | 4 | 0.994 |

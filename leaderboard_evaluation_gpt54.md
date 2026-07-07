@@ -59,6 +59,7 @@ Higher score means the model is doing more certified evil gymnastics in its resp
 | [moonshotai/kimi-k2.6](details/evaluation_gpt54/moonshotaikimi-k2.6.md) | 0.020 | **0.007** | 0.003 | 0.000 | 0.000 | 0.000 | 0.000 | 0.003 | 0.007 | 0.000 | 0.000 |
 | [openai/gpt-4o](details/evaluation_gpt54/openaigpt-4o.md) | 0.137 | **0.003** | 0.000 | 0.000 | 0.010 | 0.123 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | [openai/gpt-4-turbo](details/evaluation_gpt54/openaigpt-4-turbo.md) | 0.120 | **0.003** | 0.000 | 0.000 | 0.003 | 0.107 | 0.003 | 0.000 | 0.003 | 0.000 | 0.000 |
+| [poolside/laguna-xs-2.1](details/evaluation_gpt54/poolsidelaguna-xs-2.1.md) | 0.113 | **0.003** | 0.000 | 0.000 | 0.007 | 0.103 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | [ministral-8b-2512](details/evaluation_gpt54/ministral-8b-2512.md) | 0.107 | **0.003** | 0.000 | 0.000 | 0.003 | 0.100 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | [mistral-small-2603](details/evaluation_gpt54/mistral-small-2603.md) | 0.100 | **0.003** | 0.000 | 0.000 | 0.003 | 0.093 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | [gemini-2.5-flash-lite](details/evaluation_gpt54/gemini-2.5-flash-lite.md) | 0.100 | **0.003** | 0.000 | 0.000 | 0.000 | 0.090 | 0.003 | 0.000 | 0.000 | 0.003 | 0.000 |
@@ -178,6 +179,7 @@ The **Sum Score** is the sum of those category maxima, so it ranges from `0` to 
 | [ministral-8b-2512](details/evaluation_gpt54/ministral-8b-2512.md) | 4 | **1** | 0 | 0 | 1 | 2 | 0 | 0 | 0 | 0 | 0 |
 | [moonshotai/kimi-k2.6](details/evaluation_gpt54/moonshotaikimi-k2.6.md) | 4 | **1** | 1 | 0 | 0 | 0 | 0 | 1 | 1 | 0 | 0 |
 | [openai/gpt-4o](details/evaluation_gpt54/openaigpt-4o.md) | 4 | **1** | 0 | 0 | 1 | 2 | 0 | 0 | 0 | 0 | 0 |
+| [poolside/laguna-xs-2.1](details/evaluation_gpt54/poolsidelaguna-xs-2.1.md) | 4 | **1** | 0 | 0 | 1 | 2 | 0 | 0 | 0 | 0 | 0 |
 | [qwen/qwen3.5-122b-a10b](details/evaluation_gpt54/qwenqwen3.5-122b-a10b.md) | 4 | **1** | 1 | 0 | 0 | 1 | 1 | 0 | 0 | 0 | 0 |
 | [x-ai/grok-4.1-fast](details/evaluation_gpt54/x-aigrok-4.1-fast.md) | 4 | **1** | 0 | 1 | 0 | 1 | 0 | 1 | 0 | 0 | 0 |
 | [z-ai/glm-5](details/evaluation_gpt54/z-aiglm-5.md) | 4 | **1** | 1 | 0 | 0 | 1 | 0 | 0 | 1 | 0 | 0 |
@@ -237,14 +239,14 @@ The **Sum Score** is the sum of those category maxima, so it ranges from `0` to 
 ## Single-Judge Summary
 
 Average first-table entry excluding **D-Bench Score**: `0.009`
-Average second-table entry excluding **Sum Score**: `0.472`
+Average second-table entry excluding **Sum Score**: `0.471`
 Sum of max per column from the second table: `35`
 
 ### PCA Covered Variance (First Table)
 
 | Components | Covered Variance |
 | --- | --- |
-| 1 | 0.874 |
+| 1 | 0.873 |
 | 2 | 0.974 |
 | 3 | 0.994 |
 | 4 | 0.997 |

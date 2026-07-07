@@ -812,6 +812,20 @@
     "anti_mercy": 0.0
   },
   {
+    "LLM": "poolside/laguna-xs-2.1",
+    "D-Bench Score": 0.057,
+    "overall_evil_signal": 0.002,
+    "contempt": 0.0,
+    "mockery": 0.0,
+    "evasiveness": 0.003,
+    "flattening": 0.052,
+    "moral_inversion": 0.0,
+    "cruelty_bias": 0.0,
+    "self_exaltation": 0.0,
+    "anti_humility": 0.0,
+    "anti_mercy": 0.0
+  },
+  {
     "LLM": "ministral-8b-2512",
     "D-Bench Score": 0.053,
     "overall_evil_signal": 0.002,
