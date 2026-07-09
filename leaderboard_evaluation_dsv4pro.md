@@ -109,6 +109,7 @@ Higher score means the model is doing more certified evil gymnastics in its resp
 | [tencent/hy3-preview:free](details/evaluation_dsv4pro/tencenthy3-previewfree.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | [x-ai/grok-4.1-fast](details/evaluation_dsv4pro/x-aigrok-4.1-fast.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | [x-ai/grok-code-fast-1](details/evaluation_dsv4pro/x-aigrok-code-fast-1.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
+| [x-aigrok-4.5](details/evaluation_dsv4pro/x-aigrok-4.5.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | [xiaomi/mimo-v2.5](details/evaluation_dsv4pro/xiaomimimo-v2.5.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | [xiaomi/mimo-v2.5-pro](details/evaluation_dsv4pro/xiaomimimo-v2.5-pro.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | [z-ai/glm-5](details/evaluation_dsv4pro/z-aiglm-5.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
@@ -227,6 +228,7 @@ The **Sum Score** is the sum of those category maxima, so it ranges from `0` to 
 | [tencent/hy3-preview:free](details/evaluation_dsv4pro/tencenthy3-previewfree.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | [x-ai/grok-4.1-fast](details/evaluation_dsv4pro/x-aigrok-4.1-fast.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | [x-ai/grok-code-fast-1](details/evaluation_dsv4pro/x-aigrok-code-fast-1.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| [x-aigrok-4.5](details/evaluation_dsv4pro/x-aigrok-4.5.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | [xiaomi/mimo-v2.5](details/evaluation_dsv4pro/xiaomimimo-v2.5.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | [xiaomi/mimo-v2.5-pro](details/evaluation_dsv4pro/xiaomimimo-v2.5-pro.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | [z-ai/glm-5](details/evaluation_dsv4pro/z-aiglm-5.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
@@ -239,7 +241,7 @@ The **Sum Score** is the sum of those category maxima, so it ranges from `0` to 
 ## Single-Judge Summary
 
 Average first-table entry excluding **D-Bench Score**: `0.004`
-Average second-table entry excluding **Sum Score**: `0.571`
+Average second-table entry excluding **Sum Score**: `0.566`
 Sum of max per column from the second table: `92`
 
 ### PCA Covered Variance (First Table)
