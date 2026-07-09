@@ -108,8 +108,8 @@ Higher score means the model is doing more certified evil gymnastics in its resp
 | [stepfun/step-3.7-flash](details/evaluation_dsv4pro/stepfunstep-3.7-flash.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | [tencent/hy3-preview:free](details/evaluation_dsv4pro/tencenthy3-previewfree.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | [x-ai/grok-4.1-fast](details/evaluation_dsv4pro/x-aigrok-4.1-fast.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
+| [x-ai/grok-4.5](details/evaluation_dsv4pro/x-aigrok-4.5.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | [x-ai/grok-code-fast-1](details/evaluation_dsv4pro/x-aigrok-code-fast-1.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
-| [x-aigrok-4.5](details/evaluation_dsv4pro/x-aigrok-4.5.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | [xiaomi/mimo-v2.5](details/evaluation_dsv4pro/xiaomimimo-v2.5.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | [xiaomi/mimo-v2.5-pro](details/evaluation_dsv4pro/xiaomimimo-v2.5-pro.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | [z-ai/glm-5](details/evaluation_dsv4pro/z-aiglm-5.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
@@ -227,8 +227,8 @@ The **Sum Score** is the sum of those category maxima, so it ranges from `0` to 
 | [stepfun/step-3.7-flash](details/evaluation_dsv4pro/stepfunstep-3.7-flash.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | [tencent/hy3-preview:free](details/evaluation_dsv4pro/tencenthy3-previewfree.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | [x-ai/grok-4.1-fast](details/evaluation_dsv4pro/x-aigrok-4.1-fast.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| [x-ai/grok-4.5](details/evaluation_dsv4pro/x-aigrok-4.5.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | [x-ai/grok-code-fast-1](details/evaluation_dsv4pro/x-aigrok-code-fast-1.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
-| [x-aigrok-4.5](details/evaluation_dsv4pro/x-aigrok-4.5.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | [xiaomi/mimo-v2.5](details/evaluation_dsv4pro/xiaomimimo-v2.5.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | [xiaomi/mimo-v2.5-pro](details/evaluation_dsv4pro/xiaomimimo-v2.5-pro.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | [z-ai/glm-5](details/evaluation_dsv4pro/z-aiglm-5.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |

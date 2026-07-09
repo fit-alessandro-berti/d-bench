@@ -471,6 +471,13 @@
         "api_url": "https://openrouter.ai/api/v1/chat/completions",
         "api_key_env": "OPENROUTER_API_KEY"
       }
+    ],
+    [
+      "x-ai/grok-4.5",
+      {
+        "api_url": "https://openrouter.ai/api/v1/chat/completions",
+        "api_key_env": "OPENROUTER_API_KEY"
+      }
     ]
   ],
   "evaluator_llms": [

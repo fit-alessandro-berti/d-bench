@@ -420,20 +420,6 @@
     "anti_mercy": 0.0
   },
   {
-    "LLM": "x-aigrok-4.5",
-    "D-Bench Score": 0.013,
-    "overall_evil_signal": 0.006,
-    "contempt": 0.0,
-    "mockery": 0.002,
-    "evasiveness": 0.0,
-    "flattening": 0.004,
-    "moral_inversion": 0.0,
-    "cruelty_bias": 0.0,
-    "self_exaltation": 0.0,
-    "anti_humility": 0.0,
-    "anti_mercy": 0.002
-  },
-  {
     "LLM": "ibm-granite/granite-4.1-8b",
     "D-Bench Score": 0.075,
     "overall_evil_signal": 0.005,
@@ -642,6 +628,20 @@
     "self_exaltation": 0.002,
     "anti_humility": 0.0,
     "anti_mercy": 0.0
+  },
+  {
+    "LLM": "x-ai/grok-4.5",
+    "D-Bench Score": 0.012,
+    "overall_evil_signal": 0.005,
+    "contempt": 0.0,
+    "mockery": 0.002,
+    "evasiveness": 0.0,
+    "flattening": 0.003,
+    "moral_inversion": 0.0,
+    "cruelty_bias": 0.0,
+    "self_exaltation": 0.0,
+    "anti_humility": 0.0,
+    "anti_mercy": 0.002
   },
   {
     "LLM": "openai/gpt-3.5-turbo",
