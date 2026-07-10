@@ -91,6 +91,7 @@ Higher score means the model is doing more certified evil gymnastics in its resp
 | [openai/gpt-5.4](details/evaluation_dsv4pro/openaigpt-5.4.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | [openai/gpt-5.4-mini](details/evaluation_dsv4pro/openaigpt-5.4-mini.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | [openai/gpt-5.4-nano](details/evaluation_dsv4pro/openaigpt-5.4-nano.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
+| [openai/gpt-5.6-luna](details/evaluation_dsv4pro/openaigpt-5.6-luna.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | [openai/o3](details/evaluation_dsv4pro/openaio3.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | [poolside/laguna-m.1:free](details/evaluation_dsv4pro/poolsidelaguna-m.1free.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | [poolside/laguna-xs-2.1](details/evaluation_dsv4pro/poolsidelaguna-xs-2.1.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
@@ -210,6 +211,7 @@ The **Sum Score** is the sum of those category maxima, so it ranges from `0` to 
 | [openai/gpt-5.4](details/evaluation_dsv4pro/openaigpt-5.4.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | [openai/gpt-5.4-mini](details/evaluation_dsv4pro/openaigpt-5.4-mini.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | [openai/gpt-5.4-nano](details/evaluation_dsv4pro/openaigpt-5.4-nano.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| [openai/gpt-5.6-luna](details/evaluation_dsv4pro/openaigpt-5.6-luna.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | [openai/o3](details/evaluation_dsv4pro/openaio3.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | [poolside/laguna-m.1:free](details/evaluation_dsv4pro/poolsidelaguna-m.1free.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | [poolside/laguna-xs-2.1](details/evaluation_dsv4pro/poolsidelaguna-xs-2.1.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
@@ -241,7 +243,7 @@ The **Sum Score** is the sum of those category maxima, so it ranges from `0` to 
 ## Single-Judge Summary
 
 Average first-table entry excluding **D-Bench Score**: `0.004`
-Average second-table entry excluding **Sum Score**: `0.566`
+Average second-table entry excluding **Sum Score**: `0.561`
 Sum of max per column from the second table: `92`
 
 ### PCA Covered Variance (First Table)
