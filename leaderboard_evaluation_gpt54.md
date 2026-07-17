@@ -78,6 +78,7 @@ Higher score means the model is doing more certified evil gymnastics in its resp
 | [grok-4.20-multi-agent-experimental-beta-0304](details/evaluation_gpt54/grok-4.20-multi-agent-experimental-beta-0304.md) | 0.013 | **0.003** | 0.003 | 0.000 | 0.000 | 0.007 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | [grok-4.3](details/evaluation_gpt54/grok-4.3.md) | 0.013 | **0.003** | 0.000 | 0.000 | 0.000 | 0.007 | 0.003 | 0.000 | 0.000 | 0.000 | 0.000 |
 | [grok-build-0.1](details/evaluation_gpt54/grok-build-0.1.md) | 0.013 | **0.003** | 0.000 | 0.000 | 0.000 | 0.007 | 0.000 | 0.000 | 0.000 | 0.003 | 0.000 |
+| [meta/muse-spark-1.1](details/evaluation_gpt54/metamuse-spark-1.1.md) | 0.013 | **0.003** | 0.003 | 0.000 | 0.000 | 0.003 | 0.000 | 0.003 | 0.000 | 0.000 | 0.000 |
 | [anthropic/claude-opus-4.8](details/evaluation_gpt54/anthropicclaude-opus-4.8.md) | 0.007 | **0.003** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.003 | 0.000 |
 | [moonshotai/kimi-k3](details/evaluation_gpt54/moonshotaikimi-k3.md) | 0.007 | **0.003** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.003 | 0.000 | 0.000 |
 | [deepseek/deepseek-v4-pro](details/evaluation_gpt54/deepseekdeepseek-v4-pro.md) | 0.003 | **0.003** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
@@ -181,6 +182,7 @@ The **Sum Score** is the sum of those category maxima, so it ranges from `0` to 
 | [granite4.1:30b](details/evaluation_gpt54/granite4.130b.md) | 4 | **1** | 0 | 0 | 1 | 2 | 0 | 0 | 0 | 0 | 0 |
 | [grok-4.20-experimental-beta-0304-non-reasoning](details/evaluation_gpt54/grok-4.20-experimental-beta-0304-non-reasoning.md) | 4 | **1** | 1 | 0 | 0 | 1 | 0 | 0 | 1 | 0 | 0 |
 | [liquid/lfm-2-24b-a2b](details/evaluation_gpt54/liquidlfm-2-24b-a2b.md) | 4 | **1** | 0 | 0 | 1 | 2 | 0 | 0 | 0 | 0 | 0 |
+| [meta/muse-spark-1.1](details/evaluation_gpt54/metamuse-spark-1.1.md) | 4 | **1** | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 | 0 |
 | [ministral-8b-2512](details/evaluation_gpt54/ministral-8b-2512.md) | 4 | **1** | 0 | 0 | 1 | 2 | 0 | 0 | 0 | 0 | 0 |
 | [moonshotai/kimi-k2.6](details/evaluation_gpt54/moonshotaikimi-k2.6.md) | 4 | **1** | 1 | 0 | 0 | 0 | 0 | 1 | 1 | 0 | 0 |
 | [openai/gpt-4o](details/evaluation_gpt54/openaigpt-4o.md) | 4 | **1** | 0 | 0 | 1 | 2 | 0 | 0 | 0 | 0 | 0 |
@@ -249,7 +251,7 @@ The **Sum Score** is the sum of those category maxima, so it ranges from `0` to 
 ## Single-Judge Summary
 
 Average first-table entry excluding **D-Bench Score**: `0.009`
-Average second-table entry excluding **Sum Score**: `0.456`
+Average second-table entry excluding **Sum Score**: `0.455`
 Sum of max per column from the second table: `35`
 
 ### PCA Covered Variance (First Table)
@@ -260,7 +262,7 @@ Sum of max per column from the second table: `35`
 | 2 | 0.975 |
 | 3 | 0.994 |
 | 4 | 0.997 |
-| 5 | 0.999 |
+| 5 | 0.998 |
 | 6 | 0.999 |
 | 7 | 0.999 |
 | 8 | 1.000 |
