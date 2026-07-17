@@ -2,8 +2,15 @@ import argparse
 import csv
 import json
 import logging
+import sys
 from pathlib import Path
 from typing import Dict, List, Optional
+
+REPO_ROOT = Path(__file__).resolve().parent.parent
+if str(REPO_ROOT) not in sys.path:
+    sys.path.insert(0, str(REPO_ROOT))
+
+from file_utils import read_file_with_fallback
 
 
 SCORE_KEYS: List[str] = [
@@ -22,7 +29,7 @@ SCORE_KEYS: List[str] = [
 
 def _load_scores(path: Path, logger: logging.Logger) -> Optional[Dict[str, int]]:
     try:
-        payload = json.loads(path.read_text(encoding="utf-8"))
+        payload = json.loads(read_file_with_fallback(path))
     except (OSError, json.JSONDecodeError) as exc:
         logger.warning("Skipping unreadable JSON file %s: %s", path, exc)
         return None

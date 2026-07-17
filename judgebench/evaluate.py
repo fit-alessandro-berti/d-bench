@@ -5,6 +5,7 @@ import logging
 import os
 import re
 import subprocess
+import sys
 import threading
 import time
 from concurrent.futures import Future, ThreadPoolExecutor
@@ -13,6 +14,12 @@ from typing import Any, Dict, List, Optional, Sequence, Tuple
 
 import requests
 from jsonschema import validate
+
+REPO_ROOT = Path(__file__).resolve().parent.parent
+if str(REPO_ROOT) not in sys.path:
+    sys.path.insert(0, str(REPO_ROOT))
+
+from file_utils import open_file_with_fallback, read_file_with_fallback
 
 
 OPENROUTER_CHAT_COMPLETIONS_URL = "https://openrouter.ai/api/v1/chat/completions"
@@ -299,7 +306,7 @@ def _validate_evaluation_file(path: Path) -> Tuple[Optional[Dict[str, Any]], str
         return None, "evaluation file does not exist yet"
 
     try:
-        content = path.read_text(encoding="utf-8")
+        content = read_file_with_fallback(path)
         parsed_json = _extract_manual_json(content)
         validate(instance=parsed_json, schema=EVALUATION_JSON_SCHEMA)
     except Exception as exc:
@@ -366,7 +373,7 @@ def _build_judge_prompt(protocol: str, question: str, answer: str) -> str:
 
 
 def _load_selected_files(path: Path) -> List[str]:
-    with path.open(newline="", encoding="utf-8") as file:
+    with open_file_with_fallback(path, newline="") as file:
         reader = csv.DictReader(file)
         if reader.fieldnames is None or "file" not in reader.fieldnames:
             raise ValueError(f"Selected CSV must contain a 'file' column: {path}")
@@ -446,7 +453,7 @@ def main() -> None:
     )
     logger = logging.getLogger("judgebench.evaluate")
 
-    protocol = args.judge_prompt.read_text(encoding="utf-8")
+    protocol = read_file_with_fallback(args.judge_prompt)
     question_files = sorted(path for path in args.questions_dir.glob("*.txt") if path.is_file())
     question_by_stem: Dict[str, Path] = {path.stem: path for path in question_files}
     question_stems = sorted(question_by_stem.keys(), key=len, reverse=True)
@@ -495,8 +502,8 @@ def main() -> None:
                     reason,
                 )
 
-            question_text = question_by_stem[question_stem].read_text(encoding="utf-8")
-            answer_text = answer_path.read_text(encoding="utf-8")
+            question_text = read_file_with_fallback(question_by_stem[question_stem])
+            answer_text = read_file_with_fallback(answer_path)
             judge_prompt = _build_judge_prompt(protocol, question_text, answer_text)
 
             if is_manual:

@@ -4,8 +4,15 @@ import logging
 import math
 import re
 import shutil
+import sys
 from pathlib import Path
 from typing import Dict, List, Optional, Sequence
+
+REPO_ROOT = Path(__file__).resolve().parent.parent
+if str(REPO_ROOT) not in sys.path:
+    sys.path.insert(0, str(REPO_ROOT))
+
+from file_utils import open_file_with_fallback
 
 
 SCORE_KEYS: List[str] = [
@@ -73,7 +80,7 @@ def _diversity_score(candidate: Dict[str, object], selected: Sequence[Dict[str, 
 
 def _load_rows(input_path: Path) -> List[Dict[str, object]]:
     rows: List[Dict[str, object]] = []
-    with input_path.open(newline="", encoding="utf-8") as file:
+    with open_file_with_fallback(input_path, newline="") as file:
         reader = csv.DictReader(file)
         if reader.fieldnames is None:
             return rows

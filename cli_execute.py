@@ -10,6 +10,8 @@ import sys
 from pathlib import Path
 from typing import Any, Dict, List, Tuple
 
+from file_utils import read_file_with_fallback
+
 
 REPO_ROOT = Path(__file__).resolve().parent
 MODELS_CONFIG_PATH = REPO_ROOT / "models.json"
@@ -99,8 +101,7 @@ def parse_json_object(raw: str | None, label: str) -> Dict[str, Any]:
 def load_runtime_config(args: argparse.Namespace) -> Dict[str, Any]:
     config: Dict[str, Any] = {}
     if args.config_file:
-        with open(args.config_file, "r", encoding="utf-8") as handler:
-            file_config = json.load(handler)
+        file_config = json.loads(read_file_with_fallback(args.config_file))
         if not isinstance(file_config, dict):
             raise ValueError("config-file must contain a JSON object.")
         config = merge_dicts(config, file_config)
@@ -155,8 +156,7 @@ def build_registration_entry(config: Dict[str, Any]) -> list[Any]:
 
 
 def ensure_model_registered(config: Dict[str, Any], dry_run: bool) -> None:
-    with open(MODELS_CONFIG_PATH, "r", encoding="utf-8") as handler:
-        models_config = json.load(handler)
+    models_config = json.loads(read_file_with_fallback(MODELS_CONFIG_PATH))
 
     answering_llms = models_config.setdefault("answering_llms", [])
     alias = config["alias"]
@@ -184,8 +184,7 @@ def read_api_key(config: Dict[str, Any]) -> str | None:
         if not candidate.is_absolute():
             candidate = (REPO_ROOT / candidate).resolve()
         if candidate.exists():
-            with open(candidate, "r", encoding="utf-8") as handler:
-                return handler.read().strip()
+            return read_file_with_fallback(candidate).strip()
 
     return None
 
@@ -260,7 +259,7 @@ def run_answers(config: Dict[str, Any], common_module: Any, answer_module: Any) 
         destination = answers_dir / f"{sanitized_alias}_{question_path.stem}.txt"
         if destination.exists():
             continue
-        prompt = question_path.read_text(encoding="utf-8")
+        prompt = read_file_with_fallback(question_path)
         future = common_module.submit_prompt_to_chat_completions(
             prompt=prompt,
             destination_path=str(destination),
@@ -282,7 +281,7 @@ def run_evaluations(config: Dict[str, Any], common_module: Any, evaluate_module:
     judge_prompt_path = project_root / "judge_prompt.txt"
     leaderboard_path = project_root / "leaderboard.json"
 
-    protocol = judge_prompt_path.read_text(encoding="utf-8")
+    protocol = read_file_with_fallback(judge_prompt_path)
     question_files = sorted(path for path in questions_dir.glob("*.txt") if path.is_file())
     question_by_stem = {path.stem: path for path in question_files}
     question_stems = sorted(question_by_stem.keys(), key=len, reverse=True)
@@ -309,8 +308,8 @@ def run_evaluations(config: Dict[str, Any], common_module: Any, evaluate_module:
             output_path = evaluator_folder / f"{answer_path.name}.json"
             if output_path.exists():
                 continue
-            question_text = question_by_stem[question_stem].read_text(encoding="utf-8")
-            answer_text = answer_path.read_text(encoding="utf-8")
+            question_text = read_file_with_fallback(question_by_stem[question_stem])
+            answer_text = read_file_with_fallback(answer_path)
             judge_prompt = evaluate_module._build_judge_prompt(protocol, question_text, answer_text)
             future = common_module.submit_prompt_to_chat_completions(
                 prompt=judge_prompt,
@@ -350,7 +349,7 @@ def run_explanations(config: Dict[str, Any], common_module: Any, explainer_modul
         explanations_dir.mkdir(parents=True, exist_ok=True)
 
         for evaluation_path in sorted(evaluation_dir.glob(f"{alias_key}_*.txt.json")):
-            evaluation_json = json.loads(evaluation_path.read_text(encoding="utf-8"))
+            evaluation_json = json.loads(read_file_with_fallback(evaluation_path))
             if not isinstance(evaluation_json, dict):
                 continue
             try:
@@ -373,8 +372,8 @@ def run_explanations(config: Dict[str, Any], common_module: Any, explainer_modul
             if output_path.exists():
                 continue
 
-            question_text = question_by_stem[question_stem].read_text(encoding="utf-8")
-            answer_text = answer_path.read_text(encoding="utf-8")
+            question_text = read_file_with_fallback(question_by_stem[question_stem])
+            answer_text = read_file_with_fallback(answer_path)
             prompt = explainer_module._build_explainer_prompt(
                 protocol=explainer_module.EXPLANATION_PROTOCOL,
                 question=question_text,

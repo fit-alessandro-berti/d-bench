@@ -10,6 +10,7 @@ from typing import Any, Dict, Optional, Sequence, Tuple
 import logging
 import requests
 from jsonschema import validate
+from file_utils import read_file_with_fallback
 
 
 OPENROUTER_CHAT_COMPLETIONS_URL = "https://openrouter.ai/api/v1/chat/completions"
@@ -21,8 +22,7 @@ LLMEntry = Tuple[Any, ...]
 
 
 def _load_models_config() -> Dict[str, Any]:
-    with MODELS_CONFIG_PATH.open("r", encoding="utf-8") as file:
-        payload = json.load(file)
+    payload = json.loads(read_file_with_fallback(MODELS_CONFIG_PATH))
 
     if not isinstance(payload, dict):
         raise ValueError(f"{MODELS_CONFIG_PATH} must contain a JSON object.")

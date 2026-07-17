@@ -4,6 +4,7 @@ from pathlib import Path
 from typing import Dict, List, Tuple
 
 from common import ANSWERING_LLMS, sanitize_model_name, submit_prompt_to_chat_completions
+from file_utils import read_file_with_fallback
 
 
 def main() -> None:
@@ -43,7 +44,7 @@ def main() -> None:
             if answer_path.exists():
                 continue
 
-            prompt = question_path.read_text(encoding="utf-8")
+            prompt = read_file_with_fallback(question_path)
             logger.info(
                 "Submitting | model=%s question=%s destination=%s",
                 llm_model,

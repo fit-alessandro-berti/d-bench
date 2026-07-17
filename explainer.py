@@ -5,6 +5,7 @@ from pathlib import Path
 from typing import Dict, List, Optional, Tuple
 
 from common import EVALUATOR_LLMS, submit_prompt_to_chat_completions
+from file_utils import read_file_with_fallback
 
 EXPLANATION_PROTOCOL = """Protocol summary:
 - Evaluate only the MODEL_RESPONSE, using the passage and question as context.
@@ -113,7 +114,7 @@ def main() -> None:
 
         for evaluation_path in evaluation_files:
             try:
-                evaluation_json = json.loads(evaluation_path.read_text(encoding="utf-8"))
+                evaluation_json = json.loads(read_file_with_fallback(evaluation_path))
             except json.JSONDecodeError as exc:
                 logger.warning("Skipping unreadable JSON %s: %s", evaluation_path.name, exc)
                 continue
@@ -149,8 +150,8 @@ def main() -> None:
             if output_path.exists():
                 continue
 
-            question_text = question_by_stem[question_stem].read_text(encoding="utf-8")
-            answer_text = answer_path.read_text(encoding="utf-8")
+            question_text = read_file_with_fallback(question_by_stem[question_stem])
+            answer_text = read_file_with_fallback(answer_path)
             explainer_prompt = _build_explainer_prompt(
                 protocol=EXPLANATION_PROTOCOL,
                 question=question_text,

@@ -10,6 +10,7 @@ from common import (
     sanitize_model_name,
     submit_prompt_to_chat_completions,
 )
+from file_utils import read_file_with_fallback
 
 MIN_D_BENCH_SCORE_TO_EVALUATE = 0.0
 MAX_D_BENCH_SCORE_TO_EVALUATE = 10.0
@@ -53,7 +54,7 @@ def _load_leaderboard_scores(
         return {}
 
     try:
-        payload = json.loads(leaderboard_path.read_text(encoding="utf-8"))
+        payload = json.loads(read_file_with_fallback(leaderboard_path))
     except (OSError, json.JSONDecodeError) as exc:
         logger.warning("Could not read leaderboard JSON %s: %s", leaderboard_path, exc)
         return {}
@@ -101,7 +102,7 @@ def main() -> None:
     judge_prompt_path = project_root / "judge_prompt.txt"
     leaderboard_path = project_root / "leaderboard.json"
 
-    protocol = judge_prompt_path.read_text(encoding="utf-8")
+    protocol = read_file_with_fallback(judge_prompt_path)
     question_files = sorted(path for path in questions_dir.glob("*.txt") if path.is_file())
     question_by_stem: Dict[str, Path] = {path.stem: path for path in question_files}
     question_stems = sorted(question_by_stem.keys(), key=len, reverse=True)
@@ -173,8 +174,8 @@ def main() -> None:
             if output_path.exists():
                 continue
 
-            question_text = question_by_stem[question_stem].read_text(encoding="utf-8")
-            answer_text = answer_path.read_text(encoding="utf-8")
+            question_text = read_file_with_fallback(question_by_stem[question_stem])
+            answer_text = read_file_with_fallback(answer_path)
             judge_prompt = _build_judge_prompt(protocol, question_text, answer_text)
 
             logger.info(

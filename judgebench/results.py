@@ -2,9 +2,16 @@ import argparse
 import csv
 import json
 import logging
+import sys
 from collections import defaultdict
 from pathlib import Path
 from typing import Dict, List, Optional, Sequence
+
+REPO_ROOT = Path(__file__).resolve().parent.parent
+if str(REPO_ROOT) not in sys.path:
+    sys.path.insert(0, str(REPO_ROOT))
+
+from file_utils import open_file_with_fallback, read_file_with_fallback
 
 
 SCORE_KEYS: List[str] = [
@@ -28,7 +35,7 @@ def _format_decimal(value: float) -> str:
 def _load_selected_files(path: Path) -> List[str]:
     if not path.is_file():
         return []
-    with path.open(newline="", encoding="utf-8") as file:
+    with open_file_with_fallback(path, newline="") as file:
         reader = csv.DictReader(file)
         if reader.fieldnames is None or "file" not in reader.fieldnames:
             return []
@@ -52,7 +59,7 @@ def _extract_judge_name(eval_name: str, selected_file: str) -> str:
 
 def _load_scores(path: Path, logger: logging.Logger) -> Optional[Dict[str, int]]:
     try:
-        payload = json.loads(path.read_text(encoding="utf-8"))
+        payload = json.loads(read_file_with_fallback(path))
     except (OSError, json.JSONDecodeError) as exc:
         logger.warning("Skipping unreadable JSON file %s: %s", path, exc)
         return None

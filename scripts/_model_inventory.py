@@ -5,9 +5,16 @@ from __future__ import annotations
 
 import json
 import re
+import sys
 from dataclasses import dataclass
 from pathlib import Path
 from typing import Any
+
+REPO_ROOT = Path(__file__).resolve().parent.parent
+if str(REPO_ROOT) not in sys.path:
+    sys.path.insert(0, str(REPO_ROOT))
+
+from file_utils import read_file_with_fallback
 
 
 ANSWER_FILENAME_RE = re.compile(r"^(?P<model_key>.+)_(?P<question_key>q\d+)\.txt$")
@@ -30,7 +37,7 @@ def sanitize_model_name(model_name: str) -> str:
 
 
 def load_answering_models(models_path: Path) -> list[AnsweringModel]:
-    payload = json.loads(models_path.read_text(encoding="utf-8"))
+    payload = json.loads(read_file_with_fallback(models_path))
     if not isinstance(payload, dict):
         raise ValueError("models.json must contain a JSON object.")
 

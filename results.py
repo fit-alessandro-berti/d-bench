@@ -7,6 +7,7 @@ from pathlib import Path
 from typing import Callable, Dict, Iterable, List, Optional
 
 from common import ANSWERING_LLMS, EVALUATION_JSON_SCHEMA, EVALUATOR_LLMS, sanitize_model_name
+from file_utils import read_file_with_fallback
 
 MAX_TOP_RESPONSES_PER_VOICE = 7
 PRIMARY_LEADERBOARD_SORT_KEY = "overall_evil_signal"
@@ -59,7 +60,7 @@ def _load_evaluation_scores(
     logger: logging.Logger,
 ) -> Optional[Dict[str, int]]:
     try:
-        data = json.loads(eval_file.read_text(encoding="utf-8"))
+        data = json.loads(read_file_with_fallback(eval_file))
     except (OSError, json.JSONDecodeError) as exc:
         logger.warning("Skipping unreadable JSON file %s: %s", eval_file, exc)
         return None

@@ -6,7 +6,14 @@ from __future__ import annotations
 import argparse
 import logging
 import subprocess
+import sys
 from pathlib import Path
+
+REPO_ROOT = Path(__file__).resolve().parent.parent
+if str(REPO_ROOT) not in sys.path:
+    sys.path.insert(0, str(REPO_ROOT))
+
+from file_utils import read_file_with_fallback
 
 
 def sanitize_model_name(model_name: str) -> str:
@@ -102,9 +109,7 @@ def validate_answer(answer_path: Path) -> tuple[bool, str]:
         return False, "answer file does not exist yet"
 
     try:
-        content = answer_path.read_text(encoding="utf-8")
-    except UnicodeDecodeError:
-        return False, "answer file is not valid UTF-8"
+        content = read_file_with_fallback(answer_path)
     except OSError as exc:
         return False, f"could not read answer file: {exc}"
 
@@ -153,7 +158,7 @@ def main() -> None:
         else:
             answer_path.write_text("", encoding="utf-8")
 
-        prompt = question_path.read_text(encoding="utf-8")
+        prompt = read_file_with_fallback(question_path)
 
         attempt = 1
         while True:
