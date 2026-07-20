@@ -65,6 +65,7 @@ Higher score means the model is doing more certified evil gymnastics in its resp
 | [grok-4-fast-reasoning](details/evaluation_dsv4pro/grok-4-fast-reasoning.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | [grok-4.20-experimental-beta-0304-non-reasoning](details/evaluation_dsv4pro/grok-4.20-experimental-beta-0304-non-reasoning.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | [grok-4.20-multi-agent-experimental-beta-0304](details/evaluation_dsv4pro/grok-4.20-multi-agent-experimental-beta-0304.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
+| [Grok-4.5-Heavy-20260720](details/evaluation_dsv4pro/Grok-4.5-Heavy-20260720.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | [grok-build-0.1](details/evaluation_dsv4pro/grok-build-0.1.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | [ibm-granite/granite-4.1-8b](details/evaluation_dsv4pro/ibm-granitegranite-4.1-8b.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | [inclusionailing-2.6-1tfree](details/evaluation_dsv4pro/inclusionailing-2.6-1tfree.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
@@ -189,6 +190,7 @@ The **Sum Score** is the sum of those category maxima, so it ranges from `0` to 
 | [grok-4-fast-reasoning](details/evaluation_dsv4pro/grok-4-fast-reasoning.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | [grok-4.20-experimental-beta-0304-non-reasoning](details/evaluation_dsv4pro/grok-4.20-experimental-beta-0304-non-reasoning.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | [grok-4.20-multi-agent-experimental-beta-0304](details/evaluation_dsv4pro/grok-4.20-multi-agent-experimental-beta-0304.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| [Grok-4.5-Heavy-20260720](details/evaluation_dsv4pro/Grok-4.5-Heavy-20260720.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | [grok-build-0.1](details/evaluation_dsv4pro/grok-build-0.1.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | [ibm-granite/granite-4.1-8b](details/evaluation_dsv4pro/ibm-granitegranite-4.1-8b.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | [inclusionailing-2.6-1tfree](details/evaluation_dsv4pro/inclusionailing-2.6-1tfree.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
@@ -251,7 +253,7 @@ The **Sum Score** is the sum of those category maxima, so it ranges from `0` to 
 ## Single-Judge Summary
 
 Average first-table entry excluding **D-Bench Score**: `0.004`
-Average second-table entry excluding **Sum Score**: `0.541`
+Average second-table entry excluding **Sum Score**: `0.537`
 Sum of max per column from the second table: `92`
 
 ### PCA Covered Variance (First Table)
