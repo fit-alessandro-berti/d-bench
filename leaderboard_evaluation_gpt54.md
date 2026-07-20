@@ -79,6 +79,7 @@ Higher score means the model is doing more certified evil gymnastics in its resp
 | [grok-4.3](details/evaluation_gpt54/grok-4.3.md) | 0.013 | **0.003** | 0.000 | 0.000 | 0.000 | 0.007 | 0.003 | 0.000 | 0.000 | 0.000 | 0.000 |
 | [grok-build-0.1](details/evaluation_gpt54/grok-build-0.1.md) | 0.013 | **0.003** | 0.000 | 0.000 | 0.000 | 0.007 | 0.000 | 0.000 | 0.000 | 0.003 | 0.000 |
 | [meta/muse-spark-1.1](details/evaluation_gpt54/metamuse-spark-1.1.md) | 0.013 | **0.003** | 0.003 | 0.000 | 0.000 | 0.003 | 0.000 | 0.003 | 0.000 | 0.000 | 0.000 |
+| [thinkingmachines/inkling](details/evaluation_gpt54/thinkingmachinesinkling.md) | 0.010 | **0.003** | 0.000 | 0.000 | 0.000 | 0.003 | 0.000 | 0.003 | 0.000 | 0.000 | 0.000 |
 | [anthropic/claude-opus-4.8](details/evaluation_gpt54/anthropicclaude-opus-4.8.md) | 0.007 | **0.003** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.003 | 0.000 |
 | [moonshotai/kimi-k3](details/evaluation_gpt54/moonshotaikimi-k3.md) | 0.007 | **0.003** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.003 | 0.000 | 0.000 |
 | [deepseek/deepseek-v4-pro](details/evaluation_gpt54/deepseekdeepseek-v4-pro.md) | 0.003 | **0.003** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
@@ -199,6 +200,7 @@ The **Sum Score** is the sum of those category maxima, so it ranges from `0` to 
 | [mistral-small-2603](details/evaluation_gpt54/mistral-small-2603.md) | 3 | **1** | 0 | 0 | 1 | 1 | 0 | 0 | 0 | 0 | 0 |
 | [qwen/qwen3.5-397b-a17b](details/evaluation_gpt54/qwenqwen3.5-397b-a17b.md) | 3 | **1** | 0 | 0 | 0 | 1 | 0 | 0 | 1 | 0 | 0 |
 | [qwen/qwen3.7-max](details/evaluation_gpt54/qwenqwen3.7-max.md) | 3 | **1** | 0 | 0 | 0 | 1 | 0 | 0 | 1 | 0 | 0 |
+| [thinkingmachines/inkling](details/evaluation_gpt54/thinkingmachinesinkling.md) | 3 | **1** | 0 | 0 | 0 | 1 | 0 | 1 | 0 | 0 | 0 |
 | [x-ai/grok-code-fast-1](details/evaluation_gpt54/x-aigrok-code-fast-1.md) | 3 | **1** | 0 | 0 | 0 | 2 | 0 | 0 | 0 | 0 | 0 |
 | [xiaomi/mimo-v2.5](details/evaluation_gpt54/xiaomimimo-v2.5.md) | 3 | **1** | 0 | 0 | 0 | 1 | 0 | 0 | 1 | 0 | 0 |
 | [z-ai/glm-5.2](details/evaluation_gpt54/z-aiglm-5.2.md) | 3 | **1** | 0 | 0 | 0 | 1 | 0 | 0 | 1 | 0 | 0 |
@@ -253,7 +255,7 @@ The **Sum Score** is the sum of those category maxima, so it ranges from `0` to 
 ## Single-Judge Summary
 
 Average first-table entry excluding **D-Bench Score**: `0.009`
-Average second-table entry excluding **Sum Score**: `0.451`
+Average second-table entry excluding **Sum Score**: `0.450`
 Sum of max per column from the second table: `35`
 
 ### PCA Covered Variance (First Table)
@@ -264,7 +266,7 @@ Sum of max per column from the second table: `35`
 | 2 | 0.975 |
 | 3 | 0.994 |
 | 4 | 0.997 |
-| 5 | 0.999 |
+| 5 | 0.998 |
 | 6 | 0.999 |
 | 7 | 0.999 |
 | 8 | 1.000 |
