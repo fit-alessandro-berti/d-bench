@@ -5,6 +5,9 @@ from __future__ import annotations
 
 import argparse
 import logging
+import os
+import shlex
+import shutil
 import subprocess
 import sys
 from pathlib import Path
@@ -93,15 +96,36 @@ def to_windows_path(path: Path) -> str:
     return str(path)
 
 
-def open_in_notepad(path: Path, *, wait: bool) -> None:
-    command = ["notepad.exe", to_windows_path(path)]
+def open_text_editor(path: Path, *, wait: bool) -> None:
+    configured_editor = os.environ.get("VISUAL") or os.environ.get("EDITOR")
+    if configured_editor:
+        command = shlex.split(configured_editor) + [str(path)]
+    elif sys.platform.startswith("linux"):
+        command = first_available_editor_command(["mousepad", "xdg-open"], path)
+    elif os.name == "nt":
+        command = first_available_editor_command(["notepad++.exe", "notepad.exe"], path)
+        command[-1] = to_windows_path(path)
+    else:
+        command = first_available_editor_command(["open"], path)
+
     try:
         if wait:
             subprocess.run(command, check=True)
         else:
             subprocess.Popen(command)
     except (FileNotFoundError, OSError, subprocess.CalledProcessError) as exc:
-        raise RuntimeError(f"Could not open {path} in notepad.exe.") from exc
+        raise RuntimeError(f"Could not open {path} in a text editor.") from exc
+
+
+def first_available_editor_command(editors: list[str], path: Path) -> list[str]:
+    for editor in editors:
+        if shutil.which(editor):
+            return [editor, str(path)]
+
+    raise RuntimeError(
+        "No supported text editor found. Install mousepad on Linux, "
+        "Notepad++/Notepad on Windows, or set VISUAL/EDITOR."
+    )
 
 
 def validate_answer(answer_path: Path) -> tuple[bool, str]:
@@ -170,8 +194,8 @@ def main() -> None:
                 attempt,
                 answer_path,
             )
-            logger.info("Question text copied to clipboard. Fill the answer file, save it, and close Notepad.")
-            open_in_notepad(answer_path, wait=True)
+            logger.info("Question text copied to clipboard. Fill the answer file, save it, and close the editor.")
+            open_text_editor(answer_path, wait=True)
 
             is_valid, reason = validate_answer(answer_path)
             if is_valid:

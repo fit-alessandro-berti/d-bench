@@ -4,6 +4,8 @@ import json
 import logging
 import os
 import re
+import shlex
+import shutil
 import subprocess
 import sys
 import threading
@@ -30,7 +32,7 @@ REQUEST_TIMEOUT_SECONDS = 600
 # Edit this list the same way ANSWERING_LLMS is edited in the main benchmark:
 # ("provider/model",) uses OpenRouter by default.
 # ("model", {"api_url": "...", "api_key": "...", "additional_payload": {...}}) overrides it.
-# ("model", {"manual": True}) copies each prompt to the clipboard and opens Notepad
+# ("model", {"manual": True}) copies each prompt to the clipboard and opens a text editor
 # for manual JSON entry instead of calling an API.
 JUDGE_LLMS: Sequence[Tuple[Any, ...]] = [
     ("gpt-5.4",  {"api_url": "https://api.openai.com/v1/responses", "api_key": os.environ["OPENAI_API_KEY"],
@@ -294,11 +296,33 @@ def _to_windows_path(path: Path) -> str:
     return str(path)
 
 
-def _open_in_notepad(path: Path) -> None:
+def _open_text_editor(path: Path) -> None:
+    configured_editor = os.environ.get("VISUAL") or os.environ.get("EDITOR")
+    if configured_editor:
+        command = shlex.split(configured_editor) + [str(path)]
+    elif sys.platform.startswith("linux"):
+        command = _first_available_editor_command(["mousepad", "xdg-open"], path)
+    elif os.name == "nt":
+        command = _first_available_editor_command(["notepad++.exe", "notepad.exe"], path)
+        command[-1] = _to_windows_path(path)
+    else:
+        command = _first_available_editor_command(["open"], path)
+
     try:
-        subprocess.run(["notepad.exe", _to_windows_path(path)], check=True)
+        subprocess.run(command, check=True)
     except (FileNotFoundError, OSError, subprocess.CalledProcessError) as exc:
-        raise RuntimeError(f"Could not open {path} in notepad.exe.") from exc
+        raise RuntimeError(f"Could not open {path} in a text editor.") from exc
+
+
+def _first_available_editor_command(editors: Sequence[str], path: Path) -> List[str]:
+    for editor in editors:
+        if shutil.which(editor):
+            return [editor, str(path)]
+
+    raise RuntimeError(
+        "No supported text editor found. Install mousepad on Linux, "
+        "Notepad++/Notepad on Windows, or set VISUAL/EDITOR."
+    )
 
 
 def _validate_evaluation_file(path: Path) -> Tuple[Optional[Dict[str, Any]], str]:
@@ -337,8 +361,8 @@ def _submit_manual_evaluation(
             attempt,
             destination_path,
         )
-        logger.info("Paste the model's JSON into Notepad, save the file, and close Notepad.")
-        _open_in_notepad(destination_path)
+        logger.info("Paste the model's JSON into the text editor, save the file, and close the editor.")
+        _open_text_editor(destination_path)
 
         parsed_json, reason = _validate_evaluation_file(destination_path)
         if parsed_json is not None:
