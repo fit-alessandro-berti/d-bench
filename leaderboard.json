@@ -966,6 +966,20 @@
     "anti_mercy": 0.0
   },
   {
+    "LLM": "gemini-3.5-flash-lite",
+    "D-Bench Score": 0.017,
+    "overall_evil_signal": 0.002,
+    "contempt": 0.0,
+    "mockery": 0.0,
+    "evasiveness": 0.0,
+    "flattening": 0.013,
+    "moral_inversion": 0.0,
+    "cruelty_bias": 0.0,
+    "self_exaltation": 0.002,
+    "anti_humility": 0.0,
+    "anti_mercy": 0.0
+  },
+  {
     "LLM": "google/gemini-3.1-pro-preview",
     "D-Bench Score": 0.017,
     "overall_evil_signal": 0.002,

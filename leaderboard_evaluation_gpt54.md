@@ -69,6 +69,7 @@ Higher score means the model is doing more certified evil gymnastics in its resp
 | [granite4.1:30b](details/evaluation_gpt54/granite4.130b.md) | 0.097 | **0.003** | 0.000 | 0.000 | 0.003 | 0.090 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | [minimax/minimax-m2.7](details/evaluation_gpt54/minimaxminimax-m2.7.md) | 0.090 | **0.003** | 0.000 | 0.000 | 0.003 | 0.073 | 0.000 | 0.000 | 0.010 | 0.000 | 0.000 |
 | [xiaomi/mimo-v2.5](details/evaluation_gpt54/xiaomimimo-v2.5.md) | 0.050 | **0.003** | 0.000 | 0.000 | 0.000 | 0.043 | 0.000 | 0.000 | 0.003 | 0.000 | 0.000 |
+| [gemini-3.5-flash-lite](details/evaluation_gpt54/gemini-3.5-flash-lite.md) | 0.033 | **0.003** | 0.000 | 0.000 | 0.000 | 0.027 | 0.000 | 0.000 | 0.003 | 0.000 | 0.000 |
 | [google/gemini-3.1-pro-preview](details/evaluation_gpt54/googlegemini-3.1-pro-preview.md) | 0.033 | **0.003** | 0.000 | 0.000 | 0.000 | 0.023 | 0.000 | 0.003 | 0.003 | 0.000 | 0.000 |
 | [qwen/qwen3.5-397b-a17b](details/evaluation_gpt54/qwenqwen3.5-397b-a17b.md) | 0.033 | **0.003** | 0.000 | 0.000 | 0.000 | 0.027 | 0.000 | 0.000 | 0.003 | 0.000 | 0.000 |
 | [qwen/qwen3.6-27b](details/evaluation_gpt54/qwenqwen3.6-27b.md) | 0.033 | **0.003** | 0.000 | 0.000 | 0.000 | 0.030 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
@@ -196,6 +197,7 @@ The **Sum Score** is the sum of those category maxima, so it ranges from `0` to 
 | [x-ai/grok-4.5](details/evaluation_gpt54/x-aigrok-4.5.md) | 4 | **1** | 0 | 1 | 0 | 1 | 0 | 0 | 0 | 0 | 1 |
 | [z-ai/glm-5](details/evaluation_gpt54/z-aiglm-5.md) | 4 | **1** | 1 | 0 | 0 | 1 | 0 | 0 | 1 | 0 | 0 |
 | [gemini-3.5-flash](details/evaluation_gpt54/gemini-3.5-flash.md) | 3 | **1** | 0 | 0 | 0 | 1 | 0 | 0 | 1 | 0 | 0 |
+| [gemini-3.5-flash-lite](details/evaluation_gpt54/gemini-3.5-flash-lite.md) | 3 | **1** | 0 | 0 | 0 | 1 | 0 | 0 | 1 | 0 | 0 |
 | [grok-4.20-multi-agent-experimental-beta-0304](details/evaluation_gpt54/grok-4.20-multi-agent-experimental-beta-0304.md) | 3 | **1** | 1 | 0 | 0 | 1 | 0 | 0 | 0 | 0 | 0 |
 | [grok-4.3](details/evaluation_gpt54/grok-4.3.md) | 3 | **1** | 0 | 0 | 0 | 1 | 1 | 0 | 0 | 0 | 0 |
 | [grok-build-0.1](details/evaluation_gpt54/grok-build-0.1.md) | 3 | **1** | 0 | 0 | 0 | 1 | 0 | 0 | 0 | 1 | 0 |
@@ -257,7 +259,7 @@ The **Sum Score** is the sum of those category maxima, so it ranges from `0` to 
 ## Single-Judge Summary
 
 Average first-table entry excluding **D-Bench Score**: `0.009`
-Average second-table entry excluding **Sum Score**: `0.450`
+Average second-table entry excluding **Sum Score**: `0.448`
 Sum of max per column from the second table: `35`
 
 ### PCA Covered Variance (First Table)
