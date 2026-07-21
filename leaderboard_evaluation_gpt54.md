@@ -27,6 +27,7 @@ Higher score means the model is doing more certified evil gymnastics in its resp
 | [qwen/qwen3.5-27b](details/evaluation_gpt54/qwenqwen3.5-27b.md) | 0.077 | **0.013** | 0.000 | 0.000 | 0.007 | 0.040 | 0.000 | 0.003 | 0.007 | 0.007 | 0.000 |
 | [google/gemma-4-31b-it](details/evaluation_gpt54/googlegemma-4-31b-it.md) | 0.073 | **0.013** | 0.003 | 0.000 | 0.000 | 0.043 | 0.000 | 0.003 | 0.007 | 0.003 | 0.000 |
 | [x-ai/grok-4.1-fast](details/evaluation_gpt54/x-aigrok-4.1-fast.md) | 0.067 | **0.013** | 0.000 | 0.003 | 0.000 | 0.040 | 0.000 | 0.010 | 0.000 | 0.000 | 0.000 |
+| [meituan/longcat-2.0](details/evaluation_gpt54/meituanlongcat-2.0.md) | 0.053 | **0.013** | 0.000 | 0.000 | 0.000 | 0.030 | 0.000 | 0.003 | 0.007 | 0.000 | 0.000 |
 | [z-ai/glm-5.1](details/evaluation_gpt54/z-aiglm-5.1.md) | 0.047 | **0.013** | 0.007 | 0.003 | 0.000 | 0.013 | 0.000 | 0.010 | 0.000 | 0.000 | 0.000 |
 | [granite4.1:3b](details/evaluation_gpt54/granite4.13b.md) | 0.203 | **0.010** | 0.000 | 0.000 | 0.043 | 0.147 | 0.000 | 0.000 | 0.000 | 0.000 | 0.003 |
 | [mistralai/mistral-7b-instruct-v0.1](details/evaluation_gpt54/mistralaimistral-7b-instruct-v0.1.md) | 0.203 | **0.010** | 0.000 | 0.000 | 0.023 | 0.170 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
@@ -184,6 +185,7 @@ The **Sum Score** is the sum of those category maxima, so it ranges from `0` to 
 | [granite4.1:30b](details/evaluation_gpt54/granite4.130b.md) | 4 | **1** | 0 | 0 | 1 | 2 | 0 | 0 | 0 | 0 | 0 |
 | [grok-4.20-experimental-beta-0304-non-reasoning](details/evaluation_gpt54/grok-4.20-experimental-beta-0304-non-reasoning.md) | 4 | **1** | 1 | 0 | 0 | 1 | 0 | 0 | 1 | 0 | 0 |
 | [liquid/lfm-2-24b-a2b](details/evaluation_gpt54/liquidlfm-2-24b-a2b.md) | 4 | **1** | 0 | 0 | 1 | 2 | 0 | 0 | 0 | 0 | 0 |
+| [meituan/longcat-2.0](details/evaluation_gpt54/meituanlongcat-2.0.md) | 4 | **1** | 0 | 0 | 0 | 1 | 0 | 1 | 1 | 0 | 0 |
 | [meta/muse-spark-1.1](details/evaluation_gpt54/metamuse-spark-1.1.md) | 4 | **1** | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 | 0 |
 | [ministral-8b-2512](details/evaluation_gpt54/ministral-8b-2512.md) | 4 | **1** | 0 | 0 | 1 | 2 | 0 | 0 | 0 | 0 | 0 |
 | [moonshotai/kimi-k2.6](details/evaluation_gpt54/moonshotaikimi-k2.6.md) | 4 | **1** | 1 | 0 | 0 | 0 | 0 | 1 | 1 | 0 | 0 |

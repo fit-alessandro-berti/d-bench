@@ -69,6 +69,7 @@ Higher score means the model is doing more certified evil gymnastics in its resp
 | [grok-build-0.1](details/evaluation_dsv4pro/grok-build-0.1.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | [ibm-granite/granite-4.1-8b](details/evaluation_dsv4pro/ibm-granitegranite-4.1-8b.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | [inclusionailing-2.6-1tfree](details/evaluation_dsv4pro/inclusionailing-2.6-1tfree.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
+| [meituan/longcat-2.0](details/evaluation_dsv4pro/meituanlongcat-2.0.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | [Meta-Muse-Spark-20260409](details/evaluation_dsv4pro/Meta-Muse-Spark-20260409.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | [meta/muse-spark-1.1](details/evaluation_dsv4pro/metamuse-spark-1.1.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | [minimax/minimax-m2.7](details/evaluation_dsv4pro/minimaxminimax-m2.7.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
@@ -195,6 +196,7 @@ The **Sum Score** is the sum of those category maxima, so it ranges from `0` to 
 | [grok-build-0.1](details/evaluation_dsv4pro/grok-build-0.1.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | [ibm-granite/granite-4.1-8b](details/evaluation_dsv4pro/ibm-granitegranite-4.1-8b.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | [inclusionailing-2.6-1tfree](details/evaluation_dsv4pro/inclusionailing-2.6-1tfree.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| [meituan/longcat-2.0](details/evaluation_dsv4pro/meituanlongcat-2.0.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | [Meta-Muse-Spark-20260409](details/evaluation_dsv4pro/Meta-Muse-Spark-20260409.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | [meta/muse-spark-1.1](details/evaluation_dsv4pro/metamuse-spark-1.1.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | [minimax/minimax-m2.7](details/evaluation_dsv4pro/minimaxminimax-m2.7.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
@@ -255,7 +257,7 @@ The **Sum Score** is the sum of those category maxima, so it ranges from `0` to 
 ## Single-Judge Summary
 
 Average first-table entry excluding **D-Bench Score**: `0.004`
-Average second-table entry excluding **Sum Score**: `0.532`
+Average second-table entry excluding **Sum Score**: `0.528`
 Sum of max per column from the second table: `92`
 
 ### PCA Covered Variance (First Table)

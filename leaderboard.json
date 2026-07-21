@@ -406,6 +406,20 @@
     "anti_mercy": 0.0
   },
   {
+    "LLM": "meituan/longcat-2.0",
+    "D-Bench Score": 0.027,
+    "overall_evil_signal": 0.007,
+    "contempt": 0.0,
+    "mockery": 0.0,
+    "evasiveness": 0.0,
+    "flattening": 0.015,
+    "moral_inversion": 0.0,
+    "cruelty_bias": 0.002,
+    "self_exaltation": 0.003,
+    "anti_humility": 0.0,
+    "anti_mercy": 0.0
+  },
+  {
     "LLM": "z-ai/glm-5.1",
     "D-Bench Score": 0.023,
     "overall_evil_signal": 0.007,
