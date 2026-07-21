@@ -534,6 +534,13 @@
         "api_url": "https://generativelanguage.googleapis.com/v1beta/openai/chat/completions",
         "api_key_env": "GOOGLE_API_KEY"
       }
+    ],
+    [
+      "gemini-3.6-flash",
+      {
+        "api_url": "https://generativelanguage.googleapis.com/v1beta/openai/chat/completions",
+        "api_key_env": "GOOGLE_API_KEY"
+      }
     ]
   ],
   "evaluator_llms": [
