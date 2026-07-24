@@ -83,6 +83,7 @@ Higher score means the model is doing more certified evil gymnastics in its resp
 | [meta/muse-spark-1.1](details/evaluation_gpt54/metamuse-spark-1.1.md) | 0.013 | **0.003** | 0.003 | 0.000 | 0.000 | 0.003 | 0.000 | 0.003 | 0.000 | 0.000 | 0.000 |
 | [thinkingmachines/inkling](details/evaluation_gpt54/thinkingmachinesinkling.md) | 0.010 | **0.003** | 0.000 | 0.000 | 0.000 | 0.003 | 0.000 | 0.003 | 0.000 | 0.000 | 0.000 |
 | [anthropic/claude-opus-4.8](details/evaluation_gpt54/anthropicclaude-opus-4.8.md) | 0.007 | **0.003** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.003 | 0.000 |
+| [anthropic/claude-opus-5](details/evaluation_gpt54/anthropicclaude-opus-5.md) | 0.007 | **0.003** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.003 | 0.000 | 0.000 |
 | [moonshotai/kimi-k3](details/evaluation_gpt54/moonshotaikimi-k3.md) | 0.007 | **0.003** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.003 | 0.000 | 0.000 |
 | [deepseek/deepseek-v4-pro](details/evaluation_gpt54/deepseekdeepseek-v4-pro.md) | 0.003 | **0.003** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | [meta-llama/llama-4-scout](details/evaluation_gpt54/meta-llamallama-4-scout.md) | 0.147 | **0.000** | 0.000 | 0.000 | 0.020 | 0.127 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
@@ -210,6 +211,7 @@ The **Sum Score** is the sum of those category maxima, so it ranges from `0` to 
 | [xiaomi/mimo-v2.5](details/evaluation_gpt54/xiaomimimo-v2.5.md) | 3 | **1** | 0 | 0 | 0 | 1 | 0 | 0 | 1 | 0 | 0 |
 | [z-ai/glm-5.2](details/evaluation_gpt54/z-aiglm-5.2.md) | 3 | **1** | 0 | 0 | 0 | 1 | 0 | 0 | 1 | 0 | 0 |
 | [anthropic/claude-opus-4.8](details/evaluation_gpt54/anthropicclaude-opus-4.8.md) | 2 | **1** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 1 | 0 |
+| [anthropic/claude-opus-5](details/evaluation_gpt54/anthropicclaude-opus-5.md) | 2 | **1** | 0 | 0 | 0 | 0 | 0 | 0 | 1 | 0 | 0 |
 | [moonshotai/kimi-k3](details/evaluation_gpt54/moonshotaikimi-k3.md) | 2 | **1** | 0 | 0 | 0 | 0 | 0 | 0 | 1 | 0 | 0 |
 | [qwen/qwen3.6-27b](details/evaluation_gpt54/qwenqwen3.6-27b.md) | 2 | **1** | 0 | 0 | 0 | 1 | 0 | 0 | 0 | 0 | 0 |
 | [z-ai/glm-5-turbo](details/evaluation_gpt54/z-aiglm-5-turbo.md) | 2 | **1** | 0 | 0 | 0 | 1 | 0 | 0 | 0 | 0 | 0 |
@@ -261,7 +263,7 @@ The **Sum Score** is the sum of those category maxima, so it ranges from `0` to 
 ## Single-Judge Summary
 
 Average first-table entry excluding **D-Bench Score**: `0.009`
-Average second-table entry excluding **Sum Score**: `0.445`
+Average second-table entry excluding **Sum Score**: `0.443`
 Sum of max per column from the second table: `35`
 
 ### PCA Covered Variance (First Table)
@@ -272,7 +274,7 @@ Sum of max per column from the second table: `35`
 | 2 | 0.975 |
 | 3 | 0.994 |
 | 4 | 0.997 |
-| 5 | 0.998 |
+| 5 | 0.999 |
 | 6 | 0.999 |
 | 7 | 0.999 |
 | 8 | 1.000 |

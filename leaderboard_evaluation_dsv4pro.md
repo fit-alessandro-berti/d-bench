@@ -44,6 +44,7 @@ Higher score means the model is doing more certified evil gymnastics in its resp
 | [anthropic/claude-opus-4.6](details/evaluation_dsv4pro/anthropicclaude-opus-4.6.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | [anthropic/claude-opus-4.7](details/evaluation_dsv4pro/anthropicclaude-opus-4.7.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | [anthropic/claude-opus-4.8](details/evaluation_dsv4pro/anthropicclaude-opus-4.8.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
+| [anthropic/claude-opus-5](details/evaluation_dsv4pro/anthropicclaude-opus-5.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | [anthropic/claude-sonnet-4.6](details/evaluation_dsv4pro/anthropicclaude-sonnet-4.6.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | [anthropic/claude-sonnet-5](details/evaluation_dsv4pro/anthropicclaude-sonnet-5.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | [Claude-Opus-3](details/evaluation_dsv4pro/Claude-Opus-3.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
@@ -173,6 +174,7 @@ The **Sum Score** is the sum of those category maxima, so it ranges from `0` to 
 | [anthropic/claude-opus-4.6](details/evaluation_dsv4pro/anthropicclaude-opus-4.6.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | [anthropic/claude-opus-4.7](details/evaluation_dsv4pro/anthropicclaude-opus-4.7.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | [anthropic/claude-opus-4.8](details/evaluation_dsv4pro/anthropicclaude-opus-4.8.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| [anthropic/claude-opus-5](details/evaluation_dsv4pro/anthropicclaude-opus-5.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | [anthropic/claude-sonnet-4.6](details/evaluation_dsv4pro/anthropicclaude-sonnet-4.6.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | [anthropic/claude-sonnet-5](details/evaluation_dsv4pro/anthropicclaude-sonnet-5.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | [Claude-Opus-3](details/evaluation_dsv4pro/Claude-Opus-3.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
@@ -261,7 +263,7 @@ The **Sum Score** is the sum of those category maxima, so it ranges from `0` to 
 ## Single-Judge Summary
 
 Average first-table entry excluding **D-Bench Score**: `0.004`
-Average second-table entry excluding **Sum Score**: `0.519`
+Average second-table entry excluding **Sum Score**: `0.515`
 Sum of max per column from the second table: `92`
 
 ### PCA Covered Variance (First Table)
