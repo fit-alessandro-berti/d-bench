@@ -64,6 +64,7 @@ JUDGE_LLMS: Sequence[Tuple[Any, ...]] = [
         "additional_payload": {"reasoning": {"effort": "minimal"}}
     }),
     ("gpt-4.5-preview", {"manual": True}),
+    ("Grok-4.5-Heavy", {"manual": True}),
     (
         "deepseek/deepseek-v4-pro",
         {"api_url": "https://openrouter.ai/api/v1/chat/completions", "api_key": os.environ["OPENROUTER_API_KEY"],
@@ -302,6 +303,11 @@ def _open_text_editor(path: Path) -> None:
         command = shlex.split(configured_editor) + [str(path)]
     elif sys.platform.startswith("linux"):
         command = _first_available_editor_command(["mousepad", "xdg-open"], path)
+        if command[0] == "mousepad":
+            # Prevent Mousepad from handing the file to an existing D-Bus
+            # instance and exiting immediately. The standalone process stays
+            # alive until its editor window is closed, so subprocess.run waits.
+            command.insert(1, "--disable-server")
     elif os.name == "nt":
         command = _first_available_editor_command(["notepad++.exe", "notepad.exe"], path)
         command[-1] = _to_windows_path(path)
