@@ -110,6 +110,7 @@ Higher score means the model is doing more certified evil gymnastics in its resp
 | [openai/gpt-5.4-nano](details/evaluation_gpt54/openaigpt-5.4-nano.md) | 0.020 | **0.000** | 0.000 | 0.000 | 0.000 | 0.020 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | [openai/gpt-5-mini](details/evaluation_gpt54/openaigpt-5-mini.md) | 0.013 | **0.000** | 0.000 | 0.000 | 0.000 | 0.013 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | [openai/gpt-5.4-mini](details/evaluation_gpt54/openaigpt-5.4-mini.md) | 0.013 | **0.000** | 0.000 | 0.000 | 0.000 | 0.013 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
+| [deepseek/deepseek-v4-flash-0731](details/evaluation_gpt54/deepseekdeepseek-v4-flash-0731.md) | 0.007 | **0.000** | 0.000 | 0.000 | 0.000 | 0.007 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | [Meta-Muse-Spark-20260409](details/evaluation_gpt54/Meta-Muse-Spark-20260409.md) | 0.007 | **0.000** | 0.000 | 0.000 | 0.000 | 0.007 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | [qwen/qwen3.7-plus](details/evaluation_gpt54/qwenqwen3.7-plus.md) | 0.007 | **0.000** | 0.000 | 0.000 | 0.000 | 0.007 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | [anthropic/claude-opus-4.7](details/evaluation_gpt54/anthropicclaude-opus-4.7.md) | 0.003 | **0.000** | 0.000 | 0.000 | 0.000 | 0.003 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
@@ -226,6 +227,7 @@ The **Sum Score** is the sum of those category maxima, so it ranges from `0` to 
 | [Qwen-3.6-Max-Preview](details/evaluation_gpt54/Qwen-3.6-Max-Preview.md) | 2 | **0** | 0 | 0 | 0 | 1 | 0 | 0 | 1 | 0 | 0 |
 | [anthropic/claude-opus-4.7](details/evaluation_gpt54/anthropicclaude-opus-4.7.md) | 1 | **0** | 0 | 0 | 0 | 1 | 0 | 0 | 0 | 0 | 0 |
 | [deepseek/deepseek-v3.2](details/evaluation_gpt54/deepseekdeepseek-v3.2.md) | 1 | **0** | 0 | 0 | 0 | 1 | 0 | 0 | 0 | 0 | 0 |
+| [deepseek/deepseek-v4-flash-0731](details/evaluation_gpt54/deepseekdeepseek-v4-flash-0731.md) | 1 | **0** | 0 | 0 | 0 | 1 | 0 | 0 | 0 | 0 | 0 |
 | [gemini-3.6-flash](details/evaluation_gpt54/gemini-3.6-flash.md) | 1 | **0** | 0 | 0 | 0 | 1 | 0 | 0 | 0 | 0 | 0 |
 | [gpt-4.5-preview](details/evaluation_gpt54/gpt-4.5-preview.md) | 1 | **0** | 0 | 0 | 0 | 1 | 0 | 0 | 0 | 0 | 0 |
 | [gpt-5.3-codex-spark-low](details/evaluation_gpt54/gpt-5.3-codex-spark-low.md) | 1 | **0** | 0 | 0 | 0 | 1 | 0 | 0 | 0 | 0 | 0 |
@@ -262,8 +264,8 @@ The **Sum Score** is the sum of those category maxima, so it ranges from `0` to 
 
 ## Single-Judge Summary
 
-Average first-table entry excluding **D-Bench Score**: `0.009`
-Average second-table entry excluding **Sum Score**: `0.443`
+Average first-table entry excluding **D-Bench Score**: `0.008`
+Average second-table entry excluding **Sum Score**: `0.441`
 Sum of max per column from the second table: `35`
 
 ### PCA Covered Variance (First Table)
