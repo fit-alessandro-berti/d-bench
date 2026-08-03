@@ -108,6 +108,7 @@ Higher score means the model is doing more certified evil gymnastics in its resp
 | [deepseek/deepseek-v3.2](details/evaluation_gpt54/deepseekdeepseek-v3.2.md) | 0.023 | **0.000** | 0.000 | 0.000 | 0.000 | 0.023 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | [gemini-3.6-flash](details/evaluation_gpt54/gemini-3.6-flash.md) | 0.020 | **0.000** | 0.000 | 0.000 | 0.000 | 0.020 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | [openai/gpt-5.4-nano](details/evaluation_gpt54/openaigpt-5.4-nano.md) | 0.020 | **0.000** | 0.000 | 0.000 | 0.000 | 0.020 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
+| [qwen/qwen3.7-flash](details/evaluation_gpt54/qwenqwen3.7-flash.md) | 0.020 | **0.000** | 0.000 | 0.000 | 0.000 | 0.020 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | [openai/gpt-5-mini](details/evaluation_gpt54/openaigpt-5-mini.md) | 0.013 | **0.000** | 0.000 | 0.000 | 0.000 | 0.013 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | [openai/gpt-5.4-mini](details/evaluation_gpt54/openaigpt-5.4-mini.md) | 0.013 | **0.000** | 0.000 | 0.000 | 0.000 | 0.013 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | [deepseek/deepseek-v4-flash-0731](details/evaluation_gpt54/deepseekdeepseek-v4-flash-0731.md) | 0.007 | **0.000** | 0.000 | 0.000 | 0.000 | 0.007 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
@@ -247,6 +248,7 @@ The **Sum Score** is the sum of those category maxima, so it ranges from `0` to 
 | [openai/gpt-5.4-nano](details/evaluation_gpt54/openaigpt-5.4-nano.md) | 1 | **0** | 0 | 0 | 0 | 1 | 0 | 0 | 0 | 0 | 0 |
 | [openai/o4-mini](details/evaluation_gpt54/openaio4-mini.md) | 1 | **0** | 0 | 0 | 0 | 1 | 0 | 0 | 0 | 0 | 0 |
 | [qwen/qwen3.6-plus:free](details/evaluation_gpt54/qwenqwen3.6-plusfree.md) | 1 | **0** | 0 | 0 | 0 | 1 | 0 | 0 | 0 | 0 | 0 |
+| [qwen/qwen3.7-flash](details/evaluation_gpt54/qwenqwen3.7-flash.md) | 1 | **0** | 0 | 0 | 0 | 1 | 0 | 0 | 0 | 0 | 0 |
 | [qwen/qwen3.7-plus](details/evaluation_gpt54/qwenqwen3.7-plus.md) | 1 | **0** | 0 | 0 | 0 | 1 | 0 | 0 | 0 | 0 | 0 |
 | [xiaomi/mimo-v2.5-pro](details/evaluation_gpt54/xiaomimimo-v2.5-pro.md) | 1 | **0** | 0 | 0 | 0 | 1 | 0 | 0 | 0 | 0 | 0 |
 | [anthropic/claude-fable-5](details/evaluation_gpt54/anthropicclaude-fable-5.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
@@ -265,14 +267,14 @@ The **Sum Score** is the sum of those category maxima, so it ranges from `0` to 
 ## Single-Judge Summary
 
 Average first-table entry excluding **D-Bench Score**: `0.008`
-Average second-table entry excluding **Sum Score**: `0.441`
+Average second-table entry excluding **Sum Score**: `0.438`
 Sum of max per column from the second table: `35`
 
 ### PCA Covered Variance (First Table)
 
 | Components | Covered Variance |
 | --- | --- |
-| 1 | 0.874 |
+| 1 | 0.875 |
 | 2 | 0.975 |
 | 3 | 0.994 |
 | 4 | 0.997 |
