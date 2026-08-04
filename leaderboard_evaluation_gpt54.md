@@ -130,6 +130,7 @@ Higher score means the model is doing more certified evil gymnastics in its resp
 | [openai/gpt-5.6-sol](details/evaluation_gpt54/openaigpt-5.6-sol.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | [openai/gpt-5.6-terra](details/evaluation_gpt54/openaigpt-5.6-terra.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | [openai/o3](details/evaluation_gpt54/openaio3.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
+| [qwen/qwen3.8-max](details/evaluation_gpt54/qwenqwen3.8-max.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | [thinkingmachines/inkling-small](details/evaluation_gpt54/thinkingmachinesinkling-small.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 
 ## Maximum Per-Category Leaderboard
@@ -263,13 +264,14 @@ The **Sum Score** is the sum of those category maxima, so it ranges from `0` to 
 | [openai/gpt-5.6-sol](details/evaluation_gpt54/openaigpt-5.6-sol.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | [openai/gpt-5.6-terra](details/evaluation_gpt54/openaigpt-5.6-terra.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | [openai/o3](details/evaluation_gpt54/openaio3.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| [qwen/qwen3.8-max](details/evaluation_gpt54/qwenqwen3.8-max.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | [thinkingmachines/inkling-small](details/evaluation_gpt54/thinkingmachinesinkling-small.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | max per column |  | **4** | 3 | 1 | 9 | 7 | 3 | 1 | 2 | 3 | 2 |
 
 ## Single-Judge Summary
 
 Average first-table entry excluding **D-Bench Score**: `0.008`
-Average second-table entry excluding **Sum Score**: `0.434`
+Average second-table entry excluding **Sum Score**: `0.431`
 Sum of max per column from the second table: `35`
 
 ### PCA Covered Variance (First Table)
@@ -277,7 +279,7 @@ Sum of max per column from the second table: `35`
 | Components | Covered Variance |
 | --- | --- |
 | 1 | 0.875 |
-| 2 | 0.975 |
+| 2 | 0.976 |
 | 3 | 0.994 |
 | 4 | 0.997 |
 | 5 | 0.999 |
