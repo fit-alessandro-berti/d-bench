@@ -1,4 +1,4 @@
-# D-Bench Details (gpt-5.4)
+# D-Bench Details (evaluation_gpt54)
 
 Model: gpt-5.5-2026-04-23
 

@@ -1,4 +1,4 @@
-# D-Bench Leaderboard (gpt-5.4)
+# D-Bench Leaderboard (evaluation_gpt54)
 
 Every voice/category is normalized between `0` and `1`.
 The **D-Bench Score** ranges from `0` to `10`.

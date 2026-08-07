@@ -1,4 +1,4 @@
-# D-Bench Details (gpt-5.4)
+# D-Bench Details (evaluation_gpt54)
 
 Model: qwen/qwen3.5-35b-a3b
 

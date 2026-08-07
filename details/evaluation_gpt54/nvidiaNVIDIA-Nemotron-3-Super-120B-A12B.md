@@ -1,4 +1,4 @@
-# D-Bench Details (gpt-5.4)
+# D-Bench Details (evaluation_gpt54)
 
 Model: nvidia/NVIDIA-Nemotron-3-Super-120B-A12B
 

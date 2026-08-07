@@ -1,4 +1,4 @@
-# D-Bench Details (gpt-5.4)
+# D-Bench Details (evaluation_gpt54)
 
 Model: nvidia/Nemotron-3-Nano-Omni-30B-A3B-Reasoning
 
