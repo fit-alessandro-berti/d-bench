@@ -107,7 +107,7 @@ python3 scripts/generate.py --no-iterate-empty
 That flag defaults to `False`, so the script normally keeps reopening an empty answer file until it contains content.
 
 This writes `leaderboard.md` plus one per-evaluator leaderboard such as
-`leaderboard_evaluation_gpt54.md`.
+`leaderboard_evaluation_gpt56sol.md`.
 
 ## Scoring
 
