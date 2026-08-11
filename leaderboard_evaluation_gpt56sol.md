@@ -47,6 +47,7 @@ Higher score means the model is doing more certified evil gymnastics in its resp
 | [qwen3.6:35b-a3b](details/evaluation_gpt56sol/qwen3.635b-a3b.md) | 0.030 | **0.010** | 0.003 | 0.000 | 0.000 | 0.003 | 0.003 | 0.007 | 0.000 | 0.000 | 0.003 |
 | [google/gemini-3.1-pro-preview](details/evaluation_gpt56sol/googlegemini-3.1-pro-preview.md) | 0.030 | **0.010** | 0.010 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.010 | 0.000 | 0.000 |
 | [arcee-ai/trinity-large-thinking](details/evaluation_gpt56sol/arcee-aitrinity-large-thinking.md) | 0.027 | **0.010** | 0.003 | 0.000 | 0.000 | 0.003 | 0.000 | 0.007 | 0.003 | 0.000 | 0.000 |
+| [meta/muse-spark-1.2](details/evaluation_gpt56sol/metamuse-spark-1.2.md) | 0.027 | **0.010** | 0.003 | 0.000 | 0.000 | 0.003 | 0.000 | 0.003 | 0.007 | 0.000 | 0.000 |
 | [nvidia/Nemotron-3-Nano-Omni-30B-A3B-Reasoning](details/evaluation_gpt56sol/nvidiaNemotron-3-Nano-Omni-30B-A3B-Reasoning.md) | 0.033 | **0.007** | 0.003 | 0.000 | 0.000 | 0.020 | 0.000 | 0.000 | 0.003 | 0.000 | 0.000 |
 | [openrouter/owl-alpha](details/evaluation_gpt56sol/openrouterowl-alpha.md) | 0.027 | **0.007** | 0.007 | 0.003 | 0.000 | 0.000 | 0.000 | 0.003 | 0.003 | 0.000 | 0.003 |
 | [x-ai/grok-4.1-fast](details/evaluation_gpt56sol/x-aigrok-4.1-fast.md) | 0.027 | **0.007** | 0.007 | 0.003 | 0.000 | 0.000 | 0.000 | 0.003 | 0.007 | 0.000 | 0.000 |
@@ -114,6 +115,7 @@ Higher score means the model is doing more certified evil gymnastics in its resp
 | [GPT-5.5-Pro-20260422](details/evaluation_gpt56sol/GPT-5.5-Pro-20260422.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | [grok-4.3](details/evaluation_gpt56sol/grok-4.3.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | [Grok-4.5-Heavy-20260720](details/evaluation_gpt56sol/Grok-4.5-Heavy-20260720.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
+| [meta/muse-glimmer-30b](details/evaluation_gpt56sol/metamuse-glimmer-30b.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | [minimax/minimax-m3](details/evaluation_gpt56sol/minimaxminimax-m3.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | [openai/gpt-4.1](details/evaluation_gpt56sol/openaigpt-4.1.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | [openai/gpt-5](details/evaluation_gpt56sol/openaigpt-5.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
@@ -131,6 +133,7 @@ Higher score means the model is doing more certified evil gymnastics in its resp
 | [Qwen-3.6-Max-Preview](details/evaluation_gpt56sol/Qwen-3.6-Max-Preview.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | [qwen/qwen3.5-397b-a17b](details/evaluation_gpt56sol/qwenqwen3.5-397b-a17b.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | [thinkingmachines/inkling-small](details/evaluation_gpt56sol/thinkingmachinesinkling-small.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
+| [upstage/solar-pro4](details/evaluation_gpt56sol/upstagesolar-pro4.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | [xiaomi/mimo-v2.5](details/evaluation_gpt56sol/xiaomimimo-v2.5.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 
 ## Maximum Per-Category Leaderboard
@@ -178,6 +181,7 @@ The **Sum Score** is the sum of those category maxima, so it ranges from `0` to 
 | [z-ai/glm-5-turbo](details/evaluation_gpt56sol/z-aiglm-5-turbo.md) | 6 | **1** | 1 | 0 | 0 | 1 | 1 | 0 | 1 | 0 | 1 |
 | [arcee-ai/trinity-large-thinking](details/evaluation_gpt56sol/arcee-aitrinity-large-thinking.md) | 5 | **1** | 1 | 0 | 0 | 1 | 0 | 1 | 1 | 0 | 0 |
 | [ibm-granite/granite-4.0-h-micro](details/evaluation_gpt56sol/ibm-granitegranite-4.0-h-micro.md) | 5 | **1** | 0 | 0 | 1 | 3 | 0 | 0 | 0 | 0 | 0 |
+| [meta/muse-spark-1.2](details/evaluation_gpt56sol/metamuse-spark-1.2.md) | 5 | **1** | 1 | 0 | 0 | 1 | 0 | 1 | 1 | 0 | 0 |
 | [mistral-large-2512](details/evaluation_gpt56sol/mistral-large-2512.md) | 5 | **1** | 1 | 0 | 0 | 1 | 0 | 1 | 1 | 0 | 0 |
 | [nvidia/Nemotron-3-Nano-Omni-30B-A3B-Reasoning](details/evaluation_gpt56sol/nvidiaNemotron-3-Nano-Omni-30B-A3B-Reasoning.md) | 5 | **1** | 1 | 0 | 0 | 2 | 0 | 0 | 1 | 0 | 0 |
 | [qwen/qwen3-30b-a3b-instruct-2507](details/evaluation_gpt56sol/qwenqwen3-30b-a3b-instruct-2507.md) | 5 | **1** | 1 | 1 | 0 | 1 | 0 | 0 | 0 | 0 | 1 |
@@ -248,6 +252,7 @@ The **Sum Score** is the sum of those category maxima, so it ranges from `0` to 
 | [GPT-5.5-Pro-20260422](details/evaluation_gpt56sol/GPT-5.5-Pro-20260422.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | [grok-4.3](details/evaluation_gpt56sol/grok-4.3.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | [Grok-4.5-Heavy-20260720](details/evaluation_gpt56sol/Grok-4.5-Heavy-20260720.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| [meta/muse-glimmer-30b](details/evaluation_gpt56sol/metamuse-glimmer-30b.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | [minimax/minimax-m3](details/evaluation_gpt56sol/minimaxminimax-m3.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | [openai/gpt-4.1](details/evaluation_gpt56sol/openaigpt-4.1.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | [openai/gpt-5](details/evaluation_gpt56sol/openaigpt-5.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
@@ -265,13 +270,14 @@ The **Sum Score** is the sum of those category maxima, so it ranges from `0` to 
 | [Qwen-3.6-Max-Preview](details/evaluation_gpt56sol/Qwen-3.6-Max-Preview.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | [qwen/qwen3.5-397b-a17b](details/evaluation_gpt56sol/qwenqwen3.5-397b-a17b.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | [thinkingmachines/inkling-small](details/evaluation_gpt56sol/thinkingmachinesinkling-small.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| [upstage/solar-pro4](details/evaluation_gpt56sol/upstagesolar-pro4.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | [xiaomi/mimo-v2.5](details/evaluation_gpt56sol/xiaomimimo-v2.5.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | max per column |  | **6** | 6 | 4 | 9 | 7 | 7 | 3 | 5 | 5 | 2 |
 
 ## Single-Judge Summary
 
 Average first-table entry excluding **D-Bench Score**: `0.004`
-Average second-table entry excluding **Sum Score**: `0.493`
+Average second-table entry excluding **Sum Score**: `0.485`
 Sum of max per column from the second table: `54`
 
 ### PCA Covered Variance (First Table)
