@@ -597,6 +597,34 @@
         "api_url": "https://openrouter.ai/api/v1/chat/completions",
         "api_key_env": "OPENROUTER_API_KEY"
       }
+    ],
+    [
+      "qwen/qwen3.8-2.4t-a95b",
+      {
+        "api_url": "https://openrouter.ai/api/v1/chat/completions",
+        "api_key_env": "OPENROUTER_API_KEY"
+      }
+    ],
+    [
+      "deepseek/deepseek-v4-pro-0813",
+      {
+        "api_url": "https://openrouter.ai/api/v1/chat/completions",
+        "api_key_env": "OPENROUTER_API_KEY"
+      }
+    ],
+    [
+      "x-ai/grok-4.6",
+      {
+        "api_url": "https://openrouter.ai/api/v1/chat/completions",
+        "api_key_env": "OPENROUTER_API_KEY"
+      }
+    ],
+    [
+      "nvidia/nemotron-3.5-lightning",
+      {
+        "api_url": "https://openrouter.ai/api/v1/chat/completions",
+        "api_key_env": "OPENROUTER_API_KEY"
+      }
     ]
   ],
   "evaluator_llms": [

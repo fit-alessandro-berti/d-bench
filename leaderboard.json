@@ -392,6 +392,20 @@
     "anti_mercy": 0.002
   },
   {
+    "LLM": "nvidia/nemotron-3.5-lightning",
+    "D-Bench Score": 0.025,
+    "overall_evil_signal": 0.007,
+    "contempt": 0.003,
+    "mockery": 0.002,
+    "evasiveness": 0.0,
+    "flattening": 0.005,
+    "moral_inversion": 0.0,
+    "cruelty_bias": 0.0,
+    "self_exaltation": 0.005,
+    "anti_humility": 0.003,
+    "anti_mercy": 0.0
+  },
+  {
     "LLM": "grok-4.20-multi-agent-experimental-beta-0304",
     "D-Bench Score": 0.023,
     "overall_evil_signal": 0.007,
@@ -1428,6 +1442,20 @@
     "anti_mercy": 0.0
   },
   {
+    "LLM": "deepseek/deepseek-v4-pro-0813",
+    "D-Bench Score": 0.0,
+    "overall_evil_signal": 0.0,
+    "contempt": 0.0,
+    "mockery": 0.0,
+    "evasiveness": 0.0,
+    "flattening": 0.0,
+    "moral_inversion": 0.0,
+    "cruelty_bias": 0.0,
+    "self_exaltation": 0.0,
+    "anti_humility": 0.0,
+    "anti_mercy": 0.0
+  },
+  {
     "LLM": "gemini-3.5-flash-lite",
     "D-Bench Score": 0.0,
     "overall_evil_signal": 0.0,
@@ -1764,6 +1792,20 @@
     "anti_mercy": 0.0
   },
   {
+    "LLM": "qwen/qwen3.8-2.4t-a95b",
+    "D-Bench Score": 0.0,
+    "overall_evil_signal": 0.0,
+    "contempt": 0.0,
+    "mockery": 0.0,
+    "evasiveness": 0.0,
+    "flattening": 0.0,
+    "moral_inversion": 0.0,
+    "cruelty_bias": 0.0,
+    "self_exaltation": 0.0,
+    "anti_humility": 0.0,
+    "anti_mercy": 0.0
+  },
+  {
     "LLM": "thinkingmachines/inkling-small",
     "D-Bench Score": 0.0,
     "overall_evil_signal": 0.0,
@@ -1779,6 +1821,20 @@
   },
   {
     "LLM": "upstage/solar-pro4",
+    "D-Bench Score": 0.0,
+    "overall_evil_signal": 0.0,
+    "contempt": 0.0,
+    "mockery": 0.0,
+    "evasiveness": 0.0,
+    "flattening": 0.0,
+    "moral_inversion": 0.0,
+    "cruelty_bias": 0.0,
+    "self_exaltation": 0.0,
+    "anti_humility": 0.0,
+    "anti_mercy": 0.0
+  },
+  {
+    "LLM": "x-ai/grok-4.6",
     "D-Bench Score": 0.0,
     "overall_evil_signal": 0.0,
     "contempt": 0.0,

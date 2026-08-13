@@ -23,6 +23,7 @@ Higher score means the model is doing more certified evil gymnastics in its resp
 | [allenai/olmo-3.1-32b-instruct](details/evaluation_dsv4pro/allenaiolmo-3.1-32b-instruct.md) | 0.053 | **0.013** | 0.000 | 0.000 | 0.017 | 0.023 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | [bytedance-seed/seed-2.0-lite](details/evaluation_dsv4pro/bytedance-seedseed-2.0-lite.md) | 0.047 | **0.010** | 0.000 | 0.000 | 0.017 | 0.020 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | [openai/gpt-4o-mini](details/evaluation_dsv4pro/openaigpt-4o-mini.md) | 0.040 | **0.007** | 0.000 | 0.000 | 0.000 | 0.033 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
+| [nvidia/nemotron-3.5-lightning](details/evaluation_dsv4pro/nvidianemotron-3.5-lightning.md) | 0.030 | **0.007** | 0.000 | 0.000 | 0.000 | 0.010 | 0.000 | 0.000 | 0.007 | 0.007 | 0.000 |
 | [openai/o4-mini](details/evaluation_dsv4pro/openaio4-mini.md) | 0.023 | **0.007** | 0.000 | 0.000 | 0.000 | 0.007 | 0.000 | 0.000 | 0.003 | 0.000 | 0.007 |
 | [openrouter/owl-alpha](details/evaluation_dsv4pro/openrouterowl-alpha.md) | 0.020 | **0.007** | 0.000 | 0.000 | 0.000 | 0.003 | 0.003 | 0.000 | 0.007 | 0.000 | 0.000 |
 | [google/gemini-3.1-flash-lite-preview](details/evaluation_dsv4pro/googlegemini-3.1-flash-lite-preview.md) | 0.017 | **0.007** | 0.003 | 0.007 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
@@ -52,6 +53,7 @@ Higher score means the model is doing more certified evil gymnastics in its resp
 | [deepseek/deepseek-v4-flash](details/evaluation_dsv4pro/deepseekdeepseek-v4-flash.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | [deepseek/deepseek-v4-flash-0731](details/evaluation_dsv4pro/deepseekdeepseek-v4-flash-0731.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | [deepseek/deepseek-v4-pro](details/evaluation_dsv4pro/deepseekdeepseek-v4-pro.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
+| [deepseek/deepseek-v4-pro-0813](details/evaluation_dsv4pro/deepseekdeepseek-v4-pro-0813.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | [gemini-2.5-flash-lite](details/evaluation_dsv4pro/gemini-2.5-flash-lite.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | [gemini-3.5-flash](details/evaluation_dsv4pro/gemini-3.5-flash.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | [gemini-3.5-flash-lite](details/evaluation_dsv4pro/gemini-3.5-flash-lite.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
@@ -118,6 +120,7 @@ Higher score means the model is doing more certified evil gymnastics in its resp
 | [qwen/qwen3.7-flash](details/evaluation_dsv4pro/qwenqwen3.7-flash.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | [qwen/qwen3.7-max](details/evaluation_dsv4pro/qwenqwen3.7-max.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | [qwen/qwen3.7-plus](details/evaluation_dsv4pro/qwenqwen3.7-plus.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
+| [qwen/qwen3.8-2.4t-a95b](details/evaluation_dsv4pro/qwenqwen3.8-2.4t-a95b.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | [qwen/qwen3.8-max](details/evaluation_dsv4pro/qwenqwen3.8-max.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | [qwen3.5:4b](details/evaluation_dsv4pro/qwen3.54b.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | [stepfun/step-3.7-flash](details/evaluation_dsv4pro/stepfunstep-3.7-flash.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
@@ -127,6 +130,7 @@ Higher score means the model is doing more certified evil gymnastics in its resp
 | [upstage/solar-pro4](details/evaluation_dsv4pro/upstagesolar-pro4.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | [x-ai/grok-4.1-fast](details/evaluation_dsv4pro/x-aigrok-4.1-fast.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | [x-ai/grok-4.5](details/evaluation_dsv4pro/x-aigrok-4.5.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
+| [x-ai/grok-4.6](details/evaluation_dsv4pro/x-aigrok-4.6.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | [x-ai/grok-code-fast-1](details/evaluation_dsv4pro/x-aigrok-code-fast-1.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | [xiaomi/mimo-v2.5](details/evaluation_dsv4pro/xiaomimimo-v2.5.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | [xiaomi/mimo-v2.5-pro](details/evaluation_dsv4pro/xiaomimimo-v2.5-pro.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
@@ -159,6 +163,7 @@ The **Sum Score** is the sum of those category maxima, so it ranges from `0` to 
 | [allenai/olmo-3.1-32b-instruct](details/evaluation_dsv4pro/allenaiolmo-3.1-32b-instruct.md) | 16 | **4** | 0 | 0 | 5 | 7 | 0 | 0 | 0 | 0 | 0 |
 | [granite4.1:3b](details/evaluation_dsv4pro/granite4.13b.md) | 16 | **3** | 1 | 0 | 0 | 6 | 0 | 0 | 4 | 2 | 0 |
 | [bytedance-seed/seed-2.0-lite](details/evaluation_dsv4pro/bytedance-seedseed-2.0-lite.md) | 14 | **3** | 0 | 0 | 5 | 6 | 0 | 0 | 0 | 0 | 0 |
+| [nvidia/nemotron-3.5-lightning](details/evaluation_dsv4pro/nvidianemotron-3.5-lightning.md) | 9 | **2** | 0 | 0 | 0 | 3 | 0 | 0 | 2 | 2 | 0 |
 | [openai/o4-mini](details/evaluation_dsv4pro/openaio4-mini.md) | 7 | **2** | 0 | 0 | 0 | 2 | 0 | 0 | 1 | 0 | 2 |
 | [openrouter/owl-alpha](details/evaluation_dsv4pro/openrouterowl-alpha.md) | 6 | **2** | 0 | 0 | 0 | 1 | 1 | 0 | 2 | 0 | 0 |
 | [google/gemini-3.1-flash-lite-preview](details/evaluation_dsv4pro/googlegemini-3.1-flash-lite-preview.md) | 5 | **2** | 1 | 2 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
@@ -189,6 +194,7 @@ The **Sum Score** is the sum of those category maxima, so it ranges from `0` to 
 | [deepseek/deepseek-v4-flash](details/evaluation_dsv4pro/deepseekdeepseek-v4-flash.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | [deepseek/deepseek-v4-flash-0731](details/evaluation_dsv4pro/deepseekdeepseek-v4-flash-0731.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | [deepseek/deepseek-v4-pro](details/evaluation_dsv4pro/deepseekdeepseek-v4-pro.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| [deepseek/deepseek-v4-pro-0813](details/evaluation_dsv4pro/deepseekdeepseek-v4-pro-0813.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | [gemini-2.5-flash-lite](details/evaluation_dsv4pro/gemini-2.5-flash-lite.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | [gemini-3.5-flash](details/evaluation_dsv4pro/gemini-3.5-flash.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | [gemini-3.5-flash-lite](details/evaluation_dsv4pro/gemini-3.5-flash-lite.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
@@ -255,6 +261,7 @@ The **Sum Score** is the sum of those category maxima, so it ranges from `0` to 
 | [qwen/qwen3.7-flash](details/evaluation_dsv4pro/qwenqwen3.7-flash.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | [qwen/qwen3.7-max](details/evaluation_dsv4pro/qwenqwen3.7-max.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | [qwen/qwen3.7-plus](details/evaluation_dsv4pro/qwenqwen3.7-plus.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| [qwen/qwen3.8-2.4t-a95b](details/evaluation_dsv4pro/qwenqwen3.8-2.4t-a95b.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | [qwen/qwen3.8-max](details/evaluation_dsv4pro/qwenqwen3.8-max.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | [qwen3.5:4b](details/evaluation_dsv4pro/qwen3.54b.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | [stepfun/step-3.7-flash](details/evaluation_dsv4pro/stepfunstep-3.7-flash.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
@@ -264,6 +271,7 @@ The **Sum Score** is the sum of those category maxima, so it ranges from `0` to 
 | [upstage/solar-pro4](details/evaluation_dsv4pro/upstagesolar-pro4.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | [x-ai/grok-4.1-fast](details/evaluation_dsv4pro/x-aigrok-4.1-fast.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | [x-ai/grok-4.5](details/evaluation_dsv4pro/x-aigrok-4.5.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| [x-ai/grok-4.6](details/evaluation_dsv4pro/x-aigrok-4.6.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | [x-ai/grok-code-fast-1](details/evaluation_dsv4pro/x-aigrok-code-fast-1.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | [xiaomi/mimo-v2.5](details/evaluation_dsv4pro/xiaomimimo-v2.5.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | [xiaomi/mimo-v2.5-pro](details/evaluation_dsv4pro/xiaomimimo-v2.5-pro.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
@@ -276,8 +284,8 @@ The **Sum Score** is the sum of those category maxima, so it ranges from `0` to 
 
 ## Single-Judge Summary
 
-Average first-table entry excluding **D-Bench Score**: `0.004`
-Average second-table entry excluding **Sum Score**: `0.487`
+Average first-table entry excluding **D-Bench Score**: `0.003`
+Average second-table entry excluding **Sum Score**: `0.479`
 Sum of max per column from the second table: `92`
 
 ### PCA Covered Variance (First Table)
@@ -287,7 +295,7 @@ Sum of max per column from the second table: `92`
 | 1 | 0.931 |
 | 2 | 0.958 |
 | 3 | 0.984 |
-| 4 | 0.995 |
+| 4 | 0.994 |
 | 5 | 0.997 |
 | 6 | 0.998 |
 | 7 | 0.999 |

@@ -56,6 +56,7 @@ Higher score means the model is doing more certified evil gymnastics in its resp
 | [qwen/qwen3-30b-a3b-instruct-2507](details/evaluation_gpt56sol/qwenqwen3-30b-a3b-instruct-2507.md) | 0.023 | **0.007** | 0.007 | 0.003 | 0.000 | 0.003 | 0.000 | 0.000 | 0.000 | 0.000 | 0.003 |
 | [grok-build-0.1](details/evaluation_gpt56sol/grok-build-0.1.md) | 0.020 | **0.007** | 0.007 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.007 | 0.000 | 0.000 |
 | [moonshotai/kimi-k2.6](details/evaluation_gpt56sol/moonshotaikimi-k2.6.md) | 0.020 | **0.007** | 0.007 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.007 | 0.000 | 0.000 |
+| [nvidia/nemotron-3.5-lightning](details/evaluation_gpt56sol/nvidianemotron-3.5-lightning.md) | 0.020 | **0.007** | 0.007 | 0.003 | 0.000 | 0.000 | 0.000 | 0.000 | 0.003 | 0.000 | 0.000 |
 | [openai/o4-mini](details/evaluation_gpt56sol/openaio4-mini.md) | 0.020 | **0.007** | 0.007 | 0.000 | 0.000 | 0.003 | 0.000 | 0.000 | 0.003 | 0.000 | 0.000 |
 | [x-ai/grok-4.5](details/evaluation_gpt56sol/x-aigrok-4.5.md) | 0.020 | **0.007** | 0.007 | 0.003 | 0.000 | 0.000 | 0.000 | 0.000 | 0.003 | 0.000 | 0.000 |
 | [granite4.1:30b](details/evaluation_gpt56sol/granite4.130b.md) | 0.017 | **0.007** | 0.000 | 0.000 | 0.000 | 0.007 | 0.000 | 0.000 | 0.003 | 0.000 | 0.000 |
@@ -107,6 +108,7 @@ Higher score means the model is doing more certified evil gymnastics in its resp
 | [anthropic/claude-sonnet-5](details/evaluation_gpt56sol/anthropicclaude-sonnet-5.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | [deepseek/deepseek-v3.2](details/evaluation_gpt56sol/deepseekdeepseek-v3.2.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | [deepseek/deepseek-v4-flash-0731](details/evaluation_gpt56sol/deepseekdeepseek-v4-flash-0731.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
+| [deepseek/deepseek-v4-pro-0813](details/evaluation_gpt56sol/deepseekdeepseek-v4-pro-0813.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | [gemini-3.5-flash-lite](details/evaluation_gpt56sol/gemini-3.5-flash-lite.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | [gemini-3.6-flash](details/evaluation_gpt56sol/gemini-3.6-flash.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | [gpt-4.5-preview](details/evaluation_gpt56sol/gpt-4.5-preview.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
@@ -132,8 +134,10 @@ Higher score means the model is doing more certified evil gymnastics in its resp
 | [poolside/laguna-m.1:free](details/evaluation_gpt56sol/poolsidelaguna-m.1free.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | [Qwen-3.6-Max-Preview](details/evaluation_gpt56sol/Qwen-3.6-Max-Preview.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | [qwen/qwen3.5-397b-a17b](details/evaluation_gpt56sol/qwenqwen3.5-397b-a17b.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
+| [qwen/qwen3.8-2.4t-a95b](details/evaluation_gpt56sol/qwenqwen3.8-2.4t-a95b.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | [thinkingmachines/inkling-small](details/evaluation_gpt56sol/thinkingmachinesinkling-small.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | [upstage/solar-pro4](details/evaluation_gpt56sol/upstagesolar-pro4.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
+| [x-ai/grok-4.6](details/evaluation_gpt56sol/x-aigrok-4.6.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | [xiaomi/mimo-v2.5](details/evaluation_gpt56sol/xiaomimimo-v2.5.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 
 ## Maximum Per-Category Leaderboard
@@ -168,6 +172,7 @@ The **Sum Score** is the sum of those category maxima, so it ranges from `0` to 
 | [anthropic/claude-sonnet-4.6](details/evaluation_gpt56sol/anthropicclaude-sonnet-4.6.md) | 7 | **2** | 2 | 0 | 0 | 0 | 0 | 1 | 2 | 0 | 0 |
 | [meta/muse-spark-1.1](details/evaluation_gpt56sol/metamuse-spark-1.1.md) | 7 | **2** | 2 | 1 | 0 | 0 | 0 | 1 | 1 | 0 | 0 |
 | [moonshotai/kimi-k2.6](details/evaluation_gpt56sol/moonshotaikimi-k2.6.md) | 6 | **2** | 2 | 0 | 0 | 0 | 0 | 0 | 2 | 0 | 0 |
+| [nvidia/nemotron-3.5-lightning](details/evaluation_gpt56sol/nvidianemotron-3.5-lightning.md) | 6 | **2** | 2 | 1 | 0 | 0 | 0 | 0 | 1 | 0 | 0 |
 | [openai/o4-mini](details/evaluation_gpt56sol/openaio4-mini.md) | 6 | **2** | 2 | 0 | 0 | 1 | 0 | 0 | 1 | 0 | 0 |
 | [x-ai/grok-4.5](details/evaluation_gpt56sol/x-aigrok-4.5.md) | 6 | **2** | 2 | 1 | 0 | 0 | 0 | 0 | 1 | 0 | 0 |
 | [ministral-3b-2512](details/evaluation_gpt56sol/ministral-3b-2512.md) | 8 | **1** | 1 | 0 | 0 | 2 | 1 | 0 | 1 | 0 | 2 |
@@ -244,6 +249,7 @@ The **Sum Score** is the sum of those category maxima, so it ranges from `0` to 
 | [anthropic/claude-sonnet-5](details/evaluation_gpt56sol/anthropicclaude-sonnet-5.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | [deepseek/deepseek-v3.2](details/evaluation_gpt56sol/deepseekdeepseek-v3.2.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | [deepseek/deepseek-v4-flash-0731](details/evaluation_gpt56sol/deepseekdeepseek-v4-flash-0731.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| [deepseek/deepseek-v4-pro-0813](details/evaluation_gpt56sol/deepseekdeepseek-v4-pro-0813.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | [gemini-3.5-flash-lite](details/evaluation_gpt56sol/gemini-3.5-flash-lite.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | [gemini-3.6-flash](details/evaluation_gpt56sol/gemini-3.6-flash.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | [gpt-4.5-preview](details/evaluation_gpt56sol/gpt-4.5-preview.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
@@ -269,15 +275,17 @@ The **Sum Score** is the sum of those category maxima, so it ranges from `0` to 
 | [poolside/laguna-m.1:free](details/evaluation_gpt56sol/poolsidelaguna-m.1free.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | [Qwen-3.6-Max-Preview](details/evaluation_gpt56sol/Qwen-3.6-Max-Preview.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | [qwen/qwen3.5-397b-a17b](details/evaluation_gpt56sol/qwenqwen3.5-397b-a17b.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| [qwen/qwen3.8-2.4t-a95b](details/evaluation_gpt56sol/qwenqwen3.8-2.4t-a95b.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | [thinkingmachines/inkling-small](details/evaluation_gpt56sol/thinkingmachinesinkling-small.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | [upstage/solar-pro4](details/evaluation_gpt56sol/upstagesolar-pro4.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| [x-ai/grok-4.6](details/evaluation_gpt56sol/x-aigrok-4.6.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | [xiaomi/mimo-v2.5](details/evaluation_gpt56sol/xiaomimimo-v2.5.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | max per column |  | **6** | 6 | 4 | 9 | 7 | 7 | 3 | 5 | 5 | 2 |
 
 ## Single-Judge Summary
 
 Average first-table entry excluding **D-Bench Score**: `0.004`
-Average second-table entry excluding **Sum Score**: `0.485`
+Average second-table entry excluding **Sum Score**: `0.475`
 Sum of max per column from the second table: `54`
 
 ### PCA Covered Variance (First Table)
@@ -285,7 +293,7 @@ Sum of max per column from the second table: `54`
 | Components | Covered Variance |
 | --- | --- |
 | 1 | 0.907 |
-| 2 | 0.951 |
+| 2 | 0.950 |
 | 3 | 0.987 |
 | 4 | 0.993 |
 | 5 | 0.995 |

@@ -34,6 +34,7 @@ Higher score means the model is doing more certified evil gymnastics in its resp
 | mistralai/mistral-7b-instruct-v0.1 | 0.045 | **0.007** | 0.000 | 0.000 | 0.003 | 0.035 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | google/gemini-3-flash-preview | 0.027 | **0.007** | 0.007 | 0.003 | 0.000 | 0.003 | 0.000 | 0.002 | 0.005 | 0.000 | 0.000 |
 | grok-4.20-experimental-beta-0304-non-reasoning | 0.025 | **0.007** | 0.007 | 0.002 | 0.000 | 0.003 | 0.000 | 0.000 | 0.005 | 0.000 | 0.002 |
+| nvidia/nemotron-3.5-lightning | 0.025 | **0.007** | 0.003 | 0.002 | 0.000 | 0.005 | 0.000 | 0.000 | 0.005 | 0.003 | 0.000 |
 | grok-4.20-multi-agent-experimental-beta-0304 | 0.023 | **0.007** | 0.007 | 0.000 | 0.002 | 0.003 | 0.000 | 0.002 | 0.003 | 0.000 | 0.000 |
 | openrouter/owl-alpha | 0.023 | **0.007** | 0.003 | 0.002 | 0.000 | 0.002 | 0.002 | 0.002 | 0.005 | 0.000 | 0.002 |
 | qwen3.5:4b | 0.023 | **0.007** | 0.000 | 0.000 | 0.000 | 0.012 | 0.000 | 0.003 | 0.002 | 0.000 | 0.000 |
@@ -108,6 +109,7 @@ Higher score means the model is doing more certified evil gymnastics in its resp
 | anthropic/claude-sonnet-5 | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | deepseek/deepseek-v3.2 | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | deepseek/deepseek-v4-flash-0731 | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
+| deepseek/deepseek-v4-pro-0813 | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | gemini-3.5-flash-lite | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | gemini-3.6-flash | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | gpt-4.5-preview | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
@@ -132,8 +134,10 @@ Higher score means the model is doing more certified evil gymnastics in its resp
 | poolside/laguna-m.1:free | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | Qwen-3.6-Max-Preview | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | qwen/qwen3.5-397b-a17b | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
+| qwen/qwen3.8-2.4t-a95b | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | thinkingmachines/inkling-small | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | upstage/solar-pro4 | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
+| x-ai/grok-4.6 | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | xiaomi/mimo-v2.5 | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 
 ## Maximum Per-Category Leaderboard
@@ -166,6 +170,7 @@ The **Sum Score** is the sum of those category maxima, so it ranges from `0` to 
 | deepseek/deepseek-v4-flash | 13 | **3** | 3 | 1 | 0 | 2 | 0 | 1 | 2 | 0 | 1 |
 | grok-4.20-multi-agent-experimental-beta-0304 | 12 | **3** | 3 | 0 | 1 | 2 | 0 | 1 | 2 | 0 | 0 |
 | inclusionailing-2.6-1tfree | 11 | **3** | 3 | 1 | 0 | 1 | 0 | 0 | 3 | 0 | 0 |
+| nvidia/nemotron-3.5-lightning | 12 | **2** | 2 | 1 | 0 | 3 | 0 | 0 | 2 | 2 | 0 |
 | openrouter/owl-alpha | 11 | **2** | 2 | 1 | 0 | 1 | 1 | 1 | 2 | 0 | 1 |
 | qwen/qwen3-next-80b-a3b-instruct | 10 | **2** | 2 | 0 | 1 | 2 | 0 | 1 | 1 | 0 | 1 |
 | z-ai/glm-5.1 | 10 | **2** | 2 | 2 | 0 | 1 | 0 | 1 | 2 | 0 | 0 |
@@ -245,6 +250,7 @@ The **Sum Score** is the sum of those category maxima, so it ranges from `0` to 
 | anthropic/claude-sonnet-5 | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | deepseek/deepseek-v3.2 | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | deepseek/deepseek-v4-flash-0731 | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| deepseek/deepseek-v4-pro-0813 | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | gemini-3.5-flash-lite | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | gemini-3.6-flash | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | gpt-4.5-preview | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
@@ -269,7 +275,9 @@ The **Sum Score** is the sum of those category maxima, so it ranges from `0` to 
 | poolside/laguna-m.1:free | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | Qwen-3.6-Max-Preview | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | qwen/qwen3.5-397b-a17b | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| qwen/qwen3.8-2.4t-a95b | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | thinkingmachines/inkling-small | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | upstage/solar-pro4 | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| x-ai/grok-4.6 | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | xiaomi/mimo-v2.5 | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | max per column |  | **9** | 8 | 9 | 10 | 9 | 9 | 8 | 10 | 10 | 10 |
