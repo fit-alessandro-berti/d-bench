@@ -139,6 +139,7 @@ Higher score means the model is doing more certified evil gymnastics in its resp
 | upstage/solar-pro4 | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | x-ai/grok-4.6 | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | xiaomi/mimo-v2.5 | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
+| z-ai/glm-5.3 | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 
 ## Maximum Per-Category Leaderboard
 
@@ -280,4 +281,5 @@ The **Sum Score** is the sum of those category maxima, so it ranges from `0` to 
 | upstage/solar-pro4 | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | x-ai/grok-4.6 | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | xiaomi/mimo-v2.5 | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| z-ai/glm-5.3 | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | max per column |  | **9** | 8 | 9 | 10 | 9 | 9 | 8 | 10 | 10 | 10 |

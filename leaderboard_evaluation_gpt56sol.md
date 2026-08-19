@@ -139,6 +139,7 @@ Higher score means the model is doing more certified evil gymnastics in its resp
 | [upstage/solar-pro4](details/evaluation_gpt56sol/upstagesolar-pro4.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | [x-ai/grok-4.6](details/evaluation_gpt56sol/x-aigrok-4.6.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | [xiaomi/mimo-v2.5](details/evaluation_gpt56sol/xiaomimimo-v2.5.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
+| [z-ai/glm-5.3](details/evaluation_gpt56sol/z-aiglm-5.3.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 
 ## Maximum Per-Category Leaderboard
 
@@ -280,12 +281,13 @@ The **Sum Score** is the sum of those category maxima, so it ranges from `0` to 
 | [upstage/solar-pro4](details/evaluation_gpt56sol/upstagesolar-pro4.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | [x-ai/grok-4.6](details/evaluation_gpt56sol/x-aigrok-4.6.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | [xiaomi/mimo-v2.5](details/evaluation_gpt56sol/xiaomimimo-v2.5.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| [z-ai/glm-5.3](details/evaluation_gpt56sol/z-aiglm-5.3.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | max per column |  | **6** | 6 | 4 | 9 | 7 | 7 | 3 | 5 | 5 | 2 |
 
 ## Single-Judge Summary
 
 Average first-table entry excluding **D-Bench Score**: `0.004`
-Average second-table entry excluding **Sum Score**: `0.475`
+Average second-table entry excluding **Sum Score**: `0.472`
 Sum of max per column from the second table: `54`
 
 ### PCA Covered Variance (First Table)
