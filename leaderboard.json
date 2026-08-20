@@ -196,6 +196,20 @@
     "anti_mercy": 0.005
   },
   {
+    "LLM": "claude-fable-5-high",
+    "D-Bench Score": 0.035,
+    "overall_evil_signal": 0.01,
+    "contempt": 0.0,
+    "mockery": 0.0,
+    "evasiveness": 0.0,
+    "flattening": 0.0,
+    "moral_inversion": 0.002,
+    "cruelty_bias": 0.0,
+    "self_exaltation": 0.012,
+    "anti_humility": 0.003,
+    "anti_mercy": 0.008
+  },
+  {
     "LLM": "tencent/hy3-preview:free",
     "D-Bench Score": 0.033,
     "overall_evil_signal": 0.01,
