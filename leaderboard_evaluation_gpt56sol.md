@@ -83,6 +83,7 @@ Higher score means the model is doing more certified evil gymnastics in its resp
 | [openai/o3](details/evaluation_gpt56sol/openaio3.md) | 0.010 | **0.003** | 0.003 | 0.000 | 0.000 | 0.003 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | [qwen/qwen3.5-27b](details/evaluation_gpt56sol/qwenqwen3.5-27b.md) | 0.010 | **0.003** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.007 | 0.000 | 0.000 |
 | [qwen/qwen3.6-plus:free](details/evaluation_gpt56sol/qwenqwen3.6-plusfree.md) | 0.010 | **0.003** | 0.003 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.003 | 0.000 | 0.000 |
+| [stealth/ox-alpha](details/evaluation_gpt56sol/stealthox-alpha.md) | 0.010 | **0.003** | 0.003 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.003 | 0.000 | 0.000 |
 | [x-ai/grok-code-fast-1](details/evaluation_gpt56sol/x-aigrok-code-fast-1.md) | 0.010 | **0.003** | 0.003 | 0.000 | 0.000 | 0.003 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | [xiaomi/mimo-v2.5-pro](details/evaluation_gpt56sol/xiaomimimo-v2.5-pro.md) | 0.010 | **0.003** | 0.003 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.003 | 0.000 | 0.000 |
 | [z-ai/glm-5.2](details/evaluation_gpt56sol/z-aiglm-5.2.md) | 0.010 | **0.003** | 0.003 | 0.000 | 0.000 | 0.000 | 0.000 | 0.003 | 0.000 | 0.000 | 0.000 |
@@ -224,6 +225,7 @@ The **Sum Score** is the sum of those category maxima, so it ranges from `0` to 
 | [poolside/laguna-xs.2:free](details/evaluation_gpt56sol/poolsidelaguna-xs.2free.md) | 3 | **1** | 0 | 0 | 0 | 2 | 0 | 0 | 0 | 0 | 0 |
 | [qwen/qwen3.5-27b](details/evaluation_gpt56sol/qwenqwen3.5-27b.md) | 3 | **1** | 0 | 0 | 0 | 0 | 0 | 0 | 2 | 0 | 0 |
 | [qwen/qwen3.6-plus:free](details/evaluation_gpt56sol/qwenqwen3.6-plusfree.md) | 3 | **1** | 1 | 0 | 0 | 0 | 0 | 0 | 1 | 0 | 0 |
+| [stealth/ox-alpha](details/evaluation_gpt56sol/stealthox-alpha.md) | 3 | **1** | 1 | 0 | 0 | 0 | 0 | 0 | 1 | 0 | 0 |
 | [x-ai/grok-code-fast-1](details/evaluation_gpt56sol/x-aigrok-code-fast-1.md) | 3 | **1** | 1 | 0 | 0 | 1 | 0 | 0 | 0 | 0 | 0 |
 | [xiaomi/mimo-v2.5-pro](details/evaluation_gpt56sol/xiaomimimo-v2.5-pro.md) | 3 | **1** | 1 | 0 | 0 | 0 | 0 | 0 | 1 | 0 | 0 |
 | [z-ai/glm-5.2](details/evaluation_gpt56sol/z-aiglm-5.2.md) | 3 | **1** | 1 | 0 | 0 | 0 | 0 | 1 | 0 | 0 | 0 |
@@ -289,7 +291,7 @@ The **Sum Score** is the sum of those category maxima, so it ranges from `0` to 
 ## Single-Judge Summary
 
 Average first-table entry excluding **D-Bench Score**: `0.004`
-Average second-table entry excluding **Sum Score**: `0.468`
+Average second-table entry excluding **Sum Score**: `0.467`
 Sum of max per column from the second table: `54`
 
 ### PCA Covered Variance (First Table)

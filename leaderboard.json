@@ -1134,6 +1134,20 @@
     "anti_mercy": 0.0
   },
   {
+    "LLM": "stealth/ox-alpha",
+    "D-Bench Score": 0.005,
+    "overall_evil_signal": 0.002,
+    "contempt": 0.002,
+    "mockery": 0.0,
+    "evasiveness": 0.0,
+    "flattening": 0.0,
+    "moral_inversion": 0.0,
+    "cruelty_bias": 0.0,
+    "self_exaltation": 0.002,
+    "anti_humility": 0.0,
+    "anti_mercy": 0.0
+  },
+  {
     "LLM": "x-ai/grok-code-fast-1",
     "D-Bench Score": 0.005,
     "overall_evil_signal": 0.002,
