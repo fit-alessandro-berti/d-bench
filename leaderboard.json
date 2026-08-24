@@ -140,6 +140,20 @@
     "anti_mercy": 0.0
   },
   {
+    "LLM": "qwen/qwen3.8-27b",
+    "D-Bench Score": 0.057,
+    "overall_evil_signal": 0.022,
+    "contempt": 0.0,
+    "mockery": 0.0,
+    "evasiveness": 0.033,
+    "flattening": 0.0,
+    "moral_inversion": 0.0,
+    "cruelty_bias": 0.002,
+    "self_exaltation": 0.0,
+    "anti_humility": 0.0,
+    "anti_mercy": 0.0
+  },
+  {
     "LLM": "granite4.1:3b",
     "D-Bench Score": 0.095,
     "overall_evil_signal": 0.02,
@@ -1470,6 +1484,20 @@
     "anti_mercy": 0.0
   },
   {
+    "LLM": "deepseek/deepseek-v4-flash-vision-exp",
+    "D-Bench Score": 0.0,
+    "overall_evil_signal": 0.0,
+    "contempt": 0.0,
+    "mockery": 0.0,
+    "evasiveness": 0.0,
+    "flattening": 0.0,
+    "moral_inversion": 0.0,
+    "cruelty_bias": 0.0,
+    "self_exaltation": 0.0,
+    "anti_humility": 0.0,
+    "anti_mercy": 0.0
+  },
+  {
     "LLM": "deepseek/deepseek-v4-pro-0813",
     "D-Bench Score": 0.0,
     "overall_evil_signal": 0.0,
@@ -1499,6 +1527,20 @@
   },
   {
     "LLM": "gemini-3.6-flash",
+    "D-Bench Score": 0.0,
+    "overall_evil_signal": 0.0,
+    "contempt": 0.0,
+    "mockery": 0.0,
+    "evasiveness": 0.0,
+    "flattening": 0.0,
+    "moral_inversion": 0.0,
+    "cruelty_bias": 0.0,
+    "self_exaltation": 0.0,
+    "anti_humility": 0.0,
+    "anti_mercy": 0.0
+  },
+  {
+    "LLM": "google/gemini-3.7-flash",
     "D-Bench Score": 0.0,
     "overall_evil_signal": 0.0,
     "contempt": 0.0,
