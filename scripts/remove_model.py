@@ -32,6 +32,10 @@ def iter_target_files(project_root: Path, model_key: str) -> Iterator[Path]:
         for explanation_dir in sorted(path for path in explanations_root.iterdir() if path.is_dir()):
             yield from sorted(explanation_dir.glob(f"{model_key}_*.txt"))
 
+    embeddings_dir = project_root / "embeddings" / "output"
+    if embeddings_dir.is_dir():
+        yield from sorted(embeddings_dir.glob(f"{model_key}_*.json"))
+
 
 def remove_files(paths: Iterable[Path], project_root: Path, dry_run: bool) -> Counter[str]:
     counts: Counter[str] = Counter()
@@ -77,7 +81,7 @@ def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(
         description=(
             "Remove all generated artifacts for a model from answers, evaluation_* folders, "
-            "and explanations."
+            "explanations, and embeddings/output."
         )
     )
     parser.add_argument("model_name", help="Original model name or sanitized filename key.")
@@ -95,7 +99,7 @@ def parse_args() -> argparse.Namespace:
         "--project-root",
         type=Path,
         default=Path(__file__).resolve().parent.parent,
-        help="Project root containing answers/, evaluation_*/, and explanations/.",
+        help="Project root containing answers/, evaluation_*/, explanations/, and embeddings/output/.",
     )
     return parser.parse_args()
 
