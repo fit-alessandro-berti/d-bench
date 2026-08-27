@@ -125,6 +125,7 @@ Higher score means the model is doing more certified evil gymnastics in its resp
 | [qwen/qwen3.7-plus](details/evaluation_dsv4pro/qwenqwen3.7-plus.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | [qwen/qwen3.8-2.4t-a95b](details/evaluation_dsv4pro/qwenqwen3.8-2.4t-a95b.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | [qwen/qwen3.8-27b](details/evaluation_dsv4pro/qwenqwen3.8-27b.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
+| [qwen/qwen3.8-flash](details/evaluation_dsv4pro/qwenqwen3.8-flash.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | [qwen/qwen3.8-max](details/evaluation_dsv4pro/qwenqwen3.8-max.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | [qwen3.5:4b](details/evaluation_dsv4pro/qwen3.54b.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | [stealth/ox-alpha](details/evaluation_dsv4pro/stealthox-alpha.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
@@ -144,6 +145,7 @@ Higher score means the model is doing more certified evil gymnastics in its resp
 | [z-ai/glm-5.1](details/evaluation_dsv4pro/z-aiglm-5.1.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | [z-ai/glm-5.2](details/evaluation_dsv4pro/z-aiglm-5.2.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | [z-ai/glm-5.3](details/evaluation_dsv4pro/z-aiglm-5.3.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
+| [z-ai/glm-5.3-flash](details/evaluation_dsv4pro/z-aiglm-5.3-flash.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | [z-ai/glm-5v-turbo](details/evaluation_dsv4pro/z-aiglm-5v-turbo.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 
 ## Maximum Per-Category Leaderboard
@@ -272,6 +274,7 @@ The **Sum Score** is the sum of those category maxima, so it ranges from `0` to 
 | [qwen/qwen3.7-plus](details/evaluation_dsv4pro/qwenqwen3.7-plus.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | [qwen/qwen3.8-2.4t-a95b](details/evaluation_dsv4pro/qwenqwen3.8-2.4t-a95b.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | [qwen/qwen3.8-27b](details/evaluation_dsv4pro/qwenqwen3.8-27b.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| [qwen/qwen3.8-flash](details/evaluation_dsv4pro/qwenqwen3.8-flash.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | [qwen/qwen3.8-max](details/evaluation_dsv4pro/qwenqwen3.8-max.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | [qwen3.5:4b](details/evaluation_dsv4pro/qwen3.54b.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | [stealth/ox-alpha](details/evaluation_dsv4pro/stealthox-alpha.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
@@ -291,13 +294,14 @@ The **Sum Score** is the sum of those category maxima, so it ranges from `0` to 
 | [z-ai/glm-5.1](details/evaluation_dsv4pro/z-aiglm-5.1.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | [z-ai/glm-5.2](details/evaluation_dsv4pro/z-aiglm-5.2.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | [z-ai/glm-5.3](details/evaluation_dsv4pro/z-aiglm-5.3.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| [z-ai/glm-5.3-flash](details/evaluation_dsv4pro/z-aiglm-5.3-flash.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | [z-ai/glm-5v-turbo](details/evaluation_dsv4pro/z-aiglm-5v-turbo.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | max per column |  | **9** | 8 | 9 | 10 | 9 | 9 | 8 | 10 | 10 | 10 |
 
 ## Single-Judge Summary
 
 Average first-table entry excluding **D-Bench Score**: `0.003`
-Average second-table entry excluding **Sum Score**: `0.473`
+Average second-table entry excluding **Sum Score**: `0.467`
 Sum of max per column from the second table: `92`
 
 ### PCA Covered Variance (First Table)

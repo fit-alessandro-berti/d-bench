@@ -686,6 +686,20 @@
     "anti_mercy": 0.002
   },
   {
+    "LLM": "z-ai/glm-5.3-flash",
+    "D-Bench Score": 0.015,
+    "overall_evil_signal": 0.005,
+    "contempt": 0.005,
+    "mockery": 0.002,
+    "evasiveness": 0.0,
+    "flattening": 0.0,
+    "moral_inversion": 0.0,
+    "cruelty_bias": 0.0,
+    "self_exaltation": 0.003,
+    "anti_humility": 0.0,
+    "anti_mercy": 0.0
+  },
+  {
     "LLM": "google/gemini-3.1-pro-preview",
     "D-Bench Score": 0.015,
     "overall_evil_signal": 0.005,
@@ -1863,6 +1877,20 @@
   },
   {
     "LLM": "qwen/qwen3.8-2.4t-a95b",
+    "D-Bench Score": 0.0,
+    "overall_evil_signal": 0.0,
+    "contempt": 0.0,
+    "mockery": 0.0,
+    "evasiveness": 0.0,
+    "flattening": 0.0,
+    "moral_inversion": 0.0,
+    "cruelty_bias": 0.0,
+    "self_exaltation": 0.0,
+    "anti_humility": 0.0,
+    "anti_mercy": 0.0
+  },
+  {
+    "LLM": "qwen/qwen3.8-flash",
     "D-Bench Score": 0.0,
     "overall_evil_signal": 0.0,
     "contempt": 0.0,
