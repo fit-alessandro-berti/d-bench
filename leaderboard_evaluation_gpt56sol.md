@@ -69,6 +69,7 @@ Higher score means the model is doing more certified evil gymnastics in its resp
 | [openai/gpt-4o](details/evaluation_gpt56sol/openaigpt-4o.md) | 0.017 | **0.003** | 0.000 | 0.000 | 0.000 | 0.013 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | [poolside/laguna-xs-2.1](details/evaluation_gpt56sol/poolsidelaguna-xs-2.1.md) | 0.017 | **0.003** | 0.003 | 0.000 | 0.000 | 0.007 | 0.000 | 0.000 | 0.003 | 0.000 | 0.000 |
 | [anthropic/claude-opus-4.6](details/evaluation_gpt56sol/anthropicclaude-opus-4.6.md) | 0.013 | **0.003** | 0.003 | 0.003 | 0.003 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
+| [claude-fable-5-1-high](details/evaluation_gpt56sol/claude-fable-5-1-high.md) | 0.013 | **0.003** | 0.007 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.003 | 0.000 | 0.000 |
 | [google/gemma-4-31b-it](details/evaluation_gpt56sol/googlegemma-4-31b-it.md) | 0.013 | **0.003** | 0.003 | 0.000 | 0.000 | 0.003 | 0.000 | 0.000 | 0.003 | 0.000 | 0.000 |
 | [grok-4-0709](details/evaluation_gpt56sol/grok-4-0709.md) | 0.013 | **0.003** | 0.003 | 0.000 | 0.000 | 0.003 | 0.000 | 0.000 | 0.003 | 0.000 | 0.000 |
 | [moonshotai/kimi-k2.7-code](details/evaluation_gpt56sol/moonshotaikimi-k2.7-code.md) | 0.013 | **0.003** | 0.003 | 0.000 | 0.000 | 0.003 | 0.000 | 0.000 | 0.003 | 0.000 | 0.000 |
@@ -218,6 +219,7 @@ The **Sum Score** is the sum of those category maxima, so it ranges from `0` to 
 | [stepfun/step-3.7-flash](details/evaluation_gpt56sol/stepfunstep-3.7-flash.md) | 4 | **1** | 1 | 0 | 0 | 1 | 0 | 0 | 1 | 0 | 0 |
 | [thinkingmachines/inkling](details/evaluation_gpt56sol/thinkingmachinesinkling.md) | 4 | **1** | 1 | 0 | 0 | 1 | 0 | 0 | 1 | 0 | 0 |
 | [z-ai/glm-5.3-flash](details/evaluation_gpt56sol/z-aiglm-5.3-flash.md) | 4 | **1** | 1 | 1 | 0 | 0 | 0 | 0 | 1 | 0 | 0 |
+| [claude-fable-5-1-high](details/evaluation_gpt56sol/claude-fable-5-1-high.md) | 3 | **1** | 1 | 0 | 0 | 0 | 0 | 0 | 1 | 0 | 0 |
 | [google/gemini-3.1-pro-preview](details/evaluation_gpt56sol/googlegemini-3.1-pro-preview.md) | 3 | **1** | 1 | 0 | 0 | 0 | 0 | 0 | 1 | 0 | 0 |
 | [google/gemma-4-26b-a4b-it](details/evaluation_gpt56sol/googlegemma-4-26b-a4b-it.md) | 3 | **1** | 1 | 0 | 0 | 1 | 0 | 0 | 0 | 0 | 0 |
 | [granite4.1:30b](details/evaluation_gpt56sol/granite4.130b.md) | 3 | **1** | 0 | 0 | 0 | 1 | 0 | 0 | 1 | 0 | 0 |
@@ -301,7 +303,7 @@ The **Sum Score** is the sum of those category maxima, so it ranges from `0` to 
 ## Single-Judge Summary
 
 Average first-table entry excluding **D-Bench Score**: `0.004`
-Average second-table entry excluding **Sum Score**: `0.466`
+Average second-table entry excluding **Sum Score**: `0.465`
 Sum of max per column from the second table: `56`
 
 ### PCA Covered Variance (First Table)

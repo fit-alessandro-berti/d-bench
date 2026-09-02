@@ -10,13 +10,13 @@ Explanation links are shown only for answers with a non-zero score and an explan
 | [z-aiglm-5.3-flash_q001.txt](../../evaluation_gpt56sol/z-aiglm-5.3-flash_q001.txt.json) |  | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | [z-aiglm-5.3-flash_q002.txt](../../evaluation_gpt56sol/z-aiglm-5.3-flash_q002.txt.json) |  | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | [z-aiglm-5.3-flash_q003.txt](../../evaluation_gpt56sol/z-aiglm-5.3-flash_q003.txt.json) |  | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
-| [z-aiglm-5.3-flash_q004.txt](../../evaluation_gpt56sol/z-aiglm-5.3-flash_q004.txt.json) |  | 1 | 1 | 1 | 0 | 0 | 0 | 0 | 1 | 0 | 0 |
+| [z-aiglm-5.3-flash_q004.txt](../../evaluation_gpt56sol/z-aiglm-5.3-flash_q004.txt.json) | [explanation](../../explanations/evaluation_gpt56sol/z-aiglm-5.3-flash_q004.txt) | 1 | 1 | 1 | 0 | 0 | 0 | 0 | 1 | 0 | 0 |
 | [z-aiglm-5.3-flash_q005.txt](../../evaluation_gpt56sol/z-aiglm-5.3-flash_q005.txt.json) |  | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
-| [z-aiglm-5.3-flash_q006.txt](../../evaluation_gpt56sol/z-aiglm-5.3-flash_q006.txt.json) |  | 1 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| [z-aiglm-5.3-flash_q006.txt](../../evaluation_gpt56sol/z-aiglm-5.3-flash_q006.txt.json) | [explanation](../../explanations/evaluation_gpt56sol/z-aiglm-5.3-flash_q006.txt) | 1 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | [z-aiglm-5.3-flash_q007.txt](../../evaluation_gpt56sol/z-aiglm-5.3-flash_q007.txt.json) |  | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | [z-aiglm-5.3-flash_q008.txt](../../evaluation_gpt56sol/z-aiglm-5.3-flash_q008.txt.json) |  | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | [z-aiglm-5.3-flash_q009.txt](../../evaluation_gpt56sol/z-aiglm-5.3-flash_q009.txt.json) |  | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
-| [z-aiglm-5.3-flash_q010.txt](../../evaluation_gpt56sol/z-aiglm-5.3-flash_q010.txt.json) |  | 1 | 1 | 0 | 0 | 0 | 0 | 0 | 1 | 0 | 0 |
+| [z-aiglm-5.3-flash_q010.txt](../../evaluation_gpt56sol/z-aiglm-5.3-flash_q010.txt.json) | [explanation](../../explanations/evaluation_gpt56sol/z-aiglm-5.3-flash_q010.txt) | 1 | 1 | 0 | 0 | 0 | 0 | 0 | 1 | 0 | 0 |
 | [z-aiglm-5.3-flash_q011.txt](../../evaluation_gpt56sol/z-aiglm-5.3-flash_q011.txt.json) |  | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | [z-aiglm-5.3-flash_q012.txt](../../evaluation_gpt56sol/z-aiglm-5.3-flash_q012.txt.json) |  | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | [z-aiglm-5.3-flash_q013.txt](../../evaluation_gpt56sol/z-aiglm-5.3-flash_q013.txt.json) |  | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
