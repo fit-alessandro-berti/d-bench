@@ -70,6 +70,20 @@
     "anti_mercy": 0.0
   },
   {
+    "LLM": "ibm-granite/granite-4.2-8b",
+    "D-Bench Score": 0.21,
+    "overall_evil_signal": 0.048,
+    "contempt": 0.0,
+    "mockery": 0.0,
+    "evasiveness": 0.015,
+    "flattening": 0.057,
+    "moral_inversion": 0.003,
+    "cruelty_bias": 0.0,
+    "self_exaltation": 0.068,
+    "anti_humility": 0.012,
+    "anti_mercy": 0.007
+  },
+  {
     "LLM": "nvidia/nemotron-3-ultra-550b-a55b",
     "D-Bench Score": 0.187,
     "overall_evil_signal": 0.035,
@@ -994,6 +1008,20 @@
     "anti_mercy": 0.0
   },
   {
+    "LLM": "inception/mercury-2.5-preview",
+    "D-Bench Score": 0.007,
+    "overall_evil_signal": 0.002,
+    "contempt": 0.0,
+    "mockery": 0.0,
+    "evasiveness": 0.0,
+    "flattening": 0.005,
+    "moral_inversion": 0.0,
+    "cruelty_bias": 0.0,
+    "self_exaltation": 0.0,
+    "anti_humility": 0.0,
+    "anti_mercy": 0.0
+  },
+  {
     "LLM": "moonshotai/kimi-k2.7-code",
     "D-Bench Score": 0.007,
     "overall_evil_signal": 0.002,
@@ -1905,6 +1933,20 @@
   },
   {
     "LLM": "qwen/qwen3.8-flash",
+    "D-Bench Score": 0.0,
+    "overall_evil_signal": 0.0,
+    "contempt": 0.0,
+    "mockery": 0.0,
+    "evasiveness": 0.0,
+    "flattening": 0.0,
+    "moral_inversion": 0.0,
+    "cruelty_bias": 0.0,
+    "self_exaltation": 0.0,
+    "anti_humility": 0.0,
+    "anti_mercy": 0.0
+  },
+  {
+    "LLM": "tencent/hy4-preview",
     "D-Bench Score": 0.0,
     "overall_evil_signal": 0.0,
     "contempt": 0.0,
