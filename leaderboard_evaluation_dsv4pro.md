@@ -65,6 +65,7 @@ Higher score means the model is doing more certified evil gymnastics in its resp
 | [google/gemini-3-flash-preview](details/evaluation_dsv4pro/googlegemini-3-flash-preview.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | [google/gemini-3.1-pro-preview](details/evaluation_dsv4pro/googlegemini-3.1-pro-preview.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | [google/gemini-3.7-flash](details/evaluation_dsv4pro/googlegemini-3.7-flash.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
+| [google/gemini-3.8-flash](details/evaluation_dsv4pro/googlegemini-3.8-flash.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | [google/gemma-4-26b-a4b-it](details/evaluation_dsv4pro/googlegemma-4-26b-a4b-it.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | [google/gemma-4-31b-it](details/evaluation_dsv4pro/googlegemma-4-31b-it.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | [gpt-4.5-preview](details/evaluation_dsv4pro/gpt-4.5-preview.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
@@ -86,6 +87,7 @@ Higher score means the model is doing more certified evil gymnastics in its resp
 | [meta/muse-glimmer-30b](details/evaluation_dsv4pro/metamuse-glimmer-30b.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | [meta/muse-spark-1.1](details/evaluation_dsv4pro/metamuse-spark-1.1.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | [meta/muse-spark-1.2](details/evaluation_dsv4pro/metamuse-spark-1.2.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
+| [meta/muse-spark-1.3](details/evaluation_dsv4pro/metamuse-spark-1.3.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | [minimax/minimax-m2.7](details/evaluation_dsv4pro/minimaxminimax-m2.7.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | [minimax/minimax-m3](details/evaluation_dsv4pro/minimaxminimax-m3.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | [ministral-14b-2512](details/evaluation_dsv4pro/ministral-14b-2512.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
@@ -218,6 +220,7 @@ The **Sum Score** is the sum of those category maxima, so it ranges from `0` to 
 | [google/gemini-3-flash-preview](details/evaluation_dsv4pro/googlegemini-3-flash-preview.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | [google/gemini-3.1-pro-preview](details/evaluation_dsv4pro/googlegemini-3.1-pro-preview.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | [google/gemini-3.7-flash](details/evaluation_dsv4pro/googlegemini-3.7-flash.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| [google/gemini-3.8-flash](details/evaluation_dsv4pro/googlegemini-3.8-flash.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | [google/gemma-4-26b-a4b-it](details/evaluation_dsv4pro/googlegemma-4-26b-a4b-it.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | [google/gemma-4-31b-it](details/evaluation_dsv4pro/googlegemma-4-31b-it.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | [gpt-4.5-preview](details/evaluation_dsv4pro/gpt-4.5-preview.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
@@ -239,6 +242,7 @@ The **Sum Score** is the sum of those category maxima, so it ranges from `0` to 
 | [meta/muse-glimmer-30b](details/evaluation_dsv4pro/metamuse-glimmer-30b.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | [meta/muse-spark-1.1](details/evaluation_dsv4pro/metamuse-spark-1.1.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | [meta/muse-spark-1.2](details/evaluation_dsv4pro/metamuse-spark-1.2.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| [meta/muse-spark-1.3](details/evaluation_dsv4pro/metamuse-spark-1.3.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | [minimax/minimax-m2.7](details/evaluation_dsv4pro/minimaxminimax-m2.7.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | [minimax/minimax-m3](details/evaluation_dsv4pro/minimaxminimax-m3.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | [ministral-14b-2512](details/evaluation_dsv4pro/ministral-14b-2512.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
@@ -309,7 +313,7 @@ The **Sum Score** is the sum of those category maxima, so it ranges from `0` to 
 ## Single-Judge Summary
 
 Average first-table entry excluding **D-Bench Score**: `0.003`
-Average second-table entry excluding **Sum Score**: `0.465`
+Average second-table entry excluding **Sum Score**: `0.459`
 Sum of max per column from the second table: `92`
 
 ### PCA Covered Variance (First Table)

@@ -1022,6 +1022,20 @@
     "anti_mercy": 0.0
   },
   {
+    "LLM": "meta/muse-spark-1.3",
+    "D-Bench Score": 0.007,
+    "overall_evil_signal": 0.002,
+    "contempt": 0.002,
+    "mockery": 0.0,
+    "evasiveness": 0.0,
+    "flattening": 0.002,
+    "moral_inversion": 0.0,
+    "cruelty_bias": 0.0,
+    "self_exaltation": 0.002,
+    "anti_humility": 0.0,
+    "anti_mercy": 0.0
+  },
+  {
     "LLM": "moonshotai/kimi-k2.7-code",
     "D-Bench Score": 0.007,
     "overall_evil_signal": 0.002,
@@ -1088,6 +1102,20 @@
     "moral_inversion": 0.0,
     "cruelty_bias": 0.0,
     "self_exaltation": 0.002,
+    "anti_humility": 0.0,
+    "anti_mercy": 0.0
+  },
+  {
+    "LLM": "google/gemini-3.8-flash",
+    "D-Bench Score": 0.005,
+    "overall_evil_signal": 0.002,
+    "contempt": 0.002,
+    "mockery": 0.002,
+    "evasiveness": 0.0,
+    "flattening": 0.0,
+    "moral_inversion": 0.0,
+    "cruelty_bias": 0.0,
+    "self_exaltation": 0.0,
     "anti_humility": 0.0,
     "anti_mercy": 0.0
   },
