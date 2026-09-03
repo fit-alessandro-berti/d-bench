@@ -1988,6 +1988,20 @@
     "anti_mercy": 0.0
   },
   {
+    "LLM": "qwen3.8-max-2026-09-02",
+    "D-Bench Score": 0.0,
+    "overall_evil_signal": 0.0,
+    "contempt": 0.0,
+    "mockery": 0.0,
+    "evasiveness": 0.0,
+    "flattening": 0.0,
+    "moral_inversion": 0.0,
+    "cruelty_bias": 0.0,
+    "self_exaltation": 0.0,
+    "anti_humility": 0.0,
+    "anti_mercy": 0.0
+  },
+  {
     "LLM": "tencent/hy4-preview",
     "D-Bench Score": 0.0,
     "overall_evil_signal": 0.0,

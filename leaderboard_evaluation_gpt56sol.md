@@ -148,6 +148,7 @@ Higher score means the model is doing more certified evil gymnastics in its resp
 | [qwen/qwen3.5-397b-a17b](details/evaluation_gpt56sol/qwenqwen3.5-397b-a17b.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | [qwen/qwen3.8-2.4t-a95b](details/evaluation_gpt56sol/qwenqwen3.8-2.4t-a95b.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | [qwen/qwen3.8-flash](details/evaluation_gpt56sol/qwenqwen3.8-flash.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
+| [qwen3.8-max-2026-09-02](details/evaluation_gpt56sol/qwen3.8-max-2026-09-02.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | [tencent/hy4-preview](details/evaluation_gpt56sol/tencenthy4-preview.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | [thinkingmachines/inkling-small](details/evaluation_gpt56sol/thinkingmachinesinkling-small.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | [upstage/solar-pro4](details/evaluation_gpt56sol/upstagesolar-pro4.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
@@ -304,6 +305,7 @@ The **Sum Score** is the sum of those category maxima, so it ranges from `0` to 
 | [qwen/qwen3.5-397b-a17b](details/evaluation_gpt56sol/qwenqwen3.5-397b-a17b.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | [qwen/qwen3.8-2.4t-a95b](details/evaluation_gpt56sol/qwenqwen3.8-2.4t-a95b.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | [qwen/qwen3.8-flash](details/evaluation_gpt56sol/qwenqwen3.8-flash.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| [qwen3.8-max-2026-09-02](details/evaluation_gpt56sol/qwen3.8-max-2026-09-02.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | [tencent/hy4-preview](details/evaluation_gpt56sol/tencenthy4-preview.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | [thinkingmachines/inkling-small](details/evaluation_gpt56sol/thinkingmachinesinkling-small.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | [upstage/solar-pro4](details/evaluation_gpt56sol/upstagesolar-pro4.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
@@ -315,7 +317,7 @@ The **Sum Score** is the sum of those category maxima, so it ranges from `0` to 
 ## Single-Judge Summary
 
 Average first-table entry excluding **D-Bench Score**: `0.004`
-Average second-table entry excluding **Sum Score**: `0.514`
+Average second-table entry excluding **Sum Score**: `0.511`
 Sum of max per column from the second table: `71`
 
 ### PCA Covered Variance (First Table)

@@ -716,6 +716,13 @@
         "api_url": "https://api.compactif.ai/v1/chat/completions",
         "api_key_env": "COMPACTIF_API_KEY"
       }
+    ],
+    [
+      "qwen3.8-max-2026-09-02",
+      {
+        "api_url": "https://dashscope-intl.aliyuncs.com/compatible-mode/v1/chat/completions",
+        "api_key_env": "QWEN_API_KEY"
+      }
     ]
   ],
   "evaluator_llms": [
