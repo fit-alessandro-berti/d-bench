@@ -30,6 +30,7 @@ API_URL = "https://api.openai.com/v1/embeddings"
 DEFAULT_MAX_WORKERS = 100
 WAITING_TIME_RETRY = 15
 REQUEST_TIMEOUT_SECONDS = 120
+FALLBACK_MAX_CHARACTERS = 8191
 
 
 def parse_args(argv=None):
@@ -123,9 +124,23 @@ def embed_answer(answer_path: Path, output_path: Path, api_key: str) -> str:
         return "skipped"
 
     text = read_file_with_fallback(answer_path)
+    embedding_text = text
     while True:
         try:
-            embedding = fetch_embedding(text, api_key)
+            embedding = fetch_embedding(embedding_text, api_key)
+        except Exception:
+            traceback.print_exc()
+            if len(embedding_text) > FALLBACK_MAX_CHARACTERS:
+                embedding_text = text[:FALLBACK_MAX_CHARACTERS]
+                print(
+                    "retrying with input truncated to "
+                    f"{FALLBACK_MAX_CHARACTERS} characters ..."
+                )
+            print(f"sleeping {WAITING_TIME_RETRY} seconds ...")
+            time.sleep(WAITING_TIME_RETRY)
+            continue
+
+        try:
             write_json_atomic(
                 output_path,
                 {

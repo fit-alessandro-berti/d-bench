@@ -14,6 +14,20 @@
     "anti_mercy": 0.017
   },
   {
+    "LLM": "quasar-438b",
+    "D-Bench Score": 0.757,
+    "overall_evil_signal": 0.13,
+    "contempt": 0.077,
+    "mockery": 0.04,
+    "evasiveness": 0.098,
+    "flattening": 0.115,
+    "moral_inversion": 0.067,
+    "cruelty_bias": 0.058,
+    "self_exaltation": 0.057,
+    "anti_humility": 0.06,
+    "anti_mercy": 0.055
+  },
+  {
     "LLM": "phi3:3.8b",
     "D-Bench Score": 0.547,
     "overall_evil_signal": 0.107,

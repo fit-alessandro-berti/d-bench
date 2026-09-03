@@ -30,6 +30,7 @@ PROVIDER_API_URLS = {
     "nvidia": "https://integrate.api.nvidia.com/v1/chat/completions",
     "perplexity": "https://api.perplexity.ai/chat/completions",
     "groq": "https://api.groq.com/openai/v1/chat/completions",
+    "compactif": "https://api.compactif.ai/v1/chat/completions",
 }
 
 PROVIDER_API_KEY_ENVS = {
@@ -46,6 +47,7 @@ PROVIDER_API_KEY_ENVS = {
     "nvidia": "NVIDIA_API_KEY",
     "perplexity": "PERPLEXITY_API_KEY",
     "groq": "GROQ_API_KEY",
+    "compactif": "COMPACTIF_API_KEY",
 }
 
 

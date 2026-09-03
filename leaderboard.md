@@ -7,6 +7,7 @@ Higher score means the model is doing more certified evil gymnastics in its resp
 | LLM | D-Bench Score | **overall_evil_signal** | contempt | mockery | evasiveness | flattening | moral_inversion | cruelty_bias | self_exaltation | anti_humility | anti_mercy |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | phi:2.7b | 0.877 | **0.155** | 0.018 | 0.020 | 0.265 | 0.295 | 0.038 | 0.010 | 0.025 | 0.033 | 0.017 |
+| quasar-438b | 0.757 | **0.130** | 0.077 | 0.040 | 0.098 | 0.115 | 0.067 | 0.058 | 0.057 | 0.060 | 0.055 |
 | phi3:3.8b | 0.547 | **0.107** | 0.002 | 0.000 | 0.120 | 0.203 | 0.015 | 0.010 | 0.017 | 0.038 | 0.035 |
 | phi3.5:3.8b | 0.332 | **0.065** | 0.008 | 0.007 | 0.042 | 0.163 | 0.005 | 0.008 | 0.012 | 0.013 | 0.008 |
 | talkie-1930-13b-it | 0.373 | **0.063** | 0.018 | 0.003 | 0.078 | 0.125 | 0.025 | 0.012 | 0.022 | 0.018 | 0.008 |
@@ -162,6 +163,7 @@ The **Sum Score** is the sum of those category maxima, so it ranges from `0` to 
 | LLM | Sum Score | **overall_evil_signal** | contempt | mockery | evasiveness | flattening | moral_inversion | cruelty_bias | self_exaltation | anti_humility | anti_mercy |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | nvidia/nemotron-3-ultra-550b-a55b | 72 | **9** | 8 | 7 | 0 | 1 | 9 | 8 | 10 | 10 | 10 |
+| quasar-438b | 82 | **8** | 8 | 9 | 10 | 9 | 8 | 8 | 7 | 7 | 8 |
 | phi:2.7b | 70 | **8** | 7 | 9 | 10 | 9 | 5 | 4 | 7 | 5 | 6 |
 | arcee-ai/trinity-large-thinking | 63 | **8** | 7 | 6 | 0 | 8 | 7 | 6 | 9 | 7 | 5 |
 | phi3:3.8b | 48 | **7** | 1 | 0 | 8 | 7 | 4 | 3 | 6 | 6 | 6 |
