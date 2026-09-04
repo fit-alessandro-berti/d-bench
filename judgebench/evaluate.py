@@ -87,6 +87,7 @@ JUDGE_LLMS: Sequence[Tuple[Any, ...]] = [
         "grok-4.6",
         {"api_url": "https://api.x.ai/v1/responses", "api_key": os.environ["GROK_API_KEY"]},
     ),
+    ("meta/muse-spark-1.3",),
 ]
 
 EVALUATION_JSON_SCHEMA: Dict[str, Any] = {

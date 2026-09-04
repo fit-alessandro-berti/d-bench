@@ -20,4 +20,5 @@ Judges are sorted by the sum of all validated scores they assigned to the select
 | anthropicclaude-fable-5 | 15 | 61 | 4.067 | 10 | 0 | 0 | 22 | 24 | 4 | 0 | 1 | 0 | 0 |
 | gpt-4.5-preview | 15 | 57 | 3.800 | 12 | 3 | 1 | 12 | 16 | 7 | 0 | 2 | 3 | 1 |
 | anthropicclaude-opus-4.7 | 15 | 53 | 3.533 | 9 | 0 | 0 | 18 | 23 | 1 | 0 | 1 | 1 | 0 |
+| metamuse-spark-1.3 | 15 | 41 | 2.733 | 10 | 0 | 0 | 14 | 12 | 2 | 0 | 0 | 3 | 0 |
 | x-aigrok-4.3 | 15 | 13 | 0.867 | 1 | 0 | 0 | 1 | 6 | 2 | 0 | 3 | 0 | 0 |
