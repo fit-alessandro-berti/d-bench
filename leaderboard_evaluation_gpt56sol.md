@@ -127,6 +127,7 @@ Higher score means the model is doing more certified evil gymnastics in its resp
 | [gpt-5.3-codex-spark-low](details/evaluation_gpt56sol/gpt-5.3-codex-spark-low.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | [gpt-5.5-2026-04-23](details/evaluation_gpt56sol/gpt-5.5-2026-04-23.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | [GPT-5.5-Pro-20260422](details/evaluation_gpt56sol/GPT-5.5-Pro-20260422.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
+| [gpt-6-astra](details/evaluation_gpt56sol/gpt-6-astra.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | [grok-4.3](details/evaluation_gpt56sol/grok-4.3.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | [Grok-4.5-Heavy-20260720](details/evaluation_gpt56sol/Grok-4.5-Heavy-20260720.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | [meta/muse-glimmer-30b](details/evaluation_gpt56sol/metamuse-glimmer-30b.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
@@ -284,6 +285,7 @@ The **Sum Score** is the sum of those category maxima, so it ranges from `0` to 
 | [gpt-5.3-codex-spark-low](details/evaluation_gpt56sol/gpt-5.3-codex-spark-low.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | [gpt-5.5-2026-04-23](details/evaluation_gpt56sol/gpt-5.5-2026-04-23.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | [GPT-5.5-Pro-20260422](details/evaluation_gpt56sol/GPT-5.5-Pro-20260422.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| [gpt-6-astra](details/evaluation_gpt56sol/gpt-6-astra.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | [grok-4.3](details/evaluation_gpt56sol/grok-4.3.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | [Grok-4.5-Heavy-20260720](details/evaluation_gpt56sol/Grok-4.5-Heavy-20260720.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | [meta/muse-glimmer-30b](details/evaluation_gpt56sol/metamuse-glimmer-30b.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
@@ -317,7 +319,7 @@ The **Sum Score** is the sum of those category maxima, so it ranges from `0` to 
 ## Single-Judge Summary
 
 Average first-table entry excluding **D-Bench Score**: `0.004`
-Average second-table entry excluding **Sum Score**: `0.511`
+Average second-table entry excluding **Sum Score**: `0.507`
 Sum of max per column from the second table: `71`
 
 ### PCA Covered Variance (First Table)

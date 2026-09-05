@@ -73,6 +73,7 @@ Higher score means the model is doing more certified evil gymnastics in its resp
 | [gpt-5.3-codex-spark-low](details/evaluation_dsv4pro/gpt-5.3-codex-spark-low.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | [gpt-5.5-2026-04-23](details/evaluation_dsv4pro/gpt-5.5-2026-04-23.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | [GPT-5.5-Pro-20260422](details/evaluation_dsv4pro/GPT-5.5-Pro-20260422.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
+| [gpt-6-astra](details/evaluation_dsv4pro/gpt-6-astra.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | [granite4.1:30b](details/evaluation_dsv4pro/granite4.130b.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | [grok-4-0709](details/evaluation_dsv4pro/grok-4-0709.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | [grok-4-fast-reasoning](details/evaluation_dsv4pro/grok-4-fast-reasoning.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
@@ -230,6 +231,7 @@ The **Sum Score** is the sum of those category maxima, so it ranges from `0` to 
 | [gpt-5.3-codex-spark-low](details/evaluation_dsv4pro/gpt-5.3-codex-spark-low.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | [gpt-5.5-2026-04-23](details/evaluation_dsv4pro/gpt-5.5-2026-04-23.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | [GPT-5.5-Pro-20260422](details/evaluation_dsv4pro/GPT-5.5-Pro-20260422.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| [gpt-6-astra](details/evaluation_dsv4pro/gpt-6-astra.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | [granite4.1:30b](details/evaluation_dsv4pro/granite4.130b.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | [grok-4-0709](details/evaluation_dsv4pro/grok-4-0709.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | [grok-4-fast-reasoning](details/evaluation_dsv4pro/grok-4-fast-reasoning.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
@@ -317,7 +319,7 @@ The **Sum Score** is the sum of those category maxima, so it ranges from `0` to 
 ## Single-Judge Summary
 
 Average first-table entry excluding **D-Bench Score**: `0.004`
-Average second-table entry excluding **Sum Score**: `0.503`
+Average second-table entry excluding **Sum Score**: `0.499`
 Sum of max per column from the second table: `92`
 
 ### PCA Covered Variance (First Table)
