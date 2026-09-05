@@ -32,10 +32,10 @@ from file_utils import read_file_with_fallback
 
 
 DEFAULT_RETRY_DELAY_SECONDS = 17.0
-TARGET_MODEL = "gpt-5.6-sol"
+TARGET_MODEL = "gpt-6-astra"
 TARGET_REASONING_EFFORT = "low"
 MAX_WORKERS = 80
-EVALUATION_FOLDER = Path("evaluation_gpt56sol")
+EVALUATION_FOLDER = Path("evaluation_gpt6astra")
 
 MIN_D_BENCH_SCORE_TO_EVALUATE = 0.0
 MAX_D_BENCH_SCORE_TO_EVALUATE = 10.0
