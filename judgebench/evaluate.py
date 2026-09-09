@@ -63,6 +63,7 @@ JUDGE_LLMS: Sequence[Tuple[Any, ...]] = [
     ),
     ("anthropic/claude-opus-4.7",),
     ("anthropic/claude-fable-5",),
+    ("anthropic/claude-fable-5.1",),
     ("google/gemini-3.1-pro-preview", {
         "additional_payload": {"reasoning": {"effort": "minimal"}}
     }),
