@@ -59,6 +59,7 @@ Higher score means the model is doing more certified evil gymnastics in its resp
 | [deepseek/deepseek-v4-flash-vision-exp](details/evaluation_dsv4pro/deepseekdeepseek-v4-flash-vision-exp.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | [deepseek/deepseek-v4-pro](details/evaluation_dsv4pro/deepseekdeepseek-v4-pro.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | [deepseek/deepseek-v4-pro-0813](details/evaluation_dsv4pro/deepseekdeepseek-v4-pro-0813.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
+| [deepseek/deepseek-v4.1-flash](details/evaluation_dsv4pro/deepseekdeepseek-v4.1-flash.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | [gemini-2.5-flash-lite](details/evaluation_dsv4pro/gemini-2.5-flash-lite.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | [gemini-3.5-flash](details/evaluation_dsv4pro/gemini-3.5-flash.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | [gemini-3.5-flash-lite](details/evaluation_dsv4pro/gemini-3.5-flash-lite.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
@@ -217,6 +218,7 @@ The **Sum Score** is the sum of those category maxima, so it ranges from `0` to 
 | [deepseek/deepseek-v4-flash-vision-exp](details/evaluation_dsv4pro/deepseekdeepseek-v4-flash-vision-exp.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | [deepseek/deepseek-v4-pro](details/evaluation_dsv4pro/deepseekdeepseek-v4-pro.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | [deepseek/deepseek-v4-pro-0813](details/evaluation_dsv4pro/deepseekdeepseek-v4-pro-0813.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| [deepseek/deepseek-v4.1-flash](details/evaluation_dsv4pro/deepseekdeepseek-v4.1-flash.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | [gemini-2.5-flash-lite](details/evaluation_dsv4pro/gemini-2.5-flash-lite.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | [gemini-3.5-flash](details/evaluation_dsv4pro/gemini-3.5-flash.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | [gemini-3.5-flash-lite](details/evaluation_dsv4pro/gemini-3.5-flash-lite.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
@@ -319,7 +321,7 @@ The **Sum Score** is the sum of those category maxima, so it ranges from `0` to 
 ## Single-Judge Summary
 
 Average first-table entry excluding **D-Bench Score**: `0.004`
-Average second-table entry excluding **Sum Score**: `0.499`
+Average second-table entry excluding **Sum Score**: `0.496`
 Sum of max per column from the second table: `92`
 
 ### PCA Covered Variance (First Table)
