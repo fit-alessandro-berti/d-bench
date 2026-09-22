@@ -19,6 +19,7 @@ Higher score means the model is doing more certified evil gymnastics in its resp
 | nvidia/NVIDIA-Nemotron-3-Super-120B-A12B | 0.162 | **0.032** | 0.013 | 0.007 | 0.033 | 0.032 | 0.015 | 0.000 | 0.013 | 0.017 | 0.000 |
 | arcee-ai/trinity-large-thinking | 0.152 | **0.025** | 0.022 | 0.012 | 0.000 | 0.022 | 0.013 | 0.017 | 0.022 | 0.012 | 0.008 |
 | bytedance-seed/seed-2.0-mini | 0.112 | **0.025** | 0.000 | 0.000 | 0.027 | 0.047 | 0.000 | 0.000 | 0.000 | 0.013 | 0.000 |
+| xiaomi/mimo-v2.6-flash | 0.102 | **0.025** | 0.010 | 0.000 | 0.000 | 0.010 | 0.013 | 0.017 | 0.012 | 0.005 | 0.010 |
 | granite4.1:3b | 0.082 | **0.022** | 0.002 | 0.000 | 0.002 | 0.043 | 0.000 | 0.000 | 0.007 | 0.007 | 0.000 |
 | qwen3.5:4b | 0.072 | **0.020** | 0.000 | 0.000 | 0.000 | 0.025 | 0.002 | 0.008 | 0.007 | 0.002 | 0.008 |
 | ministral-3b-2512 | 0.070 | **0.018** | 0.003 | 0.000 | 0.000 | 0.028 | 0.005 | 0.005 | 0.003 | 0.000 | 0.007 |
@@ -29,6 +30,7 @@ Higher score means the model is doing more certified evil gymnastics in its resp
 | google/gemini-3.1-flash-lite-preview | 0.053 | **0.013** | 0.007 | 0.003 | 0.000 | 0.010 | 0.003 | 0.007 | 0.007 | 0.002 | 0.002 |
 | ministral-8b-2512 | 0.045 | **0.013** | 0.005 | 0.000 | 0.000 | 0.013 | 0.002 | 0.008 | 0.002 | 0.000 | 0.002 |
 | tencent/hy3-preview:free | 0.043 | **0.013** | 0.012 | 0.000 | 0.000 | 0.008 | 0.000 | 0.002 | 0.008 | 0.000 | 0.000 |
+| xiaomi/mimo-v2.6-pro | 0.038 | **0.013** | 0.005 | 0.000 | 0.000 | 0.007 | 0.000 | 0.003 | 0.008 | 0.000 | 0.002 |
 | meta-llama/llama-4-maverick | 0.060 | **0.012** | 0.002 | 0.000 | 0.007 | 0.018 | 0.003 | 0.000 | 0.007 | 0.005 | 0.007 |
 | meituan/longcat-2.0 | 0.043 | **0.012** | 0.012 | 0.003 | 0.000 | 0.005 | 0.003 | 0.003 | 0.005 | 0.000 | 0.000 |
 | z-ai/glm-5.1 | 0.043 | **0.012** | 0.010 | 0.003 | 0.000 | 0.007 | 0.000 | 0.008 | 0.003 | 0.000 | 0.000 |
@@ -157,6 +159,7 @@ Higher score means the model is doing more certified evil gymnastics in its resp
 | thinkingmachines/inkling-small | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | upstage/solar-pro4 | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | x-ai/grok-4.6 | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
+| x-ai/grok-4.7 | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 
 ## Maximum Per-Category Leaderboard
 
@@ -179,6 +182,7 @@ The **Sum Score** is the sum of those category maxima, so it ranges from `0` to 
 | talkie-1930-13b-it | 39 | **5** | 4 | 1 | 7 | 6 | 3 | 3 | 5 | 3 | 2 |
 | meta-llama/llama-4-maverick | 30 | **5** | 1 | 0 | 4 | 8 | 2 | 0 | 4 | 2 | 4 |
 | minimax/minimax-m2.5 | 20 | **5** | 0 | 1 | 0 | 6 | 0 | 0 | 5 | 3 | 0 |
+| xiaomi/mimo-v2.6-flash | 26 | **4** | 2 | 0 | 0 | 3 | 4 | 5 | 3 | 2 | 3 |
 | bytedance-seed/seed-2.0-mini | 17 | **4** | 0 | 0 | 5 | 5 | 0 | 0 | 0 | 3 | 0 |
 | allenai/olmo-3.1-32b-instruct | 16 | **4** | 0 | 0 | 5 | 7 | 0 | 0 | 0 | 0 | 0 |
 | tencent/hy3-preview:free | 16 | **4** | 4 | 0 | 0 | 4 | 0 | 1 | 3 | 0 | 0 |
@@ -206,6 +210,7 @@ The **Sum Score** is the sum of those category maxima, so it ranges from `0` to 
 | openrouter/owl-alpha | 12 | **2** | 2 | 1 | 0 | 2 | 1 | 1 | 2 | 0 | 1 |
 | qwen/qwen3-30b-a3b-instruct-2507 | 11 | **2** | 2 | 0 | 0 | 3 | 0 | 2 | 1 | 0 | 1 |
 | poolside/laguna-xs-2.1 | 10 | **2** | 2 | 0 | 0 | 2 | 2 | 1 | 0 | 0 | 1 |
+| xiaomi/mimo-v2.6-pro | 10 | **2** | 1 | 0 | 0 | 2 | 0 | 1 | 3 | 0 | 1 |
 | z-ai/glm-5 | 10 | **2** | 2 | 1 | 0 | 2 | 1 | 1 | 1 | 0 | 0 |
 | google/gemini-3-flash-preview | 9 | **2** | 2 | 1 | 0 | 3 | 0 | 0 | 1 | 0 | 0 |
 | google/gemini-3.1-pro-preview | 9 | **2** | 1 | 1 | 0 | 1 | 1 | 1 | 1 | 0 | 1 |
@@ -316,4 +321,5 @@ The **Sum Score** is the sum of those category maxima, so it ranges from `0` to 
 | thinkingmachines/inkling-small | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | upstage/solar-pro4 | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | x-ai/grok-4.6 | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| x-ai/grok-4.7 | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | max per column |  | **9** | 8 | 9 | 10 | 9 | 9 | 8 | 10 | 10 | 10 |

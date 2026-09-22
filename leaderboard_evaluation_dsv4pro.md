@@ -28,6 +28,8 @@ Higher score means the model is doing more certified evil gymnastics in its resp
 | [openai/gpt-4o-mini](details/evaluation_dsv4pro/openaigpt-4o-mini.md) | 0.040 | **0.007** | 0.000 | 0.000 | 0.000 | 0.033 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | [nvidia/nemotron-3.5-lightning](details/evaluation_dsv4pro/nvidianemotron-3.5-lightning.md) | 0.030 | **0.007** | 0.000 | 0.000 | 0.000 | 0.010 | 0.000 | 0.000 | 0.007 | 0.007 | 0.000 |
 | [openai/o4-mini](details/evaluation_dsv4pro/openaio4-mini.md) | 0.023 | **0.007** | 0.000 | 0.000 | 0.000 | 0.007 | 0.000 | 0.000 | 0.003 | 0.000 | 0.007 |
+| [xiaomi/mimo-v2.6-flash](details/evaluation_dsv4pro/xiaomimimo-v2.6-flash.md) | 0.023 | **0.007** | 0.000 | 0.000 | 0.000 | 0.010 | 0.000 | 0.003 | 0.003 | 0.000 | 0.000 |
+| [xiaomi/mimo-v2.6-pro](details/evaluation_dsv4pro/xiaomimimo-v2.6-pro.md) | 0.023 | **0.007** | 0.000 | 0.000 | 0.000 | 0.007 | 0.000 | 0.000 | 0.010 | 0.000 | 0.000 |
 | [openrouter/owl-alpha](details/evaluation_dsv4pro/openrouterowl-alpha.md) | 0.020 | **0.007** | 0.000 | 0.000 | 0.000 | 0.003 | 0.003 | 0.000 | 0.007 | 0.000 | 0.000 |
 | [google/gemini-3.1-flash-lite-preview](details/evaluation_dsv4pro/googlegemini-3.1-flash-lite-preview.md) | 0.017 | **0.007** | 0.003 | 0.007 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | [mistralai/mistral-7b-instruct-v0.1](details/evaluation_dsv4pro/mistralaimistral-7b-instruct-v0.1.md) | 0.027 | **0.003** | 0.000 | 0.000 | 0.007 | 0.017 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
@@ -147,6 +149,7 @@ Higher score means the model is doing more certified evil gymnastics in its resp
 | [x-ai/grok-4.1-fast](details/evaluation_dsv4pro/x-aigrok-4.1-fast.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | [x-ai/grok-4.5](details/evaluation_dsv4pro/x-aigrok-4.5.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | [x-ai/grok-4.6](details/evaluation_dsv4pro/x-aigrok-4.6.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
+| [x-ai/grok-4.7](details/evaluation_dsv4pro/x-aigrok-4.7.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | [x-ai/grok-code-fast-1](details/evaluation_dsv4pro/x-aigrok-code-fast-1.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | [xiaomi/mimo-v2.5](details/evaluation_dsv4pro/xiaomimimo-v2.5.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | [xiaomi/mimo-v2.5-pro](details/evaluation_dsv4pro/xiaomimimo-v2.5-pro.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
@@ -186,6 +189,8 @@ The **Sum Score** is the sum of those category maxima, so it ranges from `0` to 
 | [bytedance-seed/seed-2.0-lite](details/evaluation_dsv4pro/bytedance-seedseed-2.0-lite.md) | 14 | **3** | 0 | 0 | 5 | 6 | 0 | 0 | 0 | 0 | 0 |
 | [nvidia/nemotron-3.5-lightning](details/evaluation_dsv4pro/nvidianemotron-3.5-lightning.md) | 9 | **2** | 0 | 0 | 0 | 3 | 0 | 0 | 2 | 2 | 0 |
 | [openai/o4-mini](details/evaluation_dsv4pro/openaio4-mini.md) | 7 | **2** | 0 | 0 | 0 | 2 | 0 | 0 | 1 | 0 | 2 |
+| [xiaomi/mimo-v2.6-flash](details/evaluation_dsv4pro/xiaomimimo-v2.6-flash.md) | 7 | **2** | 0 | 0 | 0 | 3 | 0 | 1 | 1 | 0 | 0 |
+| [xiaomi/mimo-v2.6-pro](details/evaluation_dsv4pro/xiaomimimo-v2.6-pro.md) | 7 | **2** | 0 | 0 | 0 | 2 | 0 | 0 | 3 | 0 | 0 |
 | [openrouter/owl-alpha](details/evaluation_dsv4pro/openrouterowl-alpha.md) | 6 | **2** | 0 | 0 | 0 | 1 | 1 | 0 | 2 | 0 | 0 |
 | [google/gemini-3.1-flash-lite-preview](details/evaluation_dsv4pro/googlegemini-3.1-flash-lite-preview.md) | 5 | **2** | 1 | 2 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | [mistralai/mistral-7b-instruct-v0.1](details/evaluation_dsv4pro/mistralaimistral-7b-instruct-v0.1.md) | 7 | **1** | 0 | 0 | 2 | 4 | 0 | 0 | 0 | 0 | 0 |
@@ -306,6 +311,7 @@ The **Sum Score** is the sum of those category maxima, so it ranges from `0` to 
 | [x-ai/grok-4.1-fast](details/evaluation_dsv4pro/x-aigrok-4.1-fast.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | [x-ai/grok-4.5](details/evaluation_dsv4pro/x-aigrok-4.5.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | [x-ai/grok-4.6](details/evaluation_dsv4pro/x-aigrok-4.6.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| [x-ai/grok-4.7](details/evaluation_dsv4pro/x-aigrok-4.7.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | [x-ai/grok-code-fast-1](details/evaluation_dsv4pro/x-aigrok-code-fast-1.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | [xiaomi/mimo-v2.5](details/evaluation_dsv4pro/xiaomimimo-v2.5.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | [xiaomi/mimo-v2.5-pro](details/evaluation_dsv4pro/xiaomimimo-v2.5-pro.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
@@ -321,7 +327,7 @@ The **Sum Score** is the sum of those category maxima, so it ranges from `0` to 
 ## Single-Judge Summary
 
 Average first-table entry excluding **D-Bench Score**: `0.004`
-Average second-table entry excluding **Sum Score**: `0.496`
+Average second-table entry excluding **Sum Score**: `0.495`
 Sum of max per column from the second table: `92`
 
 ### PCA Covered Variance (First Table)
@@ -332,7 +338,7 @@ Sum of max per column from the second table: `92`
 | 2 | 0.957 |
 | 3 | 0.982 |
 | 4 | 0.992 |
-| 5 | 0.997 |
+| 5 | 0.996 |
 | 6 | 0.998 |
 | 7 | 0.999 |
 | 8 | 1.000 |

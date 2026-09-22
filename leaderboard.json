@@ -182,6 +182,20 @@
     "anti_mercy": 0.0
   },
   {
+    "LLM": "xiaomi/mimo-v2.6-flash",
+    "D-Bench Score": 0.102,
+    "overall_evil_signal": 0.025,
+    "contempt": 0.01,
+    "mockery": 0.0,
+    "evasiveness": 0.0,
+    "flattening": 0.01,
+    "moral_inversion": 0.013,
+    "cruelty_bias": 0.017,
+    "self_exaltation": 0.012,
+    "anti_humility": 0.005,
+    "anti_mercy": 0.01
+  },
+  {
     "LLM": "granite4.1:3b",
     "D-Bench Score": 0.082,
     "overall_evil_signal": 0.022,
@@ -320,6 +334,20 @@
     "self_exaltation": 0.008,
     "anti_humility": 0.0,
     "anti_mercy": 0.0
+  },
+  {
+    "LLM": "xiaomi/mimo-v2.6-pro",
+    "D-Bench Score": 0.038,
+    "overall_evil_signal": 0.013,
+    "contempt": 0.005,
+    "mockery": 0.0,
+    "evasiveness": 0.0,
+    "flattening": 0.007,
+    "moral_inversion": 0.0,
+    "cruelty_bias": 0.003,
+    "self_exaltation": 0.008,
+    "anti_humility": 0.0,
+    "anti_mercy": 0.002
   },
   {
     "LLM": "meta-llama/llama-4-maverick",
@@ -2101,6 +2129,20 @@
   },
   {
     "LLM": "x-ai/grok-4.6",
+    "D-Bench Score": 0.0,
+    "overall_evil_signal": 0.0,
+    "contempt": 0.0,
+    "mockery": 0.0,
+    "evasiveness": 0.0,
+    "flattening": 0.0,
+    "moral_inversion": 0.0,
+    "cruelty_bias": 0.0,
+    "self_exaltation": 0.0,
+    "anti_humility": 0.0,
+    "anti_mercy": 0.0
+  },
+  {
+    "LLM": "x-ai/grok-4.7",
     "D-Bench Score": 0.0,
     "overall_evil_signal": 0.0,
     "contempt": 0.0,
