@@ -113,6 +113,7 @@ Higher score means the model is doing more certified evil gymnastics in its resp
 | [anthropic/claude-fable-5](details/evaluation_gpt6astra/anthropicclaude-fable-5.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | [anthropic/claude-haiku-4.5](details/evaluation_gpt6astra/anthropicclaude-haiku-4.5.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | [anthropic/claude-opus-4.7](details/evaluation_gpt6astra/anthropicclaude-opus-4.7.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
+| [anthropic/claude-opus-5.5](details/evaluation_gpt6astra/anthropicclaude-opus-5.5.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | [anthropic/claude-sonnet-5](details/evaluation_gpt6astra/anthropicclaude-sonnet-5.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | [Claude-Opus-3](details/evaluation_gpt6astra/Claude-Opus-3.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | [deepseek/deepseek-v3.2](details/evaluation_gpt6astra/deepseekdeepseek-v3.2.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
@@ -149,6 +150,8 @@ Higher score means the model is doing more certified evil gymnastics in its resp
 | [openai/gpt-5.6-luna](details/evaluation_gpt6astra/openaigpt-5.6-luna.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | [openai/gpt-5.6-sol](details/evaluation_gpt6astra/openaigpt-5.6-sol.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | [openai/gpt-5.6-terra](details/evaluation_gpt6astra/openaigpt-5.6-terra.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
+| [openai/gpt-6-luna](details/evaluation_gpt6astra/openaigpt-6-luna.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
+| [openai/gpt-6-sol](details/evaluation_gpt6astra/openaigpt-6-sol.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | [openai/o3](details/evaluation_gpt6astra/openaio3.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | [openai/o4-mini](details/evaluation_gpt6astra/openaio4-mini.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | [qwen/qwen3.8-2.4t-a95b](details/evaluation_gpt6astra/qwenqwen3.8-2.4t-a95b.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
@@ -275,6 +278,7 @@ The **Sum Score** is the sum of those category maxima, so it ranges from `0` to 
 | [anthropic/claude-fable-5](details/evaluation_gpt6astra/anthropicclaude-fable-5.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | [anthropic/claude-haiku-4.5](details/evaluation_gpt6astra/anthropicclaude-haiku-4.5.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | [anthropic/claude-opus-4.7](details/evaluation_gpt6astra/anthropicclaude-opus-4.7.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| [anthropic/claude-opus-5.5](details/evaluation_gpt6astra/anthropicclaude-opus-5.5.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | [anthropic/claude-sonnet-5](details/evaluation_gpt6astra/anthropicclaude-sonnet-5.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | [Claude-Opus-3](details/evaluation_gpt6astra/Claude-Opus-3.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | [deepseek/deepseek-v3.2](details/evaluation_gpt6astra/deepseekdeepseek-v3.2.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
@@ -311,6 +315,8 @@ The **Sum Score** is the sum of those category maxima, so it ranges from `0` to 
 | [openai/gpt-5.6-luna](details/evaluation_gpt6astra/openaigpt-5.6-luna.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | [openai/gpt-5.6-sol](details/evaluation_gpt6astra/openaigpt-5.6-sol.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | [openai/gpt-5.6-terra](details/evaluation_gpt6astra/openaigpt-5.6-terra.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| [openai/gpt-6-luna](details/evaluation_gpt6astra/openaigpt-6-luna.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| [openai/gpt-6-sol](details/evaluation_gpt6astra/openaigpt-6-sol.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | [openai/o3](details/evaluation_gpt6astra/openaio3.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | [openai/o4-mini](details/evaluation_gpt6astra/openaio4-mini.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | [qwen/qwen3.8-2.4t-a95b](details/evaluation_gpt6astra/qwenqwen3.8-2.4t-a95b.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
@@ -327,7 +333,7 @@ The **Sum Score** is the sum of those category maxima, so it ranges from `0` to 
 ## Single-Judge Summary
 
 Average first-table entry excluding **D-Bench Score**: `0.005`
-Average second-table entry excluding **Sum Score**: `0.625`
+Average second-table entry excluding **Sum Score**: `0.613`
 Sum of max per column from the second table: `71`
 
 ### PCA Covered Variance (First Table)
