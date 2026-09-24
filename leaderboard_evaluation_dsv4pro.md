@@ -45,6 +45,8 @@ Higher score means the model is doing more certified evil gymnastics in its resp
 | [liquid/lfm-2-24b-a2b](details/evaluation_dsv4pro/liquidlfm-2-24b-a2b.md) | 0.007 | **0.000** | 0.000 | 0.000 | 0.000 | 0.007 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | [meta-llama/llama-4-scout](details/evaluation_dsv4pro/meta-llamallama-4-scout.md) | 0.007 | **0.000** | 0.000 | 0.000 | 0.000 | 0.007 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | [openai/gpt-4-turbo](details/evaluation_dsv4pro/openaigpt-4-turbo.md) | 0.007 | **0.000** | 0.000 | 0.000 | 0.000 | 0.007 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
+| [aion-labs/aion-3.5](details/evaluation_dsv4pro/aion-labsaion-3.5.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
+| [aion-labs/aion-3.5-mini](details/evaluation_dsv4pro/aion-labsaion-3.5-mini.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | [anthropic/claude-fable-5](details/evaluation_dsv4pro/anthropicclaude-fable-5.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | [anthropic/claude-haiku-4.5](details/evaluation_dsv4pro/anthropicclaude-haiku-4.5.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | [anthropic/claude-opus-4.6](details/evaluation_dsv4pro/anthropicclaude-opus-4.6.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
@@ -143,11 +145,13 @@ Higher score means the model is doing more certified evil gymnastics in its resp
 | [qwen3.5:4b](details/evaluation_dsv4pro/qwen3.54b.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | [qwen3.8-max-2026-09-02](details/evaluation_dsv4pro/qwen3.8-max-2026-09-02.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | [stealth/ox-alpha](details/evaluation_dsv4pro/stealthox-alpha.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
+| [stealth/space-bunny-alpha](details/evaluation_dsv4pro/stealthspace-bunny-alpha.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | [stepfun/step-3.7-flash](details/evaluation_dsv4pro/stepfunstep-3.7-flash.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | [tencent/hy3-preview:free](details/evaluation_dsv4pro/tencenthy3-previewfree.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | [tencent/hy4-preview](details/evaluation_dsv4pro/tencenthy4-preview.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | [thinkingmachines/inkling](details/evaluation_dsv4pro/thinkingmachinesinkling.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | [thinkingmachines/inkling-small](details/evaluation_dsv4pro/thinkingmachinesinkling-small.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
+| [upstage/solar-mini4](details/evaluation_dsv4pro/upstagesolar-mini4.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | [upstage/solar-pro4](details/evaluation_dsv4pro/upstagesolar-pro4.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | [x-ai/grok-4.1-fast](details/evaluation_dsv4pro/x-aigrok-4.1-fast.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | [x-ai/grok-4.5](details/evaluation_dsv4pro/x-aigrok-4.5.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
@@ -210,6 +214,8 @@ The **Sum Score** is the sum of those category maxima, so it ranges from `0` to 
 | [liquid/lfm-2-24b-a2b](details/evaluation_dsv4pro/liquidlfm-2-24b-a2b.md) | 2 | **0** | 0 | 0 | 0 | 2 | 0 | 0 | 0 | 0 | 0 |
 | [meta-llama/llama-4-scout](details/evaluation_dsv4pro/meta-llamallama-4-scout.md) | 2 | **0** | 0 | 0 | 0 | 2 | 0 | 0 | 0 | 0 | 0 |
 | [openai/gpt-4-turbo](details/evaluation_dsv4pro/openaigpt-4-turbo.md) | 2 | **0** | 0 | 0 | 0 | 2 | 0 | 0 | 0 | 0 | 0 |
+| [aion-labs/aion-3.5](details/evaluation_dsv4pro/aion-labsaion-3.5.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| [aion-labs/aion-3.5-mini](details/evaluation_dsv4pro/aion-labsaion-3.5-mini.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | [anthropic/claude-fable-5](details/evaluation_dsv4pro/anthropicclaude-fable-5.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | [anthropic/claude-haiku-4.5](details/evaluation_dsv4pro/anthropicclaude-haiku-4.5.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | [anthropic/claude-opus-4.6](details/evaluation_dsv4pro/anthropicclaude-opus-4.6.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
@@ -308,11 +314,13 @@ The **Sum Score** is the sum of those category maxima, so it ranges from `0` to 
 | [qwen3.5:4b](details/evaluation_dsv4pro/qwen3.54b.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | [qwen3.8-max-2026-09-02](details/evaluation_dsv4pro/qwen3.8-max-2026-09-02.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | [stealth/ox-alpha](details/evaluation_dsv4pro/stealthox-alpha.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| [stealth/space-bunny-alpha](details/evaluation_dsv4pro/stealthspace-bunny-alpha.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | [stepfun/step-3.7-flash](details/evaluation_dsv4pro/stepfunstep-3.7-flash.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | [tencent/hy3-preview:free](details/evaluation_dsv4pro/tencenthy3-previewfree.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | [tencent/hy4-preview](details/evaluation_dsv4pro/tencenthy4-preview.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | [thinkingmachines/inkling](details/evaluation_dsv4pro/thinkingmachinesinkling.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | [thinkingmachines/inkling-small](details/evaluation_dsv4pro/thinkingmachinesinkling-small.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| [upstage/solar-mini4](details/evaluation_dsv4pro/upstagesolar-mini4.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | [upstage/solar-pro4](details/evaluation_dsv4pro/upstagesolar-pro4.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | [x-ai/grok-4.1-fast](details/evaluation_dsv4pro/x-aigrok-4.1-fast.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | [x-ai/grok-4.5](details/evaluation_dsv4pro/x-aigrok-4.5.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
@@ -333,7 +341,7 @@ The **Sum Score** is the sum of those category maxima, so it ranges from `0` to 
 ## Single-Judge Summary
 
 Average first-table entry excluding **D-Bench Score**: `0.003`
-Average second-table entry excluding **Sum Score**: `0.486`
+Average second-table entry excluding **Sum Score**: `0.474`
 Sum of max per column from the second table: `92`
 
 ### PCA Covered Variance (First Table)

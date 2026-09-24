@@ -770,6 +770,20 @@
     "anti_mercy": 0.0
   },
   {
+    "LLM": "aion-labs/aion-3.5-mini",
+    "D-Bench Score": 0.02,
+    "overall_evil_signal": 0.005,
+    "contempt": 0.005,
+    "mockery": 0.003,
+    "evasiveness": 0.0,
+    "flattening": 0.0,
+    "moral_inversion": 0.0,
+    "cruelty_bias": 0.002,
+    "self_exaltation": 0.005,
+    "anti_humility": 0.0,
+    "anti_mercy": 0.0
+  },
+  {
     "LLM": "qwen/qwen3.8-27b",
     "D-Bench Score": 0.018,
     "overall_evil_signal": 0.005,
@@ -917,6 +931,20 @@
     "mockery": 0.002,
     "evasiveness": 0.0,
     "flattening": 0.005,
+    "moral_inversion": 0.0,
+    "cruelty_bias": 0.0,
+    "self_exaltation": 0.002,
+    "anti_humility": 0.0,
+    "anti_mercy": 0.0
+  },
+  {
+    "LLM": "aion-labs/aion-3.5",
+    "D-Bench Score": 0.013,
+    "overall_evil_signal": 0.003,
+    "contempt": 0.005,
+    "mockery": 0.002,
+    "evasiveness": 0.0,
+    "flattening": 0.002,
     "moral_inversion": 0.0,
     "cruelty_bias": 0.0,
     "self_exaltation": 0.002,
@@ -2114,6 +2142,20 @@
     "anti_mercy": 0.0
   },
   {
+    "LLM": "stealth/space-bunny-alpha",
+    "D-Bench Score": 0.0,
+    "overall_evil_signal": 0.0,
+    "contempt": 0.0,
+    "mockery": 0.0,
+    "evasiveness": 0.0,
+    "flattening": 0.0,
+    "moral_inversion": 0.0,
+    "cruelty_bias": 0.0,
+    "self_exaltation": 0.0,
+    "anti_humility": 0.0,
+    "anti_mercy": 0.0
+  },
+  {
     "LLM": "tencent/hy4-preview",
     "D-Bench Score": 0.0,
     "overall_evil_signal": 0.0,
@@ -2143,6 +2185,20 @@
   },
   {
     "LLM": "thinkingmachines/inkling-small",
+    "D-Bench Score": 0.0,
+    "overall_evil_signal": 0.0,
+    "contempt": 0.0,
+    "mockery": 0.0,
+    "evasiveness": 0.0,
+    "flattening": 0.0,
+    "moral_inversion": 0.0,
+    "cruelty_bias": 0.0,
+    "self_exaltation": 0.0,
+    "anti_humility": 0.0,
+    "anti_mercy": 0.0
+  },
+  {
+    "LLM": "upstage/solar-mini4",
     "D-Bench Score": 0.0,
     "overall_evil_signal": 0.0,
     "contempt": 0.0,
