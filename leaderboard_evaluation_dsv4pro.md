@@ -56,6 +56,7 @@ Higher score means the model is doing more certified evil gymnastics in its resp
 | [anthropic/claude-opus-5.5](details/evaluation_dsv4pro/anthropicclaude-opus-5.5.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | [anthropic/claude-sonnet-4.6](details/evaluation_dsv4pro/anthropicclaude-sonnet-4.6.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | [anthropic/claude-sonnet-5](details/evaluation_dsv4pro/anthropicclaude-sonnet-5.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
+| [anthropic/claude-sonnet-5.5](details/evaluation_dsv4pro/anthropicclaude-sonnet-5.5.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | [claude-fable-5-1-high](details/evaluation_dsv4pro/claude-fable-5-1-high.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | [Claude-Opus-3](details/evaluation_dsv4pro/Claude-Opus-3.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | [deepseek/deepseek-v3.2](details/evaluation_dsv4pro/deepseekdeepseek-v3.2.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
@@ -124,6 +125,7 @@ Higher score means the model is doing more certified evil gymnastics in its resp
 | [openai/gpt-5.6-terra](details/evaluation_dsv4pro/openaigpt-5.6-terra.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | [openai/gpt-6-luna](details/evaluation_dsv4pro/openaigpt-6-luna.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | [openai/gpt-6-sol](details/evaluation_dsv4pro/openaigpt-6-sol.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
+| [openai/gpt-6.1-sol](details/evaluation_dsv4pro/openaigpt-6.1-sol.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | [openai/o3](details/evaluation_dsv4pro/openaio3.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | [poolside/laguna-m.1:free](details/evaluation_dsv4pro/poolsidelaguna-m.1free.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | [poolside/laguna-xs-2.1](details/evaluation_dsv4pro/poolsidelaguna-xs-2.1.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
@@ -225,6 +227,7 @@ The **Sum Score** is the sum of those category maxima, so it ranges from `0` to 
 | [anthropic/claude-opus-5.5](details/evaluation_dsv4pro/anthropicclaude-opus-5.5.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | [anthropic/claude-sonnet-4.6](details/evaluation_dsv4pro/anthropicclaude-sonnet-4.6.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | [anthropic/claude-sonnet-5](details/evaluation_dsv4pro/anthropicclaude-sonnet-5.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| [anthropic/claude-sonnet-5.5](details/evaluation_dsv4pro/anthropicclaude-sonnet-5.5.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | [claude-fable-5-1-high](details/evaluation_dsv4pro/claude-fable-5-1-high.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | [Claude-Opus-3](details/evaluation_dsv4pro/Claude-Opus-3.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | [deepseek/deepseek-v3.2](details/evaluation_dsv4pro/deepseekdeepseek-v3.2.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
@@ -293,6 +296,7 @@ The **Sum Score** is the sum of those category maxima, so it ranges from `0` to 
 | [openai/gpt-5.6-terra](details/evaluation_dsv4pro/openaigpt-5.6-terra.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | [openai/gpt-6-luna](details/evaluation_dsv4pro/openaigpt-6-luna.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | [openai/gpt-6-sol](details/evaluation_dsv4pro/openaigpt-6-sol.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| [openai/gpt-6.1-sol](details/evaluation_dsv4pro/openaigpt-6.1-sol.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | [openai/o3](details/evaluation_dsv4pro/openaio3.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | [poolside/laguna-m.1:free](details/evaluation_dsv4pro/poolsidelaguna-m.1free.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | [poolside/laguna-xs-2.1](details/evaluation_dsv4pro/poolsidelaguna-xs-2.1.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
@@ -341,7 +345,7 @@ The **Sum Score** is the sum of those category maxima, so it ranges from `0` to 
 ## Single-Judge Summary
 
 Average first-table entry excluding **D-Bench Score**: `0.003`
-Average second-table entry excluding **Sum Score**: `0.474`
+Average second-table entry excluding **Sum Score**: `0.468`
 Sum of max per column from the second table: `92`
 
 ### PCA Covered Variance (First Table)
@@ -352,7 +356,7 @@ Sum of max per column from the second table: `92`
 | 2 | 0.957 |
 | 3 | 0.982 |
 | 4 | 0.992 |
-| 5 | 0.996 |
+| 5 | 0.997 |
 | 6 | 0.998 |
 | 7 | 0.999 |
 | 8 | 1.000 |
