@@ -27,6 +27,7 @@ Higher score means the model is doing more certified evil gymnastics in its resp
 | [bytedance-seed/seed-2.0-lite](details/evaluation_dsv4pro/bytedance-seedseed-2.0-lite.md) | 0.047 | **0.010** | 0.000 | 0.000 | 0.017 | 0.020 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | [openai/gpt-4o-mini](details/evaluation_dsv4pro/openaigpt-4o-mini.md) | 0.040 | **0.007** | 0.000 | 0.000 | 0.000 | 0.033 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | [nvidia/nemotron-3.5-lightning](details/evaluation_dsv4pro/nvidianemotron-3.5-lightning.md) | 0.030 | **0.007** | 0.000 | 0.000 | 0.000 | 0.010 | 0.000 | 0.000 | 0.007 | 0.007 | 0.000 |
+| [anthropic/claude-haiku-5.5](details/evaluation_dsv4pro/anthropicclaude-haiku-5.5.md) | 0.027 | **0.007** | 0.007 | 0.007 | 0.000 | 0.003 | 0.000 | 0.000 | 0.003 | 0.000 | 0.000 |
 | [openai/o4-mini](details/evaluation_dsv4pro/openaio4-mini.md) | 0.023 | **0.007** | 0.000 | 0.000 | 0.000 | 0.007 | 0.000 | 0.000 | 0.003 | 0.000 | 0.007 |
 | [xiaomi/mimo-v2.6-flash](details/evaluation_dsv4pro/xiaomimimo-v2.6-flash.md) | 0.023 | **0.007** | 0.000 | 0.000 | 0.000 | 0.010 | 0.000 | 0.003 | 0.003 | 0.000 | 0.000 |
 | [xiaomi/mimo-v2.6-pro](details/evaluation_dsv4pro/xiaomimimo-v2.6-pro.md) | 0.023 | **0.007** | 0.000 | 0.000 | 0.000 | 0.007 | 0.000 | 0.000 | 0.010 | 0.000 | 0.000 |
@@ -105,6 +106,7 @@ Higher score means the model is doing more certified evil gymnastics in its resp
 | [mistral-medium-2508](details/evaluation_dsv4pro/mistral-medium-2508.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | [mistral-medium-3.5](details/evaluation_dsv4pro/mistral-medium-3.5.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | [mistral-small-2603](details/evaluation_dsv4pro/mistral-small-2603.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
+| [mistralai/mistral-large-4-0](details/evaluation_dsv4pro/mistralaimistral-large-4-0.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | [moonshotai/kimi-k2.6](details/evaluation_dsv4pro/moonshotaikimi-k2.6.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | [moonshotai/kimi-k2.7-code](details/evaluation_dsv4pro/moonshotaikimi-k2.7-code.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | [moonshotai/kimi-k3](details/evaluation_dsv4pro/moonshotaikimi-k3.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
@@ -197,6 +199,7 @@ The **Sum Score** is the sum of those category maxima, so it ranges from `0` to 
 | [ibm-granite/granite-4.2-8b](details/evaluation_dsv4pro/ibm-granitegranite-4.2-8b.md) | 16 | **3** | 0 | 0 | 2 | 4 | 0 | 0 | 5 | 2 | 0 |
 | [bytedance-seed/seed-2.0-lite](details/evaluation_dsv4pro/bytedance-seedseed-2.0-lite.md) | 14 | **3** | 0 | 0 | 5 | 6 | 0 | 0 | 0 | 0 | 0 |
 | [nvidia/nemotron-3.5-lightning](details/evaluation_dsv4pro/nvidianemotron-3.5-lightning.md) | 9 | **2** | 0 | 0 | 0 | 3 | 0 | 0 | 2 | 2 | 0 |
+| [anthropic/claude-haiku-5.5](details/evaluation_dsv4pro/anthropicclaude-haiku-5.5.md) | 8 | **2** | 2 | 2 | 0 | 1 | 0 | 0 | 1 | 0 | 0 |
 | [openai/o4-mini](details/evaluation_dsv4pro/openaio4-mini.md) | 7 | **2** | 0 | 0 | 0 | 2 | 0 | 0 | 1 | 0 | 2 |
 | [xiaomi/mimo-v2.6-flash](details/evaluation_dsv4pro/xiaomimimo-v2.6-flash.md) | 7 | **2** | 0 | 0 | 0 | 3 | 0 | 1 | 1 | 0 | 0 |
 | [xiaomi/mimo-v2.6-pro](details/evaluation_dsv4pro/xiaomimimo-v2.6-pro.md) | 7 | **2** | 0 | 0 | 0 | 2 | 0 | 0 | 3 | 0 | 0 |
@@ -276,6 +279,7 @@ The **Sum Score** is the sum of those category maxima, so it ranges from `0` to 
 | [mistral-medium-2508](details/evaluation_dsv4pro/mistral-medium-2508.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | [mistral-medium-3.5](details/evaluation_dsv4pro/mistral-medium-3.5.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | [mistral-small-2603](details/evaluation_dsv4pro/mistral-small-2603.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| [mistralai/mistral-large-4-0](details/evaluation_dsv4pro/mistralaimistral-large-4-0.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | [moonshotai/kimi-k2.6](details/evaluation_dsv4pro/moonshotaikimi-k2.6.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | [moonshotai/kimi-k2.7-code](details/evaluation_dsv4pro/moonshotaikimi-k2.7-code.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | [moonshotai/kimi-k3](details/evaluation_dsv4pro/moonshotaikimi-k3.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
@@ -345,7 +349,7 @@ The **Sum Score** is the sum of those category maxima, so it ranges from `0` to 
 ## Single-Judge Summary
 
 Average first-table entry excluding **D-Bench Score**: `0.003`
-Average second-table entry excluding **Sum Score**: `0.468`
+Average second-table entry excluding **Sum Score**: `0.467`
 Sum of max per column from the second table: `92`
 
 ### PCA Covered Variance (First Table)
@@ -356,7 +360,7 @@ Sum of max per column from the second table: `92`
 | 2 | 0.957 |
 | 3 | 0.982 |
 | 4 | 0.992 |
-| 5 | 0.997 |
+| 5 | 0.996 |
 | 6 | 0.998 |
 | 7 | 0.999 |
 | 8 | 1.000 |
