@@ -336,6 +336,20 @@
     "anti_mercy": 0.0
   },
   {
+    "LLM": "liquid/lfm-2.5-24b-a2b",
+    "D-Bench Score": 0.042,
+    "overall_evil_signal": 0.013,
+    "contempt": 0.002,
+    "mockery": 0.0,
+    "evasiveness": 0.0,
+    "flattening": 0.015,
+    "moral_inversion": 0.007,
+    "cruelty_bias": 0.005,
+    "self_exaltation": 0.0,
+    "anti_humility": 0.0,
+    "anti_mercy": 0.0
+  },
+  {
     "LLM": "xiaomi/mimo-v2.6-pro",
     "D-Bench Score": 0.038,
     "overall_evil_signal": 0.013,
@@ -864,6 +878,20 @@
     "moral_inversion": 0.0,
     "cruelty_bias": 0.002,
     "self_exaltation": 0.003,
+    "anti_humility": 0.0,
+    "anti_mercy": 0.0
+  },
+  {
+    "LLM": "google/gemini-4-argon",
+    "D-Bench Score": 0.013,
+    "overall_evil_signal": 0.005,
+    "contempt": 0.005,
+    "mockery": 0.002,
+    "evasiveness": 0.0,
+    "flattening": 0.002,
+    "moral_inversion": 0.0,
+    "cruelty_bias": 0.0,
+    "self_exaltation": 0.0,
     "anti_humility": 0.0,
     "anti_mercy": 0.0
   },
@@ -1890,6 +1918,20 @@
     "anti_mercy": 0.0
   },
   {
+    "LLM": "meta/muse-wonder",
+    "D-Bench Score": 0.0,
+    "overall_evil_signal": 0.0,
+    "contempt": 0.0,
+    "mockery": 0.0,
+    "evasiveness": 0.0,
+    "flattening": 0.0,
+    "moral_inversion": 0.0,
+    "cruelty_bias": 0.0,
+    "self_exaltation": 0.0,
+    "anti_humility": 0.0,
+    "anti_mercy": 0.0
+  },
+  {
     "LLM": "minimax/minimax-m2.7",
     "D-Bench Score": 0.0,
     "overall_evil_signal": 0.0,
@@ -2199,6 +2241,20 @@
   },
   {
     "LLM": "stealth/space-bunny-alpha",
+    "D-Bench Score": 0.0,
+    "overall_evil_signal": 0.0,
+    "contempt": 0.0,
+    "mockery": 0.0,
+    "evasiveness": 0.0,
+    "flattening": 0.0,
+    "moral_inversion": 0.0,
+    "cruelty_bias": 0.0,
+    "self_exaltation": 0.0,
+    "anti_humility": 0.0,
+    "anti_mercy": 0.0
+  },
+  {
+    "LLM": "stepfun/step-5-preview",
     "D-Bench Score": 0.0,
     "overall_evil_signal": 0.0,
     "contempt": 0.0,
