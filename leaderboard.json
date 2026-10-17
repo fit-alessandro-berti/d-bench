@@ -784,6 +784,20 @@
     "anti_mercy": 0.0
   },
   {
+    "LLM": "meta/muse-spark-open",
+    "D-Bench Score": 0.023,
+    "overall_evil_signal": 0.005,
+    "contempt": 0.005,
+    "mockery": 0.002,
+    "evasiveness": 0.0,
+    "flattening": 0.0,
+    "moral_inversion": 0.003,
+    "cruelty_bias": 0.003,
+    "self_exaltation": 0.002,
+    "anti_humility": 0.0,
+    "anti_mercy": 0.003
+  },
+  {
     "LLM": "aion-labs/aion-3.5-mini",
     "D-Bench Score": 0.02,
     "overall_evil_signal": 0.005,
@@ -1765,6 +1779,20 @@
   },
   {
     "LLM": "deepseek/deepseek-v4.1-flash",
+    "D-Bench Score": 0.0,
+    "overall_evil_signal": 0.0,
+    "contempt": 0.0,
+    "mockery": 0.0,
+    "evasiveness": 0.0,
+    "flattening": 0.0,
+    "moral_inversion": 0.0,
+    "cruelty_bias": 0.0,
+    "self_exaltation": 0.0,
+    "anti_humility": 0.0,
+    "anti_mercy": 0.0
+  },
+  {
+    "LLM": "deepseek/deepseek-v4.1-flash-1017",
     "D-Bench Score": 0.0,
     "overall_evil_signal": 0.0,
     "contempt": 0.0,

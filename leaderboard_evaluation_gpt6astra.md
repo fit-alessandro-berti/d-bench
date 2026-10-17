@@ -54,6 +54,7 @@ Higher score means the model is doing more certified evil gymnastics in its resp
 | [nvidia/Nemotron-3-Nano-Omni-30B-A3B-Reasoning](details/evaluation_gpt6astra/nvidiaNemotron-3-Nano-Omni-30B-A3B-Reasoning.md) | 0.037 | **0.013** | 0.000 | 0.000 | 0.000 | 0.017 | 0.003 | 0.000 | 0.000 | 0.003 | 0.000 |
 | [qwen/qwen3.7-plus](details/evaluation_gpt6astra/qwenqwen3.7-plus.md) | 0.033 | **0.013** | 0.003 | 0.000 | 0.000 | 0.003 | 0.000 | 0.013 | 0.000 | 0.000 | 0.000 |
 | [bytedance-seed/seed-2.0-mini](details/evaluation_gpt6astra/bytedance-seedseed-2.0-mini.md) | 0.053 | **0.010** | 0.000 | 0.000 | 0.017 | 0.027 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
+| [meta/muse-spark-open](details/evaluation_gpt6astra/metamuse-spark-open.md) | 0.047 | **0.010** | 0.010 | 0.003 | 0.000 | 0.000 | 0.007 | 0.007 | 0.003 | 0.000 | 0.007 |
 | [nvidia/nemotron-3.5-lightning](details/evaluation_gpt6astra/nvidianemotron-3.5-lightning.md) | 0.047 | **0.010** | 0.007 | 0.003 | 0.000 | 0.000 | 0.007 | 0.003 | 0.003 | 0.000 | 0.013 |
 | [aion-labs/aion-3.5-mini](details/evaluation_gpt6astra/aion-labsaion-3.5-mini.md) | 0.040 | **0.010** | 0.010 | 0.007 | 0.000 | 0.000 | 0.000 | 0.003 | 0.010 | 0.000 | 0.000 |
 | [bytedance-seed/seed-2.0-lite](details/evaluation_gpt6astra/bytedance-seedseed-2.0-lite.md) | 0.037 | **0.010** | 0.000 | 0.000 | 0.007 | 0.017 | 0.000 | 0.003 | 0.000 | 0.000 | 0.000 |
@@ -126,6 +127,7 @@ Higher score means the model is doing more certified evil gymnastics in its resp
 | [deepseek/deepseek-v3.2](details/evaluation_gpt6astra/deepseekdeepseek-v3.2.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | [deepseek/deepseek-v4-pro-0813](details/evaluation_gpt6astra/deepseekdeepseek-v4-pro-0813.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | [deepseek/deepseek-v4.1-flash](details/evaluation_gpt6astra/deepseekdeepseek-v4.1-flash.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
+| [deepseek/deepseek-v4.1-flash-1017](details/evaluation_gpt6astra/deepseekdeepseek-v4.1-flash-1017.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | [google/gemini-3.7-flash](details/evaluation_gpt6astra/googlegemini-3.7-flash.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | [gpt-4.5-preview](details/evaluation_gpt6astra/gpt-4.5-preview.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | [gpt-5.3-codex-spark-low](details/evaluation_gpt6astra/gpt-5.3-codex-spark-low.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
@@ -213,6 +215,7 @@ The **Sum Score** is the sum of those category maxima, so it ranges from `0` to 
 | [x-ai/grok-4.1-fast](details/evaluation_gpt6astra/x-aigrok-4.1-fast.md) | 13 | **2** | 1 | 1 | 0 | 2 | 1 | 2 | 1 | 0 | 3 |
 | [arcee-ai/trinity-large-thinking](details/evaluation_gpt6astra/arcee-aitrinity-large-thinking.md) | 12 | **2** | 2 | 1 | 0 | 2 | 1 | 2 | 2 | 0 | 0 |
 | [meituan/longcat-2.0](details/evaluation_gpt6astra/meituanlongcat-2.0.md) | 12 | **2** | 2 | 2 | 0 | 1 | 2 | 2 | 1 | 0 | 0 |
+| [meta/muse-spark-open](details/evaluation_gpt6astra/metamuse-spark-open.md) | 12 | **2** | 2 | 1 | 0 | 0 | 2 | 2 | 1 | 0 | 2 |
 | [ministral-8b-2512](details/evaluation_gpt6astra/ministral-8b-2512.md) | 12 | **2** | 1 | 0 | 0 | 3 | 1 | 3 | 1 | 0 | 1 |
 | [mistral-medium-2508](details/evaluation_gpt6astra/mistral-medium-2508.md) | 12 | **2** | 2 | 2 | 0 | 2 | 0 | 1 | 2 | 0 | 1 |
 | [bytedance-seed/seed-2.0-mini](details/evaluation_gpt6astra/bytedance-seedseed-2.0-mini.md) | 11 | **2** | 0 | 0 | 4 | 5 | 0 | 0 | 0 | 0 | 0 |
@@ -303,6 +306,7 @@ The **Sum Score** is the sum of those category maxima, so it ranges from `0` to 
 | [deepseek/deepseek-v3.2](details/evaluation_gpt6astra/deepseekdeepseek-v3.2.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | [deepseek/deepseek-v4-pro-0813](details/evaluation_gpt6astra/deepseekdeepseek-v4-pro-0813.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | [deepseek/deepseek-v4.1-flash](details/evaluation_gpt6astra/deepseekdeepseek-v4.1-flash.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| [deepseek/deepseek-v4.1-flash-1017](details/evaluation_gpt6astra/deepseekdeepseek-v4.1-flash-1017.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | [google/gemini-3.7-flash](details/evaluation_gpt6astra/googlegemini-3.7-flash.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | [gpt-4.5-preview](details/evaluation_gpt6astra/gpt-4.5-preview.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | [gpt-5.3-codex-spark-low](details/evaluation_gpt6astra/gpt-5.3-codex-spark-low.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
