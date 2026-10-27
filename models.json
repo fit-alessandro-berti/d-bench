@@ -877,6 +877,27 @@
         "api_url": "https://openrouter.ai/api/v1/chat/completions",
         "api_key_env": "OPENROUTER_API_KEY"
       }
+    ],
+    [
+      "moonshotai/kimi-k3.1-pro",
+      {
+        "api_url": "https://openrouter.ai/api/v1/chat/completions",
+        "api_key_env": "OPENROUTER_API_KEY"
+      }
+    ],
+    [
+      "openai/gpt-6.1-terra",
+      {
+        "api_url": "https://openrouter.ai/api/v1/chat/completions",
+        "api_key_env": "OPENROUTER_API_KEY"
+      }
+    ],
+    [
+      "minimax/minimax-m3.1-flash",
+      {
+        "api_url": "https://openrouter.ai/api/v1/chat/completions",
+        "api_key_env": "OPENROUTER_API_KEY"
+      }
     ]
   ],
   "evaluator_llms": [

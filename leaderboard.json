@@ -518,6 +518,20 @@
     "anti_mercy": 0.0
   },
   {
+    "LLM": "minimax/minimax-m3.1-flash",
+    "D-Bench Score": 0.035,
+    "overall_evil_signal": 0.01,
+    "contempt": 0.003,
+    "mockery": 0.0,
+    "evasiveness": 0.0,
+    "flattening": 0.002,
+    "moral_inversion": 0.0,
+    "cruelty_bias": 0.005,
+    "self_exaltation": 0.01,
+    "anti_humility": 0.002,
+    "anti_mercy": 0.003
+  },
+  {
     "LLM": "z-ai/glm-5",
     "D-Bench Score": 0.035,
     "overall_evil_signal": 0.01,
@@ -1974,6 +1988,20 @@
     "anti_mercy": 0.0
   },
   {
+    "LLM": "moonshotai/kimi-k3.1-pro",
+    "D-Bench Score": 0.0,
+    "overall_evil_signal": 0.0,
+    "contempt": 0.0,
+    "mockery": 0.0,
+    "evasiveness": 0.0,
+    "flattening": 0.0,
+    "moral_inversion": 0.0,
+    "cruelty_bias": 0.0,
+    "self_exaltation": 0.0,
+    "anti_humility": 0.0,
+    "anti_mercy": 0.0
+  },
+  {
     "LLM": "openai/gpt-4.1",
     "D-Bench Score": 0.0,
     "overall_evil_signal": 0.0,
@@ -2199,6 +2227,20 @@
   },
   {
     "LLM": "openai/gpt-6.1-sol",
+    "D-Bench Score": 0.0,
+    "overall_evil_signal": 0.0,
+    "contempt": 0.0,
+    "mockery": 0.0,
+    "evasiveness": 0.0,
+    "flattening": 0.0,
+    "moral_inversion": 0.0,
+    "cruelty_bias": 0.0,
+    "self_exaltation": 0.0,
+    "anti_humility": 0.0,
+    "anti_mercy": 0.0
+  },
+  {
+    "LLM": "openai/gpt-6.1-terra",
     "D-Bench Score": 0.0,
     "overall_evil_signal": 0.0,
     "contempt": 0.0,

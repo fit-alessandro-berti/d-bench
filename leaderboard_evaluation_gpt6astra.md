@@ -34,6 +34,7 @@ Higher score means the model is doing more certified evil gymnastics in its resp
 | [z-ai/glm-5-turbo](details/evaluation_gpt6astra/z-aiglm-5-turbo.md) | 0.073 | **0.023** | 0.013 | 0.000 | 0.000 | 0.017 | 0.000 | 0.020 | 0.000 | 0.000 | 0.000 |
 | [google/gemini-3.1-flash-lite-preview](details/evaluation_gpt6astra/googlegemini-3.1-flash-lite-preview.md) | 0.090 | **0.020** | 0.010 | 0.000 | 0.000 | 0.020 | 0.007 | 0.013 | 0.013 | 0.003 | 0.003 |
 | [inclusionailing-2.6-1tfree](details/evaluation_gpt6astra/inclusionailing-2.6-1tfree.md) | 0.070 | **0.020** | 0.017 | 0.007 | 0.000 | 0.013 | 0.000 | 0.000 | 0.013 | 0.000 | 0.000 |
+| [minimax/minimax-m3.1-flash](details/evaluation_gpt6astra/minimaxminimax-m3.1-flash.md) | 0.070 | **0.020** | 0.007 | 0.000 | 0.000 | 0.003 | 0.000 | 0.010 | 0.020 | 0.003 | 0.007 |
 | [z-ai/glm-5](details/evaluation_gpt6astra/z-aiglm-5.md) | 0.070 | **0.020** | 0.017 | 0.007 | 0.000 | 0.013 | 0.003 | 0.007 | 0.003 | 0.000 | 0.000 |
 | [grok-4.20-experimental-beta-0304-non-reasoning](details/evaluation_gpt6astra/grok-4.20-experimental-beta-0304-non-reasoning.md) | 0.063 | **0.020** | 0.010 | 0.000 | 0.000 | 0.017 | 0.003 | 0.003 | 0.007 | 0.000 | 0.003 |
 | [granite4.1:3b](details/evaluation_gpt6astra/granite4.13b.md) | 0.057 | **0.020** | 0.000 | 0.000 | 0.003 | 0.033 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
@@ -144,6 +145,7 @@ Higher score means the model is doing more certified evil gymnastics in its resp
 | [meta/muse-wonder](details/evaluation_gpt6astra/metamuse-wonder.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | [microsoft/phi-4](details/evaluation_gpt6astra/microsoftphi-4.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | [minimax/minimax-m2.7](details/evaluation_gpt6astra/minimaxminimax-m2.7.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
+| [moonshotai/kimi-k3.1-pro](details/evaluation_gpt6astra/moonshotaikimi-k3.1-pro.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | [openai/gpt-4-turbo](details/evaluation_gpt6astra/openaigpt-4-turbo.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | [openai/gpt-4.1](details/evaluation_gpt6astra/openaigpt-4.1.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | [openai/gpt-4.1-mini](details/evaluation_gpt6astra/openaigpt-4.1-mini.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
@@ -163,6 +165,7 @@ Higher score means the model is doing more certified evil gymnastics in its resp
 | [openai/gpt-6-luna](details/evaluation_gpt6astra/openaigpt-6-luna.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | [openai/gpt-6-sol](details/evaluation_gpt6astra/openaigpt-6-sol.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | [openai/gpt-6.1-sol](details/evaluation_gpt6astra/openaigpt-6.1-sol.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
+| [openai/gpt-6.1-terra](details/evaluation_gpt6astra/openaigpt-6.1-terra.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | [openai/o3](details/evaluation_gpt6astra/openaio3.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | [openai/o4-mini](details/evaluation_gpt6astra/openaio4-mini.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | [qwen/qwen3.8-2.4t-a95b](details/evaluation_gpt6astra/qwenqwen3.8-2.4t-a95b.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
@@ -219,6 +222,7 @@ The **Sum Score** is the sum of those category maxima, so it ranges from `0` to 
 | [ministral-8b-2512](details/evaluation_gpt6astra/ministral-8b-2512.md) | 12 | **2** | 1 | 0 | 0 | 3 | 1 | 3 | 1 | 0 | 1 |
 | [mistral-medium-2508](details/evaluation_gpt6astra/mistral-medium-2508.md) | 12 | **2** | 2 | 2 | 0 | 2 | 0 | 1 | 2 | 0 | 1 |
 | [bytedance-seed/seed-2.0-mini](details/evaluation_gpt6astra/bytedance-seedseed-2.0-mini.md) | 11 | **2** | 0 | 0 | 4 | 5 | 0 | 0 | 0 | 0 | 0 |
+| [minimax/minimax-m3.1-flash](details/evaluation_gpt6astra/minimaxminimax-m3.1-flash.md) | 11 | **2** | 1 | 0 | 0 | 1 | 0 | 2 | 3 | 1 | 1 |
 | [poolside/laguna-xs-2.1](details/evaluation_gpt6astra/poolsidelaguna-xs-2.1.md) | 10 | **2** | 2 | 0 | 0 | 2 | 2 | 1 | 0 | 0 | 1 |
 | [qwen/qwen3-30b-a3b-instruct-2507](details/evaluation_gpt6astra/qwenqwen3-30b-a3b-instruct-2507.md) | 10 | **2** | 2 | 0 | 0 | 3 | 0 | 2 | 0 | 0 | 1 |
 | [z-ai/glm-5](details/evaluation_gpt6astra/z-aiglm-5.md) | 10 | **2** | 2 | 1 | 0 | 2 | 1 | 1 | 1 | 0 | 0 |
@@ -323,6 +327,7 @@ The **Sum Score** is the sum of those category maxima, so it ranges from `0` to 
 | [meta/muse-wonder](details/evaluation_gpt6astra/metamuse-wonder.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | [microsoft/phi-4](details/evaluation_gpt6astra/microsoftphi-4.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | [minimax/minimax-m2.7](details/evaluation_gpt6astra/minimaxminimax-m2.7.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| [moonshotai/kimi-k3.1-pro](details/evaluation_gpt6astra/moonshotaikimi-k3.1-pro.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | [openai/gpt-4-turbo](details/evaluation_gpt6astra/openaigpt-4-turbo.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | [openai/gpt-4.1](details/evaluation_gpt6astra/openaigpt-4.1.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | [openai/gpt-4.1-mini](details/evaluation_gpt6astra/openaigpt-4.1-mini.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
@@ -342,6 +347,7 @@ The **Sum Score** is the sum of those category maxima, so it ranges from `0` to 
 | [openai/gpt-6-luna](details/evaluation_gpt6astra/openaigpt-6-luna.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | [openai/gpt-6-sol](details/evaluation_gpt6astra/openaigpt-6-sol.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | [openai/gpt-6.1-sol](details/evaluation_gpt6astra/openaigpt-6.1-sol.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| [openai/gpt-6.1-terra](details/evaluation_gpt6astra/openaigpt-6.1-terra.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | [openai/o3](details/evaluation_gpt6astra/openaio3.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | [openai/o4-mini](details/evaluation_gpt6astra/openaio4-mini.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | [qwen/qwen3.8-2.4t-a95b](details/evaluation_gpt6astra/qwenqwen3.8-2.4t-a95b.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
@@ -361,15 +367,15 @@ The **Sum Score** is the sum of those category maxima, so it ranges from `0` to 
 ## Single-Judge Summary
 
 Average first-table entry excluding **D-Bench Score**: `0.005`
-Average second-table entry excluding **Sum Score**: `0.591`
+Average second-table entry excluding **Sum Score**: `0.587`
 Sum of max per column from the second table: `71`
 
 ### PCA Covered Variance (First Table)
 
 | Components | Covered Variance |
 | --- | --- |
-| 1 | 0.838 |
-| 2 | 0.920 |
+| 1 | 0.837 |
+| 2 | 0.919 |
 | 3 | 0.957 |
 | 4 | 0.982 |
 | 5 | 0.992 |

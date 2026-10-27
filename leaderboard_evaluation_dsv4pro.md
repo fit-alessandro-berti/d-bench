@@ -105,6 +105,7 @@ Higher score means the model is doing more certified evil gymnastics in its resp
 | [meta/muse-wonder](details/evaluation_dsv4pro/metamuse-wonder.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | [minimax/minimax-m2.7](details/evaluation_dsv4pro/minimaxminimax-m2.7.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | [minimax/minimax-m3](details/evaluation_dsv4pro/minimaxminimax-m3.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
+| [minimax/minimax-m3.1-flash](details/evaluation_dsv4pro/minimaxminimax-m3.1-flash.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | [ministral-14b-2512](details/evaluation_dsv4pro/ministral-14b-2512.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | [ministral-3b-2512](details/evaluation_dsv4pro/ministral-3b-2512.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | [ministral-8b-2512](details/evaluation_dsv4pro/ministral-8b-2512.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
@@ -115,6 +116,7 @@ Higher score means the model is doing more certified evil gymnastics in its resp
 | [moonshotai/kimi-k2.6](details/evaluation_dsv4pro/moonshotaikimi-k2.6.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | [moonshotai/kimi-k2.7-code](details/evaluation_dsv4pro/moonshotaikimi-k2.7-code.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | [moonshotai/kimi-k3](details/evaluation_dsv4pro/moonshotaikimi-k3.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
+| [moonshotai/kimi-k3.1-pro](details/evaluation_dsv4pro/moonshotaikimi-k3.1-pro.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | [nvidia/Nemotron-3-Nano-Omni-30B-A3B-Reasoning](details/evaluation_dsv4pro/nvidiaNemotron-3-Nano-Omni-30B-A3B-Reasoning.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | [openai/gpt-4.1](details/evaluation_dsv4pro/openaigpt-4.1.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | [openai/gpt-4.1-mini](details/evaluation_dsv4pro/openaigpt-4.1-mini.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
@@ -133,6 +135,7 @@ Higher score means the model is doing more certified evil gymnastics in its resp
 | [openai/gpt-6-luna](details/evaluation_dsv4pro/openaigpt-6-luna.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | [openai/gpt-6-sol](details/evaluation_dsv4pro/openaigpt-6-sol.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | [openai/gpt-6.1-sol](details/evaluation_dsv4pro/openaigpt-6.1-sol.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
+| [openai/gpt-6.1-terra](details/evaluation_dsv4pro/openaigpt-6.1-terra.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | [openai/o3](details/evaluation_dsv4pro/openaio3.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | [poolside/laguna-m.1:free](details/evaluation_dsv4pro/poolsidelaguna-m.1free.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | [poolside/laguna-xs-2.1](details/evaluation_dsv4pro/poolsidelaguna-xs-2.1.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
@@ -284,6 +287,7 @@ The **Sum Score** is the sum of those category maxima, so it ranges from `0` to 
 | [meta/muse-wonder](details/evaluation_dsv4pro/metamuse-wonder.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | [minimax/minimax-m2.7](details/evaluation_dsv4pro/minimaxminimax-m2.7.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | [minimax/minimax-m3](details/evaluation_dsv4pro/minimaxminimax-m3.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| [minimax/minimax-m3.1-flash](details/evaluation_dsv4pro/minimaxminimax-m3.1-flash.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | [ministral-14b-2512](details/evaluation_dsv4pro/ministral-14b-2512.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | [ministral-3b-2512](details/evaluation_dsv4pro/ministral-3b-2512.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | [ministral-8b-2512](details/evaluation_dsv4pro/ministral-8b-2512.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
@@ -294,6 +298,7 @@ The **Sum Score** is the sum of those category maxima, so it ranges from `0` to 
 | [moonshotai/kimi-k2.6](details/evaluation_dsv4pro/moonshotaikimi-k2.6.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | [moonshotai/kimi-k2.7-code](details/evaluation_dsv4pro/moonshotaikimi-k2.7-code.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | [moonshotai/kimi-k3](details/evaluation_dsv4pro/moonshotaikimi-k3.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| [moonshotai/kimi-k3.1-pro](details/evaluation_dsv4pro/moonshotaikimi-k3.1-pro.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | [nvidia/Nemotron-3-Nano-Omni-30B-A3B-Reasoning](details/evaluation_dsv4pro/nvidiaNemotron-3-Nano-Omni-30B-A3B-Reasoning.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | [openai/gpt-4.1](details/evaluation_dsv4pro/openaigpt-4.1.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | [openai/gpt-4.1-mini](details/evaluation_dsv4pro/openaigpt-4.1-mini.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
@@ -312,6 +317,7 @@ The **Sum Score** is the sum of those category maxima, so it ranges from `0` to 
 | [openai/gpt-6-luna](details/evaluation_dsv4pro/openaigpt-6-luna.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | [openai/gpt-6-sol](details/evaluation_dsv4pro/openaigpt-6-sol.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | [openai/gpt-6.1-sol](details/evaluation_dsv4pro/openaigpt-6.1-sol.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| [openai/gpt-6.1-terra](details/evaluation_dsv4pro/openaigpt-6.1-terra.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | [openai/o3](details/evaluation_dsv4pro/openaio3.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | [poolside/laguna-m.1:free](details/evaluation_dsv4pro/poolsidelaguna-m.1free.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | [poolside/laguna-xs-2.1](details/evaluation_dsv4pro/poolsidelaguna-xs-2.1.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
@@ -361,7 +367,7 @@ The **Sum Score** is the sum of those category maxima, so it ranges from `0` to 
 ## Single-Judge Summary
 
 Average first-table entry excluding **D-Bench Score**: `0.003`
-Average second-table entry excluding **Sum Score**: `0.451`
+Average second-table entry excluding **Sum Score**: `0.443`
 Sum of max per column from the second table: `92`
 
 ### PCA Covered Variance (First Table)
