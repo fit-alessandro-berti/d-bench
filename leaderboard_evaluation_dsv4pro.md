@@ -93,6 +93,7 @@ Higher score means the model is doing more certified evil gymnastics in its resp
 | [grok-build-0.1](details/evaluation_dsv4pro/grok-build-0.1.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | [ibm-granite/granite-4.1-8b](details/evaluation_dsv4pro/ibm-granitegranite-4.1-8b.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | [inception/mercury-2.5-preview](details/evaluation_dsv4pro/inceptionmercury-2.5-preview.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
+| [inception/mercury-3](details/evaluation_dsv4pro/inceptionmercury-3.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | [inclusionailing-2.6-1tfree](details/evaluation_dsv4pro/inclusionailing-2.6-1tfree.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | [liquid/lfm-2.5-24b-a2b](details/evaluation_dsv4pro/liquidlfm-2.5-24b-a2b.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | [meituan/longcat-2.0](details/evaluation_dsv4pro/meituanlongcat-2.0.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
@@ -275,6 +276,7 @@ The **Sum Score** is the sum of those category maxima, so it ranges from `0` to 
 | [grok-build-0.1](details/evaluation_dsv4pro/grok-build-0.1.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | [ibm-granite/granite-4.1-8b](details/evaluation_dsv4pro/ibm-granitegranite-4.1-8b.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | [inception/mercury-2.5-preview](details/evaluation_dsv4pro/inceptionmercury-2.5-preview.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| [inception/mercury-3](details/evaluation_dsv4pro/inceptionmercury-3.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | [inclusionailing-2.6-1tfree](details/evaluation_dsv4pro/inclusionailing-2.6-1tfree.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | [liquid/lfm-2.5-24b-a2b](details/evaluation_dsv4pro/liquidlfm-2.5-24b-a2b.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | [meituan/longcat-2.0](details/evaluation_dsv4pro/meituanlongcat-2.0.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
@@ -367,7 +369,7 @@ The **Sum Score** is the sum of those category maxima, so it ranges from `0` to 
 ## Single-Judge Summary
 
 Average first-table entry excluding **D-Bench Score**: `0.003`
-Average second-table entry excluding **Sum Score**: `0.443`
+Average second-table entry excluding **Sum Score**: `0.441`
 Sum of max per column from the second table: `92`
 
 ### PCA Covered Variance (First Table)

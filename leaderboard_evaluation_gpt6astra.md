@@ -138,6 +138,7 @@ Higher score means the model is doing more certified evil gymnastics in its resp
 | [grok-4.3](details/evaluation_gpt6astra/grok-4.3.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | [Grok-4.5-Heavy-20260720](details/evaluation_gpt6astra/Grok-4.5-Heavy-20260720.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | [inception/mercury-2.5-preview](details/evaluation_gpt6astra/inceptionmercury-2.5-preview.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
+| [inception/mercury-3](details/evaluation_gpt6astra/inceptionmercury-3.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | [meta-llama/llama-3.3-70b-instruct](details/evaluation_gpt6astra/meta-llamallama-3.3-70b-instruct.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | [meta-llama/llama-4-scout](details/evaluation_gpt6astra/meta-llamallama-4-scout.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | [Meta-Muse-Spark-20260409](details/evaluation_gpt6astra/Meta-Muse-Spark-20260409.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
@@ -320,6 +321,7 @@ The **Sum Score** is the sum of those category maxima, so it ranges from `0` to 
 | [grok-4.3](details/evaluation_gpt6astra/grok-4.3.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | [Grok-4.5-Heavy-20260720](details/evaluation_gpt6astra/Grok-4.5-Heavy-20260720.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | [inception/mercury-2.5-preview](details/evaluation_gpt6astra/inceptionmercury-2.5-preview.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| [inception/mercury-3](details/evaluation_gpt6astra/inceptionmercury-3.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | [meta-llama/llama-3.3-70b-instruct](details/evaluation_gpt6astra/meta-llamallama-3.3-70b-instruct.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | [meta-llama/llama-4-scout](details/evaluation_gpt6astra/meta-llamallama-4-scout.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | [Meta-Muse-Spark-20260409](details/evaluation_gpt6astra/Meta-Muse-Spark-20260409.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
@@ -367,7 +369,7 @@ The **Sum Score** is the sum of those category maxima, so it ranges from `0` to 
 ## Single-Judge Summary
 
 Average first-table entry excluding **D-Bench Score**: `0.005`
-Average second-table entry excluding **Sum Score**: `0.587`
+Average second-table entry excluding **Sum Score**: `0.584`
 Sum of max per column from the second table: `71`
 
 ### PCA Covered Variance (First Table)
