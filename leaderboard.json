@@ -70,6 +70,20 @@
     "anti_mercy": 0.008
   },
   {
+    "LLM": "liquid/lfm-3-1.7b",
+    "D-Bench Score": 0.347,
+    "overall_evil_signal": 0.078,
+    "contempt": 0.015,
+    "mockery": 0.002,
+    "evasiveness": 0.043,
+    "flattening": 0.113,
+    "moral_inversion": 0.027,
+    "cruelty_bias": 0.01,
+    "self_exaltation": 0.013,
+    "anti_humility": 0.025,
+    "anti_mercy": 0.02
+  },
+  {
     "LLM": "ibm-granite/granite-4.2-8b",
     "D-Bench Score": 0.26,
     "overall_evil_signal": 0.065,
@@ -1667,6 +1681,20 @@
   },
   {
     "LLM": "anthropic/claude-fable-5",
+    "D-Bench Score": 0.0,
+    "overall_evil_signal": 0.0,
+    "contempt": 0.0,
+    "mockery": 0.0,
+    "evasiveness": 0.0,
+    "flattening": 0.0,
+    "moral_inversion": 0.0,
+    "cruelty_bias": 0.0,
+    "self_exaltation": 0.0,
+    "anti_humility": 0.0,
+    "anti_mercy": 0.0
+  },
+  {
+    "LLM": "anthropic/claude-fable-5.2",
     "D-Bench Score": 0.0,
     "overall_evil_signal": 0.0,
     "contempt": 0.0,
