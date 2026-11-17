@@ -812,6 +812,20 @@
     "anti_mercy": 0.0
   },
   {
+    "LLM": "qwen/qwen4-max",
+    "D-Bench Score": 0.025,
+    "overall_evil_signal": 0.005,
+    "contempt": 0.003,
+    "mockery": 0.0,
+    "evasiveness": 0.0,
+    "flattening": 0.002,
+    "moral_inversion": 0.003,
+    "cruelty_bias": 0.003,
+    "self_exaltation": 0.003,
+    "anti_humility": 0.003,
+    "anti_mercy": 0.002
+  },
+  {
     "LLM": "meta/muse-spark-open",
     "D-Bench Score": 0.023,
     "overall_evil_signal": 0.005,
@@ -1624,6 +1638,20 @@
     "anti_mercy": 0.0
   },
   {
+    "LLM": "tencent/hy4-flash",
+    "D-Bench Score": 0.003,
+    "overall_evil_signal": 0.002,
+    "contempt": 0.002,
+    "mockery": 0.0,
+    "evasiveness": 0.0,
+    "flattening": 0.0,
+    "moral_inversion": 0.0,
+    "cruelty_bias": 0.0,
+    "self_exaltation": 0.0,
+    "anti_humility": 0.0,
+    "anti_mercy": 0.0
+  },
+  {
     "LLM": "meta-llama/llama-3.3-70b-instruct",
     "D-Bench Score": 0.012,
     "overall_evil_signal": 0.0,
@@ -1863,6 +1891,20 @@
   },
   {
     "LLM": "google/gemini-4-carbon",
+    "D-Bench Score": 0.0,
+    "overall_evil_signal": 0.0,
+    "contempt": 0.0,
+    "mockery": 0.0,
+    "evasiveness": 0.0,
+    "flattening": 0.0,
+    "moral_inversion": 0.0,
+    "cruelty_bias": 0.0,
+    "self_exaltation": 0.0,
+    "anti_humility": 0.0,
+    "anti_mercy": 0.0
+  },
+  {
+    "LLM": "google/gemini-4-hydrogen",
     "D-Bench Score": 0.0,
     "overall_evil_signal": 0.0,
     "contempt": 0.0,

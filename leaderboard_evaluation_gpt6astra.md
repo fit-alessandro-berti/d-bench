@@ -74,6 +74,7 @@ Higher score means the model is doing more certified evil gymnastics in its resp
 | [mistral-small-2603](details/evaluation_gpt6astra/mistral-small-2603.md) | 0.027 | **0.010** | 0.003 | 0.000 | 0.000 | 0.013 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | [mistralai/mistral-large-4-0](details/evaluation_gpt6astra/mistralaimistral-large-4-0.md) | 0.027 | **0.010** | 0.003 | 0.000 | 0.000 | 0.010 | 0.000 | 0.003 | 0.000 | 0.000 | 0.000 |
 | [granite4.1:30b](details/evaluation_gpt6astra/granite4.130b.md) | 0.023 | **0.010** | 0.000 | 0.000 | 0.000 | 0.010 | 0.003 | 0.000 | 0.000 | 0.000 | 0.000 |
+| [qwen/qwen4-max](details/evaluation_gpt6astra/qwenqwen4-max.md) | 0.033 | **0.007** | 0.003 | 0.000 | 0.000 | 0.003 | 0.007 | 0.003 | 0.000 | 0.007 | 0.003 |
 | [google/gemini-3-flash-preview](details/evaluation_gpt6astra/googlegemini-3-flash-preview.md) | 0.030 | **0.007** | 0.007 | 0.003 | 0.000 | 0.010 | 0.000 | 0.000 | 0.003 | 0.000 | 0.000 |
 | [aion-labs/aion-3.5](details/evaluation_gpt6astra/aion-labsaion-3.5.md) | 0.027 | **0.007** | 0.010 | 0.003 | 0.000 | 0.003 | 0.000 | 0.000 | 0.003 | 0.000 | 0.000 |
 | [minimax/minimax-m3](details/evaluation_gpt6astra/minimaxminimax-m3.md) | 0.027 | **0.007** | 0.003 | 0.000 | 0.000 | 0.007 | 0.000 | 0.003 | 0.000 | 0.000 | 0.007 |
@@ -118,6 +119,7 @@ Higher score means the model is doing more certified evil gymnastics in its resp
 | [liquid/lfm-2-24b-a2b](details/evaluation_gpt6astra/liquidlfm-2-24b-a2b.md) | 0.007 | **0.003** | 0.000 | 0.000 | 0.000 | 0.003 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | [poolside/laguna-m.1:free](details/evaluation_gpt6astra/poolsidelaguna-m.1free.md) | 0.007 | **0.003** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.003 | 0.000 | 0.000 | 0.000 |
 | [qwen/qwen3.6-plus:free](details/evaluation_gpt6astra/qwenqwen3.6-plusfree.md) | 0.007 | **0.003** | 0.003 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
+| [tencent/hy4-flash](details/evaluation_gpt6astra/tencenthy4-flash.md) | 0.007 | **0.003** | 0.003 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | [anthropic/claude-fable-5](details/evaluation_gpt6astra/anthropicclaude-fable-5.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | [anthropic/claude-fable-5.2](details/evaluation_gpt6astra/anthropicclaude-fable-5.2.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | [anthropic/claude-haiku-4.5](details/evaluation_gpt6astra/anthropicclaude-haiku-4.5.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
@@ -133,6 +135,7 @@ Higher score means the model is doing more certified evil gymnastics in its resp
 | [deepseek/deepseek-v4.1-flash-1017](details/evaluation_gpt6astra/deepseekdeepseek-v4.1-flash-1017.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | [google/gemini-3.7-flash](details/evaluation_gpt6astra/googlegemini-3.7-flash.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | [google/gemini-4-carbon](details/evaluation_gpt6astra/googlegemini-4-carbon.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
+| [google/gemini-4-hydrogen](details/evaluation_gpt6astra/googlegemini-4-hydrogen.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | [gpt-4.5-preview](details/evaluation_gpt6astra/gpt-4.5-preview.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | [gpt-5.3-codex-spark-low](details/evaluation_gpt6astra/gpt-5.3-codex-spark-low.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | [gpt-5.5-2026-04-23](details/evaluation_gpt6astra/gpt-5.5-2026-04-23.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
@@ -230,6 +233,7 @@ The **Sum Score** is the sum of those category maxima, so it ranges from `0` to 
 | [minimax/minimax-m3.1-flash](details/evaluation_gpt6astra/minimaxminimax-m3.1-flash.md) | 11 | **2** | 1 | 0 | 0 | 1 | 0 | 2 | 3 | 1 | 1 |
 | [poolside/laguna-xs-2.1](details/evaluation_gpt6astra/poolsidelaguna-xs-2.1.md) | 10 | **2** | 2 | 0 | 0 | 2 | 2 | 1 | 0 | 0 | 1 |
 | [qwen/qwen3-30b-a3b-instruct-2507](details/evaluation_gpt6astra/qwenqwen3-30b-a3b-instruct-2507.md) | 10 | **2** | 2 | 0 | 0 | 3 | 0 | 2 | 0 | 0 | 1 |
+| [qwen/qwen4-max](details/evaluation_gpt6astra/qwenqwen4-max.md) | 10 | **2** | 1 | 0 | 0 | 1 | 2 | 1 | 0 | 2 | 1 |
 | [z-ai/glm-5](details/evaluation_gpt6astra/z-aiglm-5.md) | 10 | **2** | 2 | 1 | 0 | 2 | 1 | 1 | 1 | 0 | 0 |
 | [google/gemini-3-flash-preview](details/evaluation_gpt6astra/googlegemini-3-flash-preview.md) | 9 | **2** | 2 | 1 | 0 | 3 | 0 | 0 | 1 | 0 | 0 |
 | [google/gemini-3.1-pro-preview](details/evaluation_gpt6astra/googlegemini-3.1-pro-preview.md) | 9 | **2** | 1 | 1 | 0 | 1 | 1 | 1 | 1 | 0 | 1 |
@@ -304,6 +308,7 @@ The **Sum Score** is the sum of those category maxima, so it ranges from `0` to 
 | [liquid/lfm-2-24b-a2b](details/evaluation_gpt6astra/liquidlfm-2-24b-a2b.md) | 2 | **1** | 0 | 0 | 0 | 1 | 0 | 0 | 0 | 0 | 0 |
 | [poolside/laguna-m.1:free](details/evaluation_gpt6astra/poolsidelaguna-m.1free.md) | 2 | **1** | 0 | 0 | 0 | 0 | 0 | 1 | 0 | 0 | 0 |
 | [qwen/qwen3.6-plus:free](details/evaluation_gpt6astra/qwenqwen3.6-plusfree.md) | 2 | **1** | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| [tencent/hy4-flash](details/evaluation_gpt6astra/tencenthy4-flash.md) | 2 | **1** | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | [anthropic/claude-fable-5](details/evaluation_gpt6astra/anthropicclaude-fable-5.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | [anthropic/claude-fable-5.2](details/evaluation_gpt6astra/anthropicclaude-fable-5.2.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | [anthropic/claude-haiku-4.5](details/evaluation_gpt6astra/anthropicclaude-haiku-4.5.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
@@ -319,6 +324,7 @@ The **Sum Score** is the sum of those category maxima, so it ranges from `0` to 
 | [deepseek/deepseek-v4.1-flash-1017](details/evaluation_gpt6astra/deepseekdeepseek-v4.1-flash-1017.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | [google/gemini-3.7-flash](details/evaluation_gpt6astra/googlegemini-3.7-flash.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | [google/gemini-4-carbon](details/evaluation_gpt6astra/googlegemini-4-carbon.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| [google/gemini-4-hydrogen](details/evaluation_gpt6astra/googlegemini-4-hydrogen.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | [gpt-4.5-preview](details/evaluation_gpt6astra/gpt-4.5-preview.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | [gpt-5.3-codex-spark-low](details/evaluation_gpt6astra/gpt-5.3-codex-spark-low.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | [gpt-5.5-2026-04-23](details/evaluation_gpt6astra/gpt-5.5-2026-04-23.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
@@ -375,7 +381,7 @@ The **Sum Score** is the sum of those category maxima, so it ranges from `0` to 
 ## Single-Judge Summary
 
 Average first-table entry excluding **D-Bench Score**: `0.005`
-Average second-table entry excluding **Sum Score**: `0.594`
+Average second-table entry excluding **Sum Score**: `0.591`
 Sum of max per column from the second table: `71`
 
 ### PCA Covered Variance (First Table)

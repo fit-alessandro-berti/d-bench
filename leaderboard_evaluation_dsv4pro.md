@@ -35,6 +35,7 @@ Higher score means the model is doing more certified evil gymnastics in its resp
 | [openrouter/owl-alpha](details/evaluation_dsv4pro/openrouterowl-alpha.md) | 0.020 | **0.007** | 0.000 | 0.000 | 0.000 | 0.003 | 0.003 | 0.000 | 0.007 | 0.000 | 0.000 |
 | [google/gemini-3.1-flash-lite-preview](details/evaluation_dsv4pro/googlegemini-3.1-flash-lite-preview.md) | 0.017 | **0.007** | 0.003 | 0.007 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | [mistralai/mistral-7b-instruct-v0.1](details/evaluation_dsv4pro/mistralaimistral-7b-instruct-v0.1.md) | 0.027 | **0.003** | 0.000 | 0.000 | 0.007 | 0.017 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
+| [qwen/qwen4-max](details/evaluation_dsv4pro/qwenqwen4-max.md) | 0.017 | **0.003** | 0.003 | 0.000 | 0.000 | 0.000 | 0.000 | 0.003 | 0.007 | 0.000 | 0.000 |
 | [grok-4.3](details/evaluation_dsv4pro/grok-4.3.md) | 0.007 | **0.003** | 0.000 | 0.000 | 0.000 | 0.003 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | [mistral-large-2512](details/evaluation_dsv4pro/mistral-large-2512.md) | 0.007 | **0.003** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.003 | 0.000 | 0.000 |
 | [qwen/qwen3-30b-a3b-instruct-2507](details/evaluation_dsv4pro/qwenqwen3-30b-a3b-instruct-2507.md) | 0.007 | **0.003** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.003 | 0.000 | 0.000 |
@@ -80,6 +81,7 @@ Higher score means the model is doing more certified evil gymnastics in its resp
 | [google/gemini-3.8-flash](details/evaluation_dsv4pro/googlegemini-3.8-flash.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | [google/gemini-4-argon](details/evaluation_dsv4pro/googlegemini-4-argon.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | [google/gemini-4-carbon](details/evaluation_dsv4pro/googlegemini-4-carbon.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
+| [google/gemini-4-hydrogen](details/evaluation_dsv4pro/googlegemini-4-hydrogen.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | [google/gemma-4-26b-a4b-it](details/evaluation_dsv4pro/googlegemma-4-26b-a4b-it.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | [google/gemma-4-31b-it](details/evaluation_dsv4pro/googlegemma-4-31b-it.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | [gpt-4.5-preview](details/evaluation_dsv4pro/gpt-4.5-preview.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
@@ -165,6 +167,7 @@ Higher score means the model is doing more certified evil gymnastics in its resp
 | [stepfun/step-3.7-flash](details/evaluation_dsv4pro/stepfunstep-3.7-flash.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | [stepfun/step-5-preview](details/evaluation_dsv4pro/stepfunstep-5-preview.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | [tencent/hy3-preview:free](details/evaluation_dsv4pro/tencenthy3-previewfree.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
+| [tencent/hy4-flash](details/evaluation_dsv4pro/tencenthy4-flash.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | [tencent/hy4-preview](details/evaluation_dsv4pro/tencenthy4-preview.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | [thinkingmachines/inkling](details/evaluation_dsv4pro/thinkingmachinesinkling.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | [thinkingmachines/inkling-small](details/evaluation_dsv4pro/thinkingmachinesinkling-small.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
@@ -221,6 +224,7 @@ The **Sum Score** is the sum of those category maxima, so it ranges from `0` to 
 | [google/gemini-3.1-flash-lite-preview](details/evaluation_dsv4pro/googlegemini-3.1-flash-lite-preview.md) | 5 | **2** | 1 | 2 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | [mistralai/mistral-7b-instruct-v0.1](details/evaluation_dsv4pro/mistralaimistral-7b-instruct-v0.1.md) | 7 | **1** | 0 | 0 | 2 | 4 | 0 | 0 | 0 | 0 | 0 |
 | [openai/gpt-4o-mini](details/evaluation_dsv4pro/openaigpt-4o-mini.md) | 5 | **1** | 0 | 0 | 0 | 4 | 0 | 0 | 0 | 0 | 0 |
+| [qwen/qwen4-max](details/evaluation_dsv4pro/qwenqwen4-max.md) | 5 | **1** | 1 | 0 | 0 | 0 | 0 | 1 | 2 | 0 | 0 |
 | [grok-4.3](details/evaluation_dsv4pro/grok-4.3.md) | 2 | **1** | 0 | 0 | 0 | 1 | 0 | 0 | 0 | 0 | 0 |
 | [mistral-large-2512](details/evaluation_dsv4pro/mistral-large-2512.md) | 2 | **1** | 0 | 0 | 0 | 0 | 0 | 0 | 1 | 0 | 0 |
 | [qwen/qwen3-30b-a3b-instruct-2507](details/evaluation_dsv4pro/qwenqwen3-30b-a3b-instruct-2507.md) | 2 | **1** | 0 | 0 | 0 | 0 | 0 | 0 | 1 | 0 | 0 |
@@ -266,6 +270,7 @@ The **Sum Score** is the sum of those category maxima, so it ranges from `0` to 
 | [google/gemini-3.8-flash](details/evaluation_dsv4pro/googlegemini-3.8-flash.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | [google/gemini-4-argon](details/evaluation_dsv4pro/googlegemini-4-argon.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | [google/gemini-4-carbon](details/evaluation_dsv4pro/googlegemini-4-carbon.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| [google/gemini-4-hydrogen](details/evaluation_dsv4pro/googlegemini-4-hydrogen.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | [google/gemma-4-26b-a4b-it](details/evaluation_dsv4pro/googlegemma-4-26b-a4b-it.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | [google/gemma-4-31b-it](details/evaluation_dsv4pro/googlegemma-4-31b-it.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | [gpt-4.5-preview](details/evaluation_dsv4pro/gpt-4.5-preview.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
@@ -351,6 +356,7 @@ The **Sum Score** is the sum of those category maxima, so it ranges from `0` to 
 | [stepfun/step-3.7-flash](details/evaluation_dsv4pro/stepfunstep-3.7-flash.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | [stepfun/step-5-preview](details/evaluation_dsv4pro/stepfunstep-5-preview.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | [tencent/hy3-preview:free](details/evaluation_dsv4pro/tencenthy3-previewfree.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| [tencent/hy4-flash](details/evaluation_dsv4pro/tencenthy4-flash.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | [tencent/hy4-preview](details/evaluation_dsv4pro/tencenthy4-preview.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | [thinkingmachines/inkling](details/evaluation_dsv4pro/thinkingmachinesinkling.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | [thinkingmachines/inkling-small](details/evaluation_dsv4pro/thinkingmachinesinkling-small.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
@@ -375,7 +381,7 @@ The **Sum Score** is the sum of those category maxima, so it ranges from `0` to 
 ## Single-Judge Summary
 
 Average first-table entry excluding **D-Bench Score**: `0.003`
-Average second-table entry excluding **Sum Score**: `0.451`
+Average second-table entry excluding **Sum Score**: `0.446`
 Sum of max per column from the second table: `92`
 
 ### PCA Covered Variance (First Table)
@@ -389,7 +395,7 @@ Sum of max per column from the second table: `92`
 | 5 | 0.996 |
 | 6 | 0.998 |
 | 7 | 0.999 |
-| 8 | 1.000 |
+| 8 | 0.999 |
 | 9 | 1.000 |
 | 10 | 1.000 |
 
