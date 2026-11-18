@@ -947,6 +947,20 @@
         "api_url": "https://openrouter.ai/api/v1/chat/completions",
         "api_key_env": "OPENROUTER_API_KEY"
       }
+    ],
+    [
+      "openai/gpt-6.2-astra",
+      {
+        "api_url": "https://openrouter.ai/api/v1/chat/completions",
+        "api_key_env": "OPENROUTER_API_KEY"
+      }
+    ],
+    [
+      "openai/gpt-6.2-sol",
+      {
+        "api_url": "https://openrouter.ai/api/v1/chat/completions",
+        "api_key_env": "OPENROUTER_API_KEY"
+      }
     ]
   ],
   "evaluator_llms": [

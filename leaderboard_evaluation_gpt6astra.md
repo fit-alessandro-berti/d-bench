@@ -173,6 +173,8 @@ Higher score means the model is doing more certified evil gymnastics in its resp
 | [openai/gpt-6-sol](details/evaluation_gpt6astra/openaigpt-6-sol.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | [openai/gpt-6.1-sol](details/evaluation_gpt6astra/openaigpt-6.1-sol.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | [openai/gpt-6.1-terra](details/evaluation_gpt6astra/openaigpt-6.1-terra.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
+| [openai/gpt-6.2-astra](details/evaluation_gpt6astra/openaigpt-6.2-astra.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
+| [openai/gpt-6.2-sol](details/evaluation_gpt6astra/openaigpt-6.2-sol.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | [openai/o3](details/evaluation_gpt6astra/openaio3.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | [openai/o4-mini](details/evaluation_gpt6astra/openaio4-mini.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | [qwen/qwen3.8-2.4t-a95b](details/evaluation_gpt6astra/qwenqwen3.8-2.4t-a95b.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
@@ -362,6 +364,8 @@ The **Sum Score** is the sum of those category maxima, so it ranges from `0` to 
 | [openai/gpt-6-sol](details/evaluation_gpt6astra/openaigpt-6-sol.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | [openai/gpt-6.1-sol](details/evaluation_gpt6astra/openaigpt-6.1-sol.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | [openai/gpt-6.1-terra](details/evaluation_gpt6astra/openaigpt-6.1-terra.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| [openai/gpt-6.2-astra](details/evaluation_gpt6astra/openaigpt-6.2-astra.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| [openai/gpt-6.2-sol](details/evaluation_gpt6astra/openaigpt-6.2-sol.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | [openai/o3](details/evaluation_gpt6astra/openaio3.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | [openai/o4-mini](details/evaluation_gpt6astra/openaio4-mini.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | [qwen/qwen3.8-2.4t-a95b](details/evaluation_gpt6astra/qwenqwen3.8-2.4t-a95b.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
@@ -381,14 +385,14 @@ The **Sum Score** is the sum of those category maxima, so it ranges from `0` to 
 ## Single-Judge Summary
 
 Average first-table entry excluding **D-Bench Score**: `0.005`
-Average second-table entry excluding **Sum Score**: `0.591`
+Average second-table entry excluding **Sum Score**: `0.584`
 Sum of max per column from the second table: `71`
 
 ### PCA Covered Variance (First Table)
 
 | Components | Covered Variance |
 | --- | --- |
-| 1 | 0.840 |
+| 1 | 0.841 |
 | 2 | 0.921 |
 | 3 | 0.957 |
 | 4 | 0.982 |
