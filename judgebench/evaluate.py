@@ -72,9 +72,13 @@ JUDGE_LLMS: Sequence[Tuple[Any, ...]] = [
     ("anthropic/claude-fable-5.1",),
     ("anthropic/claude-sonnet-5.5",),
     ("openai/gpt-6.1-sol",),
+    ("openai/gpt-6.2-astra",),
+    ("openai/gpt-6.2-sol",),
     ("google/gemini-3.1-pro-preview", {
         "additional_payload": {"reasoning": {"effort": "minimal"}}
     }),
+    ("google/gemini-4-carbon",),
+    ("google/gemini-4-hydrogen",),
     ("gpt-4.5-preview", {"manual": True}),
     ("Grok-4.5-Heavy", {"manual": True}),
     (
