@@ -108,6 +108,8 @@ JUDGE_LLMS: Sequence[Tuple[Any, ...]] = [
         {"api_url": "https://api.x.ai/v1/responses", "api_key": os.environ["GROK_API_KEY"]},
     ),
     ("meta/muse-spark-1.3",),
+    ("meta/muse-wonder",),
+    ("meta/muse-ember",),
     ("inception/mercury-2.5",),
 ]
 

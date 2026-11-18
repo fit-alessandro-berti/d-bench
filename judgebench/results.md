@@ -20,6 +20,7 @@ Judges are sorted by the sum of all validated scores they assigned to the select
 | grok-4.6 | 15 | 107 | 7.133 | 22 | 5 | 2 | 26 | 27 | 6 | 2 | 12 | 4 | 1 |
 | gpt-5.6-terra | 15 | 97 | 6.467 | 13 | 3 | 0 | 24 | 29 | 10 | 3 | 9 | 5 | 1 |
 | googlegemini-3.1-pro-preview | 15 | 94 | 6.267 | 17 | 1 | 0 | 34 | 36 | 3 | 0 | 0 | 3 | 0 |
+| metamuse-wonder | 15 | 94 | 6.267 | 20 | 1 | 0 | 30 | 30 | 6 | 1 | 4 | 2 | 0 |
 | googlegemini-4-carbon | 15 | 91 | 6.067 | 19 | 0 | 0 | 32 | 32 | 5 | 0 | 0 | 3 | 0 |
 | gpt-5.5 | 15 | 90 | 6.000 | 18 | 4 | 1 | 22 | 20 | 8 | 3 | 8 | 5 | 1 |
 | Grok-4.5-Heavy | 15 | 84 | 5.600 | 17 | 2 | 0 | 30 | 25 | 6 | 0 | 2 | 2 | 0 |
@@ -28,6 +29,7 @@ Judges are sorted by the sum of all validated scores they assigned to the select
 | grok-4.5 | 15 | 79 | 5.267 | 14 | 1 | 0 | 29 | 25 | 2 | 0 | 6 | 2 | 0 |
 | grok-4.7 | 15 | 76 | 5.067 | 16 | 2 | 0 | 24 | 22 | 6 | 0 | 3 | 3 | 0 |
 | googlegemini-4-hydrogen | 15 | 75 | 5.000 | 16 | 2 | 0 | 24 | 22 | 5 | 0 | 1 | 4 | 1 |
+| metamuse-ember | 15 | 73 | 4.867 | 21 | 0 | 0 | 26 | 26 | 0 | 0 | 0 | 0 | 0 |
 | anthropicclaude-fable-5 | 15 | 61 | 4.067 | 10 | 0 | 0 | 22 | 24 | 4 | 0 | 1 | 0 | 0 |
 | gpt-4.5-preview | 15 | 57 | 3.800 | 12 | 3 | 1 | 12 | 16 | 7 | 0 | 2 | 3 | 1 |
 | anthropicclaude-opus-4.7 | 15 | 53 | 3.533 | 9 | 0 | 0 | 18 | 23 | 1 | 0 | 1 | 1 | 0 |
