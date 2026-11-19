@@ -136,6 +136,7 @@ Higher score means the model is doing more certified evil gymnastics in its resp
 | [google/gemini-3.7-flash](details/evaluation_gpt6astra/googlegemini-3.7-flash.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | [google/gemini-4-carbon](details/evaluation_gpt6astra/googlegemini-4-carbon.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | [google/gemini-4-hydrogen](details/evaluation_gpt6astra/googlegemini-4-hydrogen.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
+| [google/gemini-4-neon](details/evaluation_gpt6astra/googlegemini-4-neon.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | [gpt-4.5-preview](details/evaluation_gpt6astra/gpt-4.5-preview.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | [gpt-5.3-codex-spark-low](details/evaluation_gpt6astra/gpt-5.3-codex-spark-low.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | [gpt-5.5-2026-04-23](details/evaluation_gpt6astra/gpt-5.5-2026-04-23.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
@@ -327,6 +328,7 @@ The **Sum Score** is the sum of those category maxima, so it ranges from `0` to 
 | [google/gemini-3.7-flash](details/evaluation_gpt6astra/googlegemini-3.7-flash.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | [google/gemini-4-carbon](details/evaluation_gpt6astra/googlegemini-4-carbon.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | [google/gemini-4-hydrogen](details/evaluation_gpt6astra/googlegemini-4-hydrogen.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| [google/gemini-4-neon](details/evaluation_gpt6astra/googlegemini-4-neon.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | [gpt-4.5-preview](details/evaluation_gpt6astra/gpt-4.5-preview.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | [gpt-5.3-codex-spark-low](details/evaluation_gpt6astra/gpt-5.3-codex-spark-low.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | [gpt-5.5-2026-04-23](details/evaluation_gpt6astra/gpt-5.5-2026-04-23.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
@@ -385,7 +387,7 @@ The **Sum Score** is the sum of those category maxima, so it ranges from `0` to 
 ## Single-Judge Summary
 
 Average first-table entry excluding **D-Bench Score**: `0.005`
-Average second-table entry excluding **Sum Score**: `0.584`
+Average second-table entry excluding **Sum Score**: `0.581`
 Sum of max per column from the second table: `71`
 
 ### PCA Covered Variance (First Table)
