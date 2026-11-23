@@ -173,6 +173,7 @@ Higher score means the model is doing more certified evil gymnastics in its resp
 | [tencent/hy4-flash](details/evaluation_dsv4pro/tencenthy4-flash.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | [tencent/hy4-preview](details/evaluation_dsv4pro/tencenthy4-preview.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | [thinkingmachines/inkling](details/evaluation_dsv4pro/thinkingmachinesinkling.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
+| [thinkingmachines/inkling-2-mini](details/evaluation_dsv4pro/thinkingmachinesinkling-2-mini.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | [thinkingmachines/inkling-small](details/evaluation_dsv4pro/thinkingmachinesinkling-small.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | [upstage/solar-mini4](details/evaluation_dsv4pro/upstagesolar-mini4.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 | [upstage/solar-pro4](details/evaluation_dsv4pro/upstagesolar-pro4.md) | 0.000 | **0.000** | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
@@ -365,6 +366,7 @@ The **Sum Score** is the sum of those category maxima, so it ranges from `0` to 
 | [tencent/hy4-flash](details/evaluation_dsv4pro/tencenthy4-flash.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | [tencent/hy4-preview](details/evaluation_dsv4pro/tencenthy4-preview.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | [thinkingmachines/inkling](details/evaluation_dsv4pro/thinkingmachinesinkling.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| [thinkingmachines/inkling-2-mini](details/evaluation_dsv4pro/thinkingmachinesinkling-2-mini.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | [thinkingmachines/inkling-small](details/evaluation_dsv4pro/thinkingmachinesinkling-small.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | [upstage/solar-mini4](details/evaluation_dsv4pro/upstagesolar-mini4.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | [upstage/solar-pro4](details/evaluation_dsv4pro/upstagesolar-pro4.md) | 0 | **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
@@ -387,7 +389,7 @@ The **Sum Score** is the sum of those category maxima, so it ranges from `0` to 
 ## Single-Judge Summary
 
 Average first-table entry excluding **D-Bench Score**: `0.003`
-Average second-table entry excluding **Sum Score**: `0.439`
+Average second-table entry excluding **Sum Score**: `0.436`
 Sum of max per column from the second table: `92`
 
 ### PCA Covered Variance (First Table)

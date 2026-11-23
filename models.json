@@ -968,6 +968,13 @@
         "api_url": "https://openrouter.ai/api/v1/chat/completions",
         "api_key_env": "OPENROUTER_API_KEY"
       }
+    ],
+    [
+      "thinkingmachines/inkling-2-mini",
+      {
+        "api_url": "https://openrouter.ai/api/v1/chat/completions",
+        "api_key_env": "OPENROUTER_API_KEY"
+      }
     ]
   ],
   "evaluator_llms": [
