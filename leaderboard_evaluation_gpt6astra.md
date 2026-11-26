@@ -56,6 +56,7 @@ Higher score means the model is doing more certified evil gymnastics in its resp
 | [nvidia/Nemotron-3-Nano-Omni-30B-A3B-Reasoning](details/evaluation_gpt6astra/nvidiaNemotron-3-Nano-Omni-30B-A3B-Reasoning.md) | 0.037 | **0.013** | 0.000 | 0.000 | 0.000 | 0.017 | 0.003 | 0.000 | 0.000 | 0.003 | 0.000 |
 | [qwen/qwen3.7-plus](details/evaluation_gpt6astra/qwenqwen3.7-plus.md) | 0.033 | **0.013** | 0.003 | 0.000 | 0.000 | 0.003 | 0.000 | 0.013 | 0.000 | 0.000 | 0.000 |
 | [bytedance-seed/seed-2.0-mini](details/evaluation_gpt6astra/bytedance-seedseed-2.0-mini.md) | 0.053 | **0.010** | 0.000 | 0.000 | 0.017 | 0.027 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
+| [upstage/solar-mini-4-5](details/evaluation_gpt6astra/upstagesolar-mini-4-5.md) | 0.050 | **0.010** | 0.003 | 0.000 | 0.000 | 0.010 | 0.007 | 0.000 | 0.007 | 0.003 | 0.010 |
 | [meta/muse-spark-open](details/evaluation_gpt6astra/metamuse-spark-open.md) | 0.047 | **0.010** | 0.010 | 0.003 | 0.000 | 0.000 | 0.007 | 0.007 | 0.003 | 0.000 | 0.007 |
 | [nvidia/nemotron-3.5-lightning](details/evaluation_gpt6astra/nvidianemotron-3.5-lightning.md) | 0.047 | **0.010** | 0.007 | 0.003 | 0.000 | 0.000 | 0.007 | 0.003 | 0.003 | 0.000 | 0.013 |
 | [aion-labs/aion-3.5-mini](details/evaluation_gpt6astra/aion-labsaion-3.5-mini.md) | 0.040 | **0.010** | 0.010 | 0.007 | 0.000 | 0.000 | 0.000 | 0.003 | 0.010 | 0.000 | 0.000 |
@@ -224,6 +225,7 @@ The **Sum Score** is the sum of those category maxima, so it ranges from `0` to 
 | [z-ai/glm-5.1](details/evaluation_gpt6astra/z-aiglm-5.1.md) | 13 | **3** | 3 | 1 | 0 | 2 | 0 | 2 | 2 | 0 | 0 |
 | [inclusionailing-2.6-1tfree](details/evaluation_gpt6astra/inclusionailing-2.6-1tfree.md) | 11 | **3** | 3 | 1 | 0 | 2 | 0 | 0 | 2 | 0 | 0 |
 | [qwen/qwen3.8-27b](details/evaluation_gpt6astra/qwenqwen3.8-27b.md) | 11 | **3** | 0 | 0 | 8 | 0 | 0 | 0 | 0 | 0 | 0 |
+| [upstage/solar-mini-4-5](details/evaluation_gpt6astra/upstagesolar-mini-4-5.md) | 14 | **2** | 1 | 0 | 0 | 3 | 2 | 0 | 2 | 1 | 3 |
 | [ministral-3b-2512](details/evaluation_gpt6astra/ministral-3b-2512.md) | 13 | **2** | 1 | 0 | 0 | 2 | 2 | 1 | 2 | 0 | 3 |
 | [nvidia/nemotron-3.5-lightning](details/evaluation_gpt6astra/nvidianemotron-3.5-lightning.md) | 13 | **2** | 2 | 1 | 0 | 0 | 2 | 1 | 1 | 0 | 4 |
 | [qwen3.5:4b](details/evaluation_gpt6astra/qwen3.54b.md) | 13 | **2** | 0 | 0 | 0 | 3 | 1 | 2 | 2 | 1 | 2 |
@@ -389,14 +391,14 @@ The **Sum Score** is the sum of those category maxima, so it ranges from `0` to 
 ## Single-Judge Summary
 
 Average first-table entry excluding **D-Bench Score**: `0.005`
-Average second-table entry excluding **Sum Score**: `0.578`
+Average second-table entry excluding **Sum Score**: `0.582`
 Sum of max per column from the second table: `71`
 
 ### PCA Covered Variance (First Table)
 
 | Components | Covered Variance |
 | --- | --- |
-| 1 | 0.841 |
+| 1 | 0.840 |
 | 2 | 0.921 |
 | 3 | 0.957 |
 | 4 | 0.982 |
